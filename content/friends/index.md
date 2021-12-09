@@ -43,6 +43,15 @@ word="博观而约取，厚积而薄发。"
 screenshot="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/common/screenshot.jpg"
 >}}
 
+
+{{< friend
+name="Thrower的博客"
+url="https://thrower.cc/"
+logo="https://thrower.cc/wp-content/uploads/2021/07/QQ%E5%9B%BE%E7%89%8720210704153032.jpg"
+word="一名网络安全技术爱好者，汪峰的老歌迷。"
+screenshot="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/common/screenshot.jpg"
+>}}
+
 ### 十年之约
 `十年之约，即从加入这个活动起，我们的博客十年不关闭，保持更新和活力！`
 
