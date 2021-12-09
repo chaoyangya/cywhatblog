@@ -6,6 +6,16 @@ comment: false
 hiddenFromHomePage: true
 ---
 
+### LoveIt官方
+{{< friend
+name="LoveIt官方"
+url="https://hugoloveit.com/"
+logo="https://cdn.jsdelivr.net/gh/dillonzq/LoveIt@master/exampleSite/assets/images/avatar.png"
+word="LoveIt主题官方文档"
+screenshot="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/common/screenshot.jpg"
+>}}
+
+### 大牛子们
 {{< friend
 name="雨临Lewis的博客"
 url="https://lewky.cn/"
@@ -16,14 +26,6 @@ group="Java"
 >}}
 
 
-
-{{< friend
-name="LoveIt官方"
-url="https://hugoloveit.com/"
-logo="https://cdn.jsdelivr.net/gh/dillonzq/LoveIt@master/exampleSite/assets/images/avatar.png"
-word="LoveIt主题官方文档"
-screenshot="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/common/screenshot.jpg"
->}}
 
 {{< friend
 name="ShenShilei"
@@ -66,7 +68,7 @@ src=""
 name="站点名称"
 url="站点地址"
 logo="站点图标或个人头像"
-word="站点描述"
+describe="站点描述"
 ```
 
 ### 我的友链信息
