@@ -87,6 +87,15 @@ word="Java,Vue,Flutter"
 screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQRov.png"
 >}}
 
+{{< friend
+name="森屿暖树"
+url="https://blog.syzhan.cn/"
+logo="http://surl-6.cn/0N3OV"
+word="人和人，和万物，相逢又别离"
+screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQRov.png"
+>}}
+
+
 
 ### 十年之约
 `十年之约，即从加入这个活动起，我们的博客十年不关闭，保持更新和活力！`
