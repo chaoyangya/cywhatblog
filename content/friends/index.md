@@ -57,7 +57,6 @@ word="十年之约"
 screenshot="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/common/screenshot.jpg"
 >}}
 
-src=""
 
 ### 如何交换友链
 {{< admonition type=info title="以下信息发送至'45204307@qq.com'" open=true >}}
