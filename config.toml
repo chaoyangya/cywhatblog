@@ -85,13 +85,21 @@ posts = "/:year/:month/:day/:slug"
         title = ""
         weight = 3
       [[languages.zh-cn.menu.main]]
+        identifier = "friends"
+        pre = ""
+        post = ""
+        name = "友链"
+        url = "/friends/"
+        title = ""
+        weight = 4
+      [[languages.zh-cn.menu.main]]
         identifier = "about"
         pre = ""
         post = ""
         name = "关于"
         url = "/about/"
         title = ""
-        weight = 4
+        weight = 5
     [languages.zh-cn.params]
       # 网站描述
       description = "关于 LoveIt 主题"
@@ -142,11 +150,11 @@ posts = "/:year/:month/:day/:slug"
           # Gravatar 邮箱，用于优先在主页显示的头像
           gravatarEmail = ""
           # 主页显示头像的 URL
-          avatarURL = ""
+          avatarURL = "https://cdn.jsdelivr.net/gh/chaoyangya/cywhat-cdn@master/images/cywhat-logo.png"
           # 主页显示的网站标题 (支持 HTML 格式)
-          title = "cywhat<br>."
+          title = "cywhat."
           # 主页显示的网站副标题
-          subtitle = "一个摸爬滚打的测开Dog."
+          subtitle = "一位摸爬滚打的测开Dog."
           # 是否为副标题显示打字机动画
           typeit = true
           # 是否显示社交账号
@@ -558,7 +566,7 @@ posts = "/:year/:month/:day/:slug"
       # 出版者信息
       [params.page.seo.publisher]
         name = "cywhat"
-        logoUrl = "/images/avatar.png"
+        logoUrl = ""
 
   # TypeIt config
   # TypeIt 配置

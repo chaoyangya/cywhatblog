@@ -74,7 +74,7 @@ hexo.extend.filter.register('after_post_render', function (data) {
             var beginPos = getPosition(link, '/', 1) + 1;
         else
             var beginPos = getPosition(link, '/', 3) + 1;
-        // In hexo 3.1.1, the permalink of "about" page is like ".../about/index.html".
+        // In hexo 3.1.1, the permalink of "about" page is like ".../about/index.md".
         var endPos = link.lastIndexOf('/') + 1;
         link = link.substring(beginPos, endPos);
 
