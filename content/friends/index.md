@@ -90,7 +90,7 @@ screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQR
 {{< friend
 name="森屿暖树"
 url="https://blog.syzhan.cn/"
-logo="http://surl-6.cn/0N3OV"
+logo="https://thirdqq.qlogo.cn/g?b=qq&nk=2817808181&s=100"
 word="人和人，和万物，相逢又别离"
 screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQRov.png"
 >}}
