@@ -25,7 +25,13 @@ word="LoveIt主题官方文档"
 screenshot="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/common/screenshot.jpg"
 >}}
 
-
+{{< friend
+name="ShenShilei"
+url="https://blog.shenshilei.site/"
+logo="https://cdn.jsdelivr.net/gh/shenshilei1022/cdn@1.6/img/custom/avatar.png"
+word=" 纵使黑夜吞噬了一切，太阳还可以重新回来。"
+screenshot="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/common/screenshot.jpg"
+>}}
 
 
 
@@ -67,4 +73,3 @@ url="https://cywhat.cn"
 logo="https://cdn.jsdelivr.net/gh/chaoyangya/cywhat-cdn@master/images/cywhat-logo.png"
 describe="一位摸爬滚打的测开Dog."
 ```
-href="mailto:"
