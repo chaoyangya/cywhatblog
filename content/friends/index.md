@@ -1,5 +1,5 @@
 ---
-title: "友链墙"
+title: "友链"
 url: friends
 reward: false
 comment: false
@@ -51,6 +51,17 @@ logo="https://thrower.cc/wp-content/uploads/2021/07/QQ%E5%9B%BE%E7%89%8720210704
 word="一名网络安全技术爱好者，汪峰的老歌迷。"
 screenshot="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/common/screenshot.jpg"
 >}}
+
+
+{{< friend
+name="BBing's Blog"
+url="https://bbing.com.cn/"
+logo="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/2B2pd1.png"
+word="自由 分享 合作。"
+screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQRov.png"
+>}}
+
+
 
 ### 十年之约
 `十年之约，即从加入这个活动起，我们的博客十年不关闭，保持更新和活力！`
