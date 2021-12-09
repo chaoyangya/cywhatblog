@@ -33,7 +33,13 @@ word=" 纵使黑夜吞噬了一切，太阳还可以重新回来。"
 screenshot="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/common/screenshot.jpg"
 >}}
 
-
+{{< friend
+name="Bore’s Notes"
+url="https://bore.vip/"
+logo="https://cdn.jsdelivr.net/gh/iwyang/pic/avatar.jpg"
+word="博观而约取，厚积而薄发。"
+screenshot="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/common/screenshot.jpg"
+>}}
 
 ### 十年之约
 `十年之约，即从加入这个活动起，我们的博客十年不关闭，保持更新和活力！`
