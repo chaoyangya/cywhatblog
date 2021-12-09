@@ -1,0 +1,80 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/</link>
+        <description>关于 LoveIt 主题</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 18 Nov 2021 10:01:24 &#43;0800</lastBuildDate>
+            <atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Raid磁盘阵列</title>
+    <link>https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/</link>
+    <pubDate>Thu, 18 Nov 2021 10:01:24 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/</guid>
+    <description><![CDATA[1.什么是Raid 什么是Raid Raid 是英文(Redundant Array of Independent Disks)的缩写，翻译成中文是“独立磁盘冗余阵列”, 简称磁盘阵列（Dis]]></description>
+</item><item>
+    <title>Linux使用iftop查看带宽占用情况</title>
+    <link>https://cywhat.cn/Linux%E4%BD%BF%E7%94%A8iftop%E6%9F%A5%E7%9C%8B%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/</link>
+    <pubDate>Wed, 17 Nov 2021 10:16:41 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E4%BD%BF%E7%94%A8iftop%E6%9F%A5%E7%9C%8B%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/</guid>
+    <description><![CDATA[查看Linux系统下服务器带宽占用情况，使用iftop 1.安装iftop 1 2 3 centos: yum install iftop debian: apt-get install iftop 2.使用iftop 1 2 3 iftop -i eth1 #查看eth1网]]></description>
+</item><item>
+    <title>Loveit开启评论功能</title>
+    <link>https://cywhat.cn/Loveit%E5%BC%80%E5%90%AF%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</link>
+    <pubDate>Thu, 21 Oct 2021 17:07:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Loveit%E5%BC%80%E5%90%AF%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</guid>
+    <description><![CDATA[小tips 该文章仅仅针对Loveit主题有效，其他自己尝试。 Loveit开启评论 loveit自带的有valine的配置，我们需要先注册一些要]]></description>
+</item><item>
+    <title>Loveit主题开启文章赞赏</title>
+    <link>https://cywhat.cn/Loveit%E4%B8%BB%E9%A2%98%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E8%B5%9E%E8%B5%8F/</link>
+    <pubDate>Thu, 21 Oct 2021 16:36:41 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Loveit%E4%B8%BB%E9%A2%98%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E8%B5%9E%E8%B5%8F/</guid>
+    <description><![CDATA[小tips 该文章仅仅针对Loveit主题有效，其他自己尝试。 添加文章打赏功能 1.配置添加 在 config.toml 添加下面的变量 1 2 3 4 [params.reward] # 文章打赏 enable = true # tru]]></description>
+</item><item>
+    <title>Loveit主题的一些美化设置</title>
+    <link>https://cywhat.cn/loveit%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BE%8E%E5%8C%96%E8%AE%BE%E7%BD%AE/</link>
+    <pubDate>Thu, 21 Oct 2021 16:08:45 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/loveit%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BE%8E%E5%8C%96%E8%AE%BE%E7%BD%AE/</guid>
+    <description><![CDATA[前景 hugo的渲染速度&quot;婶婶&rdquo;(深深)的打动了我，于是决定从hexo迁移到hugo，迁移的帖子之后总结一下，先记录一下]]></description>
+</item><item>
+    <title>fonts.googleapis.com访问较慢[已解决]</title>
+    <link>https://cywhat.cn/fonts-googleapis-com%E8%AE%BF%E9%97%AE%E8%BE%83%E6%85%A2-%E5%B7%B2%E8%A7%A3%E5%86%B3/</link>
+    <pubDate>Tue, 12 Oct 2021 18:14:32 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/fonts-googleapis-com%E8%AE%BF%E9%97%AE%E8%BE%83%E6%85%A2-%E5%B7%B2%E8%A7%A3%E5%86%B3/</guid>
+    <description><![CDATA[前景： 自己写的测试工具发现最近打开页面时快时慢，查了原因，发现是css引用的谷歌字体源：fonts.googleapis.com 解决办法： 1]]></description>
+</item><item>
+    <title>avn自动切换node版本</title>
+    <link>https://cywhat.cn/avn%E8%87%AA%E5%8A%A8%E5%88%87%E6%8D%A2node%E7%89%88%E6%9C%AC/</link>
+    <pubDate>Wed, 29 Sep 2021 17:23:33 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/avn%E8%87%AA%E5%8A%A8%E5%88%87%E6%8D%A2node%E7%89%88%E6%9C%AC/</guid>
+    <description><![CDATA[前景： 服务器中俩个服务需要用到node，但是其中一个服务需要使用低版本的node，另一个则需要高版本node 1.首先安装nvm 1 2 3 4 5 6 7]]></description>
+</item><item>
+    <title>Django中的form表单校验</title>
+    <link>https://cywhat.cn/Django%E4%B8%AD%E7%9A%84form%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C/</link>
+    <pubDate>Fri, 24 Sep 2021 18:20:37 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E4%B8%AD%E7%9A%84form%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C/</guid>
+    <description><![CDATA[前景： 我在使用django的form组件时，发现在view函数中的`form.is_valid()`在form表单校验未通过的情况下，返回的]]></description>
+</item><item>
+    <title>hexo迁移需要进行安装的一些依赖</title>
+    <link>https://cywhat.cn/hexo%E8%BF%81%E7%A7%BB%E9%9C%80%E8%A6%81%E8%BF%9B%E8%A1%8C%E5%AE%89%E8%A3%85%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BE%9D%E8%B5%96/</link>
+    <pubDate>Fri, 24 Sep 2021 17:51:42 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/hexo%E8%BF%81%E7%A7%BB%E9%9C%80%E8%A6%81%E8%BF%9B%E8%A1%8C%E5%AE%89%E8%A3%85%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BE%9D%E8%B5%96/</guid>
+    <description><![CDATA[前景： 更换新设备 or 更换新工作环境需要重新本地部署hexo环境,需要有整个工程的文件夹 1.安装hexo 1 npm install -g hexo-cli 2.安装node_moudle]]></description>
+</item><item>
+    <title>ERROR: Re-run SonarScanner using the -X switch to enable full debug logging.</title>
+    <link>https://cywhat.cn/ERROR-Re-run-SonarScanner-using-the-X-switch-to-enable-full-debug-logging/</link>
+    <pubDate>Thu, 23 Sep 2021 11:25:17 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/ERROR-Re-run-SonarScanner-using-the-X-switch-to-enable-full-debug-logging/</guid>
+    <description><![CDATA[前景 jenkins构建sonarqube报错 报错： &quot;ERROR: Re-run SonarScanner using the -X switch to enable full debug logging. 1.打开sonarqube的SCM配置 2.重新构建]]></description>
+</item></channel>
+</rss>

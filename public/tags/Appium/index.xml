@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Appium - 标签 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/tags/Appium/</link>
+        <description>Appium - 标签 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 11 Oct 2018 19:54:00 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Appium/" rel="self" type="application/rss+xml" /><item>
+    <title>App跟web定位元素页面相互切换</title>
+    <link>https://cywhat.cn/App%E8%B7%9Fweb%E5%AE%9A%E4%BD%8D%E5%85%83%E7%B4%A0%E9%A1%B5%E9%9D%A2%E7%9B%B8%E4%BA%92%E5%88%87%E6%8D%A2/</link>
+    <pubDate>Thu, 11 Oct 2018 19:54:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/App%E8%B7%9Fweb%E5%AE%9A%E4%BD%8D%E5%85%83%E7%B4%A0%E9%A1%B5%E9%9D%A2%E7%9B%B8%E4%BA%92%E5%88%87%E6%8D%A2/</guid>
+    <description><![CDATA[很多QA在做UI自动化或者App自动化的时候，会遇到在web页面要抓取App模式的元素，或者是在App要抓取H5页面的元素，从网上整理了一些]]></description>
+</item><item>
+    <title>Error taking device screenshot: null</title>
+    <link>https://cywhat.cn/Error-taking-device-screenshot-null/</link>
+    <pubDate>Thu, 11 Oct 2018 19:42:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Error-taking-device-screenshot-null/</guid>
+    <description><![CDATA[使用uiautomatorviewer 查看Android某些页面元素，出现如图错误： 1 $ Error obtaining UI hierarchy Reason: Error taking device screenshot: null 再网上找了很多解决办法依然没解决]]></description>
+</item></channel>
+</rss>

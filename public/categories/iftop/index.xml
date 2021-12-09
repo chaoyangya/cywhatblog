@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>iftop - 分类 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/categories/iftop/</link>
+        <description>iftop - 分类 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 17 Nov 2021 10:16:41 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/iftop/" rel="self" type="application/rss+xml" /><item>
+    <title>Linux使用iftop查看带宽占用情况</title>
+    <link>https://cywhat.cn/Linux%E4%BD%BF%E7%94%A8iftop%E6%9F%A5%E7%9C%8B%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/</link>
+    <pubDate>Wed, 17 Nov 2021 10:16:41 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E4%BD%BF%E7%94%A8iftop%E6%9F%A5%E7%9C%8B%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/</guid>
+    <description><![CDATA[查看Linux系统下服务器带宽占用情况，使用iftop 1.安装iftop 1 2 3 centos: yum install iftop debian: apt-get install iftop 2.使用iftop 1 2 3 iftop -i eth1 #查看eth1网]]></description>
+</item></channel>
+</rss>

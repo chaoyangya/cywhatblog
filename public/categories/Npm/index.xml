@@ -1,0 +1,29 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Npm - 分类 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/categories/Npm/</link>
+        <description>Npm - 分类 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Jul 2021 17:18:21 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/categories/Npm/" rel="self" type="application/rss+xml" /><item>
+    <title>npm切换版本</title>
+    <link>https://cywhat.cn/npm%E5%88%87%E6%8D%A2%E7%89%88%E6%9C%AC/</link>
+    <pubDate>Wed, 14 Jul 2021 17:18:21 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/npm%E5%88%87%E6%8D%A2%E7%89%88%E6%9C%AC/</guid>
+    <description><![CDATA[Npm切换版本 npm需要切换版本如果没有安装nvm很头疼,会存在以下三种情况: ① Node环境还在,只是Npm被卸载 ② Npm和Node版本不兼]]></description>
+</item><item>
+    <title>nvm: Cannot uninstall currently-active node version, vx.x.x (inferred from x.x.x)</title>
+    <link>https://cywhat.cn/nvm-Cannot-uninstall-currently-active-node-version-vx-x-x-inferred-from-x-x-x/</link>
+    <pubDate>Wed, 14 Jul 2021 17:14:24 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/nvm-Cannot-uninstall-currently-active-node-version-vx-x-x-inferred-from-x-x-x/</guid>
+    <description><![CDATA[#使用nvm卸载node版本时报错如下: 1 2 $ nvm: Cannot uninstall currently-active node version, vx.x.x (inferred from x.x.x) 需要先退出已经使用的node环境 1 $ nvm deactivate 然后再执行卸载命令 1 $ nvm uninstall vx.x.x]]></description>
+</item><item>
+    <title>npm缺少css-loader，/style-compiler，stylus-loader问题，npm没有权限无法全局更新问题</title>
+    <link>https://cywhat.cn/npm%E7%BC%BA%E5%B0%91css-loader-style-compilerstylus-loader%E9%97%AE%E9%A2%98npm%E6%B2%A1%E6%9C%89%E6%9D%83%E9%99%90%E6%97%A0%E6%B3%95%E5%85%A8%E5%B1%80%E6%9B%B4%E6%96%B0%E9%97%AE%E9%A2%98/</link>
+    <pubDate>Wed, 17 Oct 2018 16:08:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/npm%E7%BC%BA%E5%B0%91css-loader-style-compilerstylus-loader%E9%97%AE%E9%A2%98npm%E6%B2%A1%E6%9C%89%E6%9D%83%E9%99%90%E6%97%A0%E6%B3%95%E5%85%A8%E5%B1%80%E6%9B%B4%E6%96%B0%E9%97%AE%E9%A2%98/</guid>
+    <description><![CDATA[​ ERROR in ./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{&ldquo;vue&rdquo;:true,&ldquo;id&rdquo;:&ldquo;data-v-a5e4f82a&rdquo;,&ldquo;scoped&rdquo;:false,&ldquo;hasInlineConfig&rdquo;:false}!./node_modules/stylus-loader?{&ldquo;import&rdquo;:[&ldquo;~@didi/ada/style/mixins.styl&rdquo;,&quot;/home/xiaoju/manhattan-hera-webapp/client/style/base.styl&rdquo;]}!./node_modules/vue-loader/lib/selector.js?type=styles&amp;index=0&amp;bustCache!./client/components/panel_links.vue Cannot find module &lsquo;postcss-import&rsquo; @ ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{&ldquo;vue&rdquo;:true,&ldquo;id&rdquo;:&ldquo;data-v-a5e4f82a&rdquo;,&ldquo;scoped&rdquo;:false,&ldquo;hasInlineConfig&rdquo;:false}!./node_modules/stylus-loader?{&ldquo;import&rdquo;:[&ldquo;~@didi/ada/style/mixins.styl&rdquo;,&quot;/home/xiaoju/manhattan-hera-webapp/client/style/base.styl&rdquo;]}!./node_modules/vue-loader/lib/selector.js?type=styles&amp;index=0&amp;bustCache!./client/components/panel_links.vue 4:14-454 @ ./client/components/panel_links.vue @ ./client/app.ts @ multi ./client/app.ts 如下图： 在测试项目的时候，部署前端在启动前端环境的时候遇到缺少组件css-loader，/style-c]]></description>
+</item></channel>
+</rss>

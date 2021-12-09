@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Iterm2 - 标签 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/tags/Iterm2/</link>
+        <description>Iterm2 - 标签 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 26 Jan 2019 11:13:00 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Iterm2/" rel="self" type="application/rss+xml" /><item>
+    <title>Iterm2/Mac自带终端工具快速ssh</title>
+    <link>https://cywhat.cn/Iterm2-Mac%E8%87%AA%E5%B8%A6%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%BF%AB%E9%80%9Fssh/</link>
+    <pubDate>Sat, 26 Jan 2019 11:13:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Iterm2-Mac%E8%87%AA%E5%B8%A6%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%BF%AB%E9%80%9Fssh/</guid>
+    <description><![CDATA[一、 首先我们在终端本地要写一个登录的脚本，eg： 当然首先要touch login.sh 啦，下面就是脚本文件，比较low，大神勿喷，会更炫酷写法的小伙伴可以自]]></description>
+</item></channel>
+</rss>

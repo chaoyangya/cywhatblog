@@ -1,0 +1,13 @@
+---
+baseurl: "https://cywhat.cn/"
+DefaultContentLanguage: "zh-cn"
+hasCJKLanguage: true
+languageCode: "zh-cn"
+title: "cywhat's blog"
+theme: "loveit"
+metaDataFormat: "yaml"
+algolia:
+  index: "cywhat.algolia-temp"
+  key: "76bee9d276ea265b36eae78e8a17356c"
+  appID: "3031FWUVJN"
+---

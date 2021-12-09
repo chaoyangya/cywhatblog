@@ -1,0 +1,28 @@
+{
+  "name": "cywhats",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "algolia": "atomic-algolia",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaoyangya/cywhat.pp.ua.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaoyangya/cywhat.pp.ua/issues"
+  },
+  "homepage": "https://github.com/chaoyangya/cywhat.pp.ua#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "atomic-algolia": "^0.3.19"
+  },
+  "description": ""
+}

@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Easy_mock - 分类 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/categories/Easy_mock/</link>
+        <description>Easy_mock - 分类 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 16 Apr 2021 10:01:27 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/categories/Easy_mock/" rel="self" type="application/rss+xml" /><item>
+    <title>Linux部署easy_mock</title>
+    <link>https://cywhat.cn/Linux%E9%83%A8%E7%BD%B2easy-mock/</link>
+    <pubDate>Fri, 16 Apr 2021 10:01:27 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E9%83%A8%E7%BD%B2easy-mock/</guid>
+    <description><![CDATA[前期准备： 1、Linux：CentOS Linux release 7.8.2003 (Core) 2、mongodb：3.4.24 3、redis：4.0.14 4、node：8.9.0 PS： no]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Brew - 标签 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/tags/Brew/</link>
+        <description>Brew - 标签 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 18 Mar 2020 15:56:49 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Brew/" rel="self" type="application/rss+xml" /><item>
+    <title>mac 安装brew</title>
+    <link>https://cywhat.cn/mac-%E5%AE%89%E8%A3%85brew/</link>
+    <pubDate>Wed, 18 Mar 2020 15:56:49 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/mac-%E5%AE%89%E8%A3%85brew/</guid>
+    <description><![CDATA[【已解决】mac 安装brew mac是自带ruby的 打开命令行工具terminal 1、查看ruby版本 1 $ ruby -version 2、然后使用ruby安装brew]]></description>
+</item></channel>
+</rss>

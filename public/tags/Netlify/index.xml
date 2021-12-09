@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Netlify - 标签 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/tags/Netlify/</link>
+        <description>Netlify - 标签 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 12 Jul 2021 14:52:22 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Netlify/" rel="self" type="application/rss+xml" /><item>
+    <title>hexo&#43;netlify&#43;git&#43;个人域名搭建博客</title>
+    <link>https://cywhat.cn/hexo-netlify-git-%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+    <pubDate>Mon, 12 Jul 2021 14:52:22 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/hexo-netlify-git-%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+    <description><![CDATA[部署过程需要用到一些Linux命令,且本文部署操作机为Mac,如是Windows不保证能100%成功噢 部署准备 操作机: Mac(iterm) Git: 创建好个人项目(P]]></description>
+</item></channel>
+</rss>

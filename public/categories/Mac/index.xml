@@ -1,0 +1,29 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Mac - 分类 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/categories/Mac/</link>
+        <description>Mac - 分类 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 10 Sep 2021 14:54:10 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/categories/Mac/" rel="self" type="application/rss+xml" /><item>
+    <title>Mac必备软件推荐</title>
+    <link>https://cywhat.cn/Mac%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</link>
+    <pubDate>Fri, 10 Sep 2021 14:54:10 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Mac%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</guid>
+    <description><![CDATA[前景： 前几天系统降级了，发现之前使用的一些得心应手的app忘记名字了，很难找，不过最后还是在时间机器里找到了，特意开帖记录分享一下，常见的就]]></description>
+</item><item>
+    <title>Mac忽略系统更新提醒，并取消小红点</title>
+    <link>https://cywhat.cn/Mac%E5%BF%BD%E7%95%A5%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E6%8F%90%E9%86%92%E5%B9%B6%E5%8F%96%E6%B6%88%E5%B0%8F%E7%BA%A2%E7%82%B9/</link>
+    <pubDate>Tue, 07 Sep 2021 14:58:29 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Mac%E5%BF%BD%E7%95%A5%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E6%8F%90%E9%86%92%E5%B9%B6%E5%8F%96%E6%B6%88%E5%B0%8F%E7%BA%A2%E7%82%B9/</guid>
+    <description><![CDATA[1.首先关掉系统的自动更新设置** 1 2 3 4 5 $ 1.系统偏好设置--软件更新 $ 2.取消选择&#34;自动保持我的Mac最新&#34; $ 3.高级]]></description>
+</item><item>
+    <title>mac 安装brew</title>
+    <link>https://cywhat.cn/mac-%E5%AE%89%E8%A3%85brew/</link>
+    <pubDate>Wed, 18 Mar 2020 15:56:49 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/mac-%E5%AE%89%E8%A3%85brew/</guid>
+    <description><![CDATA[【已解决】mac 安装brew mac是自带ruby的 打开命令行工具terminal 1、查看ruby版本 1 $ ruby -version 2、然后使用ruby安装brew]]></description>
+</item></channel>
+</rss>

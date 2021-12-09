@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Postmant压力测试 - cywhat&#39;s blog</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Postmant压力测试" />
+<meta property="og:description" content="Postman请自行下载 下面是在网上随便抓了一个请求地址来做演示，把请求地址填入地址栏，此请求为GET请求。点击Send发送请求，请求结果将" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cywhat.cn/Postmant%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/" />
+<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="article:published_time" content="2019-03-28T18:16:00+00:00" />
+<meta property="article:modified_time" content="2019-03-28T18:16:00+00:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://cywhat.cn"/>
+
+<meta name="twitter:title" content="Postmant压力测试"/>
+<meta name="twitter:description" content="Postman请自行下载 下面是在网上随便抓了一个请求地址来做演示，把请求地址填入地址栏，此请求为GET请求。点击Send发送请求，请求结果将"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/Postmant%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/" /><link rel="prev" href="https://cywhat.cn/HTTP%E5%90%84%E4%B8%AAstatus-code%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/" /><link rel="next" href="https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Postmant压力测试",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/cywhat.cn\/Postmant%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95\/"
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Postman","wordcount":  1741 ,
+        "url": "https:\/\/cywhat.cn\/Postmant%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95\/","datePublished": "2019-03-28T18:16:00+00:00","dateModified": "2019-03-28T18:16:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "cywhat","logo": "https:\/\/cywhat.cn\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "cywhat"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="cywhat&#39;s blog">cywhat&#39;s blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="cywhat&#39;s blog">cywhat&#39;s blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Postmant压力测试</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Postman/"><i class="far fa-folder fa-fw"></i>Postman</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2019-03-28">2019-03-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1741 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 4 分钟&nbsp;<span id="/Postmant%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/" class="leancloud_visitors" data-flag-title="Postmant压力测试">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p>Postman请自行下载</p>
+<p>下面是在网上随便抓了一个请求地址来做演示，把请求地址填入地址栏，此请求为GET请求。点击Send发送请求，请求结果将会在下方显示出来。每次的请求历史数据，会被记录下来，但是经常使用的请求，还是保存一下，这么每次用的时候，选择就行了，及其方便。</p>
+<p>另外，最好创建一个账号，这样数据将会永久保存下来，不至于重装了系统或者换了台电脑数据都没了的尴尬。
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img-blog.csdnimg.cn/img_convert/3fea11cd00cc15c65ffa0d8b20d86677.png"
+        data-srcset="https://img-blog.csdnimg.cn/img_convert/3fea11cd00cc15c65ffa0d8b20d86677.png, https://img-blog.csdnimg.cn/img_convert/3fea11cd00cc15c65ffa0d8b20d86677.png 1.5x, https://img-blog.csdnimg.cn/img_convert/3fea11cd00cc15c65ffa0d8b20d86677.png 2x"
+        data-sizes="auto"
+        alt="https://img-blog.csdnimg.cn/img_convert/3fea11cd00cc15c65ffa0d8b20d86677.png"
+        title="https://img-blog.csdnimg.cn/img_convert/3fea11cd00cc15c65ffa0d8b20d86677.png" /></p>
+<p>保存的时候起个好听的名字
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img-blog.csdnimg.cn/img_convert/93990e6ee3e367ae2cf87a9116a26bdd.png"
+        data-srcset="https://img-blog.csdnimg.cn/img_convert/93990e6ee3e367ae2cf87a9116a26bdd.png, https://img-blog.csdnimg.cn/img_convert/93990e6ee3e367ae2cf87a9116a26bdd.png 1.5x, https://img-blog.csdnimg.cn/img_convert/93990e6ee3e367ae2cf87a9116a26bdd.png 2x"
+        data-sizes="auto"
+        alt="https://img-blog.csdnimg.cn/img_convert/93990e6ee3e367ae2cf87a9116a26bdd.png"
+        title="https://img-blog.csdnimg.cn/img_convert/93990e6ee3e367ae2cf87a9116a26bdd.png" /></p>
+<p>Header会传输一些我们需要的一些通用的数据，定义好之后，每个接口几乎都是一样的。所以，把这些数据进行预置，这样就不用每新建一个请求，都要重复的添加Header了。</p>
+<p>请求的时候，会把请求状态，请求的时间，以及返回的数据大小返回回来。这样一目了然。最常见的status就是200表示成功，400表示未找到资源。500开头的基本都是服务端异常等等。我之前写了一篇很详细的状态说明，请参见<a href="https://cywhat.cn/2019/03/07/http%E5%90%84%E4%B8%AAstatus-code%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/" target="_blank" rel="noopener noreffer">HTTP状态码大全</a>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img-blog.csdnimg.cn/img_convert/21001692b3f24989dd93c7370f6c0fe9.png"
+        data-srcset="https://img-blog.csdnimg.cn/img_convert/21001692b3f24989dd93c7370f6c0fe9.png, https://img-blog.csdnimg.cn/img_convert/21001692b3f24989dd93c7370f6c0fe9.png 1.5x, https://img-blog.csdnimg.cn/img_convert/21001692b3f24989dd93c7370f6c0fe9.png 2x"
+        data-sizes="auto"
+        alt="https://img-blog.csdnimg.cn/img_convert/21001692b3f24989dd93c7370f6c0fe9.png"
+        title="https://img-blog.csdnimg.cn/img_convert/21001692b3f24989dd93c7370f6c0fe9.png" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img-blog.csdnimg.cn/img_convert/1ee94aec5573735267fb282f90377d93.png"
+        data-srcset="https://img-blog.csdnimg.cn/img_convert/1ee94aec5573735267fb282f90377d93.png, https://img-blog.csdnimg.cn/img_convert/1ee94aec5573735267fb282f90377d93.png 1.5x, https://img-blog.csdnimg.cn/img_convert/1ee94aec5573735267fb282f90377d93.png 2x"
+        data-sizes="auto"
+        alt="https://img-blog.csdnimg.cn/img_convert/1ee94aec5573735267fb282f90377d93.png"
+        title="https://img-blog.csdnimg.cn/img_convert/1ee94aec5573735267fb282f90377d93.png" /></p>
+<p>点击params可以把url里的参数以列表的形式展现出来，方便编写
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img-blog.csdnimg.cn/img_convert/ea54d62217323e9b20b0d03b28306f3e.png"
+        data-srcset="https://img-blog.csdnimg.cn/img_convert/ea54d62217323e9b20b0d03b28306f3e.png, https://img-blog.csdnimg.cn/img_convert/ea54d62217323e9b20b0d03b28306f3e.png 1.5x, https://img-blog.csdnimg.cn/img_convert/ea54d62217323e9b20b0d03b28306f3e.png 2x"
+        data-sizes="auto"
+        alt="https://img-blog.csdnimg.cn/img_convert/ea54d62217323e9b20b0d03b28306f3e.png"
+        title="https://img-blog.csdnimg.cn/img_convert/ea54d62217323e9b20b0d03b28306f3e.png" /></p>
+<p>还有一种更方便的编辑方式，点击Bulk Edit ，直接修改字符串的方式修改，而且可以复制粘贴，方便迁移到其它地方。而且这个功能在其它参数编辑的地方都适用。
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img-blog.csdnimg.cn/img_convert/ce04535d4f95cd16f1c858a42a7724b3.png"
+        data-srcset="https://img-blog.csdnimg.cn/img_convert/ce04535d4f95cd16f1c858a42a7724b3.png, https://img-blog.csdnimg.cn/img_convert/ce04535d4f95cd16f1c858a42a7724b3.png 1.5x, https://img-blog.csdnimg.cn/img_convert/ce04535d4f95cd16f1c858a42a7724b3.png 2x"
+        data-sizes="auto"
+        alt="https://img-blog.csdnimg.cn/img_convert/ce04535d4f95cd16f1c858a42a7724b3.png"
+        title="https://img-blog.csdnimg.cn/img_convert/ce04535d4f95cd16f1c858a42a7724b3.png" /></p>
+<p>我们来看看如何发送POST接口
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img-blog.csdnimg.cn/img_convert/50e16c6c51ccd922142639c8bc06e7c9.png"
+        data-srcset="https://img-blog.csdnimg.cn/img_convert/50e16c6c51ccd922142639c8bc06e7c9.png, https://img-blog.csdnimg.cn/img_convert/50e16c6c51ccd922142639c8bc06e7c9.png 1.5x, https://img-blog.csdnimg.cn/img_convert/50e16c6c51ccd922142639c8bc06e7c9.png 2x"
+        data-sizes="auto"
+        alt="https://img-blog.csdnimg.cn/img_convert/50e16c6c51ccd922142639c8bc06e7c9.png"
+        title="https://img-blog.csdnimg.cn/img_convert/50e16c6c51ccd922142639c8bc06e7c9.png" /></p>
+<p>form-data、x-www-form-urlencoded、raw、binary的区别</p>
+<p>x-www-form-urlencoded</p>
+<p>当用户通过form表单提交数据的时候，例如：</p>
+<pre><code>&lt;form method=&quot;post&quot;action=&quot;http://api.test.com/user&quot; &gt;
+ &lt;inputtype=&quot;text&quot; name=&quot;name&quot;&gt;
+ &lt;inputtype=&quot;text&quot; name=&quot;age&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+<p>提交时会向服务器端发出这样的数据（已经去除部分不相关的头信息），数据如下：</p>
+<pre><code>POST /user HTTP/1.1
+Content-Type:application/x-www-form-urlencoded
+Accept-Encoding: gzip, deflate
+Host: api.test.com
+Content-Length: 21
+Connection: Keep-Alive
+Cache-Control: no-cache
+name=互扯程序&amp;age=18
+</code></pre>
+<p>它的Content-Type是application/x-www-form-urlencoded，这表示消息内容会经过URL编码</p>
+<p>form-data</p>
+<p>当需要上传文件（可以上传多个文件），并且有参数同时传递的时候，选择这个选项可以上传文件。</p>
+<p>举个例子</p>
+<pre><code>&lt;form method=&quot;post&quot;action=&quot;http://api.test.com/user/upload.do&quot; enctype=”multipart/form-data”&gt;
+&lt;inputtype=&quot;text&quot; name=&quot;desc&quot;&gt;
+&lt;inputtype=&quot;file&quot; name=&quot;pic&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+<p>浏览器将会发送以下数据：</p>
+<pre><code>POST /user/upload.do HTTP/1.1
+Accept-Language: zh-cn,zh;q=0.5
+Accept-Charset: GBK,utf-8;q=0.7,*;q=0.7
+Connection: keep-alive
+Content-Length: 60408
+Content-Type:multipart/form-data; boundary=ZnGpDtePMx0KrHh_G0X99Yef9r8JZsRJSXC
+Host: api.test.com
+</code></pre>
+<p>我们看到Content-Type:multipart/form-data;</p>
+<p>当需要上传数据的时候，必须设置enctype=“multipart/form-data”，</p>
+<p>enctype：规定在发送到服务器之前应该如何对表单数据进行编码，他有如下的三个值：</p>
+<ol>
+<li>
+<p>application/x-www-form-urlencoded。默认的编码方式。所有字符都会进行编码（空格转换为 &ldquo;+&rdquo; 加号，特殊符号转换为 ASCII HEX 值）。</p>
+</li>
+<li>
+<p>multipart/form-data 。 指定传输数据为二进制类型，比如图片、mp3、文件。 不对字符编码。在使用包含文件上传控件的表单时，必须使用该值。</p>
+</li>
+<li>
+<p>text/plain。纯文体的传输。空格转换为 “+” 加号，但不对特殊字符编码。</p>
+</li>
+</ol>
+<p>其实form表单在你不写enctype属性时，也默认为其添加了enctype属性值，默认值是enctype=&quot;application/x- www-form-urlencoded&rdquo;，所以上面注册用户的时候虽然没写，其实默认加上了。</p>
+<p>raw</p>
+<p>当需要给服务端传递json，xml等数据的时候选择raw，当选择了raw的时候，header里会自动加上</p>
+<p>Content-Type: application/json</p>
+<p>例如：</p>
+<pre><code>$.ajax({
+    url:&quot;/user/&quot;,
+    data:JSON.stringify(user),
+     method:&quot;POST&quot;,
+     contentType:&quot;application/json&quot;,
+     success: function(res){
+        console.info(&quot;添加成功&quot;)
+    }
+});
+</code></pre>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img-blog.csdnimg.cn/img_convert/bb7480fa9fc9f24c23f6d9be8029e579.png"
+        data-srcset="https://img-blog.csdnimg.cn/img_convert/bb7480fa9fc9f24c23f6d9be8029e579.png, https://img-blog.csdnimg.cn/img_convert/bb7480fa9fc9f24c23f6d9be8029e579.png 1.5x, https://img-blog.csdnimg.cn/img_convert/bb7480fa9fc9f24c23f6d9be8029e579.png 2x"
+        data-sizes="auto"
+        alt="https://img-blog.csdnimg.cn/img_convert/bb7480fa9fc9f24c23f6d9be8029e579.png"
+        title="https://img-blog.csdnimg.cn/img_convert/bb7480fa9fc9f24c23f6d9be8029e579.png" /></p>
+<p>binary（注意了这个格式这里可以上传你的压测数据文件）</p>
+<p>PS：压测文件可以是csv格式跟json格式的</p>
+<p>这里还可以在Pre-requestScript&quot;中设置环境变量 &ldquo;username&rdquo;, &ldquo;password&rdquo;,在Body 中选取&quot;form-data&rdquo; 格式，输入所需的key-value, value即为变量{{username}}, {{password}}。</p>
+<pre><code>postman.setEnvironmentVariable(&quot;username&quot;,data[&quot;username&quot;]);
+postman.setEnvironmentVariable(&quot;password&quot;,data[&quot;password&quot;]);
+</code></pre>
+<p>然后再Tests里添加断言</p>
+<pre><code>tests[&quot;Status code is 200&quot;] = responseCode.code === 200;
+tests[&quot;Response time is less than 10000ms&quot;] = responseTime &lt; 10000;
+console.log(responseTime);
+</code></pre>
+<p>只能上传一个文件，也不能添加参数。
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img-blog.csdnimg.cn/img_convert/6c381a1e9ae7b4a4c0c44e6e95059f97.png"
+        data-srcset="https://img-blog.csdnimg.cn/img_convert/6c381a1e9ae7b4a4c0c44e6e95059f97.png, https://img-blog.csdnimg.cn/img_convert/6c381a1e9ae7b4a4c0c44e6e95059f97.png 1.5x, https://img-blog.csdnimg.cn/img_convert/6c381a1e9ae7b4a4c0c44e6e95059f97.png 2x"
+        data-sizes="auto"
+        alt="https://img-blog.csdnimg.cn/img_convert/6c381a1e9ae7b4a4c0c44e6e95059f97.png"
+        title="https://img-blog.csdnimg.cn/img_convert/6c381a1e9ae7b4a4c0c44e6e95059f97.png" /></p>
+<p>压力测试</p>
+<p>当你需要验证你的接口的抗压能力的时候，可以点击Runner，进行压力测试
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img-blog.csdnimg.cn/img_convert/c0d4f4547adb0e3cdc15e54704abf20a.png"
+        data-srcset="https://img-blog.csdnimg.cn/img_convert/c0d4f4547adb0e3cdc15e54704abf20a.png, https://img-blog.csdnimg.cn/img_convert/c0d4f4547adb0e3cdc15e54704abf20a.png 1.5x, https://img-blog.csdnimg.cn/img_convert/c0d4f4547adb0e3cdc15e54704abf20a.png 2x"
+        data-sizes="auto"
+        alt="https://img-blog.csdnimg.cn/img_convert/c0d4f4547adb0e3cdc15e54704abf20a.png"
+        title="https://img-blog.csdnimg.cn/img_convert/c0d4f4547adb0e3cdc15e54704abf20a.png" /></p>
+<p>注意：压力测试只能以文件夹的方式执行多个接口，不能单独执行，如果想要测试某一个接口，就创一个文件夹，这个文件夹里只有一个要测试的接口。
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img-blog.csdnimg.cn/img_convert/59da6db4f53379ce7f7d72a91ff303c1.png"
+        data-srcset="https://img-blog.csdnimg.cn/img_convert/59da6db4f53379ce7f7d72a91ff303c1.png, https://img-blog.csdnimg.cn/img_convert/59da6db4f53379ce7f7d72a91ff303c1.png 1.5x, https://img-blog.csdnimg.cn/img_convert/59da6db4f53379ce7f7d72a91ff303c1.png 2x"
+        data-sizes="auto"
+        alt="https://img-blog.csdnimg.cn/img_convert/59da6db4f53379ce7f7d72a91ff303c1.png"
+        title="https://img-blog.csdnimg.cn/img_convert/59da6db4f53379ce7f7d72a91ff303c1.png" /></p>
+<p>点击执行，并发执行了500次。每次再100毫秒内返回结果。
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img-blog.csdnimg.cn/img_convert/d5a05c7b0316c18fd005f72ed4a16f63.png"
+        data-srcset="https://img-blog.csdnimg.cn/img_convert/d5a05c7b0316c18fd005f72ed4a16f63.png, https://img-blog.csdnimg.cn/img_convert/d5a05c7b0316c18fd005f72ed4a16f63.png 1.5x, https://img-blog.csdnimg.cn/img_convert/d5a05c7b0316c18fd005f72ed4a16f63.png 2x"
+        data-sizes="auto"
+        alt="https://img-blog.csdnimg.cn/img_convert/d5a05c7b0316c18fd005f72ed4a16f63.png"
+        title="https://img-blog.csdnimg.cn/img_convert/d5a05c7b0316c18fd005f72ed4a16f63.png" /></p>
+<div class="post-reward">
+    <input type="checkbox" name="reward" id="reward" hidden/>
+    <label class="reward-button" for="reward">赞赏支持</label>
+    <div class="qr-code">
+        <label class="qr-code-image" for="reward">
+            <img class="image" src="/img/WechatPay.jpeg">
+            <span>微信打赏</span>
+        </label>
+        <label class="qr-code-image" for="reward">
+            <img class="image" src="/img/Alipay.jpeg">
+            <span>支付宝打赏</span>
+        </label>
+    </div>
+</div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2019-03-28</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/Postmant%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/" data-title="Postmant压力测试" data-hashtags="Postman"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/Postmant%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/" data-hashtag="Postman"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/Postmant%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/" data-title="Postmant压力测试"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/Postmant%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/" data-title="Postmant压力测试"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/Postmant%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/" data-title="Postmant压力测试"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/Postman/">Postman</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/HTTP%E5%90%84%E4%B8%AAstatus-code%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/" class="prev" rel="prev" title="HTTP各个status code代表什么意思"><i class="fas fa-angle-left fa-fw"></i>HTTP各个status code代表什么意思</a>
+            <a href="/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" class="next" rel="next" title="Git基础命令">Git基础命令<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://cywhat.cn" target="_blank">cywhat</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="#" target="_blank">Do not go gentle into that good night.</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"valine":{"appId":"FWDPvzYo5Ip3RJ0e0ed2GqOm-MdYXbMMI","appKey":"U3pRQzbe2MecHMafDhaAaoRQ","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-cn","pageSize":10,"placeholder":"说点什么吧","recordIP":true,"serverURLs":"https://mukjinfv.api.lncldglobal.com/","visitor":true}},"search":{"algoliaAppID":"3031FWUVJN","algoliaIndex":"cywhat.algolia-temp","algoliaSearchKey":"76bee9d276ea265b36eae78e8a17356c","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"></script><script type="text/javascript" src="/js/custom.js"></script></body>
+</html>

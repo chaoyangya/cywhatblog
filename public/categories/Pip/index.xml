@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Pip - 分类 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/categories/Pip/</link>
+        <description>Pip - 分类 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 30 Mar 2021 11:51:17 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/categories/Pip/" rel="self" type="application/rss+xml" /><item>
+    <title>pip安装插件失败，拒绝连接</title>
+    <link>https://cywhat.cn/pip%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%A4%B1%E8%B4%A5%E6%8B%92%E7%BB%9D%E8%BF%9E%E6%8E%A5/</link>
+    <pubDate>Tue, 30 Mar 2021 11:51:17 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/pip%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%A4%B1%E8%B4%A5%E6%8B%92%E7%BB%9D%E8%BF%9E%E6%8E%A5/</guid>
+    <description><![CDATA[WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by &lsquo;ConnectTimeoutError(&lt;pip._vendor.urllib3.connection.HTTPSConnection object at 0x7ff8fba5f080&gt;, &lsquo;Connection to mirrors.aliyn.com timed out. (connect timeout=15)')': /pypi/simple/python-jenkins/ 1 $ pip3 install python-jenkins 安装python-jenkins报错如下 解决办法： 1 $ pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple python-jenkins 如上已经安装好了]]></description>
+</item></channel>
+</rss>

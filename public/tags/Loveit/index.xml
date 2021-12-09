@@ -1,0 +1,29 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Loveit - 标签 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/tags/Loveit/</link>
+        <description>Loveit - 标签 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 21 Oct 2021 17:07:26 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/Loveit/" rel="self" type="application/rss+xml" /><item>
+    <title>Loveit开启评论功能</title>
+    <link>https://cywhat.cn/Loveit%E5%BC%80%E5%90%AF%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</link>
+    <pubDate>Thu, 21 Oct 2021 17:07:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Loveit%E5%BC%80%E5%90%AF%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</guid>
+    <description><![CDATA[小tips 该文章仅仅针对Loveit主题有效，其他自己尝试。 Loveit开启评论 loveit自带的有valine的配置，我们需要先注册一些要]]></description>
+</item><item>
+    <title>Loveit主题开启文章赞赏</title>
+    <link>https://cywhat.cn/Loveit%E4%B8%BB%E9%A2%98%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E8%B5%9E%E8%B5%8F/</link>
+    <pubDate>Thu, 21 Oct 2021 16:36:41 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Loveit%E4%B8%BB%E9%A2%98%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E8%B5%9E%E8%B5%8F/</guid>
+    <description><![CDATA[小tips 该文章仅仅针对Loveit主题有效，其他自己尝试。 添加文章打赏功能 1.配置添加 在 config.toml 添加下面的变量 1 2 3 4 [params.reward] # 文章打赏 enable = true # tru]]></description>
+</item><item>
+    <title>Loveit主题的一些美化设置</title>
+    <link>https://cywhat.cn/loveit%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BE%8E%E5%8C%96%E8%AE%BE%E7%BD%AE/</link>
+    <pubDate>Thu, 21 Oct 2021 16:08:45 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/loveit%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BE%8E%E5%8C%96%E8%AE%BE%E7%BD%AE/</guid>
+    <description><![CDATA[前景 hugo的渲染速度&quot;婶婶&rdquo;(深深)的打动了我，于是决定从hexo迁移到hugo，迁移的帖子之后总结一下，先记录一下]]></description>
+</item></channel>
+</rss>

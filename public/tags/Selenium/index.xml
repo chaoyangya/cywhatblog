@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Selenium - 标签 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/tags/Selenium/</link>
+        <description>Selenium - 标签 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 20 Aug 2021 17:23:21 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Selenium/" rel="self" type="application/rss+xml" /><item>
+    <title>selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary</title>
+    <link>https://cywhat.cn/selenium-common-exceptions-WebDriverException-Message-unknown-error-cannot-find-Chrome-binary/</link>
+    <pubDate>Fri, 20 Aug 2021 17:23:21 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/selenium-common-exceptions-WebDriverException-Message-unknown-error-cannot-find-Chrome-binary/</guid>
+    <description><![CDATA[报错: selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary 原因是: 运行脚本的环境中没有找到chrome浏览器 解决: windows/mac: 指定浏览器位置 1 2 $ chrome_path = r&#34;/Library/Frameworks/Python.framework/Versions/3.6/bin/chromedriver&#34; #mac地址 win自己更换路径即可]]></description>
+</item></channel>
+</rss>

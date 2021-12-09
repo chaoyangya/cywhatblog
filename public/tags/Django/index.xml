@@ -1,0 +1,57 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Django - 标签 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/tags/Django/</link>
+        <description>Django - 标签 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 12 Oct 2021 18:14:32 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Django/" rel="self" type="application/rss+xml" /><item>
+    <title>fonts.googleapis.com访问较慢[已解决]</title>
+    <link>https://cywhat.cn/fonts-googleapis-com%E8%AE%BF%E9%97%AE%E8%BE%83%E6%85%A2-%E5%B7%B2%E8%A7%A3%E5%86%B3/</link>
+    <pubDate>Tue, 12 Oct 2021 18:14:32 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/fonts-googleapis-com%E8%AE%BF%E9%97%AE%E8%BE%83%E6%85%A2-%E5%B7%B2%E8%A7%A3%E5%86%B3/</guid>
+    <description><![CDATA[前景： 自己写的测试工具发现最近打开页面时快时慢，查了原因，发现是css引用的谷歌字体源：fonts.googleapis.com 解决办法： 1]]></description>
+</item><item>
+    <title>Django中的form表单校验</title>
+    <link>https://cywhat.cn/Django%E4%B8%AD%E7%9A%84form%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C/</link>
+    <pubDate>Fri, 24 Sep 2021 18:20:37 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E4%B8%AD%E7%9A%84form%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C/</guid>
+    <description><![CDATA[前景： 我在使用django的form组件时，发现在view函数中的`form.is_valid()`在form表单校验未通过的情况下，返回的]]></description>
+</item><item>
+    <title>Django自定义404页面</title>
+    <link>https://cywhat.cn/Django%E8%87%AA%E5%AE%9A%E4%B9%89404%E9%A1%B5%E9%9D%A2/</link>
+    <pubDate>Fri, 17 Sep 2021 19:52:13 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E8%87%AA%E5%AE%9A%E4%B9%89404%E9%A1%B5%E9%9D%A2/</guid>
+    <description><![CDATA[前景： 使用django部署的web应用，在url错误的情况下，页面会报错简单的404页面，并不美观 Django版本：1.11.7 高于2.0版]]></description>
+</item><item>
+    <title>Django发送邮箱验证码实现以及邮箱html模板</title>
+    <link>https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/</link>
+    <pubDate>Wed, 08 Sep 2021 14:40:18 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/</guid>
+    <description><![CDATA[1.setting配置 1 2 3 4 5 6 7 EMAIL_BACKEND = &#39;django.core.mail.backends.smtp.EmailBackend&#39; EMAIL_HOST = &#34;smtp.163.com&#34; # 服务器 EMAIL_PORT = 25 # 一般情况下都为25 EMAIL_HOST_USER = &#34;xxxx@163.com&#34; # 账号 EMAIL_HOST_PASSWORD = &#34;XXXXXXXXXXXX&#34; # 密码 (注意：这里的密码指的是授权码) EMAIL_USE_TLS]]></description>
+</item><item>
+    <title>DJango Uncaught ReferenceError: $ is not defined</title>
+    <link>https://cywhat.cn/DJango-Uncaught-ReferenceError-is-not-defined/</link>
+    <pubDate>Tue, 31 Aug 2021 17:12:16 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/DJango-Uncaught-ReferenceError-is-not-defined/</guid>
+    <description><![CDATA[前提: 用django和jquery写的web应用,html页面js报错,信息如下: 1 $ DJango Uncaught ReferenceError: $ is not defined 原因: js语法有问题,未识别为js语法 解]]></description>
+</item><item>
+    <title>no such table:django_session</title>
+    <link>https://cywhat.cn/no-such-table-django-session/</link>
+    <pubDate>Thu, 01 Apr 2021 17:51:03 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/no-such-table-django-session/</guid>
+    <description><![CDATA[出现上述问题是django没有django_session表 错误跟Session的机制相关 既然要从Web服务器端来记录用户信息， 那么一定要有]]></description>
+</item><item>
+    <title>Python&#43;virtualenv&#43;Django&#43;nginx&#43;uwsgi&#43;centos7部署web应用</title>
+    <link>https://cywhat.cn/Python-virtualenv-Django-nginx-uwsgi-centos7%E9%83%A8%E7%BD%B2web%E5%BA%94%E7%94%A8/</link>
+    <pubDate>Thu, 11 Mar 2021 17:09:24 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Python-virtualenv-Django-nginx-uwsgi-centos7%E9%83%A8%E7%BD%B2web%E5%BA%94%E7%94%A8/</guid>
+    <description><![CDATA[给公司写的一个工具平台，先部署到自己的服务器上进行测试，真是困难重重，此文章仅记录自己踩坑过程和搭建教程，不保证你能按照教程成功搭建，但能把]]></description>
+</item></channel>
+</rss>
