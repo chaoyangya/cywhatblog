@@ -15,7 +15,7 @@ word="LoveIt主题官方文档"
 screenshot="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/common/screenshot.jpg"
 >}}
 
-### 大牛子们
+### 大牛子们(不分先后)
 {{< friend
 name="雨临Lewis的博客"
 url="https://lewky.cn/"
@@ -61,6 +61,31 @@ word="自由 分享 合作。"
 screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQRov.png"
 >}}
 
+
+{{< friend
+name="W4J1e's blog"
+url="https://hin.cool/"
+logo="https://bu.dusays.com/2021/11/05/3d555ea202c3f.jpg"
+word="总是偏爱不务正业"
+screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQRov.png"
+>}}
+
+{{< friend
+name="小胖墩er"
+url="https://chubbyduner.top/"
+logo="https://cdn.jsdelivr.net/gh/Chubby-Duner/image-hosting@master/blog/logo.jpeg"
+word="总迟到总比不到的好，所以好好加油吧。"
+screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQRov.png"
+>}}
+
+
+{{< friend
+name="Seepine’s Blog"
+url="https://seepine.com/"
+logo="https://seepine.com/cdn/img/avatar.png"
+word="Java,Vue,Flutter"
+screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQRov.png"
+>}}
 
 
 ### 十年之约
