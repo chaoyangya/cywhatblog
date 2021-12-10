@@ -65,7 +65,7 @@ screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQR
 {{< friend
 name="W4J1e's blog"
 url="https://hin.cool/"
-logo="https://bu.dusays.com/2021/11/05/3d555ea202c3f.jpg"
+logo="https://hin.cool/favicon.ico"
 word="总是偏爱不务正业"
 screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQRov.png"
 >}}
