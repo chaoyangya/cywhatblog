@@ -99,7 +99,7 @@ screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQR
 {{< friend
 name="十年之约"
 url="https://www.foreverblog.cn/"
-logo="https://www.foreverblog.cn/favicon.ico"
+logo="https://cdn.jsdelivr.net/gh/chaoyangya/cywhat-cdn@master/images/shinian-favicon.ico"
 word="十年之约"
 screenshot="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/common/screenshot.jpg"
 >}}
