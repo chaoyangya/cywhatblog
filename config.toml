@@ -500,6 +500,7 @@ posts = "/:year/:month/:day/:slug"
         visitor = true
         recordIP = false
         highlight = true
+        master = "CAF5B538742F3A9E789A83F9AAFE1086"
         serverURLs = "https://mukjinfv.api.lncldglobal.com/"
         # emoji data file name, default is "google.yml"
         # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
