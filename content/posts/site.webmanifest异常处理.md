@@ -1,7 +1,7 @@
 ---
-title: "Site"
+title: "Ssite.webmanifest异常处理"
 date: 2021-12-14T15:14:48+08:00
-draft: true
+draft: false
 tags: ["Hugo"]
 categories: ["Hugo"]
 ---
@@ -10,5 +10,30 @@ categories: ["Hugo"]
 搭建完博客后，发现开发者模式中`site.webmanifest`加载非常慢，最后加载异常(404/超时等),严重拖慢博客的加载速度
 
 
-### 2.
+### 2.生成博客所需要的图片文件
+
+a.打开：`https://realfavicongenerator.net/`
+
+b.选择`Select your Favicon image`按钮，上传自己的图片
+![img35.png](../../static/img/img35.png)
+
+c.选择`continue with this picture`
+![img34.png](../../static/img/img34.png)
+
+d.滑到页面最下方，选择`Generate your Favicons and HTML code`
+![img36.png](../../static/img/img36.png)
+
+f.选择`HTML 5`，选择`favicon package`
+![img37.png](../../static/img/img37.png)
+
+### 3.将文件夹所有内容存储到博客
+将文件夹中所有内容都`copy`到博客的`static`文件夹下即可
+![img38.png](../../static/img/img38.png)
+
+### 4.重新生成发布
+发现`site.webmanifest`的问题就已经解决了
+    
+
+
+
 
