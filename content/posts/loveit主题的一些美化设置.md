@@ -15,18 +15,16 @@ hugo的渲染速度"婶婶"(深深)的打动了我，于是决定从hexo迁移�
 
 ### 1.admonition
 
-admonition比较常用，有12个样式，只需要更改对应的 `type` 就可以了，list如下：
+`admonition`比较常用，有12个样式，只需要更改对应的 `type` 就可以了，list如下：
 
 ### 2.用法：
-```html
-{{< admonition type=tip title="This is a tip" open=true >}}
-一个"技巧"横幅
+```HTML 
+{{< admonition type=tip title="This is a tip" open=false >}}
+一个 **技巧** 横幅
 {{< /admonition >}}
-
 或者
-
-{{< admonition tip "This is a tip" true >}}
-一个"技巧"横幅
+{{< admonition tip "This is a tip" false >}}
+一个 **技巧** 横幅
 {{< /admonition >}}
 ```
 

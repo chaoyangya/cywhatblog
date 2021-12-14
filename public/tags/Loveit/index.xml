@@ -17,7 +17,7 @@
     <pubDate>Thu, 21 Oct 2021 16:36:41 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/Loveit%E4%B8%BB%E9%A2%98%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E8%B5%9E%E8%B5%8F/</guid>
-    <description><![CDATA[小tips 该文章仅仅针对Loveit主题有效，其他自己尝试。 添加文章打赏功能 1.配置添加 在 config.toml 添加下面的变量 1 2 3 4 [params.reward] # 文章打赏 enable = true # tru]]></description>
+    <description><![CDATA[小tips 该文章仅仅针对Loveit主题有效，其他自己尝试。 添加文章打赏功能 注意 PS: 使用hugo版本必须为拓展版hugo_extended，如]]></description>
 </item><item>
     <title>Loveit主题的一些美化设置</title>
     <link>https://cywhat.cn/loveit%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BE%8E%E5%8C%96%E8%AE%BE%E7%BD%AE/</link>

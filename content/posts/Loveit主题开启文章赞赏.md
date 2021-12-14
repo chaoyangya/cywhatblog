@@ -12,6 +12,13 @@ categories: ["Hugo","Loveit"]
 
 ## 添加文章打赏功能
 
+{{< admonition type=warning title="注意" open=true >}} 
+PS: 使用`hugo`版本必须为拓展版`hugo_extended`，如下图
+{{< /admonition >}}
+
+![img39.png](img39.png)
+
+
 ### 1.配置添加
 
 在 `config.toml` 添加下面的变量
@@ -47,13 +54,13 @@ defaultContentLanguage = "zh-cn"
 
 ```
 [reward]
-  other = "赞赏支持"                          #other中的文字可以自由更改
+other = "赞赏支持"                          #other中的文字可以自由更改
 
 [rewardAlipay]
-  other = "支付宝打赏"
+other = "支付宝打赏"
 
 [rewardWechat]
-  other = "微信打赏"
+other = "微信打赏"
 ```
 
 ### 3.添加模板文件
