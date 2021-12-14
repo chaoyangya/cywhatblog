@@ -500,6 +500,7 @@ posts = "/:year/:month/:day/:slug"
         visitor = true
         recordIP = false
         highlight = true
+        tagMeta = 	["博主","小伙伴","访客"]
         master = "CAF5B538742F3A9E789A83F9AAFE1086"
         serverURLs = "https://mukjinfv.api.lncldglobal.com/"
         # emoji data file name, default is "google.yml"
