@@ -12,25 +12,35 @@ categories: ["Hugo"]
 
 ### 2.生成博客所需要的图片文件
 
-a.打开：`https://realfavicongenerator.net/`
+#### 1).打开：`https://realfavicongenerator.net/`
 
-b.选择`Select your Favicon image`按钮，上传自己的图片
+#### 2).选择`Select your Favicon image`按钮，上传自己的图片
+
 ![img35.png](/img/img35.png)
 
-c.选择`continue with this picture`
+#### 3).选择`continue with this picture`
+
 ![img34.png](/img/img34.png)
 
-d.滑到页面最下方，选择`Generate your Favicons and HTML code`
+#### 4).滑到页面最下方，选择`Generate your Favicons and HTML code`
+
 ![img36.png](/img/img36.png)
 
-f.选择`HTML 5`，选择`favicon package`
+#### 5).选择`HTML 5`，选择`favicon package`
+
 ![img37.png](/img/img37.png)
 
 ### 3.将文件夹所有内容存储到博客
+
 将文件夹中所有内容都`copy`到博客的`static`文件夹下即可
+
 ![img38.png](/img/img38.png)
 
-### 4.重新生成发布
+### 4.修改`site.webmanifest`文件内容
+
+`name`和`short_name`值修改为网站url即可
+
+### 5.重新生成发布
 发现`site.webmanifest`的问题就已经解决了
     
 

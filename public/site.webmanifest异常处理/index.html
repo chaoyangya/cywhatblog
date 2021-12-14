@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/cywhat.cn\/site.webmanifest%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Hugo","wordcount":  287 ,
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Hugo","wordcount":  342 ,
         "url": "https:\/\/cywhat.cn\/site.webmanifest%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86\/","datePublished": "2021-12-14T15:14:48+08:00","dateModified": "2021-12-14T15:14:48+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
@@ -104,7 +104,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Ssite.webmanifest异常处理</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Hugo/"><i class="far fa-folder fa-fw"></i>Hugo</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-12-14">2021-12-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 287 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-12-14">2021-12-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 342 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/site.webmanifest%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/" class="leancloud_visitors" data-flag-title="Ssite.webmanifest异常处理">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -118,9 +118,18 @@
     <li>
       <ul>
         <li><a href="#1前景">1.前景</a></li>
-        <li><a href="#2生成博客所需要的图片文件">2.生成博客所需要的图片文件</a></li>
+        <li><a href="#2生成博客所需要的图片文件">2.生成博客所需要的图片文件</a>
+          <ul>
+            <li><a href="#1打开httpsrealfavicongeneratornet">1).打开：<code>https://realfavicongenerator.net/</code></a></li>
+            <li><a href="#2选择select-your-favicon-image按钮上传自己的图片">2).选择<code>Select your Favicon image</code>按钮，上传自己的图片</a></li>
+            <li><a href="#3选择continue-with-this-picture">3).选择<code>continue with this picture</code></a></li>
+            <li><a href="#4滑到页面最下方选择generate-your-favicons-and-html-code">4).滑到页面最下方，选择<code>Generate your Favicons and HTML code</code></a></li>
+            <li><a href="#5选择html-5选择favicon-package">5).选择<code>HTML 5</code>，选择<code>favicon package</code></a></li>
+          </ul>
+        </li>
         <li><a href="#3将文件夹所有内容存储到博客">3.将文件夹所有内容存储到博客</a></li>
-        <li><a href="#4重新生成发布">4.重新生成发布</a></li>
+        <li><a href="#4修改sitewebmanifest文件内容">4.修改<code>site.webmanifest</code>文件内容</a></li>
+        <li><a href="#5重新生成发布">5.重新生成发布</a></li>
       </ul>
     </li>
   </ul>
@@ -128,9 +137,9 @@
             </div><div class="content" id="content"><h3 id="1前景">1.前景</h3>
 <p>搭建完博客后，发现开发者模式中<code>site.webmanifest</code>加载非常慢，最后加载异常(404/超时等),严重拖慢博客的加载速度</p>
 <h3 id="2生成博客所需要的图片文件">2.生成博客所需要的图片文件</h3>
-<p>a.打开：<code>https://realfavicongenerator.net/</code></p>
-<p>b.选择<code>Select your Favicon image</code>按钮，上传自己的图片
-<img
+<h4 id="1打开httpsrealfavicongeneratornet">1).打开：<code>https://realfavicongenerator.net/</code></h4>
+<h4 id="2选择select-your-favicon-image按钮上传自己的图片">2).选择<code>Select your Favicon image</code>按钮，上传自己的图片</h4>
+<p><img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="/img/img35.png"
@@ -138,8 +147,8 @@
         data-sizes="auto"
         alt="/img/img35.png"
         title="img35.png" /></p>
-<p>c.选择<code>continue with this picture</code>
-<img
+<h4 id="3选择continue-with-this-picture">3).选择<code>continue with this picture</code></h4>
+<p><img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="/img/img34.png"
@@ -147,8 +156,8 @@
         data-sizes="auto"
         alt="/img/img34.png"
         title="img34.png" /></p>
-<p>d.滑到页面最下方，选择<code>Generate your Favicons and HTML code</code>
-<img
+<h4 id="4滑到页面最下方选择generate-your-favicons-and-html-code">4).滑到页面最下方，选择<code>Generate your Favicons and HTML code</code></h4>
+<p><img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="/img/img36.png"
@@ -156,8 +165,8 @@
         data-sizes="auto"
         alt="/img/img36.png"
         title="img36.png" /></p>
-<p>f.选择<code>HTML 5</code>，选择<code>favicon package</code>
-<img
+<h4 id="5选择html-5选择favicon-package">5).选择<code>HTML 5</code>，选择<code>favicon package</code></h4>
+<p><img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="/img/img37.png"
@@ -166,8 +175,8 @@
         alt="/img/img37.png"
         title="img37.png" /></p>
 <h3 id="3将文件夹所有内容存储到博客">3.将文件夹所有内容存储到博客</h3>
-<p>将文件夹中所有内容都<code>copy</code>到博客的<code>static</code>文件夹下即可
-<img
+<p>将文件夹中所有内容都<code>copy</code>到博客的<code>static</code>文件夹下即可</p>
+<p><img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="/img/img38.png"
@@ -175,7 +184,9 @@
         data-sizes="auto"
         alt="/img/img38.png"
         title="img38.png" /></p>
-<h3 id="4重新生成发布">4.重新生成发布</h3>
+<h3 id="4修改sitewebmanifest文件内容">4.修改<code>site.webmanifest</code>文件内容</h3>
+<p><code>name</code>和<code>short_name</code>值修改为网站url即可</p>
+<h3 id="5重新生成发布">5.重新生成发布</h3>
 <p>发现<code>site.webmanifest</code>的问题就已经解决了</p>
 <div class="post-reward">
     <input type="checkbox" name="reward" id="reward" hidden/>
