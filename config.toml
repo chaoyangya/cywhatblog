@@ -26,6 +26,9 @@ enableEmoji = true
 #分类名称大小写
 preserveTaxonomyNames = true
 
+# 网站关键词
+keywords = "cywhat,测试,hugo,hexo,博客,cywhat's blog"
+
 #
 disablePathToLower = true
 

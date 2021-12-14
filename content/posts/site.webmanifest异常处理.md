@@ -1,5 +1,5 @@
 ---
-title: "Ssite.webmanifest异常处理"
+title: "Site.webmanifest异常处理"
 date: 2021-12-14T15:14:48+08:00
 draft: false
 tags: ["Hugo"]
