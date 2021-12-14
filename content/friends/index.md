@@ -88,7 +88,13 @@ word="人和人，和万物，相逢又别离"
 screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQRov.png"
 >}}
 
-
+{{< friend
+name="iMaeGoo’s Blog"
+url="https://www.imaegoo.com"
+logo="https://www.imaegoo.com/images/avatar.jpg"
+word="虹墨空间站"
+screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQRov.png"
+>}}
 
 ### 十年之约
 `十年之约，即从加入这个活动起，我们的博客十年不关闭，保持更新和活力！`
