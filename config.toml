@@ -40,8 +40,8 @@ date = [":filename", ":default"]
   tag = "tags"
   category = "categories"
 
-[permalinks]
-posts = "/:year/:month/:day/:slug"
+#[permalinks]
+#posts = "/:year/:month/:day/:slug"
 
 [languages]
 
