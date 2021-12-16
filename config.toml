@@ -56,7 +56,7 @@ date = [":filename", ":default"]
     # 默认每页列表显示的文章数目
     paginate = 12
     # [UA-XXXXXXXX-X] 谷歌分析代号
-    googleAnalytics = ""
+    googleAnalytics = "G-225C41PHZX"
     # 版权描述，仅仅用于 SEO
     copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
     # 菜单配置
@@ -613,10 +613,10 @@ date = [":filename", ":default"]
   # Analytics config
   # 网站分析配置
   [params.analytics]
-    enable = false
+    enable = true
     # Google Analytics
     [params.analytics.google]
-      id = "G-GFWQKR5Q8D"
+      id = "G-225C41PHZX"
       # whether to anonymize IP
       # 是否匿名化用户 IP
       anonymizeIP = true
