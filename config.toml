@@ -616,7 +616,7 @@ date = [":filename", ":default"]
     enable = true
     # Google Analytics
     [params.analytics.google]
-      id = "G-225C41PHZX"
+      id = ""
       # whether to anonymize IP
       # 是否匿名化用户 IP
       anonymizeIP = true
@@ -626,6 +626,12 @@ date = [":filename", ":default"]
       # server url for your tracker if you're self hosting
       # 自行托管追踪器时的主机路径
       server = ""
+    # Baidu Analytics
+    # 百度统计
+    [params.analytics.baidu]
+      id = "a54de2ed85b7ec3fd5ad114214614491"
+
+
 
   # Cookie consent config
   # Cookie 许可配置
