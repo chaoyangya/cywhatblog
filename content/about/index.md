@@ -30,3 +30,7 @@ class IntroduceMyself():
         self.graduation_time = 4
         self.blog = "https://cywhat.cn"
 
+
+{{< admonition type=success title="公众号" open=true >}} 
+![blog-vx1.png](/img/blog-vx1.png)
+{{< /admonition >}}
