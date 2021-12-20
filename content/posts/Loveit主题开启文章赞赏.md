@@ -16,7 +16,7 @@ categories: ["Hugo","Loveit"]
 PS: 使用`hugo`版本必须为拓展版`hugo_extended`，如下图
 {{< /admonition >}}
 
-![img39.png](img39.png)
+![img39.png](/img/img39.png)
 
 
 ### 1.配置添加
