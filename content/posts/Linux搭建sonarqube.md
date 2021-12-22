@@ -17,7 +17,7 @@ categories: ["Sonarqube"]
 
 
 ## 1.安装Jdk
-[安装JDK](https://cywhat.pp.ua/linux%E5%AE%89%E8%A3%85jdk11/)
+[安装JDK](https://cywhat.cn/linux%E5%AE%89%E8%A3%85jdk11/)
 
 ## 2.安装PostgreSQL
 ```bash

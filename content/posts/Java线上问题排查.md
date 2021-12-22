@@ -26,7 +26,7 @@ $ printf '%x' pid2(线程id)  ==> 6a4     #6a4为输出结果
 $ jstack pid1(进程id) > t.txt
 ```
 
-**如果jstack报错,请查看 [jstack不存在](https://cywhat.pp.ua/bash-jstack-%E6%9C%AA%E6%89%BE%E5%88%B0%E5%91%BD%E4%BB%A4/)**
+**如果jstack报错,请查看 [jstack不存在](https://cywhat.cn/bash-jstack-%E6%9C%AA%E6%89%BE%E5%88%B0%E5%91%BD%E4%BB%A4/)**
 
 ## 在t.txt文件中查找```6a4```
 ```bash

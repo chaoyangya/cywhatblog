@@ -22,4 +22,4 @@ $ chrome_path = r"/Library/Frameworks/Python.framework/Versions/3.6/bin/chromedr
 
 linux: 安装chrome浏览器
 
-  [Linux安装chrome浏览器](https://cywhat.pp.ua/centos7%E5%AE%89%E8%A3%85chrome%E6%B5%8F%E8%A7%88%E5%99%A8/)
+  [Linux安装chrome浏览器](https://cywhat.cn/centos7%E5%AE%89%E8%A3%85chrome%E6%B5%8F%E8%A7%88%E5%99%A8/)
