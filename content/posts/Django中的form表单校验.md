@@ -10,7 +10,7 @@ categories: ["Django"]
 
 ``我在使用django的form组件时，发现在view函数中的`form.is_valid()`在form表单校验未通过的情况下，返回的仍然是True，最后发现还是form表单的问题，异常函数并没有传递给view函数``
 
-问题代码：
+### 问题代码：
 
 ```python
 form部分
@@ -58,12 +58,12 @@ def send_sms(request):
 ```
 
 
-原因：
+### 原因：
 
 ``我也不知道为什么 ValidationError 为什么没有把异常抛给view 更换另一个抛出异常的函数即可``
 
 
-解决：
+### 解决：
 ```python
 return ValidationError('邮箱未注册')   #改为
 

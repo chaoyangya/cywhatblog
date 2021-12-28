@@ -6,7 +6,7 @@ tags: ["Django","Html"]
 categories: ["Django"]
 ---
 
-## 1.setting配置
+### 1.setting配置
 ```python
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = "smtp.163.com"  # 服务器
@@ -17,16 +17,16 @@ EMAIL_USE_TLS = False  # 一般都为False
 EMAIL_FROM = "xxxx@163.com"  # 邮箱来自 一般和邮箱账号保持一致
 ```
 
-## 2.邮箱配置
+### 2.邮箱配置
 ```python
 #登录邮箱-设置-POP3/SMTP/IMAP,开启服务，保存授权码，切记要保存，授权码就是密码
 如图:
 ```
 
-![img19](/img/img19.png)
+![img20](/img/img20.png)
 
 
-## 3.代码部分
+### 3.代码部分
 ```python
 from django.core.mail import EmailMessage
 from django.template import loader
@@ -76,7 +76,7 @@ def clean_email(self):
 ```
 
 
-## 4.html模板
+### 4.html模板
 ```html
 {% load static %}
 <head>
@@ -187,6 +187,6 @@ def clean_email(self):
 {% block js %}{% endblock %}
 ```
 
-## 5.效果图如下：
+### 5.效果图如下：
 
-![img18](/img/img18.png)
+![img19](/img/img19.png)

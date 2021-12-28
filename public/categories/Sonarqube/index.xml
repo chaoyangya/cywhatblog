@@ -10,7 +10,7 @@
     <pubDate>Thu, 23 Sep 2021 11:25:17 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/ERROR-Re-run-SonarScanner-using-the-X-switch-to-enable-full-debug-logging/</guid>
-    <description><![CDATA[前景 jenkins构建sonarqube报错 报错： &quot;ERROR: Re-run SonarScanner using the -X switch to enable full debug logging. 1.打开sonarqube的SCM配置 2.重新构建]]></description>
+    <description><![CDATA[前景 jenkins构建sonarqube报错 报错： &quot;ERROR: Re-run SonarScanner using the -X switch to enable full debug logging. 1.打开sonarqube的SCM配置 2.重新构建即可]]></description>
 </item><item>
     <title>Linux搭建sonarqube</title>
     <link>https://cywhat.cn/Linux%E6%90%AD%E5%BB%BAsonarqube/</link>

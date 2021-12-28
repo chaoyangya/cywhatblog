@@ -17,6 +17,6 @@
     <pubDate>Mon, 30 Mar 2020 15:54:01 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/centos7%E5%AE%89%E8%A3%85mysql5-7%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8/</guid>
-    <description><![CDATA[一 安装前准备 1、检查是否已经安装过mysql，执行命令 1 $ rpm -qa | grep mysql 2、查询所有Mysql对应的文件夹 1 $ whereis mysql 如果有的话请删除相关目录或文件]]></description>
+    <description><![CDATA[一、安装前准备 1.检查是否已经安装过mysql，执行命令 1 $ rpm -qa | grep mysql 2.查询所有Mysql对应的文件夹 1 $ whereis mysql 如果有的话请删除相关目录或文]]></description>
 </item></channel>
 </rss>

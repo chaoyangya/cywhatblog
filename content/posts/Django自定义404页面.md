@@ -11,7 +11,7 @@ categories: ["Django"]
 
 Django版本：1.11.7  **高于2.0版本不可使用以下语法，切记**
 
-## 1.settings设置
+### 1.settings设置
 ```bash
 修改 settings.py 的配置如下  #自定义页面会在非调试模式下生效，所以debug=false
 
@@ -20,7 +20,7 @@ DEBUG=False
 ALLOWED_HOST=["*"]
 ```
 
-## 2.项目根目录下的views.py配置
+### 2.项目根目录下的views.py配置
 ```python
 views.py
 
@@ -31,7 +31,7 @@ def page_not_found(request):
 
 ```
 
-## 3.项目根目录的urls.py配置
+### 3.项目根目录的urls.py配置
 ```python
 urls.py   #如果urls有别的路由位置，也必须在原urls.py文件下修改，否则不生效
 from . import views
@@ -39,4 +39,4 @@ from . import views
 handler404 = views.page_not_found
 ```
 
-## 4.重新发布即可生效
+### 4.重新发布即可生效

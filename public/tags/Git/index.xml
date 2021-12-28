@@ -24,7 +24,7 @@
     <pubDate>Thu, 01 Apr 2021 17:54:22 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/git-branch%E5%87%BA%E7%8E%B0end%E9%9C%80%E8%A6%81q%E6%89%8D%E8%83%BD%E9%80%80%E5%87%BA/</guid>
-    <description><![CDATA[git 进入了编辑模式 用以下命令即可解决： 1 $ git config --global core.pager mor]]></description>
+    <description><![CDATA[前景： 在查看git branch分支时，需要q才能退出出现 原因 进入了编辑模式 解决 1 $ git config --global core.pager mor]]></description>
 </item><item>
     <title>Git基础命令</title>
     <link>https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</link>
@@ -38,6 +38,6 @@
     <pubDate>Mon, 29 Oct 2018 16:29:00 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/checkout%E6%97%A0%E6%95%88/</guid>
-    <description><![CDATA[在日常工作中，我们经常会遇到要更新一个项目，但是由于更改了配置，需要将这些配置commit或者checkout，但是有的同学不想commit]]></description>
+    <description><![CDATA[前景 日常工作中，遇到的一些checkout无效或者commit提交不了的情况 1.首先 你需要update的项目 会告诉你更改了那些配置，必须要还]]></description>
 </item></channel>
 </rss>

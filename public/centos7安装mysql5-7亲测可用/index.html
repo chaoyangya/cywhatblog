@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Centos7安装mysql5.7亲测可用 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Centos7安装mysql5.7亲测可用" />
-<meta property="og:description" content="一 安装前准备 1、检查是否已经安装过mysql，执行命令 1 $ rpm -qa | grep mysql 2、查询所有Mysql对应的文件夹 1 $ whereis mysql 如果有的话请删除相关目录或文件" />
+<meta property="og:description" content="一、安装前准备 1.检查是否已经安装过mysql，执行命令 1 $ rpm -qa | grep mysql 2.查询所有Mysql对应的文件夹 1 $ whereis mysql 如果有的话请删除相关目录或文" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cywhat.cn/centos7%E5%AE%89%E8%A3%85mysql5-7%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8/" />
 <meta property="og:image" content="https://cywhat.cn"/>
@@ -17,7 +17,7 @@
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
 <meta name="twitter:title" content="Centos7安装mysql5.7亲测可用"/>
-<meta name="twitter:description" content="一 安装前准备 1、检查是否已经安装过mysql，执行命令 1 $ rpm -qa | grep mysql 2、查询所有Mysql对应的文件夹 1 $ whereis mysql 如果有的话请删除相关目录或文件"/>
+<meta name="twitter:description" content="一、安装前准备 1.检查是否已经安装过mysql，执行命令 1 $ rpm -qa | grep mysql 2.查询所有Mysql对应的文件夹 1 $ whereis mysql 如果有的话请删除相关目录或文"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/centos7%E5%AE%89%E8%A3%85mysql5-7%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8/" /><link rel="prev" href="https://cywhat.cn/mac-%E5%AE%89%E8%A3%85brew/" /><link rel="next" href="https://cywhat.cn/Centos7-7%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AEjenkins-python-allure%E5%8F%91%E9%80%81%E5%AE%9A%E5%88%B6%E5%8C%96%E6%8A%A5%E5%91%8A/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/cywhat.cn\/centos7%E5%AE%89%E8%A3%85mysql5-7%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Linux, Mysql","wordcount":  1205 ,
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Linux, Mysql","wordcount":  1209 ,
         "url": "https:\/\/cywhat.cn\/centos7%E5%AE%89%E8%A3%85mysql5-7%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8\/","datePublished": "2020-03-30T15:54:01+00:00","dateModified": "2020-03-30T15:54:01+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
@@ -105,16 +105,49 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Centos7安装mysql5.7亲测可用</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Mysql/"><i class="far fa-folder fa-fw"></i>Mysql</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-03-30">2020-03-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1205 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-03-30">2020-03-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1209 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><p>一 安装前准备
-1、检查是否已经安装过mysql，执行命令</p>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#一安装前准备">一、安装前准备</a>
+      <ul>
+        <li><a href="#1检查是否已经安装过mysql执行命令">1.检查是否已经安装过mysql，执行命令</a></li>
+        <li><a href="#2查询所有mysql对应的文件夹">2.查询所有Mysql对应的文件夹</a></li>
+        <li><a href="#3检查mysql用户组和用户是否存在如果没有则创建">3.检查mysql用户组和用户是否存在，如果没有，则创建</a>
+          <ul>
+            <li><a href="#1查看是否存在组">1)、查看是否存在组</a></li>
+            <li><a href="#2创建用户组跟用户">2)、创建用户组跟用户</a></li>
+          </ul>
+        </li>
+        <li><a href="#4从官网下载是用于linux的mysql安装包">4.从官网下载是用于Linux的Mysql安装包</a></li>
+      </ul>
+    </li>
+    <li><a href="#二安装mysql">二、安装Mysql</a>
+      <ul>
+        <li><a href="#1解压mysql安装包">1.解压mysql安装包：</a></li>
+        <li><a href="#2在usrlocalmysql目录下创建data目录">2.在/usr/local/mysql目录下创建data目录</a></li>
+        <li><a href="#3更改mysql目录下所有的目录及文件夹所属的用户组和用户以及权限">3.更改mysql目录下所有的目录及文件夹所属的用户组和用户，以及权限</a></li>
+        <li><a href="#4编译安装并初始化mysql务必记住初始化输出日志末尾的密码数据库管理员临时密码">4.编译安装并初始化mysql,务必记住初始化输出日志末尾的密码（数据库管理员临时密码）</a></li>
+        <li><a href="#5运行初始化命令成功后输出日志如下">5.运行初始化命令成功后，输出日志如下：</a></li>
+        <li><a href="#6编辑配置文件mycnf添加配置如下">6.编辑配置文件my.cnf，添加配置如下</a></li>
+        <li><a href="#7设为开机启动">7.设为开机启动</a></li>
+        <li><a href="#8授权为可执行状态">8.授权为可执行状态</a></li>
+        <li><a href="#9开机启动">9.开机启动</a></li>
+        <li><a href="#10启动mysql">10.启动mysql</a></li>
+        <li><a href="#11查询mysql服务">11.、查询mysql服务</a></li>
+        <li><a href="#12登录mysql修改密码密码为步骤5生成的临时密码">12.、登录mysql，修改密码(密码为步骤5生成的临时密码)</a></li>
+        <li><a href="#13开放远程连接">13.开放远程连接</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="一安装前准备">一、安装前准备</h2>
+<h3 id="1检查是否已经安装过mysql执行命令">1.检查是否已经安装过mysql，执行命令</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -130,8 +163,8 @@
         data-srcset="https://img-blog.csdnimg.cn/2020033015134267.png, https://img-blog.csdnimg.cn/2020033015134267.png 1.5x, https://img-blog.csdnimg.cn/2020033015134267.png 2x"
         data-sizes="auto"
         alt="https://img-blog.csdnimg.cn/2020033015134267.png"
-        title="在这里插入图片描述" />
-2、查询所有Mysql对应的文件夹</p>
+        title="在这里插入图片描述" /></p>
+<h3 id="2查询所有mysql对应的文件夹">2.查询所有Mysql对应的文件夹</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -158,9 +191,8 @@
 </code></pre></td></tr></table>
 </div>
 </div><p>并再次执行<code>whereis mysql </code>验证是否删除完毕</p>
-<p>3、检查mysql用户组和用户是否存在，如果没有，则创建</p>
-<pre><code>1)、查看是否存在组
-</code></pre>
+<h3 id="3检查mysql用户组和用户是否存在如果没有则创建">3.检查mysql用户组和用户是否存在，如果没有，则创建</h3>
+<h4 id="1查看是否存在组">1)、查看是否存在组</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -179,8 +211,7 @@
         title="在这里插入图片描述" />
 我的是已经创建过了，所以就不创建了</p>
 <p>没有的话需要创建用户跟用户组</p>
-<pre><code>2)、创建用户组跟用户
-</code></pre>
+<h4 id="2创建用户组跟用户">2)、创建用户组跟用户</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -197,7 +228,7 @@
 <pre class="chroma"><code class="language-bash" data-lang="bash">$ useradd -r -g mysql mysql   创建用户且属于mysql用户组
 </code></pre></td></tr></table>
 </div>
-</div><p>4、从官网下载是用于Linux的Mysql安装包</p>
+</div><h3 id="4从官网下载是用于linux的mysql安装包">4.从官网下载是用于Linux的Mysql安装包</h3>
 <p>下载命令：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -216,8 +247,8 @@
         alt="https://img-blog.csdnimg.cn/20200330152105124.png"
         title="在这里插入图片描述" />
 也可以直接到mysql官网选择其他版本进行下载。</p>
-<p>二 安装Mysql
-1、解压mysql安装包：</p>
+<h2 id="二安装mysql">二、安装Mysql</h2>
+<h3 id="1解压mysql安装包">1.解压mysql安装包：</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -237,7 +268,7 @@
 <pre class="chroma"><code class="language-bash" data-lang="bash">$ mv mysql-5.7.24-linux-glibc2.12-x86_64 /usr/local/mysql
 </code></pre></td></tr></table>
 </div>
-</div><p>2、在/usr/local/mysql目录下创建data目录</p>
+</div><h3 id="2在usrlocalmysql目录下创建data目录">2.在/usr/local/mysql目录下创建data目录</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -246,7 +277,7 @@
 <pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir /usr/local/mysql/data  
 </code></pre></td></tr></table>
 </div>
-</div><p>3、更改mysql目录下所有的目录及文件夹所属的用户组和用户，以及权限</p>
+</div><h3 id="3更改mysql目录下所有的目录及文件夹所属的用户组和用户以及权限">3.更改mysql目录下所有的目录及文件夹所属的用户组和用户，以及权限</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -263,7 +294,7 @@ $ chown -R mysql mysql/
 $ chgrp -R mysql mysql/
 </code></pre></td></tr></table>
 </div>
-</div><p>4、编译安装并初始化mysql,务必记住初始化输出日志末尾的密码（数据库管理员临时密码）</p>
+</div><h3 id="4编译安装并初始化mysql务必记住初始化输出日志末尾的密码数据库管理员临时密码">4.编译安装并初始化mysql,务必记住初始化输出日志末尾的密码（数据库管理员临时密码）</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -299,7 +330,7 @@ $ chgrp -R mysql mysql/
 <pre class="chroma"><code class="language-bash" data-lang="bash">$ yum -y install numactl
 </code></pre></td></tr></table>
 </div>
-</div><p>5、运行初始化命令成功后，输出日志如下：</p>
+</div><h3 id="5运行初始化命令成功后输出日志如下">5.运行初始化命令成功后，输出日志如下：</h3>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -309,7 +340,7 @@ $ chgrp -R mysql mysql/
         alt="https://img-blog.csdnimg.cn/20200330153759390.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoYW95YW5nX28=,size_16,color_FFFFFF,t_70"
         title="在这里插入图片描述" />
 记录日志最末尾位置root@localhost:后的字符串，此字符串为mysql管理员临时登录密码。</p>
-<p>6、编辑配置文件my.cnf，添加配置如下</p>
+<h3 id="6编辑配置文件mycnf添加配置如下">6.编辑配置文件my.cnf，添加配置如下</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -360,8 +391,8 @@ symbolic-links<span class="o">=</span><span class="m">0</span>
         data-srcset="https://img-blog.csdnimg.cn/20200330153940629.png?x-oss-process=image/watermark%2ctype_ZmFuZ3poZW5naGVpdGk%2cshadow_10%2ctext_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoYW95YW5nX28=%2csize_16%2ccolor_FFFFFF%2ct_70, https://img-blog.csdnimg.cn/20200330153940629.png?x-oss-process=image/watermark%2ctype_ZmFuZ3poZW5naGVpdGk%2cshadow_10%2ctext_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoYW95YW5nX28=%2csize_16%2ccolor_FFFFFF%2ct_70 1.5x, https://img-blog.csdnimg.cn/20200330153940629.png?x-oss-process=image/watermark%2ctype_ZmFuZ3poZW5naGVpdGk%2cshadow_10%2ctext_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoYW95YW5nX28=%2csize_16%2ccolor_FFFFFF%2ct_70 2x"
         data-sizes="auto"
         alt="https://img-blog.csdnimg.cn/20200330153940629.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoYW95YW5nX28=,size_16,color_FFFFFF,t_70"
-        title="在这里插入图片描述" />
-7、设为开机启动</p>
+        title="在这里插入图片描述" /></p>
+<h3 id="7设为开机启动">7.设为开机启动</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -396,7 +427,7 @@ symbolic-links<span class="o">=</span><span class="m">0</span>
 $ <span class="nv">datadir</span><span class="o">=</span>/usr/local/mysql/data/
 </code></pre></td></tr></table>
 </div>
-</div><p>8、授权为可执行状态</p>
+</div><h3 id="8授权为可执行状态">8.授权为可执行状态</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -405,7 +436,7 @@ $ <span class="nv">datadir</span><span class="o">=</span>/usr/local/mysql/data/
 <pre class="chroma"><code class="language-bash" data-lang="bash">$ chmod +x /etc/init.d/mysql
 </code></pre></td></tr></table>
 </div>
-</div><p>9、开机启动</p>
+</div><h3 id="9开机启动">9.开机启动</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -414,7 +445,7 @@ $ <span class="nv">datadir</span><span class="o">=</span>/usr/local/mysql/data/
 <pre class="chroma"><code class="language-bash" data-lang="bash">$ chkconfig --add mysql
 </code></pre></td></tr></table>
 </div>
-</div><p>10、启动mysql</p>
+</div><h3 id="10启动mysql">10.启动mysql</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -450,7 +481,7 @@ $ <span class="nv">datadir</span><span class="o">=</span>/usr/local/mysql/data/
 <pre class="chroma"><code class="language-bash" data-lang="bash">$ 这里上面的错误孤岛了很久没效果的话 建议卸载了mysql重新安装一次
 </code></pre></td></tr></table>
 </div>
-</div><p>11、查询mysql服务</p>
+</div><h3 id="11查询mysql服务">11.、查询mysql服务</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -459,7 +490,7 @@ $ <span class="nv">datadir</span><span class="o">=</span>/usr/local/mysql/data/
 <pre class="chroma"><code class="language-bash" data-lang="bash">$ ps -ef<span class="p">|</span>grep mysql
 </code></pre></td></tr></table>
 </div>
-</div><p>12、登录mysql，修改密码(密码为步骤5生成的临时密码)</p>
+</div><h3 id="12登录mysql修改密码密码为步骤5生成的临时密码">12.、登录mysql，修改密码(密码为步骤5生成的临时密码)</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -477,7 +508,7 @@ $ <span class="nv">datadir</span><span class="o">=</span>/usr/local/mysql/data/
 <pre class="chroma"><code class="language-bash" data-lang="bash">$ mysql&gt;set password <span class="k">for</span> root@localhost <span class="o">=</span> password<span class="o">(</span><span class="s1">&#39;yourpass&#39;</span><span class="o">)</span><span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>13、开放远程连接</p>
+</div><h3 id="13开放远程连接">13.开放远程连接</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1

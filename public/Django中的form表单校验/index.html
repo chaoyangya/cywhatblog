@@ -112,10 +112,20 @@
                     <span>目录</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#问题代码">问题代码：</a></li>
+        <li><a href="#原因">原因：</a></li>
+        <li><a href="#解决">解决：</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
             </div><div class="content" id="content"><p><strong>前景：</strong></p>
 <p><code>我在使用django的form组件时，发现在view函数中的`form.is_valid()`在form表单校验未通过的情况下，返回的仍然是True，最后发现还是form表单的问题，异常函数并没有传递给view函数</code></p>
-<p>问题代码：</p>
+<h3 id="问题代码">问题代码：</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -206,9 +216,9 @@
     <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">({</span><span class="s1">&#39;status&#39;</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span> <span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="n">form</span><span class="o">.</span><span class="n">errors</span><span class="p">})</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>原因：</p>
+</div><h3 id="原因">原因：</h3>
 <p><code>我也不知道为什么 ValidationError 为什么没有把异常抛给view 更换另一个抛出异常的函数即可</code></p>
-<p>解决：</p>
+<h3 id="解决">解决：</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1

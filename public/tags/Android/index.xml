@@ -17,6 +17,6 @@
     <pubDate>Thu, 11 Oct 2018 19:42:00 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/Error-taking-device-screenshot-null/</guid>
-    <description><![CDATA[使用uiautomatorviewer 查看Android某些页面元素，出现如图错误： 1 $ Error obtaining UI hierarchy Reason: Error taking device screenshot: null 再网上找了很多解决办法依然没解决]]></description>
+    <description><![CDATA[前景 使用uiautomatorviewer 查看Android某些页面元素，出现如图错误： 1 Error obtaining UI hierarchy Reason: Error taking device screenshot: null 在网上找了很多解决办法依然没解]]></description>
 </item></channel>
 </rss>

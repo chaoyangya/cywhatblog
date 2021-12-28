@@ -6,9 +6,14 @@ tags: ["Git"]
 categories: ["Git"]
 ---
 
-git 进入了编辑模式
+### 前景：
+在查看`git branch`分支时，需要q才能退出出现
 
-用以下命令即可解决：
+### 原因
+进入了编辑模式
+
+
+### 解决
 
 ```bash
 $ git config --global core.pager mor

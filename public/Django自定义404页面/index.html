@@ -117,18 +117,18 @@
     <li>
       <ul>
         <li><a href="#前景">前景：</a></li>
+        <li><a href="#1settings设置">1.settings设置</a></li>
+        <li><a href="#2项目根目录下的viewspy配置">2.项目根目录下的views.py配置</a></li>
+        <li><a href="#3项目根目录的urlspy配置">3.项目根目录的urls.py配置</a></li>
+        <li><a href="#4重新发布即可生效">4.重新发布即可生效</a></li>
       </ul>
     </li>
-    <li><a href="#1settings设置">1.settings设置</a></li>
-    <li><a href="#2项目根目录下的viewspy配置">2.项目根目录下的views.py配置</a></li>
-    <li><a href="#3项目根目录的urlspy配置">3.项目根目录的urls.py配置</a></li>
-    <li><a href="#4重新发布即可生效">4.重新发布即可生效</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h3 id="前景">前景：</h3>
 <p>使用django部署的web应用，在url错误的情况下，页面会报错简单的404页面，并不美观</p>
 <p>Django版本：1.11.7  <strong>高于2.0版本不可使用以下语法，切记</strong></p>
-<h2 id="1settings设置">1.settings设置</h2>
+<h3 id="1settings设置">1.settings设置</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -145,7 +145,7 @@
 <span class="nv">ALLOWED_HOST</span><span class="o">=[</span><span class="s2">&#34;*&#34;</span><span class="o">]</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="2项目根目录下的viewspy配置">2.项目根目录下的views.py配置</h2>
+</div><h3 id="2项目根目录下的viewspy配置">2.项目根目录下的views.py配置</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -166,7 +166,7 @@
 
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="3项目根目录的urlspy配置">3.项目根目录的urls.py配置</h2>
+</div><h3 id="3项目根目录的urlspy配置">3.项目根目录的urls.py配置</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -181,7 +181,7 @@
 <span class="n">handler404</span> <span class="o">=</span> <span class="n">views</span><span class="o">.</span><span class="n">page_not_found</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="4重新发布即可生效">4.重新发布即可生效</h2>
+</div><h3 id="4重新发布即可生效">4.重新发布即可生效</h3>
 <div class="post-reward">
     <input type="checkbox" name="reward" id="reward" hidden/>
     <label class="reward-button" for="reward">赞赏支持</label>

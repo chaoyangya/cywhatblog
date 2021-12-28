@@ -10,6 +10,6 @@
     <pubDate>Tue, 31 Aug 2021 17:12:16 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/DJango-Uncaught-ReferenceError-is-not-defined/</guid>
-    <description><![CDATA[前提: 用django和jquery写的web应用,html页面js报错,信息如下: 1 $ DJango Uncaught ReferenceError: $ is not defined 原因: js语法有问题,未识别为js语法 解]]></description>
+    <description><![CDATA[前提 用django和jquery写的web应用,html页面js报错,信息如下: 1 DJango Uncaught ReferenceError: $ is not defined 原因 js语法有问题,未识别为js语法 解决 需要]]></description>
 </item></channel>
 </rss>

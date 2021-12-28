@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>checkout无效 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="checkout无效" />
-<meta property="og:description" content="在日常工作中，我们经常会遇到要更新一个项目，但是由于更改了配置，需要将这些配置commit或者checkout，但是有的同学不想commit" />
+<meta property="og:description" content="前景 日常工作中，遇到的一些checkout无效或者commit提交不了的情况 1.首先 你需要update的项目 会告诉你更改了那些配置，必须要还" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cywhat.cn/checkout%E6%97%A0%E6%95%88/" />
 <meta property="og:image" content="https://cywhat.cn"/>
@@ -17,7 +17,7 @@
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
 <meta name="twitter:title" content="checkout无效"/>
-<meta name="twitter:description" content="在日常工作中，我们经常会遇到要更新一个项目，但是由于更改了配置，需要将这些配置commit或者checkout，但是有的同学不想commit"/>
+<meta name="twitter:description" content="前景 日常工作中，遇到的一些checkout无效或者commit提交不了的情况 1.首先 你需要update的项目 会告诉你更改了那些配置，必须要还"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/checkout%E6%97%A0%E6%95%88/" /><link rel="prev" href="https://cywhat.cn/npm%E7%BC%BA%E5%B0%91css-loader-style-compilerstylus-loader%E9%97%AE%E9%A2%98npm%E6%B2%A1%E6%9C%89%E6%9D%83%E9%99%90%E6%97%A0%E6%B3%95%E5%85%A8%E5%B1%80%E6%9B%B4%E6%96%B0%E9%97%AE%E9%A2%98/" /><link rel="next" href="https://cywhat.cn/Linux%E5%BF%AB%E6%8D%B7%E8%BF%9B%E5%85%A5%E9%95%BF%E7%9B%AE%E5%BD%95%E7%9A%84%E6%96%B9%E6%B3%95/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/cywhat.cn\/checkout%E6%97%A0%E6%95%88\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Git","wordcount":  372 ,
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Git","wordcount":  195 ,
         "url": "https:\/\/cywhat.cn\/checkout%E6%97%A0%E6%95%88\/","datePublished": "2018-10-29T16:29:00+00:00","dateModified": "2018-10-29T16:29:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
@@ -105,47 +105,68 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">checkout无效</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Git/"><i class="far fa-folder fa-fw"></i>Git</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2018-10-29">2018-10-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 372 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2018-10-29">2018-10-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 195 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><p>在日常工作中，我们经常会遇到要更新一个项目，但是由于更改了配置，需要将这些配置<code>commit</code>或者<code>checkout</code>，但是有的同学不想commit怎么办呢，只能通过checkout，那么问题又来了，改了很多配置，checkout之后又要重新修改配置，就很烦。</p>
-<p>哈哈哈，在偶然的机会，找前端大神学会了俩句命令，亲测在代码merge没冲突没问题的情况下都可以成功！</p>
-<p>那么我们开始吧</p>
-<p>1、首先 你需要update的项目 会告诉你更改了那些配置，必须要还原或者提交</p>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#前景">前景</a></li>
+        <li><a href="#1首先-你需要update的项目-会告诉你更改了那些配置必须要还原或者提交">1.首先 你需要update的项目 会告诉你更改了那些配置，必须要还原或者提交</a></li>
+        <li><a href="#2暂存提交">2.暂存提交</a></li>
+        <li><a href="#3更新">3.更新</a></li>
+        <li><a href="#4取暂存">4.取暂存</a></li>
+        <li><a href="#5检查是否可以checkout或者commit">5.检查是否可以checkout或者commit</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="前景">前景</h3>
+<p><strong>日常工作中，遇到的一些<code>checkout</code>无效或者<code>commit</code>提交不了的情况</strong></p>
+<h3 id="1首先-你需要update的项目-会告诉你更改了那些配置必须要还原或者提交">1.首先 你需要update的项目 会告诉你更改了那些配置，必须要还原或者提交</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git pull
+<pre class="chroma"><code class="language-bash" data-lang="bash">git pull
 </code></pre></td></tr></table>
 </div>
-</div><p>2、执行以下命令</p>
+</div><h3 id="2暂存提交">2.暂存提交</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git stash
+<pre class="chroma"><code class="language-bash" data-lang="bash">git stash
 </code></pre></td></tr></table>
 </div>
-</div><p>命令的意思是将这些更改过的配置 暂存起来，注意是暂存！</p>
-<p>3、然后<code>git pull </code>你会发现，神奇的以及开始update了，可以看到那些代码是更改过的</p>
-<p>4、最后我们要把暂存的配置，给它取出来，用到以下命令</p>
+</div><p><code>命令的意思是将这些更改过的配置 暂存起来，注意是暂存</code></p>
+<h3 id="3更新">3.更新</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git statsh pop
+<pre class="chroma"><code class="language-bash" data-lang="bash">git pull     <span class="c1">#拉取最新代码</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>5、最后你发现之前暂存的配置，以及取出来并且成功替换了update之后的配置</p>
+</div><h3 id="4取暂存">4.取暂存</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git statsh pop
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="5检查是否可以checkout或者commit">5.检查是否可以checkout或者commit</h3>
+<p><code>最后你发现之前暂存的配置，以及取出来并且成功替换了update之后的配置</code></p>
 <div class="post-reward">
     <input type="checkbox" name="reward" id="reward" hidden/>
     <label class="reward-button" for="reward">赞赏支持</label>

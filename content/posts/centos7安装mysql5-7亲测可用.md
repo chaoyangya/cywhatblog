@@ -5,15 +5,15 @@ draft: false
 tags: ["Linux","Mysql"]
 categories: ["Mysql"]
 ---
-一 安装前准备
-1、检查是否已经安装过mysql，执行命令
+## 一、安装前准备
+### 1.检查是否已经安装过mysql，执行命令
 	
 
 ```bash
 $ rpm -qa | grep mysql
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020033015134267.png)
-2、查询所有Mysql对应的文件夹
+### 2.查询所有Mysql对应的文件夹
 
 ```bash
 $ whereis mysql
@@ -29,10 +29,10 @@ $ rm -rf /usr/local/mysql
 并再次执行`whereis mysql `验证是否删除完毕
 
 
-3、检查mysql用户组和用户是否存在，如果没有，则创建
+### 3.检查mysql用户组和用户是否存在，如果没有，则创建
 
 
-	1)、查看是否存在组
+#### 1)、查看是否存在组
 	
 ```bash
 $ cat /etc/group | grep mysql
@@ -42,7 +42,7 @@ $ cat /etc/group | grep mysql
 
 没有的话需要创建用户跟用户组
 
-	2)、创建用户组跟用户
+#### 2)、创建用户组跟用户
 	
 
 ```bash
@@ -53,7 +53,7 @@ $ groupadd mysql   创建用户组
 $ useradd -r -g mysql mysql   创建用户且属于mysql用户组
 ```
 
-4、从官网下载是用于Linux的Mysql安装包
+### 4.从官网下载是用于Linux的Mysql安装包
 
 下载命令：
 ```bash
@@ -63,8 +63,8 @@ $ wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.24-linux-glibc2.1
 也可以直接到mysql官网选择其他版本进行下载。
 
 
-二 安装Mysql
-1、解压mysql安装包：
+## 二、安装Mysql
+### 1.解压mysql安装包：
 
 ```bash
 $ tar -zvxf mysql-5.7.24-linux-glibc2.12-x86_64.tar.gz
@@ -79,13 +79,13 @@ $ tar -zvxf mysql-5.7.24-linux-glibc2.12-x86_64.tar.gz
 $ mv mysql-5.7.24-linux-glibc2.12-x86_64 /usr/local/mysql
 ```
 
-2、在/usr/local/mysql目录下创建data目录
+### 2.在/usr/local/mysql目录下创建data目录
 
 ```bash
 $ mkdir /usr/local/mysql/data  
 ```
 
-3、更改mysql目录下所有的目录及文件夹所属的用户组和用户，以及权限
+### 3.更改mysql目录下所有的目录及文件夹所属的用户组和用户，以及权限
 
 ```bash
 $ cd /usr/local/ 
@@ -96,7 +96,7 @@ $ chgrp -R mysql mysql/
 ```
 
 
-4、编译安装并初始化mysql,务必记住初始化输出日志末尾的密码（数据库管理员临时密码）
+### 4.编译安装并初始化mysql,务必记住初始化输出日志末尾的密码（数据库管理员临时密码）
 
 ```bash
 $ cd /usr/local/mysql/bin/ 进入到bin目录进行编译安装
@@ -120,12 +120,12 @@ $ yum -y install numactl
 ```
 
 
-5、运行初始化命令成功后，输出日志如下：
+### 5.运行初始化命令成功后，输出日志如下：
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200330153759390.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoYW95YW5nX28=,size_16,color_FFFFFF,t_70)
 记录日志最末尾位置root@localhost:后的字符串，此字符串为mysql管理员临时登录密码。
 
-6、编辑配置文件my.cnf，添加配置如下
+### 6.编辑配置文件my.cnf，添加配置如下
 
 ```bash
 $ vi /etc/my.cnf   如果 my.cnf 文件没有的话自行添加
@@ -149,7 +149,7 @@ $ 按esc 输入 ：wq 保存退出即可
 ```
 配置如下图：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200330153940629.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoYW95YW5nX28=,size_16,color_FFFFFF,t_70)
-7、设为开机启动
+### 7.设为开机启动
 
 ```bash
 $ cd /usr/local/mysql/support-files/
@@ -167,17 +167,17 @@ $ vi /etc/init.d/mysql 打开编辑之后会看到下面有俩个字段(basedir�
 $ basedir=/usr/local/mysql/
 $ datadir=/usr/local/mysql/data/
 ```
-8、授权为可执行状态
+### 8.授权为可执行状态
 
 ```bash
 $ chmod +x /etc/init.d/mysql
 ```
-9、开机启动
+### 9.开机启动
 
 ```bash
 $ chkconfig --add mysql
 ```
-10、启动mysql
+### 10.启动mysql
 
 ```bash
 $ service mysql start  
@@ -198,13 +198,13 @@ $ Starting MySQL... ERROR! The server quit without updating PID file
 $ 这里上面的错误孤岛了很久没效果的话 建议卸载了mysql重新安装一次
 ```
 
-11、查询mysql服务
+### 11.、查询mysql服务
 
 ```bash
 $ ps -ef|grep mysql
 ```
 
-12、登录mysql，修改密码(密码为步骤5生成的临时密码)
+### 12.、登录mysql，修改密码(密码为步骤5生成的临时密码)
 
 ```bash
 $ ./mysql -u root -p 如果提示mysql：未找到命令 请进入/usl/local/mysql/bin/目录下执行
@@ -216,7 +216,7 @@ Enter password:
 $ mysql>set password for root@localhost = password('yourpass');
 ```
 
-13、开放远程连接
+### 13.开放远程连接
 
 ```bash
 $ mysql>use mysql;
