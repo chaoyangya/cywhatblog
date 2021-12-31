@@ -306,7 +306,7 @@ date = [":filename", ":default"]
     since = 2018
     # ICP info only in China (HTML format is supported)
     # ICP 备案信息，仅在中国使用 (支持 HTML 格式)
-    icp = ""
+    icp = '<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">京ICP备2021041376号</a>'
     # license info (HTML format is supported)
     # 许可协议信息 (支持 HTML 格式)
     license= '<a rel="license external nofollow noopener noreffer" href="#" target="_blank">Do not go gentle into that good night.</a>'
