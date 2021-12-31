@@ -38,10 +38,10 @@ screenshot="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/comm
 
 
 {{< friend
-name="Thrower的博客"
-url="https://thrower.cc/"
-logo="https://thrower.cc/wp-content/uploads/2021/07/QQ%E5%9B%BE%E7%89%8720210704153032.jpg"
-word="一名网络安全技术爱好者，汪峰的老歌迷。"
+name="IILeeのBlog"
+url="https://www.iilee.cn/"
+logo="https://www.iilee.cn/avatar"
+word="所以，看不到光，算是不幸吗？需要光才是真正的不幸吧。"
 screenshot="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/common/screenshot.jpg"
 >}}
 
