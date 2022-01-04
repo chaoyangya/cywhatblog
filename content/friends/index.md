@@ -64,6 +64,13 @@ screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQR
 >}}
 
 {{< friend
+name="Thrower的博客"
+url="https://thrower.cc/"
+logo="https://thrower.cc/wp-content/uploads/2021/07/QQ%E5%9B%BE%E7%89%8720210704153032.jpg"
+word="一名网络安全技术爱好者，汪峰的老歌迷。"
+>}}
+
+{{< friend
 name="小胖墩er"
 url="https://chubbyduner.top/"
 logo="https://cdn.jsdelivr.net/gh/Chubby-Duner/image-hosting@master/blog/logo.jpeg"
