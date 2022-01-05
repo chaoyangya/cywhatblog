@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/posts/</link>
         <description>所有文章 | cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 23 Dec 2021 15:49:42 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 05 Jan 2022 10:49:45 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Linux配置时间同步</title>
+    <link>https://cywhat.cn/Linux%E9%85%8D%E7%BD%AE%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5/</link>
+    <pubDate>Wed, 05 Jan 2022 10:49:45 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E9%85%8D%E7%BD%AE%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5/</guid>
+    <description><![CDATA[前景 排查售后问题发现一个奇葩BUG是因为Linux服务器时间不同步导致 1.安装ntpdate 1 yum install -y ntpdate 2.同步时间 1 ntpdate 0.asia.pool.ntp.org #0.asia.pool.ntp.org 为ntp时间服务器]]></description>
+</item><item>
     <title>Linux卸载python</title>
     <link>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDpython/</link>
     <pubDate>Thu, 23 Dec 2021 15:49:42 &#43;0800</pubDate>
@@ -67,12 +74,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/Linux%E4%BD%BF%E7%94%A8iftop%E6%9F%A5%E7%9C%8B%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/</guid>
     <description><![CDATA[查看Linux系统下服务器带宽占用情况，使用iftop 1.安装iftop 1 2 3 centos: yum install iftop debian: apt-get install iftop 2.使用iftop 1 2 3 iftop -i eth1 #查看eth1网]]></description>
-</item><item>
-    <title>Loveit开启评论功能</title>
-    <link>https://cywhat.cn/Loveit%E5%BC%80%E5%90%AF%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</link>
-    <pubDate>Thu, 21 Oct 2021 17:07:26 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Loveit%E5%BC%80%E5%90%AF%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</guid>
-    <description><![CDATA[小tips 该文章仅仅针对Loveit主题有效，其他自己尝试。 Loveit开启评论 loveit自带的有valine的配置，我们需要先注册一些要]]></description>
 </item></channel>
 </rss>

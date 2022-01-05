@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/tags/Linux/</link>
         <description>Linux - 标签 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 23 Dec 2021 15:49:42 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/Linux/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 05 Jan 2022 10:49:45 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/Linux/" rel="self" type="application/rss+xml" /><item>
+    <title>Linux配置时间同步</title>
+    <link>https://cywhat.cn/Linux%E9%85%8D%E7%BD%AE%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5/</link>
+    <pubDate>Wed, 05 Jan 2022 10:49:45 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E9%85%8D%E7%BD%AE%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5/</guid>
+    <description><![CDATA[前景 排查售后问题发现一个奇葩BUG是因为Linux服务器时间不同步导致 1.安装ntpdate 1 yum install -y ntpdate 2.同步时间 1 ntpdate 0.asia.pool.ntp.org #0.asia.pool.ntp.org 为ntp时间服务器]]></description>
+</item><item>
     <title>Linux卸载python</title>
     <link>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDpython/</link>
     <pubDate>Thu, 23 Dec 2021 15:49:42 &#43;0800</pubDate>
@@ -67,12 +74,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85jdk11/</guid>
     <description><![CDATA[1.下载jdk 下载安装 1 提取码: brq2 2.上传到服务器 3.解压 1 $ tar -zvxf openjdk-11+28_linux-x64_bin.tar.gz 4.移动文件夹并重命名 1 $ mv jdk-11/ /usr/local/java 5.配置环境变量 1 2 3 4 5 6 vim /etc/profile export JAVA_HOME=/usr/local/java export PATH=$JAVA_HOME/bin:$PATH]]></description>
-</item><item>
-    <title>Linux关闭防火墙</title>
-    <link>https://cywhat.cn/Linux%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/</link>
-    <pubDate>Wed, 01 Sep 2021 10:43:37 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Linux%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
-    <description><![CDATA[注意:ConterOS7.0以上使用的是firewall，ConterOS7.0以下使用的是iptables 1.查看防火状态 1 2 3 $ systemctl status firewalld #]]></description>
 </item></channel>
 </rss>
