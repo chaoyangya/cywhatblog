@@ -6,15 +6,20 @@ tags: ["Linux","Flask"]
 categories: ["Flask"]
 ---
 
-1、删除原有的用大写开头的Flask插件
-
+**错误：**
 ```bash
-$ pip uninstall Flask
+'ImportError: No module named flask'
 ```
 
-2、yum安装 flask
+### 1、删除原有的用大写开头的Flask插件
+
 ```bash
-$ yum install python-flask
+pip uninstall Flask
 ```
 
-3、等待安装完成就可以允许程序啦（100%有用）
+### 2、yum安装 flask
+```bash
+yum install python-flask
+```
+
+### 3、等待安装完成就可以允许程序啦（100%有用）

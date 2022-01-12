@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>HTTP各个status code代表什么意思 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="HTTP各个status code代表什么意思" />
-<meta property="og:description" content="在介绍状态码之前，要简单讲一下为什么要有状态码这个东西。计算机之间的通信以协议为共同基础，客户端和服务端都按照协议的约定进行通信。HTTP的" />
+<meta property="og:description" content="计算机之间的通信以协议为共同基础，客户端和服务端都按照协议的约定进行通信。HTTP的状态码就在HTTP的协议内，规定了很多的状态。客户端请求" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cywhat.cn/HTTP%E5%90%84%E4%B8%AAstatus-code%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/" />
 <meta property="og:image" content="https://cywhat.cn"/>
@@ -17,7 +17,7 @@
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
 <meta name="twitter:title" content="HTTP各个status code代表什么意思"/>
-<meta name="twitter:description" content="在介绍状态码之前，要简单讲一下为什么要有状态码这个东西。计算机之间的通信以协议为共同基础，客户端和服务端都按照协议的约定进行通信。HTTP的"/>
+<meta name="twitter:description" content="计算机之间的通信以协议为共同基础，客户端和服务端都按照协议的约定进行通信。HTTP的状态码就在HTTP的协议内，规定了很多的状态。客户端请求"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/HTTP%E5%90%84%E4%B8%AAstatus-code%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/" /><link rel="prev" href="https://cywhat.cn/Iterm2-Mac%E8%87%AA%E5%B8%A6%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%BF%AB%E9%80%9Fssh/" /><link rel="next" href="https://cywhat.cn/Postmant%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/cywhat.cn\/HTTP%E5%90%84%E4%B8%AAstatus-code%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Https","wordcount":  1067 ,
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Https","wordcount":  975 ,
         "url": "https:\/\/cywhat.cn\/HTTP%E5%90%84%E4%B8%AAstatus-code%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D\/","datePublished": "2019-03-07T16:30:00+00:00","dateModified": "2019-03-07T16:30:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
@@ -105,8 +105,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">HTTP各个status code代表什么意思</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Https/"><i class="far fa-folder fa-fw"></i>Https</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2019-03-07">2019-03-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1067 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2019-03-07">2019-03-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 975 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -114,12 +114,19 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#3">3</a></li>
-    <li><a href="#4">4</a></li>
-    <li><a href="#5">5</a></li>
+    <li>
+      <ul>
+        <li><a href="#状态码说明">状态码说明</a></li>
+        <li><a href="#12">1&amp;2</a></li>
+        <li><a href="#3">3</a></li>
+        <li><a href="#4">4</a></li>
+        <li><a href="#5">5</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>在介绍状态码之前，要简单讲一下为什么要有状态码这个东西。计算机之间的通信以协议为共同基础，客户端和服务端都按照协议的约定进行通信。HTTP的状态码就在HTTP的协议内，规定了很多的状态。客户端请求服务端后，服务端就返回结果，同时返回状态码。告诉客户端，本次请求是成功了还是失败了，还是要客户端做什么操作。那为什么不使用文本状态码呢？不是更加清晰直观吗？这是因为这些状态协议里面已经规定了，提到状态码，就是表示本条状态。</p>
+            </div><div class="content" id="content"><p><strong>计算机之间的通信以协议为共同基础，客户端和服务端都按照协议的约定进行通信。HTTP的状态码就在HTTP的协议内，规定了很多的状态。客户端请求服务端后，服务端就返回结果，同时返回状态码。告诉客户端，本次请求是成功了还是失败了，还是要客户端做什么操作。那为什么不使用文本状态码呢？不是更加清晰直观吗？这是因为这些状态协议里面已经规定了，提到状态码，就是表示本条状态。</strong></p>
+<h3 id="状态码说明">状态码说明</h3>
 <p>状态码分为1-5开头的CODE,以下依次说明,请仔细阅读噢</p>
 <p><code>1** </code>类状态码称之为Information 状态吗，表示信息正在处理。</p>
 <p><code>2** </code>类状态码称为为Success状态码，表示请求正常完成。</p>
@@ -127,27 +134,26 @@
 <p><code>4** </code>类状态码称之为Error状态码，通常是由于客户端的错误导致的。</p>
 <p><code>5** </code>类状态吗称为Server Error状态码，通常是服务端的错误导致的。</p>
 <p>小结下：状态码分为客户端错误状态码、服务端错误状态码、成功状态码，重定向状态码等。</p>
-<p>##1&amp;2</p>
+<h3 id="12">1&amp;2</h3>
 <p><code>1**</code> 不常见到哈,直接从2开始讲了</p>
 <p><code>200(ok)</code>示从客户端成功发出去请求到服务端了,服务端也接收到了这条请求并正确返回</p>
 <p><code>204 </code> No Content 请求已经成功了，但是却没有返回任何结果（实体）。通常使用php die() exit()函数会引发204状态码</p>
 <p><code>206 </code>Partial Content 范围请求状态码。</p>
-<h2 id="3">3</h2>
+<h3 id="3">3</h3>
 <p><code>301 </code> Moved Permanently 表示你请求的页面资源现在已经转移位置了，你需要到新的地方去需找该页面。这个即重定向，服务器的response首部里会有location字段值来提示。</p>
 <p><code>302(Found)</code>和<code>301</code>差不多。表示你请求的页面资源现在已经转移位置了，你要到新的地方去寻找。但是新的地方也不是固定的，说不定过几天还要换。不提示用户保存书签，提示用户跳转。</p>
 <p><code>303 </code>See other .表示你请求的页面中包含着你想要拿到资源的地址。比如你到门卫处去取快递，到了门卫处，大爷说快递已经交给前台了。这个过程会返回303状态码。</p>
 <p><code>304 </code> Not Modified 表示资源已经找到了，但是和上次相比没有更新。浏览器读取缓存。</p>
 <p><code>307 </code> Temporary Redirect 临时重定向。</p>
-<h2 id="4">4</h2>
+<h3 id="4">4</h3>
 <p><code>400 </code> Bad Request 报文语法错误。</p>
 <p><code>401 </code> Unauthorized 需要通过HTTP认证（BASIC 或者DIGEST）.</p>
 <p><code>403 </code> Forbidden 目录、文件权限错误都会报此状态码。</p>
 <p><code>404 </code> 服务器上无此资源，一般情况为路径错误。</p>
-<h2 id="5">5</h2>
+<h3 id="5">5</h3>
 <p><code>500 </code> Internal Server Error 服务端错误，有可能是WEB应用存在错误。</p>
 <p><code>502 </code> Internal Server Error服务端错误,有可能是服务端服务以及停止运行。</p>
 <p><code>503 </code> Serveice Unavailable  服务器超负荷运行。</p>
-<p>这些东西，没必要死记硬背。使用的次数多了慢慢就记住了.一开始使用的时候去查下文档就好了。这也是我写此篇博客的原因：留此存证，以备不时之需。</p>
 <div class="post-reward">
     <input type="checkbox" name="reward" id="reward" hidden/>
     <label class="reward-button" for="reward">赞赏支持</label>

@@ -103,6 +103,30 @@ word="虹墨空间站"
 screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQRov.png"
 >}}
 
+{{< friend
+name="N0ts Blog"
+url="https://blog.n0ts.cn/"
+logo="https://cdn.nutssss.cn/wp-content/uploads/2020/02/1581510626-head.png"
+word="一个爱好钻研技术的咸鱼"
+>}}
+
+{{< friend
+name="旧时繁华"
+url="https://blog.rain888.cn/"
+logo="https://zzwyun.gitee.io/static/img/jiushi.png"
+word="繁华似锦觅安宁,淡云流水度此生"
+>}}
+
+{{< friend
+name="孟坤博客"
+url="https://mkblog.cn/"
+logo="https://tva1.sinaimg.cn/large/a15b4afegy1fn6votd165j2036036glk.jpg"
+word="互联网+分享+科技+吐槽=孟坤博客"
+>}}
+
+
+
+
 ### 十年之约
 `十年之约，即从加入这个活动起，我们的博客十年不关闭，保持更新和活力！`
 
