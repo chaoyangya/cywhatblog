@@ -10,6 +10,6 @@
     <pubDate>Thu, 01 Apr 2021 18:17:13 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/gitignore%E4%B8%8D%E7%94%9F%E6%95%88%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
-    <description><![CDATA[原因：git本地运行有缓存，需要清楚git缓存即可 1 $ git rm -r --cached . 注意： 清完缓存需要把代码推到远程仓库]]></description>
+    <description><![CDATA[原因 原因：git本地运行有缓存，需要清除git缓存即可 解决 1 git rm -r --cached . 注意： 清完缓存需要把代码推到远程仓库]]></description>
 </item></channel>
 </rss>

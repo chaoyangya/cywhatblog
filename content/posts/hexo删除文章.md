@@ -6,11 +6,12 @@ tags: ["Hexo"]
 categories: ["Hexo"]
 ---
 
-**hexo删除文章**
+### hexo删除文章
+```text
+删除 "_posts" 中的 .md 结尾的文件
+```
 
-直接删除 "_posts" 中的 .md 结尾的文件
-
-执行
+### 执行生效
 ```bash
-$ hexo d -g
+hexo d -g
 ```

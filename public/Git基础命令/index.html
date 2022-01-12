@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Git基础命令 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Git基础命令" />
-<meta property="og:description" content="如果是开发人员，忽略此步骤，从下面大字的开始即可： 项目开始阶段，初始化项目（init），提交本地的代码到仓库，将本地仓库的代码推送到远端库（" />
+<meta property="og:description" content="git基本命令 初始化：创建一个git仓库，创建之后就会在当前目录生成一个.git的文件 1 git init 添加文件：把文件添加到缓冲区 1 git add filename 添加所有文件" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" />
 <meta property="og:image" content="https://cywhat.cn"/>
@@ -17,7 +17,7 @@
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
 <meta name="twitter:title" content="Git基础命令"/>
-<meta name="twitter:description" content="如果是开发人员，忽略此步骤，从下面大字的开始即可： 项目开始阶段，初始化项目（init），提交本地的代码到仓库，将本地仓库的代码推送到远端库（"/>
+<meta name="twitter:description" content="git基本命令 初始化：创建一个git仓库，创建之后就会在当前目录生成一个.git的文件 1 git init 添加文件：把文件添加到缓冲区 1 git add filename 添加所有文件"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" /><link rel="prev" href="https://cywhat.cn/Postmant%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/" /><link rel="next" href="https://cywhat.cn/ImportError-No-module-named-flask/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/cywhat.cn\/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Git","wordcount":  1473 ,
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Git","wordcount":  1108 ,
         "url": "https:\/\/cywhat.cn\/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4\/","datePublished": "2019-10-23T15:32:00+00:00","dateModified": "2019-10-23T15:32:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
@@ -105,38 +105,76 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Git基础命令</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Git/"><i class="far fa-folder fa-fw"></i>Git</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2019-10-23">2019-10-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1473 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2019-10-23">2019-10-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1108 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><p>如果是开发人员，忽略此步骤，从下面大字的开始即可：</p>
-<p>项目开始阶段，初始化项目（init），提交本地的代码到仓库，将本地仓库的代码推送到远端库（push）；</p>
-<p>项目开发人员从远端库克隆代码到本机（clone），此时本地仅有一个master分支；新建dev分支并切换、在Dev分支中进行开发工作，其实就是修改并提交代码（add+commit）；当开发的dev分支的代码没问题时，将dev分支合并（merge）到master；将master推送到远端分支，至此，其他的项目开发人员就可以查看到你提交的代码了！</p>
-<p>dev分支也可以是修复某个bug或者为了开发某个issue建立的，当bug已经修复或issue开发完成时，把dev合并到master之后，就可以把它删除了</p>
-<p>git基本命令</p>
-<p>初始化：创建一个git仓库，创建之后就会在当前目录生成一个.git的文件</p>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#git基本命令">git基本命令</a>
+          <ul>
+            <li><a href="#初始化创建一个git仓库创建之后就会在当前目录生成一个git的文件">初始化：创建一个git仓库，创建之后就会在当前目录生成一个.git的文件</a></li>
+            <li><a href="#添加文件把文件添加到缓冲区">添加文件：把文件添加到缓冲区</a></li>
+            <li><a href="#添加所有文件到缓冲区从目前掌握的水平看和后面加的区别在于加all可以添加被手动删除的文件而加不行">添加所有文件到缓冲区（从目前掌握的水平看，和后面加“.”的区别在于，加all可以添加被手动删除的文件，而加“.”不行）：</a></li>
+            <li><a href="#删除文件">删除文件</a></li>
+            <li><a href="#提交提交缓冲区的所有修改到仓库注意如果修改了文件但是没有add到缓冲区也是不会被提交的">提交：提交缓冲区的所有修改到仓库(注意：如果修改了文件但是没有add到缓冲区，也是不会被提交的)</a></li>
+            <li><a href="#查看git库的状态未提交的文件分为两种add过已经在缓冲区的未add过的">查看git库的状态，未提交的文件，分为两种，add过已经在缓冲区的，未add过的</a></li>
+            <li><a href="#比较如果文件修改了还没有提交就可以比较文件修改前后的差异">比较：如果文件修改了，还没有提交，就可以比较文件修改前后的差异</a></li>
+            <li><a href="#查看日志">查看日志</a></li>
+            <li><a href="#版本回退可以将当前仓库回退到历史的某个版本">版本回退：可以将当前仓库回退到历史的某个版本</a></li>
+            <li><a href="#第一种用法回退到上一个版本head代表当前版本有一个代表上一个版本以此类推">第一种用法：回退到上一个版本（HEAD代表当前版本，有一个^代表上一个版本，以此类推）</a></li>
+            <li><a href="#第二种用法回退到指定版本其中d7b5是想回退的指定版本号的前几位">第二种用法：回退到指定版本(其中d7b5是想回退的指定版本号的前几位)</a></li>
+            <li><a href="#查看命令历史查看仓库的操作历史">查看命令历史：查看仓库的操作历史</a></li>
+            <li><a href="#git分支管理-查看分支的情况前面带号的就是当前分支">git分支管理 查看分支的情况，前面带*号的就是当前分支</a></li>
+            <li><a href="#创建分支">创建分支</a></li>
+            <li><a href="#切换当前分支到指定分支">切换当前分支到指定分支</a></li>
+            <li><a href="#创建分支并切换到创建的分支">创建分支并切换到创建的分支</a></li>
+            <li><a href="#合并某分支的内容到当前分支">合并某分支的内容到当前分支</a></li>
+            <li><a href="#删除分支">删除分支</a></li>
+            <li><a href="#如果两个分支同时进行了同一个文件的修改和提交在merge时就会产生冲突首先要手动打开文件解决冲突再提交就相当于进行了merge">如果两个分支同时进行了同一个文件的修改和提交，在merge时就会产生冲突，首先要手动打开文件解决冲突，再提交，就相当于进行了<code>merge</code></a></li>
+            <li><a href="#新建标签默认为最新版本后面加上版本号参数则可指定版本增加标签">新建标签，默认为最新版本，后面加上版本号参数则可指定版本增加标签</a></li>
+            <li><a href="#查看所有标签">查看所有标签：</a></li>
+            <li><a href="#查看标签的详细信息">查看标签的详细信息</a></li>
+            <li><a href="#推送所有tag">推送所有tag:</a></li>
+            <li><a href="#推送某个tag">推送某个tag：</a></li>
+            <li><a href="#git远端库相关">git远端库相关</a></li>
+            <li><a href="#移除远端仓库">移除远端仓库</a></li>
+            <li><a href="#将本地仓库内容推送到远端仓库-u-表示第一次推送master分支的所有内容后面再推送就不需要-u了跟commit的区别在于一个是提交到本地仓库一个是提交到远程仓库">将本地仓库内容推送到远端仓库(-u 表示第一次推送master分支的所有内容，后面再推送就不需要-u了)，跟commit的区别在于一个是提交到本地仓库，一个是提交到远程仓库</a></li>
+            <li><a href="#从远端库更新内容到本地相当于svn的update">从远端库更新内容到本地（相当于svn的update），</a></li>
+            <li><a href="#git记住用户名密码">git记住用户名密码</a></li>
+            <li><a href="#push的时候默认每次都需输入github的用户名和密码在git仓库根目录下git文件夹的config文件末尾增加如下内容即可记住用户名密码无需每次推送都输入了">push的时候默认每次都需输入GitHub的用户名和密码，在git仓库根目录下.git文件夹的config文件末尾增加如下内容，即可记住用户名密码，无需每次推送都输入了</a></li>
+            <li><a href="#强制推送分支">强制推送分支</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="git基本命令">git基本命令</h3>
+<h4 id="初始化创建一个git仓库创建之后就会在当前目录生成一个git的文件">初始化：创建一个git仓库，创建之后就会在当前目录生成一个.git的文件</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git init
+<pre class="chroma"><code class="language-bash" data-lang="bash">git init
 </code></pre></td></tr></table>
 </div>
-</div><p>添加文件：把文件添加到缓冲区</p>
+</div><h4 id="添加文件把文件添加到缓冲区">添加文件：把文件添加到缓冲区</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git add filename
+<pre class="chroma"><code class="language-bash" data-lang="bash">git add filename
 </code></pre></td></tr></table>
 </div>
-</div><p>添加所有文件到缓冲区（从目前掌握的水平看，和后面加“.”的区别在于，加all可以添加被手动删除的文件，而加“.”不行）：</p>
+</div><h4 id="添加所有文件到缓冲区从目前掌握的水平看和后面加的区别在于加all可以添加被手动删除的文件而加不行">添加所有文件到缓冲区（从目前掌握的水平看，和后面加“.”的区别在于，加all可以添加被手动删除的文件，而加“.”不行）：</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -144,166 +182,166 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git add .
+<pre class="chroma"><code class="language-bash" data-lang="bash">git add .
 
-$ git add --all
+git add --all
 </code></pre></td></tr></table>
 </div>
-</div><p>删除文件</p>
+</div><h4 id="删除文件">删除文件</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git rm filename
+<pre class="chroma"><code class="language-bash" data-lang="bash">git rm filename
 </code></pre></td></tr></table>
 </div>
-</div><p>提交：提交缓冲区的所有修改到仓库(注意：如果修改了文件但是没有add到缓冲区，也是不会被提交的)</p>
+</div><h4 id="提交提交缓冲区的所有修改到仓库注意如果修改了文件但是没有add到缓冲区也是不会被提交的">提交：提交缓冲区的所有修改到仓库(注意：如果修改了文件但是没有add到缓冲区，也是不会被提交的)</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git commit -m <span class="s2">&#34;提交的说明&#34;</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">git commit -m <span class="s2">&#34;提交的说明&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>commit可以一次提交缓冲区的所有文件</p>
-<p>查看git库的状态，未提交的文件，分为两种，add过已经在缓冲区的，未add过的</p>
+</div><p><code>commit</code>可以一次提交缓冲区的所有文件</p>
+<h4 id="查看git库的状态未提交的文件分为两种add过已经在缓冲区的未add过的">查看git库的状态，未提交的文件，分为两种，add过已经在缓冲区的，未add过的</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git status -b
+<pre class="chroma"><code class="language-bash" data-lang="bash">git status -b
 </code></pre></td></tr></table>
 </div>
-</div><p>比较：如果文件修改了，还没有提交，就可以比较文件修改前后的差异</p>
+</div><h4 id="比较如果文件修改了还没有提交就可以比较文件修改前后的差异">比较：如果文件修改了，还没有提交，就可以比较文件修改前后的差异</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git diff filename
+<pre class="chroma"><code class="language-bash" data-lang="bash">git diff filename
 </code></pre></td></tr></table>
 </div>
-</div><p>查看日志</p>
+</div><h4 id="查看日志">查看日志</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git log
+<pre class="chroma"><code class="language-bash" data-lang="bash">git log
 </code></pre></td></tr></table>
 </div>
-</div><p>版本回退：可以将当前仓库回退到历史的某个版本</p>
+</div><h4 id="版本回退可以将当前仓库回退到历史的某个版本">版本回退：可以将当前仓库回退到历史的某个版本</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git reset
+<pre class="chroma"><code class="language-bash" data-lang="bash">git reset
 </code></pre></td></tr></table>
 </div>
-</div><p>第一种用法：回退到上一个版本（HEAD代表当前版本，有一个^代表上一个版本，以此类推）</p>
+</div><h4 id="第一种用法回退到上一个版本head代表当前版本有一个代表上一个版本以此类推">第一种用法：回退到上一个版本（HEAD代表当前版本，有一个^代表上一个版本，以此类推）</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git reset --hard HEAD^
+<pre class="chroma"><code class="language-bash" data-lang="bash">git reset --hard HEAD^
 </code></pre></td></tr></table>
 </div>
-</div><p>第二种用法：回退到指定版本(其中d7b5是想回退的指定版本号的前几位)</p>
+</div><h4 id="第二种用法回退到指定版本其中d7b5是想回退的指定版本号的前几位">第二种用法：回退到指定版本(其中d7b5是想回退的指定版本号的前几位)</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git reset --hard d7b5
+<pre class="chroma"><code class="language-bash" data-lang="bash">git reset --hard d7b5
 </code></pre></td></tr></table>
 </div>
-</div><p>查看命令历史：查看仓库的操作历史</p>
+</div><h4 id="查看命令历史查看仓库的操作历史">查看命令历史：查看仓库的操作历史</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git reflog
+<pre class="chroma"><code class="language-bash" data-lang="bash">git reflog
 </code></pre></td></tr></table>
 </div>
-</div><p>git分支管理 查看分支的情况，前面带*号的就是当前分支</p>
+</div><h4 id="git分支管理-查看分支的情况前面带号的就是当前分支">git分支管理 查看分支的情况，前面带*号的就是当前分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git branch
+<pre class="chroma"><code class="language-bash" data-lang="bash">git branch
 </code></pre></td></tr></table>
 </div>
-</div><p>创建分支</p>
+</div><h4 id="创建分支">创建分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git branch <span class="s2">&#34;分支名&#34;</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">git branch <span class="s2">&#34;分支名&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>切换当前分支到指定分支</p>
+</div><h4 id="切换当前分支到指定分支">切换当前分支到指定分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git checkout <span class="s2">&#34;分支名&#34;</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">git checkout <span class="s2">&#34;分支名&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>创建分支并切换到创建的分支</p>
+</div><h4 id="创建分支并切换到创建的分支">创建分支并切换到创建的分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git checkout -b <span class="s2">&#34;分支名&#34;</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">git checkout -b <span class="s2">&#34;分支名&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>合并某分支的内容到当前分支</p>
+</div><h4 id="合并某分支的内容到当前分支">合并某分支的内容到当前分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git merge <span class="s2">&#34;分支名&#34;</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">git merge <span class="s2">&#34;分支名&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>删除分支</p>
+</div><h4 id="删除分支">删除分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git branch -d <span class="s2">&#34;分支名&#34;</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">git branch -d <span class="s2">&#34;分支名&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>如果两个分支同时进行了同一个文件的修改和提交，在merge时就会产生冲突，首先要手动打开文件解决冲突，再提交，就相当于进行了merge</p>
+</div><h4 id="如果两个分支同时进行了同一个文件的修改和提交在merge时就会产生冲突首先要手动打开文件解决冲突再提交就相当于进行了merge">如果两个分支同时进行了同一个文件的修改和提交，在merge时就会产生冲突，首先要手动打开文件解决冲突，再提交，就相当于进行了<code>merge</code></h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git log --graph
+<pre class="chroma"><code class="language-bash" data-lang="bash">git log --graph
 </code></pre></td></tr></table>
 </div>
-</div><p>新建标签，默认为最新版本，后面加上版本号参数则可指定版本增加标签</p>
+</div><h4 id="新建标签默认为最新版本后面加上版本号参数则可指定版本增加标签">新建标签，默认为最新版本，后面加上版本号参数则可指定版本增加标签</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git tag <span class="s2">&#34;标签名&#34;</span> <span class="s2">&#34;版本号&#34;</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">git tag <span class="s2">&#34;标签名&#34;</span> <span class="s2">&#34;版本号&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>查看所有标签：</p>
+</div><h4 id="查看所有标签">查看所有标签：</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -312,7 +350,7 @@ $ git add --all
 <pre class="chroma"><code class="language-bash" data-lang="bash">git tag
 </code></pre></td></tr></table>
 </div>
-</div><p>查看标签的详细信息</p>
+</div><h4 id="查看标签的详细信息">查看标签的详细信息</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -321,81 +359,80 @@ $ git add --all
 <pre class="chroma"><code class="language-bash" data-lang="bash">git show <span class="s2">&#34;标签名&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>将tag提交到远端仓库</p>
-<p>推送所有tag:</p>
+</div><h4 id="推送所有tag">推送所有tag:</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git push origin --tags
+<pre class="chroma"><code class="language-bash" data-lang="bash">git push origin --tags
 </code></pre></td></tr></table>
 </div>
-</div><p>推送某个tag：</p>
+</div><h4 id="推送某个tag">推送某个tag：</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git push origin v1.0
+<pre class="chroma"><code class="language-bash" data-lang="bash">git push origin v1.0
 </code></pre></td></tr></table>
 </div>
-</div><p>git远端库相关</p>
+</div><h4 id="git远端库相关">git远端库相关</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git remote add origin git://127.0.0.1/abc.git 
+<pre class="chroma"><code class="language-bash" data-lang="bash">git remote add origin git://127.0.0.1/abc.git 
 </code></pre></td></tr></table>
 </div>
-</div><p>移除远端仓库</p>
+</div><h4 id="移除远端仓库">移除远端仓库</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git remote remove origin
+<pre class="chroma"><code class="language-bash" data-lang="bash">git remote remove origin
 </code></pre></td></tr></table>
 </div>
-</div><p>将本地仓库内容推送到远端仓库(-u 表示第一次推送master分支的所有内容，后面再推送就不需要-u了)，跟commit的区别在于一个是提交到本地仓库，一个是提交到远程仓库</p>
+</div><h4 id="将本地仓库内容推送到远端仓库-u-表示第一次推送master分支的所有内容后面再推送就不需要-u了跟commit的区别在于一个是提交到本地仓库一个是提交到远程仓库">将本地仓库内容推送到远端仓库(-u 表示第一次推送master分支的所有内容，后面再推送就不需要-u了)，跟commit的区别在于一个是提交到本地仓库，一个是提交到远程仓库</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git push -u origin master
+<pre class="chroma"><code class="language-bash" data-lang="bash">git push -u origin master
 </code></pre></td></tr></table>
 </div>
-</div><p>从远端库更新内容到本地（相当于svn的update），</p>
+</div><h4 id="从远端库更新内容到本地相当于svn的update">从远端库更新内容到本地（相当于svn的update），</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git pull
+<pre class="chroma"><code class="language-bash" data-lang="bash">git pull
 </code></pre></td></tr></table>
 </div>
-</div><p>tips:如果push的时候，本地和文件和远端文件有冲突，就要先pull、然后手动解决冲突，才能继续push</p>
-<p>git记住用户名密码</p>
-<p>push的时候默认每次都需输入GitHub的用户名和密码，在git仓库根目录下.git文件夹的config文件末尾增加如下内容，即可记住用户名密码，无需每次推送都输入了</p>
+</div><p><code>tips:</code>如果push的时候，本地和文件和远端文件有冲突，就要先pull、然后手动解决冲突，才能继续push</p>
+<h4 id="git记住用户名密码">git记住用户名密码</h4>
+<h4 id="push的时候默认每次都需输入github的用户名和密码在git仓库根目录下git文件夹的config文件末尾增加如下内容即可记住用户名密码无需每次推送都输入了">push的时候默认每次都需输入GitHub的用户名和密码，在git仓库根目录下.git文件夹的config文件末尾增加如下内容，即可记住用户名密码，无需每次推送都输入了</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="o">[</span>credential<span class="o">]</span>
-    <span class="nv">helper</span> <span class="o">=</span> store
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>credential<span class="o">]</span>
+  <span class="nv">helper</span> <span class="o">=</span> store
 </code></pre></td></tr></table>
 </div>
-</div><p>强制推送分支</p>
+</div><h4 id="强制推送分支">强制推送分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git push -f origin master
+<pre class="chroma"><code class="language-bash" data-lang="bash">git push -f origin master
 </code></pre></td></tr></table>
 </div>
 </div><div class="post-reward">

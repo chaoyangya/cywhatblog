@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>.gitignore不生效的解决方案 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content=".gitignore不生效的解决方案" />
-<meta property="og:description" content="原因：git本地运行有缓存，需要清楚git缓存即可 1 $ git rm -r --cached . 注意： 清完缓存需要把代码推到远程仓库" />
+<meta property="og:description" content="原因 原因：git本地运行有缓存，需要清除git缓存即可 解决 1 git rm -r --cached . 注意： 清完缓存需要把代码推到远程仓库" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cywhat.cn/gitignore%E4%B8%8D%E7%94%9F%E6%95%88%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" />
 <meta property="og:image" content="https://cywhat.cn"/>
@@ -17,7 +17,7 @@
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
 <meta name="twitter:title" content=".gitignore不生效的解决方案"/>
-<meta name="twitter:description" content="原因：git本地运行有缓存，需要清楚git缓存即可 1 $ git rm -r --cached . 注意： 清完缓存需要把代码推到远程仓库"/>
+<meta name="twitter:description" content="原因 原因：git本地运行有缓存，需要清除git缓存即可 解决 1 git rm -r --cached . 注意： 清完缓存需要把代码推到远程仓库"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/gitignore%E4%B8%8D%E7%94%9F%E6%95%88%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" /><link rel="prev" href="https://cywhat.cn/git-branch%E5%87%BA%E7%8E%B0end%E9%9C%80%E8%A6%81q%E6%89%8D%E8%83%BD%E9%80%80%E5%87%BA/" /><link rel="next" href="https://cywhat.cn/Linux%E7%AE%A1%E7%90%86node%E7%89%88%E6%9C%AC/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/cywhat.cn\/gitignore%E4%B8%8D%E7%94%9F%E6%95%88%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Git, .gitignore","wordcount":  50 ,
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Git, .gitignore","wordcount":  53 ,
         "url": "https:\/\/cywhat.cn\/gitignore%E4%B8%8D%E7%94%9F%E6%95%88%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88\/","datePublished": "2021-04-01T18:17:13+00:00","dateModified": "2021-04-01T18:17:13+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
@@ -105,7 +105,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">.gitignore不生效的解决方案</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Git/"><i class="far fa-folder fa-fw"></i>Git</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-04-01">2021-04-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 50 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-04-01">2021-04-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 53 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -114,19 +114,27 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#注意">注意：</a></li>
+    <li>
+      <ul>
+        <li><a href="#原因">原因</a></li>
+        <li><a href="#解决">解决</a></li>
+        <li><a href="#注意">注意：</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p><strong>原因：git本地运行有缓存，需要清楚git缓存即可</strong></p>
+            </div><div class="content" id="content"><h3 id="原因">原因</h3>
+<p><strong>原因：git本地运行有缓存，需要清除git缓存即可</strong></p>
+<h3 id="解决">解决</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git rm -r --cached .
+<pre class="chroma"><code class="language-bash" data-lang="bash">git rm -r --cached .
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="注意">注意：</h2>
+</div><h3 id="注意">注意：</h3>
 <p>清完缓存需要把代码推到远程仓库</p>
 <div class="post-reward">
     <input type="checkbox" name="reward" id="reward" hidden/>
