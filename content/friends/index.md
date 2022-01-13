@@ -128,11 +128,17 @@ word="互联网+分享+科技+吐槽=孟坤博客"
 
 {{< friend
 name="怀特博客"
-url="https://www.ylesb.com"
+url="https://www.ylesb.com/"
 logo="https://www.ylesb.com/wp-content/uploads/2019/10/favicon.ico"
 word="怀特博客-忠于原创 乐于分享"
 >}}
 
+{{< friend
+name="Mintimate's Blog"
+url="https://www.mintimate.cn/"
+logo="https://mintimate.cn/custom/img/favicon/favicon.png"
+word="专注与你分享技术教程～"
+>}}
 
 
 ### 十年之约
