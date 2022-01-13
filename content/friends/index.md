@@ -140,6 +140,14 @@ logo="https://mintimate.cn/custom/img/favicon/favicon.png"
 word="专注与你分享技术教程～"
 >}}
 
+{{< friend
+name="逸晨的小屋"
+url="https://yichenxyz.blogspot.com/"
+logo="https://cdn.jsdelivr.net/gh/yichenxyz/imgs@1.0/avatar.png"
+word="一个名叫逸晨的博主的博客。"
+>}}
+
+
 
 ### 十年之约
 `十年之约，即从加入这个活动起，我们的博客十年不关闭，保持更新和活力！`
