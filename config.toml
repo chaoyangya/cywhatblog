@@ -500,7 +500,7 @@ date = [":filename", ":default"]
         requiredFields = ['nick','mail']
         #开启自动获取qq头像
         enableQQ = true
-        visitor = false
+        visitor = true
         recordIP = false
         highlight = true
         tagMeta = 	["博主","小伙伴","访客"]
