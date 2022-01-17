@@ -2,7 +2,6 @@
 title: "友链"
 url: friends
 reward: false
-comment: true
 hiddenFromHomePage: true
 ---
 
