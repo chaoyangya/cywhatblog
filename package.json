@@ -20,7 +20,7 @@
   "homepage": "https://github.com/chaoyangya/cywhat.pp.ua#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "valine": "^1.4.16"
+    "valine": "^1.4.6"
   },
   "devDependencies": {
     "atomic-algolia": "^0.3.19"
