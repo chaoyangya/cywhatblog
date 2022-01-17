@@ -147,6 +147,16 @@ logo="https://cdn.jsdelivr.net/gh/yichenxyz/imgs@1.0/avatar.png"
 word="一个名叫逸晨的博主的博客。"
 >}}
 
+{{< friend
+name="Hermoso"
+url="https://imszz.com"
+logo="https://cdn.jsdelivr.net/gh/weilain/cdn-photo/Photo/avatar.jpg"
+word="时间如一捧流沙,缓缓的在指间流尽"
+>}}
+
+
+
+
 
 
 ### 十年之约
