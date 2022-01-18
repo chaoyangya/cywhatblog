@@ -1,80 +1,421 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>cywhat&#39;s blog</title>
-        <link>https://cywhat.cn/</link>
-        <description>关于 LoveIt 主题</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 05 Jan 2022 10:49:45 &#43;0800</lastBuildDate>
-            <atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
-        <item>
-    <title>Linux配置时间同步</title>
-    <link>https://cywhat.cn/Linux%E9%85%8D%E7%BD%AE%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5/</link>
-    <pubDate>Wed, 05 Jan 2022 10:49:45 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Linux%E9%85%8D%E7%BD%AE%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5/</guid>
-    <description><![CDATA[前景 排查售后问题发现一个奇葩BUG是因为Linux服务器时间不同步导致 1.安装ntpdate 1 yum install -y ntpdate 2.同步时间 1 ntpdate 0.asia.pool.ntp.org #0.asia.pool.ntp.org 为ntp时间服务器]]></description>
-</item><item>
-    <title>Linux卸载python</title>
-    <link>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDpython/</link>
-    <pubDate>Thu, 23 Dec 2021 15:49:42 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDpython/</guid>
-    <description><![CDATA[1.rpm镜像安装方式卸载 1.卸载Python3(仅适合通过rpm安装的python) 1 rpm -qa|grep python3|xargs rpm -ev --allmatches --nodeps 2.删除残留文件 1 whereis python3 |xargs rm -frv 3.删除软]]></description>
-</item><item>
-    <title>Linux安装python3.7</title>
-    <link>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85python3.7.0/</link>
-    <pubDate>Thu, 23 Dec 2021 15:13:53 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85python3.7.0/</guid>
-    <description><![CDATA[前景 **新服务器搭建Django Web服务需要安装python3.7.0 1.前置条件(一定要在安装之前) 安装python需要依赖(-y：安装]]></description>
-</item><item>
-    <title>ModuleNotFoundError: No Module Named &#39;_Ctypes&#39; Make: *** [Install] 错误 1</title>
-    <link>https://cywhat.cn/ModuleNotFoundError-No-module-named-_ctypes-make-install-%E9%94%99%E8%AF%AF-1/</link>
-    <pubDate>Thu, 23 Dec 2021 10:44:14 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/ModuleNotFoundError-No-module-named-_ctypes-make-install-%E9%94%99%E8%AF%AF-1/</guid>
-    <description><![CDATA[前景 新服务器安装python3.7.0在make install的时候报错ModuleNotFoundError: No module named '_ctypes' make: *** [install] 错误 1导致编译]]></description>
-</item><item>
-    <title>zipimport.ZipImportError: can&#39;t decompress data; zlib not available make: *** [install] 错误 1</title>
-    <link>https://cywhat.cn/zipimport.ZipImportError-cant-decompress-data-zlib-not-available-make-install-%E9%94%99%E8%AF%AF-1/</link>
-    <pubDate>Thu, 23 Dec 2021 10:36:34 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/zipimport.ZipImportError-cant-decompress-data-zlib-not-available-make-install-%E9%94%99%E8%AF%AF-1/</guid>
-    <description><![CDATA[前景 新服务器安装python3.7.0在make install的时候报错zipimport.ZipImportError: can't decompress data; zlib not available make: *** [install]]]></description>
-</item><item>
-    <title>如何保持Ssh长时间连接不断开</title>
-    <link>https://cywhat.cn/%E5%A6%82%E4%BD%95%E4%BF%9D%E6%8C%81Ssh%E9%95%BF%E6%97%B6%E9%97%B4%E9%93%BE%E6%8E%A5%E4%B8%8D%E6%96%AD%E5%BC%80/</link>
-    <pubDate>Wed, 22 Dec 2021 14:29:11 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/%E5%A6%82%E4%BD%95%E4%BF%9D%E6%8C%81Ssh%E9%95%BF%E6%97%B6%E9%97%B4%E9%93%BE%E6%8E%A5%E4%B8%8D%E6%96%AD%E5%BC%80/</guid>
-    <description><![CDATA[前景： 新购入的华为云服务器SSH连接5分钟没有任何操作就自动断开了，该文章主要为了解决该问题，同样的场景适合各种云服务器/本地物理服务器等 1]]></description>
-</item><item>
-    <title>Site.webmanifest异常处理</title>
-    <link>https://cywhat.cn/site.webmanifest%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
-    <pubDate>Tue, 14 Dec 2021 15:14:48 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/site.webmanifest%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</guid>
-    <description><![CDATA[1.前景 搭建完博客后，发现开发者模式中site.webmanifest加载非常慢，最后加载异常(404/超时等),严重拖慢博客的加载速度 2.]]></description>
-</item><item>
-    <title>如何创建自己的cdn图床地址</title>
-    <link>https://cywhat.cn/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84cdn%E5%9B%BE%E5%BA%8A%E5%9C%B0%E5%9D%80/</link>
-    <pubDate>Fri, 10 Dec 2021 16:01:02 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84cdn%E5%9B%BE%E5%BA%8A%E5%9C%B0%E5%9D%80/</guid>
-    <description><![CDATA[1。准备工作 1、github账号 2、需要制作图床的图片 2.创建github项目 3.上传图片到项目 4.转换图片地址 转换地址 1 2 3 1.获取到在g]]></description>
-</item><item>
-    <title>Raid磁盘阵列</title>
-    <link>https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/</link>
-    <pubDate>Thu, 18 Nov 2021 10:01:24 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/</guid>
-    <description><![CDATA[1.什么是Raid 什么是Raid Raid 是英文(Redundant Array of Independent Disks)的缩写，翻译成中文是“独立磁盘冗余阵列”, 简称磁盘阵列（Dis]]></description>
-</item><item>
-    <title>Linux使用iftop查看带宽占用情况</title>
-    <link>https://cywhat.cn/Linux%E4%BD%BF%E7%94%A8iftop%E6%9F%A5%E7%9C%8B%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/</link>
-    <pubDate>Wed, 17 Nov 2021 10:16:41 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Linux%E4%BD%BF%E7%94%A8iftop%E6%9F%A5%E7%9C%8B%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/</guid>
-    <description><![CDATA[查看Linux系统下服务器带宽占用情况，使用iftop 1.安装iftop 1 2 3 centos: yum install iftop debian: apt-get install iftop 2.使用iftop 1 2 3 iftop -i eth1 #查看eth1网]]></description>
-</item></channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cywhat&#39;s blog</title>
+    <link>https://cywhat.cn/</link>
+    <description>Recent content on cywhat&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
+    <webMaster>cywhat@cywhat.cn (cywhat)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 05 Jan 2022 10:49:45 +0800</lastBuildDate>
+    
+        <atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Posts</title>
+      <link>https://cywhat.cn/posts/</link>
+      <pubDate>Wed, 05 Jan 2022 10:49:45 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>https://cywhat.cn/about/</link>
+      <pubDate>Tue, 19 Oct 2021 22:01:44 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/about/</guid>
+      <description>&lt;div class=&#34;details admonition success open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-check-circle fa-fw&#34;&gt;&lt;/i&gt;!&lt;i class=&#34;details-icon fas fa-angle-right fa-fw&#34;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&amp;quot; &amp;mdash;-关于我&amp;mdash;-&amp;rdquo;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;h1 id=&#34;---codingutf-8---&#34;&gt;-&lt;em&gt;- coding:utf-8 -&lt;/em&gt;-&lt;/h1&gt;
+&lt;p&gt;class IntroduceMyself():&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&#39;&#39;&#39; 测开Dog的介绍 &#39;&#39;&#39;
+
+
+def __init__(self):
+
+    self.name = &amp;quot;cywhat&amp;quot;
+    self.age = 26
+    self.height = &amp;quot;172cm&amp;quot;
+    self.email = &amp;quot;cywhat@cywhat.cn&amp;quot;
+    self.wechat = &amp;quot;SwagAlong&amp;quot;
+    self.hometown = &amp;quot;山西忻州&amp;quot;
+    self.hobby = &amp;quot;LOL/王者荣耀/摄影&amp;quot;
+    self.school = &amp;quot;麻省理工(YY)&amp;quot;
+    self.graduation_time = 4
+    self.blog = &amp;quot;https://cywhat.cn&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;details admonition success open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-check-circle fa-fw&#34;&gt;&lt;/i&gt;公众号&lt;i class=&#34;details-icon fas fa-angle-right fa-fw&#34;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;img
+        class=&#34;lazyload&#34;
+        src=&#34;https://cywhat.cn/svg/loading.min.svg&#34;
+        data-src=&#34;https://cywhat.cn/img/blog-vx1.png&#34;
+        data-srcset=&#34;https://cywhat.cn/img/blog-vx1.png, https://cywhat.cn/img/blog-vx1.png 1.5x, https://cywhat.cn/img/blog-vx1.png 2x&#34;
+        data-sizes=&#34;auto&#34;
+        alt=&#34;/img/blog-vx1.png&#34;
+        title=&#34;blog-vx1.png&#34; /&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>友链</title>
+      <link>https://cywhat.cn/friends/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/friends/</guid>
+      <description>&lt;h3 id=&#34;loveit官方&#34;&gt;LoveIt官方&lt;/h3&gt;
+
+
+	&lt;a target=&#34;_blank&#34; href=https://hugoloveit.com/ title=LoveIt官方---LoveIt主题官方文档 class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.jsdelivr.net/gh/dillonzq/LoveIt@master/exampleSite/assets/images/avatar.png onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;LoveIt官方&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;LoveIt主题官方文档&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+&lt;h3 id=&#34;大牛子们不分先后&#34;&gt;大牛子们(不分先后)&lt;/h3&gt;
+
+
+	&lt;a target=&#34;_blank&#34; href=https://lewky.cn/ title=雨临Lewis的博客---不想当写手的码农不是好咸鱼_(xз」∠)_ class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/avatar.jpg onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;雨临Lewis的博客&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;不想当写手的码农不是好咸鱼_(xз」∠)_&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+
+
+	&lt;a target=&#34;_blank&#34; href=https://bore.vip/ title=Bore’s&amp;#32;Notes---博观而约取，厚积而薄发。 class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.jsdelivr.net/gh/iwyang/pic/avatar.jpg onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;Bore’s Notes&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;博观而约取，厚积而薄发。&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+
+
+	&lt;a target=&#34;_blank&#34; href=https://www.iilee.cn/ title=IILeeのBlog---所以，看不到光，算是不幸吗？需要光才是真正的不幸吧。 class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://www.iilee.cn/avatar onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;IILeeのBlog&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;所以，看不到光，算是不幸吗？需要光才是真正的不幸吧。&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+
+
+	&lt;a target=&#34;_blank&#34; href=https://bbing.com.cn/ title=BBing&amp;#39;s&amp;#32;Blog---自由&amp;#32;分享&amp;#32;合作。 class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/2B2pd1.png onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;BBing&amp;#39;s Blog&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;自由 分享 合作。&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+
+
+	&lt;a target=&#34;_blank&#34; href=https://hin.cool/ title=W4J1e&amp;#39;s&amp;#32;blog---总是偏爱不务正业 class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://hin.cool/favicon.ico onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;W4J1e&amp;#39;s blog&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;总是偏爱不务正业&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+
+
+	&lt;a target=&#34;_blank&#34; href=https://thrower.cc/ title=Thrower的博客---一名网络安全技术爱好者，汪峰的老歌迷。 class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://thrower.cc/wp-content/uploads/2021/07/QQ%E5%9B%BE%E7%89%8720210704153032.jpg onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;Thrower的博客&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;一名网络安全技术爱好者，汪峰的老歌迷。&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+
+
+	&lt;a target=&#34;_blank&#34; href=https://chubbyduner.top/ title=小胖墩er---总迟到总比不到的好，所以好好加油吧。 class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.jsdelivr.net/gh/Chubby-Duner/image-hosting@master/blog/logo.jpeg onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;小胖墩er&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;总迟到总比不到的好，所以好好加油吧。&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+
+
+	&lt;a target=&#34;_blank&#34; href=https://seepine.com/ title=Seepine’s&amp;#32;Blog---Java,Vue,Flutter class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://seepine.com/cdn/img/avatar.png onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;Seepine’s Blog&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;Java,Vue,Flutter&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+
+
+	&lt;a target=&#34;_blank&#34; href=https://blog.syzhan.cn/ title=森屿暖树---人和人，和万物，相逢又别离 class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://thirdqq.qlogo.cn/g?b&amp;#61;qq&amp;amp;nk&amp;#61;2817808181&amp;amp;s&amp;#61;100 onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;森屿暖树&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;人和人，和万物，相逢又别离&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+
+
+	&lt;a target=&#34;_blank&#34; href=https://www.imaegoo.com title=iMaeGoo’s&amp;#32;Blog---虹墨空间站 class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://www.imaegoo.com/images/avatar.jpg onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;iMaeGoo’s Blog&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;虹墨空间站&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+
+
+	&lt;a target=&#34;_blank&#34; href=https://blog.n0ts.cn/ title=N0ts&amp;#32;Blog---一个爱好钻研技术的咸鱼 class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.nutssss.cn/wp-content/uploads/2020/02/1581510626-head.png onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;N0ts Blog&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;一个爱好钻研技术的咸鱼&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+
+
+	&lt;a target=&#34;_blank&#34; href=https://blog.rain888.cn/ title=旧时繁华---繁华似锦觅安宁,淡云流水度此生 class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://zzwyun.gitee.io/static/img/jiushi.png onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;旧时繁华&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;繁华似锦觅安宁,淡云流水度此生&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+
+
+	&lt;a target=&#34;_blank&#34; href=https://mkblog.cn/ title=孟坤博客---互联网&amp;#43;分享&amp;#43;科技&amp;#43;吐槽&amp;#61;孟坤博客 class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://tva1.sinaimg.cn/large/a15b4afegy1fn6votd165j2036036glk.jpg onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;孟坤博客&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;互联网&amp;#43;分享&amp;#43;科技&amp;#43;吐槽=孟坤博客&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+
+
+	&lt;a target=&#34;_blank&#34; href=https://www.ylesb.com/ title=怀特博客---怀特博客-忠于原创&amp;#32;乐于分享 class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://www.ylesb.com/wp-content/uploads/2019/10/favicon.ico onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;怀特博客&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;怀特博客-忠于原创 乐于分享&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+
+
+	&lt;a target=&#34;_blank&#34; href=https://www.mintimate.cn/ title=Mintimate&amp;#39;s&amp;#32;Blog---专注与你分享技术教程～ class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://mintimate.cn/custom/img/favicon/favicon.png onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;Mintimate&amp;#39;s Blog&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;专注与你分享技术教程～&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+
+
+	&lt;a target=&#34;_blank&#34; href=https://yichenxyz.blogspot.com/ title=逸晨的小屋---一个名叫逸晨的博主的博客。 class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.jsdelivr.net/gh/yichenxyz/imgs@1.0/avatar.png onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;逸晨的小屋&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;一个名叫逸晨的博主的博客。&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+
+
+	&lt;a target=&#34;_blank&#34; href=https://imszz.com title=Hermoso---时间如一捧流沙,缓缓的在指间流尽 class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.jsdelivr.net/gh/weilain/cdn-photo/Photo/avatar.jpg onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;Hermoso&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;时间如一捧流沙,缓缓的在指间流尽&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+&lt;h3 id=&#34;十年之约&#34;&gt;十年之约&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;十年之约，即从加入这个活动起，我们的博客十年不关闭，保持更新和活力！&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;本站已加入【十年之约】！有兴趣的朋友可以点击下面的链接了解一哈~&lt;/p&gt;
+
+
+	&lt;a target=&#34;_blank&#34; href=https://www.foreverblog.cn/ title=十年之约---十年之约 class=&#34;friend url&#34;&gt;
+	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
+		&lt;div class=&#34;friend block left&#34;&gt;
+		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.jsdelivr.net/gh/chaoyangya/cywhat-cdn@master/images/shinian-favicon.ico onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;friend block right&#34;&gt;
+		  &lt;div class=&#34;friend name&#34;&gt;十年之约&lt;/div&gt;
+		  &lt;div class=&#34;friend info&#34;&gt;&#34;十年之约&#34;&lt;/div&gt;
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/a&gt;
+
+
+&lt;h3 id=&#34;如何交换友链&#34;&gt;如何交换友链&lt;/h3&gt;
+&lt;div class=&#34;details admonition info open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34;&gt;&lt;/i&gt;以下信息发送至&amp;#39;45204307@qq.com&amp;#39;&lt;i class=&#34;details-icon fas fa-angle-right fa-fw&#34;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;name=&amp;#34;站点名称&amp;#34;
+url=&amp;#34;站点地址&amp;#34;
+logo=&amp;#34;站点图标或个人头像&amp;#34;
+describe=&amp;#34;站点描述&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;我的友链信息&#34;&gt;我的友链信息&lt;/h3&gt;
+&lt;div class=&#34;details admonition tip&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-lightbulb fa-fw&#34;&gt;&lt;/i&gt;我的友链信息&lt;i class=&#34;details-icon fas fa-angle-right fa-fw&#34;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;name=&amp;#34;cywhat&amp;#39;s blog&amp;#34;
+url=&amp;#34;https://cywhat.cn&amp;#34;
+logo=&amp;#34;https://cdn.jsdelivr.net/gh/chaoyangya/cywhat-cdn@master/images/cywhat-logo.png&amp;#34;
+describe=&amp;#34;一位摸爬滚打的测开Dog.&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
 </rss>
