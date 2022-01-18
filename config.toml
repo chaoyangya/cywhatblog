@@ -146,7 +146,7 @@ date = [":filename", ":default"]
       # 主页信息设置
       [languages.zh-cn.params.home]
         # RSS 文章数目
-        rss = 10
+        rss = 50
         # 主页个人信息
         [languages.zh-cn.params.home.profile]
           enable = true
