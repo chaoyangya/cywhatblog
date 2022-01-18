@@ -209,12 +209,12 @@ date = [":filename", ":default"]
         Hackernews = ""
         Kickstarter = ""
         Patreon = ""
-        Steam = ""
+        Steam = "https://steamcommunity.com/id/cywhat/"
         Twitch = ""
         Strava = ""
         Skype = ""
         Whatsapp = ""
-        Zhihu = ""
+        Zhihu = "https://www.zhihu.com/people/chao-yang-o"
         Douban = ""
         Angellist = ""
         Slidershare = ""
@@ -233,7 +233,7 @@ date = [":filename", ":default"]
         XMPP = ""
         Matrix = ""
         Bilibili = "https://space.bilibili.com/175448999"
-        Email = "cywhat@cywhat.cn"
+        Email = "45204307@qq.com"
         RSS = true
 
 
