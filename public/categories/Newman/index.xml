@@ -17,6 +17,6 @@
     <pubDate>Mon, 22 Mar 2021 16:06:15 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/Linux-macos%E5%AE%89%E8%A3%85newman/</guid>
-    <description><![CDATA[[已解决]Linux/macos安装newman 一、安装Node环境（1/2选其一即可） 官网下载node包，并上传到linux服务器 1 https://nodejs.org/en/download/ wg]]></description>
+    <description><![CDATA[1、安装Node环境（1/2选其一即可） 1.官网下载node包，并上传到linux服务器 1 https://nodejs.org/en/download/ 2.wget安装 1 wget https://nodejs.org/dist/v15.12.0/node-v15.12.0-linux-x64.tar.xz 3.安装解压 1 tar -xvf node-v15.12.0-linux-x64.tar.xz 4.移]]></description>
 </item></channel>
 </rss>

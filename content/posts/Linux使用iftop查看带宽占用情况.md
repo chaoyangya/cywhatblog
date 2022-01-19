@@ -6,7 +6,7 @@ tags: ["Linux"]
 categories: ["Linux","iftop"]
 ---
 
-查看Linux系统下服务器带宽占用情况，使用iftop
+
 
 ### 1.安装iftop
 ```bash

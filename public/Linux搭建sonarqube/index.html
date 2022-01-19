@@ -116,14 +116,18 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#1安装jdk">1.安装Jdk</a></li>
-    <li><a href="#2安装postgresql">2.安装PostgreSQL</a></li>
-    <li><a href="#3安装sonarqube">3.安装SonarQube</a></li>
-    <li><a href="#4添加用户">4.添加用户</a></li>
-    <li><a href="#5进入postgresql配置数据库">5.进入PostgreSQL配置数据库</a></li>
-    <li><a href="#6修改sonarqube配置">6.修改sonarqube配置</a></li>
-    <li><a href="#7启动sonarqube">7.启动sonarqube</a></li>
-    <li><a href="#8安装sonar-scanner">8.安装sonar-scanner</a></li>
+    <li>
+      <ul>
+        <li><a href="#1安装jdk">1.安装Jdk</a></li>
+        <li><a href="#2安装postgresql">2.安装PostgreSQL</a></li>
+        <li><a href="#3安装sonarqube">3.安装SonarQube</a></li>
+        <li><a href="#4添加用户">4.添加用户</a></li>
+        <li><a href="#5进入postgresql配置数据库">5.进入PostgreSQL配置数据库</a></li>
+        <li><a href="#6修改sonarqube配置">6.修改sonarqube配置</a></li>
+        <li><a href="#7启动sonarqube">7.启动sonarqube</a></li>
+        <li><a href="#8安装sonar-scanner">8.安装sonar-scanner</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><p><strong>前言</strong>
@@ -132,9 +136,9 @@
 <code>SonarQube:8.2.0.32929</code>
 <code>PostgreSQL:12</code>
 <code>sonar-scanner:4.6.2.2472</code></p>
-<h2 id="1安装jdk">1.安装Jdk</h2>
+<h3 id="1安装jdk">1.安装Jdk</h3>
 <p><a href="https://cywhat.cn/linux%E5%AE%89%E8%A3%85jdk11/" target="_blank" rel="noopener noreffer">安装JDK</a></p>
-<h2 id="2安装postgresql">2.安装PostgreSQL</h2>
+<h3 id="2安装postgresql">2.安装PostgreSQL</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -181,7 +185,7 @@ sudo systemctl start postgresql-12
         data-sizes="auto"
         alt="/img/img17.png"
         title="img17" /></p>
-<h2 id="3安装sonarqube">3.安装SonarQube</h2>
+<h3 id="3安装sonarqube">3.安装SonarQube</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -204,7 +208,7 @@ unzip sonarqube-8.2.0.32929.zip
 mv sonarqube-8.2.0.32929 /usr/local/sonarqube
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="4添加用户">4.添加用户</h2>
+</div><h3 id="4添加用户">4.添加用户</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -227,7 +231,7 @@ sudo passwd sonar
 chmod -R sonar:sonar /usr/local/sonarqube
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="5进入postgresql配置数据库">5.进入PostgreSQL配置数据库</h2>
+</div><h3 id="5进入postgresql配置数据库">5.进入PostgreSQL配置数据库</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -262,7 +266,7 @@ GRANT ALL PRIVILEGES ON DATABASE sonar TO sonar<span class="p">;</span>
 ALTER DATABASE sonar OWNER TO sonar<span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="6修改sonarqube配置">6.修改sonarqube配置</h2>
+</div><h3 id="6修改sonarqube配置">6.修改sonarqube配置</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -309,7 +313,7 @@ sonar.search.port<span class="o">=</span><span class="m">9001</span>  <span clas
 
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="7启动sonarqube">7.启动sonarqube</h2>
+</div><h3 id="7启动sonarqube">7.启动sonarqube</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -326,7 +330,7 @@ sonar.search.port<span class="o">=</span><span class="m">9001</span>  <span clas
 sh  sonar.sh start
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="8安装sonar-scanner">8.安装sonar-scanner</h2>
+</div><h3 id="8安装sonar-scanner">8.安装sonar-scanner</h3>
 <p><a href="https://pan.baidu.com/s/1rIs2oMba5LTvpAcdz75lZg" target="_blank" rel="noopener noreffer">下载sonar-scanner</a></p>
 <p><code>提取码: qtd4</code></p>
 <div class="highlight"><div class="chroma">

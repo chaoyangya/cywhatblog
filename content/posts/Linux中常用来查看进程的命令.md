@@ -5,24 +5,25 @@ draft: false
 tags: ["Linux"]
 categories: ["Linux"]
 ---
-查看所有运行中的进程:
+
+#### 查看所有运行中的进程:
 ```bash
-$ ps aux | less
+ps aux | less
 ```
 
-显示所有进程: 
+#### 显示所有进程: 
 ```bash
-$ ps -A  
-$ ps -e
+ps -A  
+ps -e
 ```
 
-显示进程的树状图:
+#### 显示进程的树状图:
 ```bash
-$ pstree
+pstree
 ```
 
-查看进程:
+#### 查看进程:
 ```bash
-$ netstat -ntlp
+netstat -ntlp
 ```
 

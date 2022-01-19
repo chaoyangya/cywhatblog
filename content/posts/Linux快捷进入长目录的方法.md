@@ -6,18 +6,21 @@ tags: ["Linux"]
 categories: ["Linux"]
 ---
 
-1、将上述设置写到家目录的```.bashrc```文件中（~/.bashrc）
+### 1.设置环境变量
 ```bash
-$ alias cywhat ='cd /root/XX/XX/XX/XX'
+vim ~/.bashrc
+
+alias cywhat ='cd /root/XX/XX/XX/XX'
 ```
 
 
-2、然后让配置生效
+### 2.然后让配置生效
 ```bash
-$ source ./bashrc
+source ./bashrc
 ```
 
 
 
-3、最后我们输入设置的```cywhat```（这个名字自己设置）就可以快速进入设置的长目录了
+### 3.验证
+最后我们输入设置的```cywhat```（这个名字自己设置）就可以快速进入设置的长目录了
 

@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/cywhat.cn\/Linux%E9%83%A8%E7%BD%B2easy-mock\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Easy_mock, Linux","wordcount":  1179 ,
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Easy_mock, Linux","wordcount":  1163 ,
         "url": "https:\/\/cywhat.cn\/Linux%E9%83%A8%E7%BD%B2easy-mock\/","datePublished": "2021-04-16T10:01:27+00:00","dateModified": "2021-04-16T10:01:27+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
@@ -105,7 +105,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Linux部署easy_mock</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Easy_mock/"><i class="far fa-folder fa-fw"></i>Easy_mock</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-04-16">2021-04-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1179 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-04-16">2021-04-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1163 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;<span id="/Linux%E9%83%A8%E7%BD%B2easy-mock/" class="leancloud_visitors" data-flag-title="Linux部署easy_mock">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -116,14 +116,19 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#mongodb安装">mongodb安装</a></li>
-    <li><a href="#redis安装">redis安装</a></li>
+    <li>
+      <ul>
+        <li><a href="#前期准备">前期准备：</a></li>
+        <li><a href="#1mongodb安装">1.mongodb安装</a></li>
+        <li><a href="#2redis安装">2.redis安装</a></li>
+      </ul>
+    </li>
     <li><a href="#安装node">安装node</a></li>
     <li><a href="#安装easy_mock">安装easy_mock</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>前期准备：
-1、Linux：CentOS Linux release 7.8.2003 (Core)
+            </div><div class="content" id="content"><h3 id="前期准备">前期准备：</h3>
+<p>1、Linux：CentOS Linux release 7.8.2003 (Core)
 2、mongodb：3.4.24
 3、redis：4.0.14
 4、node：8.9.0</p>
@@ -132,7 +137,7 @@
 <p>node版本不要超过8.x.x<br>
 mongodb版本不要超过3.6.x</p>
 </blockquote>
-<h2 id="mongodb安装">mongodb安装</h2>
+<h3 id="1mongodb安装">1.mongodb安装</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -157,26 +162,26 @@ mongodb版本不要超过3.6.x</p>
 </span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> /usr/local/
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /usr/local/
 
 <span class="c1">#下载mongodb包</span>
-$ curl -O https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.4.24.tgz  
+curl -O https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.4.24.tgz  
 
 <span class="c1">#解压</span>  
-$ tar -zxvf mongodb-linux-x86_64-3.4.24.tgz
+tar -zxvf mongodb-linux-x86_64-3.4.24.tgz
 
 <span class="c1">#重命名mongodb</span>
-$ mv mongodb-linux-x86_64-3.4.24 mongodb
+mv mongodb-linux-x86_64-3.4.24 mongodb
  
 <span class="c1">#编辑环境变量</span>
-$ vi ~/.bashrc
+vi ~/.bashrc
 
 <span class="c1">#环境变量</span>
-$ <span class="nb">export</span> <span class="nv">MONGO_HOME</span><span class="o">=</span>/usr/local/mongodb
-$ <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$MONGO_HOME</span>/bin:<span class="nv">$PATH</span>
+<span class="nb">export</span> <span class="nv">MONGO_HOME</span><span class="o">=</span>/usr/local/mongodb
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$MONGO_HOME</span>/bin:<span class="nv">$PATH</span>
 
 <span class="c1">#让环境变量生效</span>
-$ <span class="nb">source</span> ~/.bashrc
+<span class="nb">source</span> ~/.bashrc
 </code></pre></td></tr></table>
 </div>
 </div><p>安装好mongodb以后创建mongodb数据存放目录和日志存放目录</p>
@@ -189,9 +194,9 @@ $ <span class="nb">source</span> ~/.bashrc
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">##  创建数据目录</span>
-$ <span class="nb">cd</span> /root/
-$ mkdir -p /mongodb/data
-$ mkdir -p /mongodb/log/
+<span class="nb">cd</span> /root/
+mkdir -p /mongodb/data
+mkdir -p /mongodb/log/
 </code></pre></td></tr></table>
 </div>
 </div><p>启动mongodb(并保持后台运行)</p>
@@ -202,7 +207,7 @@ $ mkdir -p /mongodb/log/
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#后台启动mongodb</span>
-$ mongod  --dbpath<span class="o">=</span>/root/mongodb/data --logpath<span class="o">=</span>/root/mongodb/log/mongodb.log --logappend <span class="p">&amp;</span>
+mongod  --dbpath<span class="o">=</span>/root/mongodb/data --logpath<span class="o">=</span>/root/mongodb/log/mongodb.log --logappend <span class="p">&amp;</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>解释：</p>
@@ -220,7 +225,7 @@ $ mongod  --dbpath<span class="o">=</span>/root/mongodb/data --logpath<span clas
 --logappend  防止日志被删除
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="redis安装">redis安装</h2>
+</div><h3 id="2redis安装">2.redis安装</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -254,26 +259,26 @@ $ mongod  --dbpath<span class="o">=</span>/root/mongodb/data --logpath<span clas
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#下载redis包</span>
-$ wget http://download.redis.io/releases/redis-4.0.14.tar.gz
+wget http://download.redis.io/releases/redis-4.0.14.tar.gz
 
 <span class="c1">#解压</span>
-$ tar -xvzf redis-4.0.14.tar.gz
+tar -xvzf redis-4.0.14.tar.gz
 
 <span class="c1">#重命名</span>
-$ mv redis-4.0.14 redis
-$ <span class="nb">cd</span> redis-4.0.14/
+mv redis-4.0.14 redis
+<span class="nb">cd</span> redis-4.0.14/
 
 <span class="c1">#安装gcc依赖</span>
-$ yum -y install gcc          
+yum -y install gcc          
 
 <span class="c1">#编译</span>
-$ make
+make
 
 <span class="c1"># 如报错可使用命令</span> 
-$ make <span class="nv">MALLOC</span><span class="o">=</span>libc
+make <span class="nv">MALLOC</span><span class="o">=</span>libc
 
 <span class="c1">#拷贝执行程序到bin</span>
-$ cp src/redis-server /usr/local/bin/
+cp src/redis-server /usr/local/bin/
 $ cp src/redis-cli /usr/local/bin/
 
 <span class="c1">#编辑redis配置文件</span>

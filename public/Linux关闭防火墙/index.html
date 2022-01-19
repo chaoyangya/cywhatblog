@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Linux关闭防火墙 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Linux关闭防火墙" />
-<meta property="og:description" content="注意:ConterOS7.0以上使用的是firewall，ConterOS7.0以下使用的是iptables 1.查看防火状态 1 2 3 $ systemctl status firewalld #" />
+<meta property="og:description" content="注意:ConterOS7.0以上使用的是firewall，ConterOS7.0以下使用的是iptables 1.查看防火状态 1 2 3 systemctl status firewalld #7" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cywhat.cn/Linux%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/" />
 <meta property="og:image" content="https://cywhat.cn"/>
@@ -17,7 +17,7 @@
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
 <meta name="twitter:title" content="Linux关闭防火墙"/>
-<meta name="twitter:description" content="注意:ConterOS7.0以上使用的是firewall，ConterOS7.0以下使用的是iptables 1.查看防火状态 1 2 3 $ systemctl status firewalld #"/>
+<meta name="twitter:description" content="注意:ConterOS7.0以上使用的是firewall，ConterOS7.0以下使用的是iptables 1.查看防火状态 1 2 3 systemctl status firewalld #7"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/Linux%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/" /><link rel="prev" href="https://cywhat.cn/DJango-Uncaught-ReferenceError-is-not-defined/" /><link rel="next" href="https://cywhat.cn/Tampermonkey-%E8%84%9A%E6%9C%AC-Aira2GUI%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/cywhat.cn\/Linux%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Linux","wordcount":  179 ,
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Linux","wordcount":  171 ,
         "url": "https:\/\/cywhat.cn\/Linux%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99\/","datePublished": "2021-09-01T10:43:37+00:00","dateModified": "2021-09-01T10:43:37+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
@@ -105,7 +105,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Linux关闭防火墙</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Linux/"><i class="far fa-folder fa-fw"></i>Linux</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-01">2021-09-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 179 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-01">2021-09-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 171 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/Linux%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/" class="leancloud_visitors" data-flag-title="Linux关闭防火墙">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -116,14 +116,18 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#1查看防火状态">1.查看防火状态</a></li>
-    <li><a href="#2暂时关闭防火墙">2.暂时关闭防火墙</a></li>
-    <li><a href="#3永久关闭防火墙">3.永久关闭防火墙</a></li>
-    <li><a href="#4重启防火墙">4.重启防火墙</a></li>
+    <li>
+      <ul>
+        <li><a href="#1查看防火状态">1.查看防火状态</a></li>
+        <li><a href="#2暂时关闭防火墙">2.暂时关闭防火墙</a></li>
+        <li><a href="#3永久关闭防火墙">3.永久关闭防火墙</a></li>
+        <li><a href="#4重启防火墙">4.重启防火墙</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><p><strong>注意:ConterOS7.0以上使用的是firewall，ConterOS7.0以下使用的是iptables</strong></p>
-<h2 id="1查看防火状态">1.查看防火状态</h2>
+<h3 id="1查看防火状态">1.查看防火状态</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -131,12 +135,12 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ systemctl status firewalld  <span class="c1">#7.0以上</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl status firewalld  <span class="c1">#7.0以上</span>
 
-$ service  iptables status  <span class="c1">#7.0以下</span>
+service  iptables status  <span class="c1">#7.0以下</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="2暂时关闭防火墙">2.暂时关闭防火墙</h2>
+</div><h3 id="2暂时关闭防火墙">2.暂时关闭防火墙</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -144,12 +148,12 @@ $ service  iptables status  <span class="c1">#7.0以下</span>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ syatemctl stop firewalld     <span class="c1">#7.0以上</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">syatemctl stop firewalld     <span class="c1">#7.0以上</span>
 
-$ service  iptables stop      <span class="c1">#7.0以下</span>
+service  iptables stop      <span class="c1">#7.0以下</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="3永久关闭防火墙">3.永久关闭防火墙</h2>
+</div><h3 id="3永久关闭防火墙">3.永久关闭防火墙</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -157,12 +161,12 @@ $ service  iptables stop      <span class="c1">#7.0以下</span>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ systemctl disable firewalld    <span class="c1">#7.0以上</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl disable firewalld    <span class="c1">#7.0以上</span>
 
-$ chkconfig iptables off     <span class="c1">#7.0以下</span>
+chkconfig iptables off     <span class="c1">#7.0以下</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="4重启防火墙">4.重启防火墙</h2>
+</div><h3 id="4重启防火墙">4.重启防火墙</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -170,9 +174,9 @@ $ chkconfig iptables off     <span class="c1">#7.0以下</span>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ systemctl <span class="nb">enable</span> firewalld  <span class="c1">#7.0以上</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl <span class="nb">enable</span> firewalld  <span class="c1">#7.0以上</span>
 
-$ service iptables restart  <span class="c1">#7.0以下</span>
+service iptables restart  <span class="c1">#7.0以下</span>
 </code></pre></td></tr></table>
 </div>
 </div><div class="post-reward">

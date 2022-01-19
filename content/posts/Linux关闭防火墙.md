@@ -10,39 +10,39 @@ categories: ["Linux"]
 
 
 
-## 1.查看防火状态
+### 1.查看防火状态
 ```bash
-$ systemctl status firewalld  #7.0以上
+systemctl status firewalld  #7.0以上
 
-$ service  iptables status  #7.0以下
+service  iptables status  #7.0以下
 ```
 
 
 
 
-## 2.暂时关闭防火墙
+### 2.暂时关闭防火墙
 ```bash
-$ syatemctl stop firewalld     #7.0以上
+syatemctl stop firewalld     #7.0以上
 
-$ service  iptables stop      #7.0以下
+service  iptables stop      #7.0以下
 ```
 
 
-## 3.永久关闭防火墙
+### 3.永久关闭防火墙
 ```bash
-$ systemctl disable firewalld    #7.0以上
+systemctl disable firewalld    #7.0以上
 
-$ chkconfig iptables off     #7.0以下
+chkconfig iptables off     #7.0以下
 ```
 
 
 
 
-## 4.重启防火墙
+### 4.重启防火墙
 ```bash
-$ systemctl enable firewalld  #7.0以上
+systemctl enable firewalld  #7.0以上
 
-$ service iptables restart  #7.0以下
+service iptables restart  #7.0以下
 ```
 
 

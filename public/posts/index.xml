@@ -73,6 +73,6 @@
     <pubDate>Wed, 17 Nov 2021 10:16:41 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/Linux%E4%BD%BF%E7%94%A8iftop%E6%9F%A5%E7%9C%8B%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/</guid>
-    <description><![CDATA[查看Linux系统下服务器带宽占用情况，使用iftop 1.安装iftop 1 2 3 centos: yum install iftop debian: apt-get install iftop 2.使用iftop 1 2 3 iftop -i eth1 #查看eth1网]]></description>
+    <description><![CDATA[1.安装iftop 1 2 3 centos: yum install iftop debian: apt-get install iftop 2.使用iftop 1 2 3 iftop -i eth1 #查看eth1网卡的带宽占用情况 iftop -i eth1 -P #显示详细端口流量占用 3.if]]></description>
 </item></channel>
 </rss>

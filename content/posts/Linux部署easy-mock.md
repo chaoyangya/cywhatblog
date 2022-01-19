@@ -5,7 +5,7 @@ draft: false
 tags: ["Easy_mock","Linux"]
 categories: ["Easy_mock"]
 ---
-前期准备：
+### 前期准备：
 1、Linux：CentOS Linux release 7.8.2003 (Core)
 2、mongodb：3.4.24
 3、redis：4.0.14
@@ -17,45 +17,45 @@ categories: ["Easy_mock"]
 > mongodb版本不要超过3.6.x
 
 
-## mongodb安装
+### 1.mongodb安装
 
 ```bash
-$ cd /usr/local/
+cd /usr/local/
 
 #下载mongodb包
-$ curl -O https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.4.24.tgz  
+curl -O https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.4.24.tgz  
 
 #解压  
-$ tar -zxvf mongodb-linux-x86_64-3.4.24.tgz
+tar -zxvf mongodb-linux-x86_64-3.4.24.tgz
 
 #重命名mongodb
-$ mv mongodb-linux-x86_64-3.4.24 mongodb
+mv mongodb-linux-x86_64-3.4.24 mongodb
  
 #编辑环境变量
-$ vi ~/.bashrc
+vi ~/.bashrc
 
 #环境变量
-$ export MONGO_HOME=/usr/local/mongodb
-$ export PATH=$MONGO_HOME/bin:$PATH
+export MONGO_HOME=/usr/local/mongodb
+export PATH=$MONGO_HOME/bin:$PATH
 
 #让环境变量生效
-$ source ~/.bashrc
+source ~/.bashrc
 ```
 
 安装好mongodb以后创建mongodb数据存放目录和日志存放目录
 
 ```bash
 ##  创建数据目录
-$ cd /root/
-$ mkdir -p /mongodb/data
-$ mkdir -p /mongodb/log/
+cd /root/
+mkdir -p /mongodb/data
+mkdir -p /mongodb/log/
 ```
 
 启动mongodb(并保持后台运行)
 
 ```bash
 #后台启动mongodb
-$ mongod  --dbpath=/root/mongodb/data --logpath=/root/mongodb/log/mongodb.log --logappend &
+mongod  --dbpath=/root/mongodb/data --logpath=/root/mongodb/log/mongodb.log --logappend &
 ```
 
 解释：
@@ -66,30 +66,30 @@ $ mongod  --dbpath=/root/mongodb/data --logpath=/root/mongodb/log/mongodb.log --
 --logpath 	 日志存放目录
 --logappend  防止日志被删除
 ```
-## redis安装
+### 2.redis安装
 
 ```bash
 #下载redis包
-$ wget http://download.redis.io/releases/redis-4.0.14.tar.gz
+wget http://download.redis.io/releases/redis-4.0.14.tar.gz
 
 #解压
-$ tar -xvzf redis-4.0.14.tar.gz
+tar -xvzf redis-4.0.14.tar.gz
 
 #重命名
-$ mv redis-4.0.14 redis
-$ cd redis-4.0.14/
+mv redis-4.0.14 redis
+cd redis-4.0.14/
 
 #安装gcc依赖
-$ yum -y install gcc          
+yum -y install gcc          
 
 #编译
-$ make
+make
 
 # 如报错可使用命令 
-$ make MALLOC=libc
+make MALLOC=libc
 
 #拷贝执行程序到bin
-$ cp src/redis-server /usr/local/bin/
+cp src/redis-server /usr/local/bin/
 $ cp src/redis-cli /usr/local/bin/
 
 #编辑redis配置文件

@@ -16,10 +16,10 @@ categories: ["Sonarqube"]
 
 
 
-## 1.安装Jdk
+### 1.安装Jdk
 [安装JDK](https://cywhat.cn/linux%E5%AE%89%E8%A3%85jdk11/)
 
-## 2.安装PostgreSQL
+### 2.安装PostgreSQL
 ```bash
 1.安装镜像
 sudo yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
@@ -42,7 +42,7 @@ sudo systemctl start postgresql-12
 ![img17](/img/img17.png)
 
 
-## 3.安装SonarQube
+### 3.安装SonarQube
 ```bash
 1.下载SonarQube
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.2.0.32929.zip
@@ -54,7 +54,7 @@ unzip sonarqube-8.2.0.32929.zip
 mv sonarqube-8.2.0.32929 /usr/local/sonarqube
 ```
 
-## 4.添加用户
+### 4.添加用户
 ```bash
 1.新增用户
 sudo adduser sonar
@@ -67,7 +67,7 @@ chmod -R sonar:sonar /usr/local/sonarqube
 ```
 
 
-## 5.进入PostgreSQL配置数据库
+### 5.进入PostgreSQL配置数据库
 ```bash
 1.切换到postgre用户
 sudo su - postgre
@@ -85,7 +85,7 @@ GRANT ALL PRIVILEGES ON DATABASE sonar TO sonar;
 ALTER DATABASE sonar OWNER TO sonar;
 ```
 
-## 6.修改sonarqube配置
+### 6.修改sonarqube配置
 ```bash
 1.vim /usr/local/sonarqube/conf/sonar.properties   #加入如下配置
 
@@ -109,7 +109,7 @@ sonar.search.port=9001  #修改search端口,如果端口冲突必须要更改噢
 
 ```
 
-## 7.启动sonarqube
+### 7.启动sonarqube
 ```bash
 su sonar    #必须用非root启动
 
@@ -118,7 +118,7 @@ cd /usr/local/sonarqube/bin/linux-x86-64/
 sh  sonar.sh start
 ```
 
-## 8.安装sonar-scanner
+### 8.安装sonar-scanner
 
 [下载sonar-scanner](https://pan.baidu.com/s/1rIs2oMba5LTvpAcdz75lZg)
 

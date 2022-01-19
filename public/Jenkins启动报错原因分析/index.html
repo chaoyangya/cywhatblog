@@ -116,12 +116,16 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#1启动jenkins">1.启动jenkins</a></li>
-    <li><a href="#2查看jenkins启动状态">2.查看jenkins启动状态</a></li>
-    <li><a href="#3分析报错原因">3.分析报错原因</a></li>
+    <li>
+      <ul>
+        <li><a href="#1启动jenkins">1.启动jenkins</a></li>
+        <li><a href="#2查看jenkins启动状态">2.查看jenkins启动状态</a></li>
+        <li><a href="#3分析报错原因">3.分析报错原因</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="1启动jenkins">1.启动jenkins</h2>
+            </div><div class="content" id="content"><h3 id="1启动jenkins">1.启动jenkins</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -130,7 +134,7 @@
 <pre class="chroma"><code class="language-bash" data-lang="bash">systemctl start jenkins   <span class="c1">#如果命令不可使用，首先要把jenkins放到系统启动配置中，详情请百度</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="2查看jenkins启动状态">2.查看jenkins启动状态</h2>
+</div><h3 id="2查看jenkins启动状态">2.查看jenkins启动状态</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -139,7 +143,7 @@
 <pre class="chroma"><code class="language-bash" data-lang="bash">systemctl status jenkins.service
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="3分析报错原因">3.分析报错原因</h2>
+</div><h3 id="3分析报错原因">3.分析报错原因</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
