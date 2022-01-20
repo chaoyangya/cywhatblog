@@ -4,12 +4,33 @@
         <link>https://cywhat.cn/tags/</link>
         <description>Tags - 标签 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 05 Jan 2022 10:49:45 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 20 Jan 2022 11:06:19 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Granafa</title>
+    <link>https://cywhat.cn/tags/Granafa/</link>
+    <pubDate>Thu, 20 Jan 2022 11:06:19 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/tags/Granafa/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Linux</title>
     <link>https://cywhat.cn/tags/Linux/</link>
-    <pubDate>Wed, 05 Jan 2022 10:49:45 &#43;0800</pubDate>
+    <pubDate>Thu, 20 Jan 2022 11:06:19 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/tags/Linux/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>node_exporter</title>
+    <link>https://cywhat.cn/tags/node_exporter/</link>
+    <pubDate>Thu, 20 Jan 2022 11:06:19 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/tags/node_exporter/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>prometheus</title>
+    <link>https://cywhat.cn/tags/prometheus/</link>
+    <pubDate>Thu, 20 Jan 2022 11:06:19 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/tags/prometheus/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Ntpdate</title>
@@ -52,27 +73,6 @@
     <pubDate>Tue, 12 Oct 2021 18:14:32 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/tags/Django/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Avn</title>
-    <link>https://cywhat.cn/tags/Avn/</link>
-    <pubDate>Wed, 29 Sep 2021 17:23:33 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/tags/Avn/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Node</title>
-    <link>https://cywhat.cn/tags/Node/</link>
-    <pubDate>Wed, 29 Sep 2021 17:23:33 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/tags/Node/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Hexo</title>
-    <link>https://cywhat.cn/tags/Hexo/</link>
-    <pubDate>Fri, 24 Sep 2021 17:51:42 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/tags/Hexo/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

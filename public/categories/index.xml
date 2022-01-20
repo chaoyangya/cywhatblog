@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/categories/</link>
         <description>Categories - 分类 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 05 Jan 2022 10:49:45 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 20 Jan 2022 11:06:19 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Granafa</title>
+    <link>https://cywhat.cn/categories/Granafa/</link>
+    <pubDate>Thu, 20 Jan 2022 11:06:19 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/Granafa/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Linux</title>
     <link>https://cywhat.cn/categories/Linux/</link>
     <pubDate>Wed, 05 Jan 2022 10:49:45 &#43;0800</pubDate>
@@ -66,13 +73,6 @@
     <pubDate>Wed, 29 Sep 2021 17:23:33 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/categories/Avn/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Hexo</title>
-    <link>https://cywhat.cn/categories/Hexo/</link>
-    <pubDate>Fri, 24 Sep 2021 17:51:42 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/Hexo/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
