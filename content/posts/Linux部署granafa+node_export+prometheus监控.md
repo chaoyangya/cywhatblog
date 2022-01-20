@@ -6,7 +6,7 @@ tags: ["Granafa","Linux","node_exporter","prometheus"]
 categories: ["Granafa"]
 ---
 
-### 1、下载安装Node_export
+### 1、下载安装Node_exporter
 ```bash
 #1.下载
 wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz
@@ -97,6 +97,7 @@ PS：默认用户名密码都是admin,第一次登录需要修改密码
 [下载中文版node仪表盘](https://grafana.com/grafana/dashboards/8919)
 
 **下载JSON包**
+
 ![img46.png](/img/img46.png)
 
 

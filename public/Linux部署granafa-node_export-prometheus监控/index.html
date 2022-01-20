@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Linux部署granafa&#43;node_exporter&#43;prometheus监控 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Linux部署granafa&#43;node_exporter&#43;prometheus监控" />
-<meta property="og:description" content="1、下载安装Node_export 1 2 3 4 5 6 7 8 9 10 11 #1.下载 wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz #2.解压 tar -zvxf node_exporter-1.3.1.linux-amd64.tar.gz #3.重命名 mv node_exporter-1.3.1.linux-amd64.tar.gz /usr/local/soft/node_exporter #4.启动并常驻后台,默认端口为91" />
+<meta property="og:description" content="1、下载安装Node_exporter 1 2 3 4 5 6 7 8 9 10 11 #1.下载 wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz #2.解压 tar -zvxf node_exporter-1.3.1.linux-amd64.tar.gz #3.重命名 mv node_exporter-1.3.1.linux-amd64.tar.gz /usr/local/soft/node_exporter #4.启动并常驻后台,默认端口为" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cywhat.cn/Linux%E9%83%A8%E7%BD%B2granafa-node_export-prometheus%E7%9B%91%E6%8E%A7/" />
 <meta property="og:image" content="https://cywhat.cn"/>
@@ -17,7 +17,7 @@
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
 <meta name="twitter:title" content="Linux部署granafa&#43;node_exporter&#43;prometheus监控"/>
-<meta name="twitter:description" content="1、下载安装Node_export 1 2 3 4 5 6 7 8 9 10 11 #1.下载 wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz #2.解压 tar -zvxf node_exporter-1.3.1.linux-amd64.tar.gz #3.重命名 mv node_exporter-1.3.1.linux-amd64.tar.gz /usr/local/soft/node_exporter #4.启动并常驻后台,默认端口为91"/>
+<meta name="twitter:description" content="1、下载安装Node_exporter 1 2 3 4 5 6 7 8 9 10 11 #1.下载 wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz #2.解压 tar -zvxf node_exporter-1.3.1.linux-amd64.tar.gz #3.重命名 mv node_exporter-1.3.1.linux-amd64.tar.gz /usr/local/soft/node_exporter #4.启动并常驻后台,默认端口为"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/Linux%E9%83%A8%E7%BD%B2granafa-node_export-prometheus%E7%9B%91%E6%8E%A7/" /><link rel="prev" href="https://cywhat.cn/Linux%E9%85%8D%E7%BD%AE%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/cywhat.cn\/Linux%E9%83%A8%E7%BD%B2granafa-node_export-prometheus%E7%9B%91%E6%8E%A7\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Granafa, Linux, node_exporter, prometheus","wordcount":  484 ,
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Granafa, Linux, node_exporter, prometheus","wordcount":  486 ,
         "url": "https:\/\/cywhat.cn\/Linux%E9%83%A8%E7%BD%B2granafa-node_export-prometheus%E7%9B%91%E6%8E%A7\/","datePublished": "2022-01-20T11:06:19+08:00","dateModified": "2022-01-20T11:06:19+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
@@ -105,7 +105,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Linux部署granafa&#43;node_exporter&#43;prometheus监控</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Granafa/"><i class="far fa-folder fa-fw"></i>Granafa</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-01-20">2022-01-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 484 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-01-20">2022-01-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 486 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/Linux%E9%83%A8%E7%BD%B2granafa-node_export-prometheus%E7%9B%91%E6%8E%A7/" class="leancloud_visitors" data-flag-title="Linux部署granafa&#43;node_exporter&#43;prometheus监控">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -118,7 +118,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#1下载安装node_export">1、下载安装Node_export</a></li>
+        <li><a href="#1下载安装node_exporter">1、下载安装Node_exporter</a></li>
         <li><a href="#2下载安装prometheus">2.下载安装prometheus</a></li>
         <li><a href="#3下载安装granafa">3.下载安装granafa</a></li>
         <li><a href="#4web访问granafa-url">4.web访问granafa-url</a></li>
@@ -132,7 +132,7 @@
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h3 id="1下载安装node_export">1、下载安装Node_export</h3>
+            </div><div class="content" id="content"><h3 id="1下载安装node_exporter">1、下载安装Node_exporter</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -298,8 +298,8 @@ eg:
         title="img45.png" /></p>
 <h3 id="8官网下载仪表盘">8.官网下载仪表盘</h3>
 <p><a href="https://grafana.com/grafana/dashboards/8919" target="_blank" rel="noopener noreffer">下载中文版node仪表盘</a></p>
-<p><strong>下载JSON包</strong>
-<img
+<p><strong>下载JSON包</strong></p>
+<p><img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="/img/img46.png"
