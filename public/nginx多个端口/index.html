@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>nginx解决多个端口映射80的配置 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="nginx解决多个端口映射80的配置" />
-<meta property="og:description" content="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 $ server { listen 80; server_name xx.cn; #域名1 location / { proxy_pass http://x.x.x.x:9001; #域名1需要映射到80端口的服务端口 } } server { listen 80; server_name xx.cn; #域名2 location / { proxy_pass http://xx.xx.xx.xx:7300; #域" />
+<meta property="og:description" content="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 server { listen 80; server_name xx.cn; #域名1 location / { proxy_pass http://x.x.x.x:9001; #域名1需要映射到80端口的服务端口 } } server { listen 80; server_name xx.cn; #域名2 location / { proxy_pass http://xx.xx.xx.xx:7300; #域名" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cywhat.cn/nginx%E5%A4%9A%E4%B8%AA%E7%AB%AF%E5%8F%A3/" />
 <meta property="og:image" content="https://cywhat.cn"/>
@@ -17,7 +17,7 @@
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
 <meta name="twitter:title" content="nginx解决多个端口映射80的配置"/>
-<meta name="twitter:description" content="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 $ server { listen 80; server_name xx.cn; #域名1 location / { proxy_pass http://x.x.x.x:9001; #域名1需要映射到80端口的服务端口 } } server { listen 80; server_name xx.cn; #域名2 location / { proxy_pass http://xx.xx.xx.xx:7300; #域"/>
+<meta name="twitter:description" content="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 server { listen 80; server_name xx.cn; #域名1 location / { proxy_pass http://x.x.x.x:9001; #域名1需要映射到80端口的服务端口 } } server { listen 80; server_name xx.cn; #域名2 location / { proxy_pass http://xx.xx.xx.xx:7300; #域名"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/nginx%E5%A4%9A%E4%B8%AA%E7%AB%AF%E5%8F%A3/" /><link rel="prev" href="https://cywhat.cn/Linux%E9%83%A8%E7%BD%B2easy-mock/" /><link rel="next" href="https://cywhat.cn/supervisord%E7%AE%A1%E7%90%86%E5%B8%B8%E9%A9%BB%E8%BF%9B%E7%A8%8Buwsgi-nginx-redis-mongodb/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/cywhat.cn\/nginx%E5%A4%9A%E4%B8%AA%E7%AB%AF%E5%8F%A3\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Nginx, Linux","wordcount":  133 ,
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Nginx, Linux","wordcount":  132 ,
         "url": "https:\/\/cywhat.cn\/nginx%E5%A4%9A%E4%B8%AA%E7%AB%AF%E5%8F%A3\/","datePublished": "2021-04-16T10:12:11+00:00","dateModified": "2021-04-16T10:12:11+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
@@ -105,7 +105,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">nginx解决多个端口映射80的配置</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Nginx/"><i class="far fa-folder fa-fw"></i>Nginx</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-04-16">2021-04-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 133 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-04-16">2021-04-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 132 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/nginx%E5%A4%9A%E4%B8%AA%E7%AB%AF%E5%8F%A3/" class="leancloud_visitors" data-flag-title="nginx解决多个端口映射80的配置">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -144,7 +144,7 @@
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ server <span class="o">{</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">server <span class="o">{</span>
     listen       80<span class="p">;</span>
     server_name  xx.cn<span class="p">;</span>  <span class="c1">#域名1</span>
 

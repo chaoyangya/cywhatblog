@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/cywhat.cn\/Python-virtualenv-Django-nginx-uwsgi-centos7%E9%83%A8%E7%BD%B2web%E5%BA%94%E7%94%A8\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Linux, Nginx, Django","wordcount":  1330 ,
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Linux, Nginx, Django","wordcount":  1366 ,
         "url": "https:\/\/cywhat.cn\/Python-virtualenv-Django-nginx-uwsgi-centos7%E9%83%A8%E7%BD%B2web%E5%BA%94%E7%94%A8\/","datePublished": "2021-03-11T17:09:24+00:00","dateModified": "2021-03-11T17:09:24+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
@@ -105,7 +105,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Python&#43;virtualenv&#43;Django&#43;nginx&#43;uwsgi&#43;centos7部署web应用</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Python/"><i class="far fa-folder fa-fw"></i>Python</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-11">2021-03-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1330 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-11">2021-03-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1366 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;<span id="/Python-virtualenv-Django-nginx-uwsgi-centos7%E9%83%A8%E7%BD%B2web%E5%BA%94%E7%94%A8/" class="leancloud_visitors" data-flag-title="Python&#43;virtualenv&#43;Django&#43;nginx&#43;uwsgi&#43;centos7部署web应用">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -116,19 +116,29 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#我的环境">我的环境</a></li>
-    <li><a href="#1上传clone项目至服务器">1、上传/clone项目至服务器</a></li>
-    <li><a href="#2安装python370">2、安装python3.7.0</a></li>
-    <li><a href="#安装虚拟环境">安装虚拟环境</a></li>
-    <li><a href="#安装uwsgi">安装uwsgi</a></li>
-    <li><a href="#安装nginx">安装nginx</a></li>
-    <li><a href="#django项目数据库迁移">django项目数据库迁移</a></li>
-    <li><a href="#启动uwsgi">启动uwsgi</a></li>
-    <li><a href="#疑难解答">疑难解答</a></li>
+    <li>
+      <ul>
+        <li><a href="#我的环境">我的环境</a></li>
+        <li><a href="#1上传clone项目至服务器">1.上传/clone项目至服务器</a></li>
+        <li><a href="#2安装python370">2.安装python3.7.0</a></li>
+        <li><a href="#3安装虚拟环境">3.安装虚拟环境</a></li>
+        <li><a href="#4安装uwsgi">4.安装uwsgi</a></li>
+        <li><a href="#5安装nginx">5.安装nginx</a></li>
+        <li><a href="#6django项目数据库迁移">6.django项目数据库迁移</a></li>
+        <li><a href="#7启动uwsgi">7.启动uwsgi</a></li>
+        <li><a href="#8疑难解答">8.疑难解答</a>
+          <ul>
+            <li><a href="#1启动uwsgiini报错">1、启动uwsgi.ini报错</a></li>
+            <li><a href="#2部署项目完成以后而且静态资源也已经迁移访问资源还是403修改nginx的使用用户为root即可">2、部署项目完成以后，而且静态资源也已经迁移，访问资源还是403，修改nginx的使用用户为root即可</a></li>
+            <li><a href="#3nginx部署完成后出现-bash-nginx-command-not-found-添加nginx的环境变量即可">3、nginx部署完成后，出现-bash: nginx: command not found 添加nginx的环境变量即可</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><p>给公司写的一个工具平台，先部署到自己的服务器上进行测试，真是困难重重，此文章仅记录自己踩坑过程和搭建教程，不保证你能按照教程成功搭建，但能把坑提前暴露出来，避免大家重复踩坑！</p>
-<h2 id="我的环境">我的环境</h2>
+<h3 id="我的环境">我的环境</h3>
 <ol>
 <li><strong>部署服务器</strong> ：CentOS Linux release 7.8.2003 (Core)</li>
 <li><strong>Python</strong>：3.7.0</li>
@@ -137,175 +147,129 @@
 <li><strong>Uwsgi</strong>：2.0.19.1</li>
 <li><strong>操作机</strong>：mac + iterm2</li>
 </ol>
-<h2 id="1上传clone项目至服务器">1、上传/clone项目至服务器</h2>
+<h3 id="1上传clone项目至服务器">1.上传/clone项目至服务器</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ git/xftp均可
+<pre class="chroma"><code class="language-bash" data-lang="bash">git/xftp均可
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="2安装python370">2、安装python3.7.0</h2>
-<p>安装python3.7.0：</p>
+</div><h3 id="2安装python370">2.安装python3.7.0</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ wget http://www.python.org/ftp/python/3.7.0/Python-3.7.0.tgz
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#安装python3.7.0</span>
+wget http://www.python.org/ftp/python/3.7.0/Python-3.7.0.tgz
+
+<span class="c1">#解压</span>
+tar -xvzf Python-3.7.0.tgz
+
+<span class="c1">#进入文件夹</span>
+<span class="nb">cd</span> Python-3.7.0
+
+<span class="c1">#执行配置文件</span>
+./configure --with-ssl
+
+<span class="c1">#编译&amp;安装</span>
+make  <span class="p">&amp;</span>   make install
+
+<span class="c1">#建立软连接</span>
+ln -s /usr/local/python3/bin/python3.7 /usr/bin/python3
+ln -s /usr/local/python3/bin/pip3.7 /usr/bin/pip3
+
+<span class="c1">#检测python3版本</span>
+python3 -V
 </code></pre></td></tr></table>
 </div>
-</div><p>解压</p>
+</div><h3 id="3安装虚拟环境">3.安装虚拟环境</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ tar -xvzf Python-3.7.0.tgz
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#安装虚拟环境</span>
+pip3 install virtualenv
+
+<span class="c1">#新建虚拟环境文件夹</span>
+mkdir pyenv
+
+<span class="c1">#进入虚拟环境文件夹</span>
+<span class="nb">cd</span> pyenv
+
+<span class="c1">#安装虚拟环境</span>
+virtualenv  -p python3 myenv
+
+<span class="c1">#激活虚拟环境</span>
+<span class="nb">source</span> /myenv/bin/activate
+
+<span class="c1">#安装项目所需组件</span>
+pip3 install -r requriements.txt
+
+<span class="c1">#pip安装依赖太慢使用douban源</span>
+pip install xx -i http://pypi.douban.com/simple/
 </code></pre></td></tr></table>
 </div>
-</div><p>进入文件夹</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> Python-3.7.0
-</code></pre></td></tr></table>
-</div>
-</div><p>执行配置文件</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ ./configure --with-ssl
-</code></pre></td></tr></table>
-</div>
-</div><p>编译</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ make    
-</code></pre></td></tr></table>
-</div>
-</div><p>安装</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo make install
-</code></pre></td></tr></table>
-</div>
-</div><p>建立软连接</p>
+</div><h3 id="4安装uwsgi">4.安装uwsgi</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ ln -s /usr/local/python3/bin/python3.7 /usr/bin/python3
-$ ln -s /usr/local/python3/bin/pip3.7 /usr/bin/pip3
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#安装uwsgi</span>
+pip3 install uwsgi
+
+<span class="c1">#在项目根目录添加 .ini 结尾的uwsgi配置文件</span>
+touch uwsgi.ini  <span class="c1">#(这里的uwsgi可以自己命名)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>检测python3版本</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$  python3 -V
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="安装虚拟环境">安装虚拟环境</h2>
-<p>1、安装虚拟环境</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ pip3 install virtualenv
-</code></pre></td></tr></table>
-</div>
-</div><p>2、新建虚拟环境文件夹</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir pyenv
-</code></pre></td></tr></table>
-</div>
-</div><p>3、进入虚拟环境文件夹</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> pyenv
-</code></pre></td></tr></table>
-</div>
-</div><p>4、安装虚拟环境</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ virtualenv  -p python3 myenv
-</code></pre></td></tr></table>
-</div>
-</div><p>5、激活虚拟环境</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">source</span> /myenv/bin/activate
-</code></pre></td></tr></table>
-</div>
-</div><p>6、安装项目所需组件</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ pip3 install -r requriements.txt
-</code></pre></td></tr></table>
-</div>
-</div><p>7、pip安装依赖太慢使用douban源</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ pip install xx -i http://pypi.douban.com/simple/
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="安装uwsgi">安装uwsgi</h2>
-<p>1、安装uwsgi</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ pip3 install uwsgi
-</code></pre></td></tr></table>
-</div>
-</div><p>2、在项目根目录添加 .ini 结尾的uwsgi配置文件</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ touch uwsgi.ini <span class="o">(</span>这里的uwsgi可以自己命名<span class="o">)</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>3、修改uwsgi.ini配置文件</p>
-<div class="highlight"><div class="chroma">
+</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -335,9 +299,11 @@ $ ln -s /usr/local/python3/bin/pip3.7 /usr/bin/pip3
 </span><span class="lnt">26
 </span><span class="lnt">27
 </span><span class="lnt">28
+</span><span class="lnt">29
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>uwsgi<span class="o">]</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#修改uwsgi.ini配置文件</span>
+<span class="o">[</span>uwsgi<span class="o">]</span>
 <span class="c1">#http只能用于wusgi自己调试 要跟nginx通信需要用sockt 使用内网ip</span>
 <span class="c1">#http=111.11.11.1:9003</span>  
 <span class="nv">socket</span> <span class="o">=</span> 111.11.11.1:9001
@@ -367,82 +333,61 @@ wsgi-file <span class="o">=</span> mydjango/wsgi.py
 <span class="nv">daemonize</span> <span class="o">=</span> /root/mydjango/uwsgi.log
 </code></pre></td></tr></table>
 </div>
-</div><p>这里先不启动uwsgi，后面等nginx安装好了一起启动即可</p>
-<h2 id="安装nginx">安装nginx</h2>
-<p>1、安装依赖</p>
+</div><p><strong>这里先不启动uwsgi，后面等nginx安装好了一起启动即可</strong></p>
+<h3 id="5安装nginx">5.安装nginx</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ yum -y install gcc pcre-devel zlib-devel openssl openssl-devel
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#安装依赖</span>
+yum -y install gcc pcre-devel zlib-devel openssl openssl-devel
+
+<span class="c1">#下载nginx</span>
+wget http://nginx.org/download/nginx-1.16.1.tar.gz 
+
+<span class="c1">#新建文件夹</span>
+mkdir /usr/loacl/nginx
+
+<span class="c1">#解压nginx包</span>
+tar -zxvf nginx-1.16.1.tar.gz
+
+<span class="c1">#进入解压后的nginx目录</span>
+<span class="nb">cd</span> nginx-1.16.1/
+
+<span class="c1">#指定安装路径</span>
+./configure  --prefix<span class="o">=</span>/usr/local/nginx
+
+<span class="c1">#编译安装</span>
+make <span class="o">&amp;&amp;</span> make install
+
+<span class="c1">#修改nginx.conf配置</span>
+vim /usr/local/nginx/conf/nginx.conf  
 </code></pre></td></tr></table>
 </div>
-</div><p>2、下载nginx</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$  wget http://nginx.org/download/nginx-1.16.1.tar.gz 
-</code></pre></td></tr></table>
-</div>
-</div><p>3、新建文件夹</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ mkdir /usr/loacl/nginx
-</code></pre></td></tr></table>
-</div>
-</div><p>4、解压nginx包</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ tar -zxvf nginx-1.16.1.tar.gz
-</code></pre></td></tr></table>
-</div>
-</div><p>5、进入解压后的nginx目录</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> nginx-1.16.1/
-</code></pre></td></tr></table>
-</div>
-</div><p>6、编译</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ ./configure  --prefix<span class="o">=</span>/usr/local/nginx
-</code></pre></td></tr></table>
-</div>
-</div><p>7、安装</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ make <span class="o">&amp;&amp;</span> make install
-</code></pre></td></tr></table>
-</div>
-</div><p>8、修改nginx.conf配置即可</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ vim /usr/local/nginx/conf/nginx.conf
-</code></pre></td></tr></table>
-</div>
-</div><p>修改内容如下</p>
-<div class="highlight"><div class="chroma">
+</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -470,9 +415,11 @@ wsgi-file <span class="o">=</span> mydjango/wsgi.py
 </span><span class="lnt">24
 </span><span class="lnt">25
 </span><span class="lnt">26
+</span><span class="lnt">27
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">server <span class="o">{</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#修改内容如下</span>
+server <span class="o">{</span>
         listen       80<span class="p">;</span> <span class="c1">#这里80端口要注意别被其他程序占用</span>
         listen       <span class="o">[</span>::<span class="o">]</span>:80
         server_name  xxx.xxx.xx.x<span class="p">;</span> <span class="c1">#这里的ip要换成外网可以访问的ip</span>
@@ -500,87 +447,76 @@ wsgi-file <span class="o">=</span> mydjango/wsgi.py
         <span class="o">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>启动nginx</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> /usr/loacl/nginx/sbin
-</code></pre></td></tr></table>
-</div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ ./nginx
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#进入文件夹</span>
+<span class="nb">cd</span> /usr/loacl/nginx/sbin
+
+<span class="c1">#启动nginx</span>
+./nginx
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="django项目数据库迁移">django项目数据库迁移</h2>
-<p>1、进入虚拟环境</p>
+</div><h3 id="6django项目数据库迁移">6.django项目数据库迁移</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">source</span> /myenv/bin/activate
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#进入且激活虚拟环境</span>
+<span class="nb">source</span> /myenv/bin/activate
+
+<span class="c1">#迁移数据库</span>
+python3 manage.py makemigrations
+python3 manage.py migrate
+
+<span class="c1">#迁移静态文件</span>
+python3 manage.py collectstatic
 </code></pre></td></tr></table>
 </div>
-</div><p>2、迁移数据库</p>
+</div><h3 id="7启动uwsgi">7.启动uwsgi</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ python3 manage.py makemigrations
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#启动uwsgi</span>
+uwsgi -d --ini uwsgi.ini <span class="c1"># -d 可以让uwsgi保持在后台运行</span>
 </code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ python3 manage.py migrate
-</code></pre></td></tr></table>
-</div>
-</div><p>3、迁移静态文件</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ python3 manage.py collectstatic
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="启动uwsgi">启动uwsgi</h2>
-<p>1、启动uwsgi</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ uwsgi -d --ini uwsgi.ini <span class="c1"># -d 可以让uwsgi保持在后台运行</span>
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="疑难解答">疑难解答</h2>
-<p>1、启动uwsgi.ini报错</p>
+</div><h3 id="8疑难解答">8.疑难解答</h3>
+<h4 id="1启动uwsgiini报错">1、启动uwsgi.ini报错</h4>
 <p>WARNING: Can&rsquo;t find section &ldquo;uwsgi&rdquo; in INI configuration file uwsgi.ini</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ 原因：uwsgi.ini头部没有添加<span class="o">[</span>uwsgi<span class="o">]</span> 头部文件 添加完成以后即可
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#原因：uwsgi.ini头部没有添加[uwsgi] 头部文件 添加完成以后即可</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>2、部署项目完成以后，而且静态资源也已经迁移，访问资源还是403，修改nginx的使用用户为root即可</p>
+</div><h4 id="2部署项目完成以后而且静态资源也已经迁移访问资源还是403修改nginx的使用用户为root即可">2、部署项目完成以后，而且静态资源也已经迁移，访问资源还是403，修改nginx的使用用户为root即可</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ vim /usr/local/nginx/conf/nginx.conf
+<pre class="chroma"><code class="language-bash" data-lang="bash">vim /usr/local/nginx/conf/nginx.conf
 </code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
@@ -599,37 +535,38 @@ wsgi-file <span class="o">=</span> mydjango/wsgi.py
         data-sizes="auto"
         alt="https://img-blog.csdnimg.cn/20210311170330559.png"
         title="在这里插入图片描述" /></p>
-<p>3、nginx部署完成后，出现-bash: nginx: command not found 添加nginx的环境变量即可</p>
+<h4 id="3nginx部署完成后出现-bash-nginx-command-not-found-添加nginx的环境变量即可">3、nginx部署完成后，出现-bash: nginx: command not found 添加nginx的环境变量即可</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ vim /etc/profile
+<pre class="chroma"><code class="language-bash" data-lang="bash">vim /etc/profile
 </code></pre></td></tr></table>
 </div>
-</div><p>在末尾加入：</p>
-<div class="highlight"><div class="chroma">
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#在末尾加入</span>
+<span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/var/local/nginx/sbin
+<span class="nb">export</span> PATH
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/var/local/nginx/sbin
-$ <span class="nb">export</span> PATH
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#然后让配置生效</span>
+<span class="nb">source</span> /etc/prifile   <span class="c1">#然后就可以使用nginx快捷命令了</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>然后让配置生效</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">source</span> /etc/prifile
-</code></pre></td></tr></table>
-</div>
-</div><p>然后就可以使用nginx快捷命令了</p>
-<div class="post-reward">
+</div><div class="post-reward">
     <input type="checkbox" name="reward" id="reward" hidden/>
     <label class="reward-button" for="reward">赞赏支持</label>
     <div class="qr-code">

@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>no such table:django_session - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="no such table:django_session" />
-<meta property="og:description" content="出现上述问题是django没有django_session表 错误跟Session的机制相关 既然要从Web服务器端来记录用户信息， 那么一定要有" />
+<meta property="og:description" content="出现的问题是django没有django_session表 错误跟Session的机制相关 既然要从Web服务器端来记录用户信息， 那么一定要有存" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cywhat.cn/no-such-table-django-session/" />
 <meta property="og:image" content="https://cywhat.cn"/>
@@ -17,7 +17,7 @@
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
 <meta name="twitter:title" content="no such table:django_session"/>
-<meta name="twitter:description" content="出现上述问题是django没有django_session表 错误跟Session的机制相关 既然要从Web服务器端来记录用户信息， 那么一定要有"/>
+<meta name="twitter:description" content="出现的问题是django没有django_session表 错误跟Session的机制相关 既然要从Web服务器端来记录用户信息， 那么一定要有存"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/no-such-table-django-session/" /><link rel="prev" href="https://cywhat.cn/pip%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%A4%B1%E8%B4%A5%E6%8B%92%E7%BB%9D%E8%BF%9E%E6%8E%A5/" /><link rel="next" href="https://cywhat.cn/nginx%E9%85%8D%E7%BD%AE%E5%AE%9E%E7%8E%B0ip%E8%AE%BF%E9%97%AE%E6%8C%87%E5%AE%9AURL/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
@@ -114,12 +114,21 @@
                     <span>目录</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><p><strong>出现上述问题是django没有django_session表</strong></p>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#django创建存放session表命令如下">django创建存放session表命令如下：</a></li>
+        <li><a href="#出现很多绿色的ok即创建完成">!出现很多绿色的ok即创建完成</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><strong>出现的问题是django没有django_session表</strong></p>
 <p>错误跟Session的机制相关
 既然要从Web服务器端来记录用户信息，
 那么一定要有存放用户session id对应信息的地方才行</p>
-<p>django创建存放session表命令如下：</p>
+<h3 id="django创建存放session表命令如下">django创建存放session表命令如下：</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -128,7 +137,7 @@
 <pre class="chroma"><code class="language-bash" data-lang="bash">$ python manage.py migrate
 </code></pre></td></tr></table>
 </div>
-</div><p>出现很多绿色的ok即创建完成</p>
+</div><h3 id="出现很多绿色的ok即创建完成">!出现很多绿色的ok即创建完成</h3>
 <div class="post-reward">
     <input type="checkbox" name="reward" id="reward" hidden/>
     <label class="reward-button" for="reward">赞赏支持</label>

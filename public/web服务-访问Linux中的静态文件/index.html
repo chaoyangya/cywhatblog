@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/cywhat.cn\/web%E6%9C%8D%E5%8A%A1-%E8%AE%BF%E9%97%AELinux%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Nginx, Linux","wordcount":  277 ,
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Nginx, Linux","wordcount":  275 ,
         "url": "https:\/\/cywhat.cn\/web%E6%9C%8D%E5%8A%A1-%E8%AE%BF%E9%97%AELinux%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6\/","datePublished": "2021-03-29T18:04:20+00:00","dateModified": "2021-03-29T18:04:20+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
@@ -105,7 +105,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">web服务 访问Linux中的静态文件</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Nginx/"><i class="far fa-folder fa-fw"></i>Nginx</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-29">2021-03-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 277 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-29">2021-03-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 275 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/web%E6%9C%8D%E5%8A%A1-%E8%AE%BF%E9%97%AELinux%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6/" class="leancloud_visitors" data-flag-title="web服务 访问Linux中的静态文件">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -114,19 +114,31 @@
                     <span>目录</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><p>报错404，NOT FOUND可能是因为nginx.conf配置文件的俩处地方配置有误，按照下面，检查你的配置之后99.9999%是可以在浏览器访问Linux的静态文件的</p>
-<p>1、检查nginx是否打开允许访问本地文件的配置</p>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#报错404not-found可能是因为nginxconf配置文件的俩处地方配置有误按照下面检查你的配置之后999999是可以在浏览器访问linux的静态文件的">报错404，NOT FOUND可能是因为nginx.conf配置文件的俩处地方配置有误，按照下面，检查你的配置之后99.9999%是可以在浏览器访问Linux的静态文件的</a></li>
+        <li><a href="#1检查nginx是否打开允许访问本地文件的配置">1.检查nginx是否打开允许访问本地文件的配置</a></li>
+        <li><a href="#2查找如下图的配置项没有的话添加即可注意是在http这个服务中">2.查找如下图的配置项，没有的话添加即可，注意是在http这个服务中</a></li>
+        <li><a href="#3检查需要访问文件的路径是否配置正确例如我要访问的静态文件名称为bapihtml文件存放路径为rootccccbapihtml配置如下">3.检查需要访问文件的路径是否配置正确，例如我要访问的静态文件名称为Bapi.html，文件存放路径为root/cccc/Bapi.html，配置如下</a></li>
+        <li><a href="#4访问静态文件">4.访问静态文件</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="报错404not-found可能是因为nginxconf配置文件的俩处地方配置有误按照下面检查你的配置之后999999是可以在浏览器访问linux的静态文件的">报错404，NOT FOUND可能是因为nginx.conf配置文件的俩处地方配置有误，按照下面，检查你的配置之后99.9999%是可以在浏览器访问Linux的静态文件的</h3>
+<h3 id="1检查nginx是否打开允许访问本地文件的配置">1.检查nginx是否打开允许访问本地文件的配置</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ vim nginx.conf
+<pre class="chroma"><code class="language-bash" data-lang="bash">vim nginx.conf
 </code></pre></td></tr></table>
 </div>
-</div><p>2、查找如下图的配置项，没有的话添加即可，注意是在http这个服务中
-<img
+</div><h3 id="2查找如下图的配置项没有的话添加即可注意是在http这个服务中">2.查找如下图的配置项，没有的话添加即可，注意是在http这个服务中</h3>
+<p><img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="https://img-blog.csdnimg.cn/20210329180009631.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NoYW95YW5nX28=,size_16,color_FFFFFF,t_70"
@@ -139,10 +151,10 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ proxy_intercept_errors on<span class="p">;</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">proxy_intercept_errors on<span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>3、检查需要访问文件的路径是否配置正确，例如我要访问的静态文件名称为Bapi.html，文件存放路径为root/cccc/Bapi.html，配置如下</p>
+</div><h3 id="3检查需要访问文件的路径是否配置正确例如我要访问的静态文件名称为bapihtml文件存放路径为rootccccbapihtml配置如下">3.检查需要访问文件的路径是否配置正确，例如我要访问的静态文件名称为Bapi.html，文件存放路径为root/cccc/Bapi.html，配置如下</h3>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -151,7 +163,7 @@
         data-sizes="auto"
         alt="https://img-blog.csdnimg.cn/20210329180232275.png"
         title="在这里插入图片描述" /></p>
-<p>4、访问静态文件</p>
+<h3 id="4访问静态文件">4.访问静态文件</h3>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"

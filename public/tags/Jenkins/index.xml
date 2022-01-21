@@ -24,7 +24,7 @@
     <pubDate>Wed, 18 Aug 2021 10:38:09 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/newman%E7%94%9F%E6%88%90%E5%A5%BD%E7%9C%8B%E7%9A%84html%E6%8A%A5%E5%91%8A/</guid>
-    <description><![CDATA[PS:运行newman需要node 版本大于10 1.安装newman 1 $ npm install -g newman 2.安装普通html报告插件(建议安装) 1 $ npm install -g newman-reporter-html 3.安装美]]></description>
+    <description><![CDATA[PS:运行newman需要node 版本大于10 1.安装newman 1 npm install -g newman 2.安装普通html报告插件(建议安装) 1 npm install -g newman-reporter-html 3.安装美化h]]></description>
 </item><item>
     <title>Centos7.7安装并配置jenkins&#43;python&#43;allure发送定制化报告</title>
     <link>https://cywhat.cn/Centos7-7%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AEjenkins-python-allure%E5%8F%91%E9%80%81%E5%AE%9A%E5%88%B6%E5%8C%96%E6%8A%A5%E5%91%8A/</link>

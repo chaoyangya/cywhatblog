@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>supervisord管理常驻进程uwsgi/nginx/redis/mongodb - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="supervisord管理常驻进程uwsgi/nginx/redis/mongodb" />
-<meta property="og:description" content="解决部署的一些项目,因机器关机/重启导致项目需要手动重新启动的问题 1 `安装supervisor yum安装 1 $ yum install supervisor pip安装 1 $ pip install supervisor eas" />
+<meta property="og:description" content="解决部署的一些项目,因机器关机/重启导致项目需要手动重新启动的问题 1.安装supervisor(3种选一种) 1 2 3 4 5 6 7 8 #yum安装 yum install" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cywhat.cn/supervisord%E7%AE%A1%E7%90%86%E5%B8%B8%E9%A9%BB%E8%BF%9B%E7%A8%8Buwsgi-nginx-redis-mongodb/" />
 <meta property="og:image" content="https://cywhat.cn"/>
@@ -17,7 +17,7 @@
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
 <meta name="twitter:title" content="supervisord管理常驻进程uwsgi/nginx/redis/mongodb"/>
-<meta name="twitter:description" content="解决部署的一些项目,因机器关机/重启导致项目需要手动重新启动的问题 1 `安装supervisor yum安装 1 $ yum install supervisor pip安装 1 $ pip install supervisor eas"/>
+<meta name="twitter:description" content="解决部署的一些项目,因机器关机/重启导致项目需要手动重新启动的问题 1.安装supervisor(3种选一种) 1 2 3 4 5 6 7 8 #yum安装 yum install"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/supervisord%E7%AE%A1%E7%90%86%E5%B8%B8%E9%A9%BB%E8%BF%9B%E7%A8%8Buwsgi-nginx-redis-mongodb/" /><link rel="prev" href="https://cywhat.cn/nginx%E5%A4%9A%E4%B8%AA%E7%AB%AF%E5%8F%A3/" /><link rel="next" href="https://cywhat.cn/hexo%E7%AE%A1%E7%90%86%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/cywhat.cn\/supervisord%E7%AE%A1%E7%90%86%E5%B8%B8%E9%A9%BB%E8%BF%9B%E7%A8%8Buwsgi-nginx-redis-mongodb\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Supervisord, Linux","wordcount":  1012 ,
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Supervisord, Linux","wordcount":  1015 ,
         "url": "https:\/\/cywhat.cn\/supervisord%E7%AE%A1%E7%90%86%E5%B8%B8%E9%A9%BB%E8%BF%9B%E7%A8%8Buwsgi-nginx-redis-mongodb\/","datePublished": "2021-05-24T11:35:23+00:00","dateModified": "2021-05-24T11:35:23+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
@@ -105,7 +105,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">supervisord管理常驻进程uwsgi/nginx/redis/mongodb</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Supervisord/"><i class="far fa-folder fa-fw"></i>Supervisord</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-24">2021-05-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1012 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-24">2021-05-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1015 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;<span id="/supervisord%E7%AE%A1%E7%90%86%E5%B8%B8%E9%A9%BB%E8%BF%9B%E7%A8%8Buwsgi-nginx-redis-mongodb/" class="leancloud_visitors" data-flag-title="supervisord管理常驻进程uwsgi/nginx/redis/mongodb">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -116,67 +116,62 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#1-安装supervisor">1 `安装supervisor</a></li>
-    <li><a href="#2-配置supervisor">2 `配置supervisor</a></li>
-    <li><a href="#3-修改默认配置">3 `修改默认配置</a></li>
-    <li><a href="#4-通过配置文件启动supervisor">4 `通过配置文件启动supervisor</a></li>
-    <li><a href="#5-编写要管理进程的配置文件">5 `编写要管理进程的配置文件</a></li>
-    <li><a href="#6-启动应用">6 `启动应用</a></li>
-    <li><a href="#7-supervisor命令详解">7 `supervisor命令详解</a></li>
-    <li><a href="#注意事项">注意事项</a></li>
+    <li>
+      <ul>
+        <li><a href="#1安装supervisor3种选一种">1.安装supervisor(3种选一种)</a></li>
+        <li><a href="#2配置supervisor">2.配置supervisor</a></li>
+        <li><a href="#3修改默认配置">3.修改默认配置</a></li>
+        <li><a href="#4通过配置文件启动supervisor">4.通过配置文件启动supervisor</a></li>
+        <li><a href="#5编写要管理进程的配置文件">5.编写要管理进程的配置文件</a></li>
+        <li><a href="#6启动应用">6.启动应用</a></li>
+        <li><a href="#7supervisor命令详解">7.supervisor命令详解</a></li>
+        <li><a href="#注意事项">注意事项</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><p>解决部署的一些项目,因机器关机/重启导致项目需要手动重新启动的问题</p>
-<h2 id="1-安装supervisor">1 `安装supervisor</h2>
-<p>yum安装</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ yum install supervisor
-</code></pre></td></tr></table>
-</div>
-</div><p>pip安装</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ pip install supervisor
-</code></pre></td></tr></table>
-</div>
-</div><p>easy_install安装</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ easy_install supervisor
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="2-配置supervisor">2 `配置supervisor</h2>
+<h3 id="1安装supervisor3种选一种">1.安装supervisor(3种选一种)</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#yum安装</span>
+yum install supervisor
+
+<span class="c1">#pip安装</span>
+pip install supervisor
+
+<span class="c1">#easy_install安装</span>
+easy_install supervisor
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="2配置supervisor">2.配置supervisor</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#生成配置supervisor文件</span>
-$ echo_supervisord_conf &gt; /etc/supervisord.conf
+echo_supervisord_conf &gt; /etc/supervisord.conf
+
+<span class="c1">#创建存放配置文件目录</span>
+mkdir -p /etc/supervisord.d/conf
 </code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#创建存放配置文件目录</span>
-$ mkdir -p /etc/supervisord.d/conf
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="3-修改默认配置">3 `修改默认配置</h2>
+</div><h3 id="3修改默认配置">3.修改默认配置</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -185,11 +180,11 @@ $ mkdir -p /etc/supervisord.d/conf
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#文件最后一行,目录修改为配置文件地址,我的.ini文件是在/etc/supervisord.d/conf/存放,而且本身配置文件也在etc中,所以目录直接写supervisord.d/conf/就可以了</span>
-$ <span class="o">[</span>include<span class="o">]</span>
-$ <span class="nv">files</span> <span class="o">=</span> supervisord.d/conf/*.ini
+<span class="o">[</span>include<span class="o">]</span>
+<span class="nv">files</span> <span class="o">=</span> supervisord.d/conf/*.ini
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="4-通过配置文件启动supervisor">4 `通过配置文件启动supervisor</h2>
+</div><h3 id="4通过配置文件启动supervisor">4.通过配置文件启动supervisor</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -200,7 +195,7 @@ $ <span class="nv">files</span> <span class="o">=</span> supervisord.d/conf/*.in
 $ supervisord -c /etc/supervisord.conf
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="5-编写要管理进程的配置文件">5 `编写要管理进程的配置文件</h2>
+</div><h3 id="5编写要管理进程的配置文件">5.编写要管理进程的配置文件</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -243,28 +238,7 @@ $ <span class="o">[</span>program:uwsgi<span class="o">]</span>  <span class="c1
   <span class="nv">stderr_logfile</span><span class="o">=</span>/var/log/uwsgi_err.log   <span class="c1">#输出错误日志路径</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="6-启动应用">6 `启动应用</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#重启supervisor配置中的所有程序</span>
-$ supervisorctl reload
-</code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#查看supervisor状态 出现启动项目name即可</span>
-$ supervisorctl status
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="7-supervisor命令详解">7 `supervisor命令详解</h2>
+</div><h3 id="6启动应用">6.启动应用</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -277,58 +251,71 @@ $ supervisorctl status
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ supervisorctl restart &lt;application name&gt;  <span class="c1">#重启指定应用</span>
-$ supervisorctl stop &lt;application name&gt;  <span class="c1">#停止指定应用</span>
-$ supervisorctl start &lt;application name&gt;  <span class="c1">#启动指定应用</span>
-$ supervisorctl restart all  <span class="c1">#重启所有应用</span>
-$ supervisorctl stop all  <span class="c1">#停止所有应用</span>
-$ supervisorctl start all  <span class="c1">#启动所有应用</span>
-$ supervisorctl update  <span class="c1">#配置文件修改后可以使用该命令加载新的配置</span>
-$ supervisorctl reload  <span class="c1">#重新启动配置中的所有程序</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#重启supervisor配置中的所有程序</span>
+supervisorctl reload
+
+<span class="c1">#查看supervisor状态 出现启动项目name即可</span>
+supervisorctl status
+
+<span class="c1">#重启单个应用</span>
+supervisorctl restart uwsgi
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="注意事项">注意事项</h2>
+</div><h3 id="7supervisor命令详解">7.supervisor命令详解</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">supervisorctl restart &lt;application name&gt;  <span class="c1">#重启指定应用</span>
+supervisorctl stop &lt;application name&gt;  <span class="c1">#停止指定应用</span>
+supervisorctl start &lt;application name&gt;  <span class="c1">#启动指定应用</span>
+supervisorctl restart all  <span class="c1">#重启所有应用</span>
+supervisorctl stop all  <span class="c1">#停止所有应用</span>
+supervisorctl start all  <span class="c1">#启动所有应用</span>
+supervisorctl update  <span class="c1">#配置文件修改后可以使用该命令加载新的配置</span>
+supervisorctl reload  <span class="c1">#重新启动配置中的所有程序</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="注意事项">注意事项</h3>
 <p>使用supervisorctl status查看发现有进程被不断重启,报错如下:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">XXX<span class="o">(</span>项目名<span class="o">)</span>      FATAL     Exited too quickly <span class="o">(</span>process log may have details<span class="o">)</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#XXX(项目名)      FATAL     Exited too quickly (process log may have details)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>原因:</p>
+</div><pre><code>原因:
+
+```bash
+supervisor只支持前台程序的托管到后台 #(启动前需要kill掉已经存在的进程),例如:
+
+    #uwsgi
+    uwsgi如果出现不断重启,一定是启动命令中加了-d的参数,去掉就好了
+
+    #redis
+    redis就需要把redis.conf配置文件中的daemonize设置为no
+
+    #nginx
+    nginx就需要在命令行后缀增加 -g ‘daemon off;’
+
+    #mongodb
+    mongodb如果不断重启,多半也是因为启动命令中加了后台运行的参数 &amp; 同样的去掉就可以了
+</code></pre>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span></code></pre></td>
+<pre class="chroma"><code></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">supervisor只支持前台程序的托管到后台<span class="o">(</span>启动前需要kill掉已经存在的进程<span class="o">)</span>,例如:
-
-	<span class="c1">#uwsgi</span>
-	uwsgi如果出现不断重启,一定是启动命令中加了-d的参数,去掉就好了
-
-	<span class="c1">#redis</span>
-	redis就需要把redis.conf配置文件中的daemonize设置为no
-
-	<span class="c1">#nginx</span>
-	nginx就需要在命令行后缀增加 -g ‘daemon off<span class="p">;</span>’
-
-	<span class="c1">#mongodb</span>
-	mongodb如果不断重启,多半也是因为启动命令中加了后台运行的参数 <span class="p">&amp;</span> 同样的去掉就可以了
-</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback"></code></pre></td></tr></table>
 </div>
 </div><div class="post-reward">
     <input type="checkbox" name="reward" id="reward" hidden/>

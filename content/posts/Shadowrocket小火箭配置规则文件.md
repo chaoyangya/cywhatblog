@@ -6,12 +6,12 @@ tags: ["Shadowrocket"]
 categories: ["Shadowrocket"]
 ---
 
-## 国内外划分+广告过滤
+### 国内外划分+广告过滤
 ```bash
-$ https://raw.githubusercontent.com/chaoyangya/cywhat-block-ad/master/cywhat-block-ad.conf
+https://raw.githubusercontent.com/chaoyangya/cywhat-block-ad/master/cywhat-block-ad.conf
 ```
 
-## 黑名单(国内外划分无广告过滤)
+### 黑名单(国内外划分无广告过滤)
 ```bash
-$ https://raw.githubusercontent.com/chaoyangya/cywhat-block-ad/master/cywhat-no-block-ad.conf
+https://raw.githubusercontent.com/chaoyangya/cywhat-block-ad/master/cywhat-no-block-ad.conf
 ```

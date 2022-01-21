@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>mysql连接以及增删改查语句 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
-<meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="mysql连接以及增删改查语句" />
-<meta property="og:description" content="好久没操作数据库语句,都快忘光了,记录一下 1.连接数据库(mysql) 1 $ mysql -h机器ip -u用户名 -p密码 2.查看所有数据库 1 $ show databases; 3.进入" />
+        <title>Mysql连接以及增删改查语句 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
+<meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Mysql连接以及增删改查语句" />
+<meta property="og:description" content="1.连接数据库(mysql) 1 mysql -h机器ip -u用户名 -p密码 2.查看所有数据库 1 show databases; 3.进入某个数据库 1 use xxx; # xxx为数据库名 4.查看数据" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cywhat.cn/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5/" />
 <meta property="og:image" content="https://cywhat.cn"/>
@@ -16,19 +16,19 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
-<meta name="twitter:title" content="mysql连接以及增删改查语句"/>
-<meta name="twitter:description" content="好久没操作数据库语句,都快忘光了,记录一下 1.连接数据库(mysql) 1 $ mysql -h机器ip -u用户名 -p密码 2.查看所有数据库 1 $ show databases; 3.进入"/>
+<meta name="twitter:title" content="Mysql连接以及增删改查语句"/>
+<meta name="twitter:description" content="1.连接数据库(mysql) 1 mysql -h机器ip -u用户名 -p密码 2.查看所有数据库 1 show databases; 3.进入某个数据库 1 use xxx; # xxx为数据库名 4.查看数据"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5/" /><link rel="prev" href="https://cywhat.cn/%E8%A7%A3%E5%86%B3hexo%E5%9B%BE%E7%89%87%E4%B8%8D%E5%B1%95%E7%A4%BA%E9%97%AE%E9%A2%98/" /><link rel="next" href="https://cywhat.cn/libvulkan-so-1-64bit-%E7%BC%BA%E5%B0%91%E4%BE%9D%E8%B5%96/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "mysql连接以及增删改查语句",
+        "headline": "Mysql连接以及增删改查语句",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/cywhat.cn\/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Mysql","wordcount":  190 ,
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Mysql","wordcount":  147 ,
         "url": "https:\/\/cywhat.cn\/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5\/","datePublished": "2021-08-18T16:41:15+00:00","dateModified": "2021-08-18T16:41:15+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
@@ -103,10 +103,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">mysql连接以及增删改查语句</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">Mysql连接以及增删改查语句</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Mysql/"><i class="far fa-folder fa-fw"></i>Mysql</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-08-18">2021-08-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 190 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5/" class="leancloud_visitors" data-flag-title="mysql连接以及增删改查语句">
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-08-18">2021-08-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 147 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5/" class="leancloud_visitors" data-flag-title="Mysql连接以及增删改查语句">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
@@ -116,64 +116,57 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#1连接数据库mysql">1.连接数据库(mysql)</a></li>
-    <li><a href="#2查看所有数据库">2.查看所有数据库</a></li>
-    <li><a href="#3进入某个数据库">3.进入某个数据库</a></li>
-    <li><a href="#4查看数据库中的表">4.查看数据库中的表</a></li>
-    <li><a href="#4查看数据库中的表-1">4.查看数据库中的表</a></li>
-    <li><a href="#5增">5.增</a></li>
-    <li><a href="#6删">6.删</a></li>
-    <li><a href="#7改">7.改</a></li>
-    <li><a href="#8查">8.查</a></li>
+    <li>
+      <ul>
+        <li><a href="#1连接数据库mysql">1.连接数据库(mysql)</a></li>
+        <li><a href="#2查看所有数据库">2.查看所有数据库</a></li>
+        <li><a href="#3进入某个数据库">3.进入某个数据库</a></li>
+        <li><a href="#4查看数据库中的表">4.查看数据库中的表</a></li>
+        <li><a href="#5增">5.增</a></li>
+        <li><a href="#6删">6.删</a></li>
+        <li><a href="#7改">7.改</a></li>
+        <li><a href="#8查">8.查</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>好久没操作数据库语句,都快忘光了,记录一下</p>
-<h2 id="1连接数据库mysql">1.连接数据库(mysql)</h2>
+            </div><div class="content" id="content"><h3 id="1连接数据库mysql">1.连接数据库(mysql)</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ mysql  -h机器ip -u用户名 -p密码 
+<pre class="chroma"><code class="language-bash" data-lang="bash">mysql  -h机器ip -u用户名 -p密码 
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="2查看所有数据库">2.查看所有数据库</h2>
+</div><h3 id="2查看所有数据库">2.查看所有数据库</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ show databases<span class="p">;</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">show databases<span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="3进入某个数据库">3.进入某个数据库</h2>
+</div><h3 id="3进入某个数据库">3.进入某个数据库</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ use xxx<span class="p">;</span>   <span class="c1"># xxx为数据库名</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">use xxx<span class="p">;</span>   <span class="c1"># xxx为数据库名</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="4查看数据库中的表">4.查看数据库中的表</h2>
+</div><h3 id="4查看数据库中的表">4.查看数据库中的表</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ show tables<span class="p">;</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">show tables<span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="4查看数据库中的表-1">4.查看数据库中的表</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ show tables<span class="p">;</span>
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="5增">5.增</h2>
+</div><h3 id="5增">5.增</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -181,36 +174,36 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ insert into 表名 <span class="o">(</span> field1, field2,...fieldN <span class="o">)</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">insert into 表名 <span class="o">(</span> field1, field2,...fieldN <span class="o">)</span>
                        VALUES
                        <span class="o">(</span> value1, value2,...valueN <span class="o">)</span><span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="6删">6.删</h2>
+</div><h3 id="6删">6.删</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ delete from 表名 where <span class="nv">字段名</span><span class="o">=</span>字段值<span class="p">;</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">delete from 表名 where <span class="nv">字段名</span><span class="o">=</span>字段值<span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="7改">7.改</h2>
+</div><h3 id="7改">7.改</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ update 表名 <span class="nb">set</span> <span class="nv">字段名</span><span class="o">=</span>字段值<span class="p">;</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">update 表名 <span class="nb">set</span> <span class="nv">字段名</span><span class="o">=</span>字段值<span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="8查">8.查</h2>
+</div><h3 id="8查">8.查</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="k">select</span> * from 表名 where <span class="nv">字段名</span><span class="o">=</span>字段值<span class="p">;</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="k">select</span> * from 表名 where <span class="nv">字段名</span><span class="o">=</span>字段值<span class="p">;</span>
 </code></pre></td></tr></table>
 </div>
 </div><div class="post-reward">
@@ -238,7 +231,7 @@
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5/" data-title="mysql连接以及增删改查语句" data-hashtags="Mysql"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5/" data-hashtag="Mysql"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5/" data-title="mysql连接以及增删改查语句"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5/" data-title="mysql连接以及增删改查语句"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5/" data-title="mysql连接以及增删改查语句"><i class="fab fa-weibo fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5/" data-title="Mysql连接以及增删改查语句" data-hashtags="Mysql"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5/" data-hashtag="Mysql"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5/" data-title="Mysql连接以及增删改查语句"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5/" data-title="Mysql连接以及增删改查语句"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5/" data-title="Mysql连接以及增删改查语句"><i class="fab fa-weibo fa-fw"></i></a></span>
             </div>
         </div>
     </div>

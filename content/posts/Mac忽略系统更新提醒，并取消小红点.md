@@ -5,38 +5,38 @@ draft: false
 tags: ["Mac"]
 categories: ["Mac"]
 ---
-## 1.首先关掉系统的自动更新设置**
+### 1.首先关掉系统的自动更新设置**
 ```bash
-$ 1.系统偏好设置--软件更新
+1.系统偏好设置--软件更新
 
-$ 2.取消选择"自动保持我的Mac最新"
+2.取消选择"自动保持我的Mac最新"
 
-$ 3.高级--取消所有按钮勾选
+3.高级--取消所有按钮勾选
 ```
 
 ![img16](/img/img16.png)
 
 
-## 2.执行代码
+### 2.执行代码
 **以下操作需要在终端中进行**
 
-### 1.忽略大版本更新
+#### a.忽略大版本更新
 ```bash
-$ sudo softwareupdate --ignore "macOS Catalina"
+sudo softwareupdate --ignore "macOS Catalina"
 
-$ sudo softwareupdate --ignore "macOS Mojave"
+sudo softwareupdate --ignore "macOS Mojave"
 
-$ sudo softwareupdate --ignore "macOS Big Sur"
+sudo softwareupdate --ignore "macOS Big Sur"
 ```
 
-### 2.取消小红点
+#### b.取消小红点
 ```bash
-$ defaults write com.apple.systempreferences AttentionPrefBundleIDs 0
+defaults write com.apple.systempreferences AttentionPrefBundleIDs 0
 
-$ killall Dock  
+killall Dock  
 ```
 
 ### 3.恢复更新提示
 ```bash
-$ sudo softwareupdate --reset-ignored
+sudo softwareupdate --reset-ignored
 ```

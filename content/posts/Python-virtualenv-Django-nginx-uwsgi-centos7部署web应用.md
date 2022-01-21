@@ -8,7 +8,7 @@ categories: ["Python"]
 
 给公司写的一个工具平台，先部署到自己的服务器上进行测试，真是困难重重，此文章仅记录自己踩坑过程和搭建教程，不保证你能按照教程成功搭建，但能把坑提前暴露出来，避免大家重复踩坑！
 
-## 我的环境
+### 我的环境
 
 
  1. **部署服务器** ：CentOS Linux release 7.8.2003 (Core)
@@ -20,123 +20,86 @@ categories: ["Python"]
  
 
 
-## 1、上传/clone项目至服务器
+### 1.上传/clone项目至服务器
 ```bash
-$ git/xftp均可
+git/xftp均可
 ```
 
 
-## 2、安装python3.7.0
+### 2.安装python3.7.0
 
-安装python3.7.0：
-
-```bash
-$ wget http://www.python.org/ftp/python/3.7.0/Python-3.7.0.tgz
-```
-解压
 
 ```bash
-$ tar -xvzf Python-3.7.0.tgz
-```
+#安装python3.7.0
+wget http://www.python.org/ftp/python/3.7.0/Python-3.7.0.tgz
 
-进入文件夹
+#解压
+tar -xvzf Python-3.7.0.tgz
 
-```bash
-$ cd Python-3.7.0
-```
+#进入文件夹
+cd Python-3.7.0
 
-执行配置文件
+#执行配置文件
+./configure --with-ssl
 
-```bash
-$ ./configure --with-ssl
-```
+#编译&安装
+make  &   make install
 
-编译
+#建立软连接
+ln -s /usr/local/python3/bin/python3.7 /usr/bin/python3
+ln -s /usr/local/python3/bin/pip3.7 /usr/bin/pip3
 
-```bash
-$ make    
-```
-
-安装
-
-```bash
-$ sudo make install
-```
-
-建立软连接
-
-```bash
-$ ln -s /usr/local/python3/bin/python3.7 /usr/bin/python3
-$ ln -s /usr/local/python3/bin/pip3.7 /usr/bin/pip3
-```
-
-检测python3版本
-
-```bash
-$  python3 -V
+#检测python3版本
+python3 -V
 ```
 
 
-## 安装虚拟环境
-1、安装虚拟环境
+
+
+
+
+### 3.安装虚拟环境
 
 ```bash
-$ pip3 install virtualenv
+#安装虚拟环境
+pip3 install virtualenv
+
+#新建虚拟环境文件夹
+mkdir pyenv
+
+#进入虚拟环境文件夹
+cd pyenv
+
+#安装虚拟环境
+virtualenv  -p python3 myenv
+
+#激活虚拟环境
+source /myenv/bin/activate
+
+#安装项目所需组件
+pip3 install -r requriements.txt
+
+#pip安装依赖太慢使用douban源
+pip install xx -i http://pypi.douban.com/simple/
 ```
 
-2、新建虚拟环境文件夹
+
+
+### 4.安装uwsgi
+
 
 ```bash
-$ mkdir pyenv
+#安装uwsgi
+pip3 install uwsgi
+
+#在项目根目录添加 .ini 结尾的uwsgi配置文件
+touch uwsgi.ini  #(这里的uwsgi可以自己命名)
 ```
 
-3、进入虚拟环境文件夹
+
 
 ```bash
-$ cd pyenv
-```
-
-4、安装虚拟环境
-
-```bash
-$ virtualenv  -p python3 myenv
-```
-
-5、激活虚拟环境
-
-```bash
-$ source /myenv/bin/activate
-```
-
-6、安装项目所需组件
-
-```bash
-$ pip3 install -r requriements.txt
-```
-
-7、pip安装依赖太慢使用douban源
-
-```bash
-$ pip install xx -i http://pypi.douban.com/simple/
-```
-
-## 安装uwsgi
-
-1、安装uwsgi
-
-```bash
-$ pip3 install uwsgi
-```
-
-2、在项目根目录添加 .ini 结尾的uwsgi配置文件
-
-```bash
-$ touch uwsgi.ini (这里的uwsgi可以自己命名)
-```
-
-3、修改uwsgi.ini配置文件
-
-```bash
+#修改uwsgi.ini配置文件
 [uwsgi]
 #http只能用于wusgi自己调试 要跟nginx通信需要用sockt 使用内网ip
 #http=111.11.11.1:9003  
@@ -167,62 +130,41 @@ pidfile = /root/mydjango/uwsgi.pid
 daemonize = /root/mydjango/uwsgi.log
 ```
 
-这里先不启动uwsgi，后面等nginx安装好了一起启动即可
+**这里先不启动uwsgi，后面等nginx安装好了一起启动即可**
 
 
 
-## 安装nginx
-1、安装依赖
+### 5.安装nginx
 
 ```bash
-$ yum -y install gcc pcre-devel zlib-devel openssl openssl-devel
+#安装依赖
+yum -y install gcc pcre-devel zlib-devel openssl openssl-devel
+
+#下载nginx
+wget http://nginx.org/download/nginx-1.16.1.tar.gz 
+
+#新建文件夹
+mkdir /usr/loacl/nginx
+
+#解压nginx包
+tar -zxvf nginx-1.16.1.tar.gz
+
+#进入解压后的nginx目录
+cd nginx-1.16.1/
+
+#指定安装路径
+./configure  --prefix=/usr/local/nginx
+
+#编译安装
+make && make install
+
+#修改nginx.conf配置
+vim /usr/local/nginx/conf/nginx.conf  
 ```
 
-2、下载nginx
 
 ```bash
-$  wget http://nginx.org/download/nginx-1.16.1.tar.gz 
-```
-
-3、新建文件夹
-
-```bash
-$ mkdir /usr/loacl/nginx
-```
-
-4、解压nginx包
-
-```bash
-$ tar -zxvf nginx-1.16.1.tar.gz
-```
-
-5、进入解压后的nginx目录
-
-```bash
-$ cd nginx-1.16.1/
-```
-
-6、编译
-
-```bash
-$ ./configure  --prefix=/usr/local/nginx
-```
-
-7、安装
-
-```bash
-$ make && make install
-```
-
-8、修改nginx.conf配置即可
-
-```bash
-$ vim /usr/local/nginx/conf/nginx.conf
-```
-
-修改内容如下
-
-```bash
+#修改内容如下
 server {
         listen       80; #这里80端口要注意别被其他程序占用
         listen       [::]:80
@@ -251,66 +193,57 @@ server {
         }
 ```
 
-启动nginx
 
 ```bash
-$ cd /usr/loacl/nginx/sbin
-```
+#进入文件夹
+cd /usr/loacl/nginx/sbin
 
-```bash
-$ ./nginx
-```
-
-
-## django项目数据库迁移
-1、进入虚拟环境
-
-```bash
-$ source /myenv/bin/activate
-```
-
-2、迁移数据库
-
-```bash
-$ python3 manage.py makemigrations
-```
-
-```bash
-$ python3 manage.py migrate
-```
-
-3、迁移静态文件
-
-```bash
-$ python3 manage.py collectstatic
+#启动nginx
+./nginx
 ```
 
 
 
-## 启动uwsgi
-
-1、启动uwsgi
+### 6.django项目数据库迁移
 
 ```bash
-$ uwsgi -d --ini uwsgi.ini # -d 可以让uwsgi保持在后台运行
+#进入且激活虚拟环境
+source /myenv/bin/activate
+
+#迁移数据库
+python3 manage.py makemigrations
+python3 manage.py migrate
+
+#迁移静态文件
+python3 manage.py collectstatic
 ```
 
 
-## 疑难解答
 
-1、启动uwsgi.ini报错
+### 7.启动uwsgi
+
+
+```bash
+#启动uwsgi
+uwsgi -d --ini uwsgi.ini # -d 可以让uwsgi保持在后台运行
+```
+
+
+### 8.疑难解答
+
+#### 1、启动uwsgi.ini报错
 
 WARNING: Can't find section "uwsgi" in INI configuration file uwsgi.ini
 
 ```bash
-$ 原因：uwsgi.ini头部没有添加[uwsgi] 头部文件 添加完成以后即可
+#原因：uwsgi.ini头部没有添加[uwsgi] 头部文件 添加完成以后即可
 ```
 
-2、部署项目完成以后，而且静态资源也已经迁移，访问资源还是403，修改nginx的使用用户为root即可
+#### 2、部署项目完成以后，而且静态资源也已经迁移，访问资源还是403，修改nginx的使用用户为root即可
 
 
 ```bash
-$ vim /usr/local/nginx/conf/nginx.conf
+vim /usr/local/nginx/conf/nginx.conf
 ```
 
 ```bash
@@ -319,24 +252,24 @@ $ vim /usr/local/nginx/conf/nginx.conf
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210311170330559.png)
 
 
-3、nginx部署完成后，出现-bash: nginx: command not found 添加nginx的环境变量即可
+#### 3、nginx部署完成后，出现-bash: nginx: command not found 添加nginx的环境变量即可
 
 ```bash
-$ vim /etc/profile
+vim /etc/profile
 ```
-
-在末尾加入：
 
 ```bash
-$ PATH=$PATH:/var/local/nginx/sbin
-$ export PATH
+#在末尾加入
+PATH=$PATH:/var/local/nginx/sbin
+export PATH
 ```
 
-然后让配置生效
+
 
 ```bash
-$ source /etc/prifile
+#然后让配置生效
+source /etc/prifile   #然后就可以使用nginx快捷命令了
 ```
 
-然后就可以使用nginx快捷命令了
+
 

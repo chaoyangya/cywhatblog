@@ -45,7 +45,7 @@
     <pubDate>Thu, 01 Apr 2021 17:51:03 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/no-such-table-django-session/</guid>
-    <description><![CDATA[出现上述问题是django没有django_session表 错误跟Session的机制相关 既然要从Web服务器端来记录用户信息， 那么一定要有]]></description>
+    <description><![CDATA[出现的问题是django没有django_session表 错误跟Session的机制相关 既然要从Web服务器端来记录用户信息， 那么一定要有存]]></description>
 </item><item>
     <title>Python&#43;virtualenv&#43;Django&#43;nginx&#43;uwsgi&#43;centos7部署web应用</title>
     <link>https://cywhat.cn/Python-virtualenv-Django-nginx-uwsgi-centos7%E9%83%A8%E7%BD%B2web%E5%BA%94%E7%94%A8/</link>

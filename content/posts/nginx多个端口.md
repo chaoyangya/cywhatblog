@@ -7,8 +7,8 @@ categories: ["Nginx"]
 ---
 
 
-``` bash
-$ server {
+```bash
+server {
     listen       80;
     server_name  xx.cn;  #域名1
 

@@ -8,48 +8,46 @@ categories: ["Supervisord"]
 
 解决部署的一些项目,因机器关机/重启导致项目需要手动重新启动的问题
 
-## 1 `安装supervisor
+### 1.安装supervisor(3种选一种)
 
-yum安装
-```bash
-$ yum install supervisor
-```
-
-pip安装
 
 ```bash
-$ pip install supervisor
-```
+#yum安装
+yum install supervisor
 
-easy_install安装
+#pip安装
+pip install supervisor
 
-```bash
-$ easy_install supervisor
+#easy_install安装
+easy_install supervisor
 ```
 
 
-## 2 `配置supervisor
+
+
+
+### 2.配置supervisor
 
 ```bash
 #生成配置supervisor文件
-$ echo_supervisord_conf > /etc/supervisord.conf
-```
+echo_supervisord_conf > /etc/supervisord.conf
 
-```bash
 #创建存放配置文件目录
-$ mkdir -p /etc/supervisord.d/conf
+mkdir -p /etc/supervisord.d/conf
 ```
 
-## 3 `修改默认配置
+
+
+### 3.修改默认配置
 
 ```bash
 #文件最后一行,目录修改为配置文件地址,我的.ini文件是在/etc/supervisord.d/conf/存放,而且本身配置文件也在etc中,所以目录直接写supervisord.d/conf/就可以了
-$ [include]
-$ files = supervisord.d/conf/*.ini
+[include]
+files = supervisord.d/conf/*.ini
 ```
 
 
-## 4 `通过配置文件启动supervisor
+### 4.通过配置文件启动supervisor
 
 ```bash
 #这里一定要用配置文件的绝对路径
@@ -57,7 +55,7 @@ $ supervisord -c /etc/supervisord.conf
 ```
 
 
-## 5 `编写要管理进程的配置文件
+### 5.编写要管理进程的配置文件
 
 ```bash
 #因为我这里配置文件中通配符是以.ini结尾 所以新建的文件后缀为.ini
@@ -81,55 +79,58 @@ $ [program:uwsgi]  #uwsgi这个名称是管理进程的别名,可以自定义
 ```
 
 
-## 6 `启动应用
+### 6.启动应用
 
 ```bash
 #重启supervisor配置中的所有程序
-$ supervisorctl reload
-```
+supervisorctl reload
 
-```bash
 #查看supervisor状态 出现启动项目name即可
-$ supervisorctl status
+supervisorctl status
+
+#重启单个应用
+supervisorctl restart uwsgi
 ```
 
 
-## 7 `supervisor命令详解
+
+
+### 7.supervisor命令详解
 
 ```bash
-$ supervisorctl restart <application name>  #重启指定应用
-$ supervisorctl stop <application name>  #停止指定应用
-$ supervisorctl start <application name>  #启动指定应用
-$ supervisorctl restart all  #重启所有应用
-$ supervisorctl stop all  #停止所有应用
-$ supervisorctl start all  #启动所有应用
-$ supervisorctl update  #配置文件修改后可以使用该命令加载新的配置
-$ supervisorctl reload  #重新启动配置中的所有程序
+supervisorctl restart <application name>  #重启指定应用
+supervisorctl stop <application name>  #停止指定应用
+supervisorctl start <application name>  #启动指定应用
+supervisorctl restart all  #重启所有应用
+supervisorctl stop all  #停止所有应用
+supervisorctl start all  #启动所有应用
+supervisorctl update  #配置文件修改后可以使用该命令加载新的配置
+supervisorctl reload  #重新启动配置中的所有程序
 ```
 
 
-## 注意事项
+### 注意事项
 
 使用supervisorctl status查看发现有进程被不断重启,报错如下:
 
 ```bash
-XXX(项目名)      FATAL     Exited too quickly (process log may have details)
+#XXX(项目名)      FATAL     Exited too quickly (process log may have details)
 ```
 
-原因:
-
-```bash
-supervisor只支持前台程序的托管到后台(启动前需要kill掉已经存在的进程),例如:
-
-	#uwsgi
-	uwsgi如果出现不断重启,一定是启动命令中加了-d的参数,去掉就好了
-
-	#redis
-	redis就需要把redis.conf配置文件中的daemonize设置为no
-
-	#nginx
-	nginx就需要在命令行后缀增加 -g ‘daemon off;’
-
-	#mongodb
-	mongodb如果不断重启,多半也是因为启动命令中加了后台运行的参数 & 同样的去掉就可以了
+    原因:
+    
+    ```bash
+    supervisor只支持前台程序的托管到后台 #(启动前需要kill掉已经存在的进程),例如:
+    
+        #uwsgi
+        uwsgi如果出现不断重启,一定是启动命令中加了-d的参数,去掉就好了
+    
+        #redis
+        redis就需要把redis.conf配置文件中的daemonize设置为no
+    
+        #nginx
+        nginx就需要在命令行后缀增加 -g ‘daemon off;’
+    
+        #mongodb
+        mongodb如果不断重启,多半也是因为启动命令中加了后台运行的参数 & 同样的去掉就可以了
 ```

@@ -10,7 +10,7 @@
     <pubDate>Wed, 18 Aug 2021 10:38:09 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/newman%E7%94%9F%E6%88%90%E5%A5%BD%E7%9C%8B%E7%9A%84html%E6%8A%A5%E5%91%8A/</guid>
-    <description><![CDATA[PS:运行newman需要node 版本大于10 1.安装newman 1 $ npm install -g newman 2.安装普通html报告插件(建议安装) 1 $ npm install -g newman-reporter-html 3.安装美]]></description>
+    <description><![CDATA[PS:运行newman需要node 版本大于10 1.安装newman 1 npm install -g newman 2.安装普通html报告插件(建议安装) 1 npm install -g newman-reporter-html 3.安装美化h]]></description>
 </item><item>
     <title>Postmant压力测试</title>
     <link>https://cywhat.cn/Postmant%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/</link>
