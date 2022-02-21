@@ -139,12 +139,6 @@ logo="https://mintimate.cn/custom/img/favicon/favicon.png"
 word="专注与你分享技术教程～"
 >}}
 
-{{< friend
-name="逸晨的小屋"
-url="https://yichenxyz.blogspot.com/"
-logo="https://cdn.jsdelivr.net/gh/yichenxyz/imgs@1.0/avatar.png"
-word="一个名叫逸晨的博主的博客。"
->}}
 
 {{< friend
 name="Hermoso"
