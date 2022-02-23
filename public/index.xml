@@ -322,21 +322,6 @@ def __init__(self):
 
 
 
-	&lt;a target=&#34;_blank&#34; href=https://yichenxyz.blogspot.com/ title=逸晨的小屋---一个名叫逸晨的博主的博客。 class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.jsdelivr.net/gh/yichenxyz/imgs@1.0/avatar.png onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;逸晨的小屋&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;一个名叫逸晨的博主的博客。&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-
-
 	&lt;a target=&#34;_blank&#34; href=https://imszz.com title=Hermoso---时间如一捧流沙,缓缓的在指间流尽 class=&#34;friend url&#34;&gt;
 	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
 		&lt;div class=&#34;friend block left&#34;&gt;

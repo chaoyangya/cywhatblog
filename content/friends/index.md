@@ -27,6 +27,7 @@ group="Java"
 
 
 
+
 {{< friend
 name="Bore’s Notes"
 url="https://bore.vip/"
