@@ -20,9 +20,9 @@ class IntroduceMyself():
     def __init__(self):
     
         self.name = "cywhat"
-        self.age = 26
+        self.age = 27
         self.height = "172cm"
-        self.email = "cywhat@cywhat.cn"
+        self.email = "45204307@qq.com"
         self.wechat = "SwagAlong"
         self.hometown = "山西忻州"
         self.hobby = "LOL/王者荣耀/摄影"

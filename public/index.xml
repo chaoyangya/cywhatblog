@@ -44,9 +44,9 @@
 def __init__(self):
 
     self.name = &amp;quot;cywhat&amp;quot;
-    self.age = 26
+    self.age = 27
     self.height = &amp;quot;172cm&amp;quot;
-    self.email = &amp;quot;cywhat@cywhat.cn&amp;quot;
+    self.email = &amp;quot;45204307@qq.com&amp;quot;
     self.wechat = &amp;quot;SwagAlong&amp;quot;
     self.hometown = &amp;quot;山西忻州&amp;quot;
     self.hobby = &amp;quot;LOL/王者荣耀/摄影&amp;quot;
