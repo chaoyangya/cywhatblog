@@ -45,4 +45,5 @@ showdoc         "接口文档App"
 
 PicGo           "Git图床上传工具"
 
+qBittorrent     "磁力链接下载包含(.torrent文件)"
 ```
