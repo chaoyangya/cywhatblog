@@ -32,9 +32,9 @@ class IntroduceMyself():
 
 
 {{< admonition type=success title="公众号" open=true >}} 
+{{< /admonition >}}
 ![blog-vx1.png](/img/cywhat-gzh.png)
-{{< /admonition >}}
 
-{{< admonition type=success title="小程序" open=true >}} 
-![blog-vx1.png](/img/cywhat-xcx-ss.png)
+{{< admonition type=question title="小程序" open=true >}} 
 {{< /admonition >}}
+![blog-vx1.png](/img/cywhat-xcx-ss.png)

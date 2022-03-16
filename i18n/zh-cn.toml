@@ -207,3 +207,13 @@ other = "支付宝打赏"
 
 [rewardWechat]
 other = "微信打赏"
+
+
+[promote]
+  other = "关注一下再走吧"                          #other中的文字可以自由更改
+
+[promotegzh]
+  other = "公众号"
+
+[promotexcx]
+  other = "小程序"

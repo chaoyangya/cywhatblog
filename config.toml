@@ -316,6 +316,13 @@ date = [":filename", ":default"]
     enable = true
     wechat = "/img/WechatPay.jpeg"           # 微信二维码
     alipay = "/img/Alipay.jpeg"
+
+  # 公众号和小程序展示
+  [params.promote]
+    enable = true
+    xcx = "/img/cywhat-xcx.jpg"           # 微信二维码
+    gzh = "/img/cywhat-gzh.jpg"
+
   # Section (all posts) page config
   # Section (所有文章) 页面配置
 
