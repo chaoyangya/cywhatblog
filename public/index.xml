@@ -66,6 +66,22 @@ def __init__(self):
         data-srcset=&#34;https://cywhat.cn/img/blog-vx1.png, https://cywhat.cn/img/blog-vx1.png 1.5x, https://cywhat.cn/img/blog-vx1.png 2x&#34;
         data-sizes=&#34;auto&#34;
         alt=&#34;/img/blog-vx1.png&#34;
+        title=&#34;blog-vx1.png&#34; /&gt;
+&lt;img
+        class=&#34;lazyload&#34;
+        src=&#34;https://cywhat.cn/svg/loading.min.svg&#34;
+        data-src=&#34;https://cywhat.cn/img/cywhat-xcx.jpg&#34;
+        data-srcset=&#34;https://cywhat.cn/img/cywhat-xcx.jpg, https://cywhat.cn/img/cywhat-xcx.jpg 1.5x, https://cywhat.cn/img/cywhat-xcx.jpg 2x&#34;
+        data-sizes=&#34;auto&#34;
+        alt=&#34;/img/cywhat-xcx.jpg&#34;
+        title=&#34;blog-vx1.png&#34; /&gt;
+&lt;img
+        class=&#34;lazyload&#34;
+        src=&#34;https://cywhat.cn/svg/loading.min.svg&#34;
+        data-src=&#34;https://cywhat.cn/img/cywhat-xcx-1.jpg&#34;
+        data-srcset=&#34;https://cywhat.cn/img/cywhat-xcx-1.jpg, https://cywhat.cn/img/cywhat-xcx-1.jpg 1.5x, https://cywhat.cn/img/cywhat-xcx-1.jpg 2x&#34;
+        data-sizes=&#34;auto&#34;
+        alt=&#34;/img/cywhat-xcx-1.jpg&#34;
         title=&#34;blog-vx1.png&#34; /&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;

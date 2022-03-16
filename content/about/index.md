@@ -33,4 +33,6 @@ class IntroduceMyself():
 
 {{< admonition type=success title="公众号" open=true >}} 
 ![blog-vx1.png](/img/blog-vx1.png)
+![blog-vx1.png](/img/cywhat-xcx.jpg)
+![blog-vx1.png](/img/cywhat-xcx-1.jpg)
 {{< /admonition >}}

@@ -46,4 +46,14 @@ showdoc         "接口文档App"
 PicGo           "Git图床上传工具"
 
 qBittorrent     "磁力链接下载包含(.torrent文件)"
+
+Wondershare_PDFelement_Pro   "PDF编辑器"
+
+CrossOver        "windows应用"
+
+Wallpaper_Wizard "Mac壁纸"
+
+ScreenFocus       "智能熄屏(非常好用)"
+
+SideNotes         "Mac侧边栏笔记(强迫症患者福音)"
 ```
