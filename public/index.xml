@@ -62,26 +62,25 @@ def __init__(self):
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;img
         class=&#34;lazyload&#34;
         src=&#34;https://cywhat.cn/svg/loading.min.svg&#34;
-        data-src=&#34;https://cywhat.cn/img/blog-vx1.png&#34;
-        data-srcset=&#34;https://cywhat.cn/img/blog-vx1.png, https://cywhat.cn/img/blog-vx1.png 1.5x, https://cywhat.cn/img/blog-vx1.png 2x&#34;
+        data-src=&#34;https://cywhat.cn/img/cywhat-gzh.png&#34;
+        data-srcset=&#34;https://cywhat.cn/img/cywhat-gzh.png, https://cywhat.cn/img/cywhat-gzh.png 1.5x, https://cywhat.cn/img/cywhat-gzh.png 2x&#34;
         data-sizes=&#34;auto&#34;
-        alt=&#34;/img/blog-vx1.png&#34;
-        title=&#34;blog-vx1.png&#34; /&gt;
-&lt;img
+        alt=&#34;/img/cywhat-gzh.png&#34;
+        title=&#34;blog-vx1.png&#34; /&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition success open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-check-circle fa-fw&#34;&gt;&lt;/i&gt;小程序&lt;i class=&#34;details-icon fas fa-angle-right fa-fw&#34;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;img
         class=&#34;lazyload&#34;
         src=&#34;https://cywhat.cn/svg/loading.min.svg&#34;
-        data-src=&#34;https://cywhat.cn/img/cywhat-xcx.jpg&#34;
-        data-srcset=&#34;https://cywhat.cn/img/cywhat-xcx.jpg, https://cywhat.cn/img/cywhat-xcx.jpg 1.5x, https://cywhat.cn/img/cywhat-xcx.jpg 2x&#34;
+        data-src=&#34;https://cywhat.cn/img/cywhat-xcx-ss.png&#34;
+        data-srcset=&#34;https://cywhat.cn/img/cywhat-xcx-ss.png, https://cywhat.cn/img/cywhat-xcx-ss.png 1.5x, https://cywhat.cn/img/cywhat-xcx-ss.png 2x&#34;
         data-sizes=&#34;auto&#34;
-        alt=&#34;/img/cywhat-xcx.jpg&#34;
-        title=&#34;blog-vx1.png&#34; /&gt;
-&lt;img
-        class=&#34;lazyload&#34;
-        src=&#34;https://cywhat.cn/svg/loading.min.svg&#34;
-        data-src=&#34;https://cywhat.cn/img/cywhat-xcx-1.jpg&#34;
-        data-srcset=&#34;https://cywhat.cn/img/cywhat-xcx-1.jpg, https://cywhat.cn/img/cywhat-xcx-1.jpg 1.5x, https://cywhat.cn/img/cywhat-xcx-1.jpg 2x&#34;
-        data-sizes=&#34;auto&#34;
-        alt=&#34;/img/cywhat-xcx-1.jpg&#34;
+        alt=&#34;/img/cywhat-xcx-ss.png&#34;
         title=&#34;blog-vx1.png&#34; /&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
