@@ -30,7 +30,7 @@ preserveTaxonomyNames = true
 keywords = "cywhat,测试,hugo,hexo,博客,cywhat's blog"
 
 #
-disablePathToLower = true
+DisablePathToLower = true
 
 #兼容hexo引用文件路径
 [frontmatter]
