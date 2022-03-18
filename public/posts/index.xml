@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/posts/</link>
         <description>所有文章 | cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 20 Jan 2022 11:06:19 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 18 Mar 2022 11:31:21 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo的Loveit主题修改sitemap</title>
+    <link>https://cywhat.cn/Hugo%E7%9A%84Loveit%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9sitemap.xml%E9%85%8D%E7%BD%AE/</link>
+    <pubDate>Fri, 18 Mar 2022 11:31:21 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Hugo%E7%9A%84Loveit%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9sitemap.xml%E9%85%8D%E7%BD%AE/</guid>
+    <description><![CDATA[前景： 要解决的问题是在Hugo自动生成的sitemap.xml文件中（sitemap.xml等于是给搜索引擎看的网站的目录），出现了很多无关]]></description>
+</item><item>
     <title>Linux部署granafa&#43;node_exporter&#43;prometheus监控</title>
     <link>https://cywhat.cn/Linux%E9%83%A8%E7%BD%B2granafa-node_export-prometheus%E7%9B%91%E6%8E%A7/</link>
     <pubDate>Thu, 20 Jan 2022 11:06:19 &#43;0800</pubDate>
@@ -67,12 +74,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84cdn%E5%9B%BE%E5%BA%8A%E5%9C%B0%E5%9D%80/</guid>
     <description><![CDATA[1。准备工作 1、github账号 2、需要制作图床的图片 2.创建github项目 3.上传图片到项目 4.转换图片地址 转换地址 1 2 3 1.获取到在g]]></description>
-</item><item>
-    <title>Raid磁盘阵列</title>
-    <link>https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/</link>
-    <pubDate>Thu, 18 Nov 2021 10:01:24 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/</guid>
-    <description><![CDATA[1.什么是Raid 什么是Raid Raid 是英文(Redundant Array of Independent Disks)的缩写，翻译成中文是“独立磁盘冗余阵列”, 简称磁盘阵列（Dis]]></description>
 </item></channel>
 </rss>

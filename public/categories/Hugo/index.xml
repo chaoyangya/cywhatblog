@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/categories/Hugo/</link>
         <description>Hugo - 分类 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 14 Dec 2021 15:14:48 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Hugo/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 18 Mar 2022 11:31:21 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Hugo/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo的Loveit主题修改sitemap</title>
+    <link>https://cywhat.cn/Hugo%E7%9A%84Loveit%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9sitemap.xml%E9%85%8D%E7%BD%AE/</link>
+    <pubDate>Fri, 18 Mar 2022 11:31:21 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Hugo%E7%9A%84Loveit%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9sitemap.xml%E9%85%8D%E7%BD%AE/</guid>
+    <description><![CDATA[前景： 要解决的问题是在Hugo自动生成的sitemap.xml文件中（sitemap.xml等于是给搜索引擎看的网站的目录），出现了很多无关]]></description>
+</item><item>
     <title>Site.webmanifest异常处理</title>
     <link>https://cywhat.cn/site.webmanifest%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
     <pubDate>Tue, 14 Dec 2021 15:14:48 &#43;0800</pubDate>
