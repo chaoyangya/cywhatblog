@@ -720,9 +720,9 @@ date = [":filename", ":default"]
 # Sitemap config
 # 网站地图配置
 [sitemap]
-  changefreq = "weekly"
+  changefreq = "daily"
   filename = "sitemap-posttype-post.xml"
-  priority = 0.5
+  priority = 1.0
 
 # Permalinks config (https://gohugo.io/content-management/urls/#permalinks)
 # Permalinks 配置 (https://gohugo.io/content-management/urls/#permalinks)
