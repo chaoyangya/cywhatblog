@@ -56,4 +56,6 @@ Wallpaper_Wizard "Mac壁纸"
 ScreenFocus       "智能熄屏(非常好用)"
 
 SideNotes         "Mac侧边栏笔记(强迫症患者福音)"
+
+ACDSee Photo Studio 7  "Mac最好用的图片查看/编辑软件"
 ```

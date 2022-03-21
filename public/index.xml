@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cywhat&#39;s blog</title>
@@ -10,16 +11,142 @@
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Fri, 18 Mar 2022 11:31:21 +0800</lastBuildDate>
     
-        <atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Posts</title>
-      <link>https://cywhat.cn/posts/</link>
+      <title>Hugo的Loveit主题修改sitemap</title>
+      <link>https://cywhat.cn/Hugo%E7%9A%84Loveit%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9sitemap.xml%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Fri, 18 Mar 2022 11:31:21 +0800</pubDate>
       <author>cywhat@cywhat.cn (cywhat)</author>
-      <guid>https://cywhat.cn/posts/</guid>
-      <description></description>
+      <guid>https://cywhat.cn/Hugo%E7%9A%84Loveit%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9sitemap.xml%E9%85%8D%E7%BD%AE/</guid>
+      <description>前景： 要解决的问题是在Hugo自动生成的sitemap.xml文件中（sitemap.xml等于是给搜索引擎看的网站的目录），出现了很多无关</description>
+    </item>
+    
+    <item>
+      <title>Linux部署granafa&#43;node_exporter&#43;prometheus监控</title>
+      <link>https://cywhat.cn/Linux%E9%83%A8%E7%BD%B2granafa-node_export-prometheus%E7%9B%91%E6%8E%A7/</link>
+      <pubDate>Thu, 20 Jan 2022 11:06:19 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Linux%E9%83%A8%E7%BD%B2granafa-node_export-prometheus%E7%9B%91%E6%8E%A7/</guid>
+      <description>1、下载安装Node_exporter 1 2 3 4 5 6 7 8 9 10 11 #1.下载 wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz #2.解压 tar -zvxf node_exporter-1.3.1.linux-amd64.tar.gz #3.重命名 mv node_exporter-1.3.1.linux-amd64.tar.gz /usr/local/soft/node_exporter #4.启动并常驻后台,默认端口为</description>
+    </item>
+    
+    <item>
+      <title>Linux配置时间同步</title>
+      <link>https://cywhat.cn/Linux%E9%85%8D%E7%BD%AE%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5/</link>
+      <pubDate>Wed, 05 Jan 2022 10:49:45 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Linux%E9%85%8D%E7%BD%AE%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5/</guid>
+      <description>前景 排查售后问题发现一个奇葩BUG是因为Linux服务器时间不同步导致 1.安装ntpdate 1 yum install -y ntpdate 2.同步时间 1 ntpdate 0.asia.pool.ntp.org #0.asia.pool.ntp.org 为ntp时间服务器</description>
+    </item>
+    
+    <item>
+      <title>Linux卸载python</title>
+      <link>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDpython/</link>
+      <pubDate>Thu, 23 Dec 2021 15:49:42 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDpython/</guid>
+      <description>1.rpm镜像安装方式卸载 1.卸载Python3(仅适合通过rpm安装的python) 1 rpm -qa|grep python3|xargs rpm -ev --allmatches --nodeps 2.删除残留文件 1 whereis python3 |xargs rm -frv 3.删除软</description>
+    </item>
+    
+    <item>
+      <title>Linux安装python3.7</title>
+      <link>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85python3.7.0/</link>
+      <pubDate>Thu, 23 Dec 2021 15:13:53 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85python3.7.0/</guid>
+      <description>前景 **新服务器搭建Django Web服务需要安装python3.7.0 1.前置条件(一定要在安装之前) 安装python需要依赖(-y：安装</description>
+    </item>
+    
+    <item>
+      <title>ModuleNotFoundError: No Module Named &#39;_Ctypes&#39; Make: *** [Install] 错误 1</title>
+      <link>https://cywhat.cn/ModuleNotFoundError-No-module-named-_ctypes-make-install-%E9%94%99%E8%AF%AF-1/</link>
+      <pubDate>Thu, 23 Dec 2021 10:44:14 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/ModuleNotFoundError-No-module-named-_ctypes-make-install-%E9%94%99%E8%AF%AF-1/</guid>
+      <description>前景 新服务器安装python3.7.0在make install的时候报错ModuleNotFoundError: No module named &#39;_ctypes&#39; make: *** [install] 错误 1导致编译</description>
+    </item>
+    
+    <item>
+      <title>zipimport.ZipImportError: can&#39;t decompress data; zlib not available make: *** [install] 错误 1</title>
+      <link>https://cywhat.cn/zipimport.ZipImportError-cant-decompress-data-zlib-not-available-make-install-%E9%94%99%E8%AF%AF-1/</link>
+      <pubDate>Thu, 23 Dec 2021 10:36:34 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/zipimport.ZipImportError-cant-decompress-data-zlib-not-available-make-install-%E9%94%99%E8%AF%AF-1/</guid>
+      <description>前景 新服务器安装python3.7.0在make install的时候报错zipimport.ZipImportError: can&#39;t decompress data; zlib not available make: *** [install]</description>
+    </item>
+    
+    <item>
+      <title>如何保持Ssh长时间连接不断开</title>
+      <link>https://cywhat.cn/%E5%A6%82%E4%BD%95%E4%BF%9D%E6%8C%81Ssh%E9%95%BF%E6%97%B6%E9%97%B4%E9%93%BE%E6%8E%A5%E4%B8%8D%E6%96%AD%E5%BC%80/</link>
+      <pubDate>Wed, 22 Dec 2021 14:29:11 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/%E5%A6%82%E4%BD%95%E4%BF%9D%E6%8C%81Ssh%E9%95%BF%E6%97%B6%E9%97%B4%E9%93%BE%E6%8E%A5%E4%B8%8D%E6%96%AD%E5%BC%80/</guid>
+      <description>前景： 新购入的华为云服务器SSH连接5分钟没有任何操作就自动断开了，该文章主要为了解决该问题，同样的场景适合各种云服务器/本地物理服务器等 1</description>
+    </item>
+    
+    <item>
+      <title>Site.webmanifest异常处理</title>
+      <link>https://cywhat.cn/site.webmanifest%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
+      <pubDate>Tue, 14 Dec 2021 15:14:48 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/site.webmanifest%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</guid>
+      <description>1.前景 搭建完博客后，发现开发者模式中site.webmanifest加载非常慢，最后加载异常(404/超时等),严重拖慢博客的加载速度 2.</description>
+    </item>
+    
+    <item>
+      <title>如何创建自己的cdn图床地址</title>
+      <link>https://cywhat.cn/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84cdn%E5%9B%BE%E5%BA%8A%E5%9C%B0%E5%9D%80/</link>
+      <pubDate>Fri, 10 Dec 2021 16:01:02 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84cdn%E5%9B%BE%E5%BA%8A%E5%9C%B0%E5%9D%80/</guid>
+      <description>1。准备工作 1、github账号 2、需要制作图床的图片 2.创建github项目 3.上传图片到项目 4.转换图片地址 转换地址 1 2 3 1.获取到在g</description>
+    </item>
+    
+    <item>
+      <title>Raid磁盘阵列</title>
+      <link>https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/</link>
+      <pubDate>Thu, 18 Nov 2021 10:01:24 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/</guid>
+      <description>1.什么是Raid 什么是Raid Raid 是英文(Redundant Array of Independent Disks)的缩写，翻译成中文是“独立磁盘冗余阵列”, 简称磁盘阵列（Dis</description>
+    </item>
+    
+    <item>
+      <title>Linux使用iftop查看带宽占用情况</title>
+      <link>https://cywhat.cn/Linux%E4%BD%BF%E7%94%A8iftop%E6%9F%A5%E7%9C%8B%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/</link>
+      <pubDate>Wed, 17 Nov 2021 10:16:41 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Linux%E4%BD%BF%E7%94%A8iftop%E6%9F%A5%E7%9C%8B%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/</guid>
+      <description>1.安装iftop 1 2 3 centos: yum install iftop debian: apt-get install iftop 2.使用iftop 1 2 3 iftop -i eth1 #查看eth1网卡的带宽占用情况 iftop -i eth1 -P #显示详细端口流量占用 3.if</description>
+    </item>
+    
+    <item>
+      <title>Loveit开启评论功能</title>
+      <link>https://cywhat.cn/Loveit%E5%BC%80%E5%90%AF%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</link>
+      <pubDate>Thu, 21 Oct 2021 17:07:26 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Loveit%E5%BC%80%E5%90%AF%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</guid>
+      <description>小tips 该文章仅仅针对Loveit主题有效，其他自己尝试。 Loveit开启评论 loveit自带的有valine的配置，我们需要先注册一些要</description>
+    </item>
+    
+    <item>
+      <title>Loveit主题开启文章赞赏</title>
+      <link>https://cywhat.cn/Loveit%E4%B8%BB%E9%A2%98%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E8%B5%9E%E8%B5%8F/</link>
+      <pubDate>Thu, 21 Oct 2021 16:36:41 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Loveit%E4%B8%BB%E9%A2%98%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E8%B5%9E%E8%B5%8F/</guid>
+      <description>小tips 该文章仅仅针对Loveit主题有效，其他自己尝试。 添加文章打赏功能 注意 PS: 使用hugo版本必须为拓展版hugo_extended，如</description>
+    </item>
+    
+    <item>
+      <title>Loveit主题的一些美化设置</title>
+      <link>https://cywhat.cn/loveit%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BE%8E%E5%8C%96%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Thu, 21 Oct 2021 16:08:45 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/loveit%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BE%8E%E5%8C%96%E8%AE%BE%E7%BD%AE/</guid>
+      <description>前景 hugo的渲染速度&amp;quot;婶婶&amp;rdquo;(深深)的打动了我，于是决定从hexo迁移到hugo，迁移的帖子之后总结一下，先记录一下</description>
     </item>
     
     <item>
@@ -28,65 +155,565 @@
       <pubDate>Tue, 19 Oct 2021 22:01:44 +0800</pubDate>
       <author>cywhat@cywhat.cn (cywhat)</author>
       <guid>https://cywhat.cn/about/</guid>
-      <description>&lt;div class=&#34;details admonition success open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-check-circle fa-fw&#34;&gt;&lt;/i&gt;!&lt;i class=&#34;details-icon fas fa-angle-right fa-fw&#34;&gt;&lt;/i&gt;
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&amp;quot; &amp;mdash;-关于我&amp;mdash;-&amp;rdquo;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;h1 id=&#34;---codingutf-8---&#34;&gt;-&lt;em&gt;- coding:utf-8 -&lt;/em&gt;-&lt;/h1&gt;
-&lt;p&gt;class IntroduceMyself():&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&#39;&#39;&#39; 测开Dog的介绍 &#39;&#39;&#39;
-
-
-def __init__(self):
-
-    self.name = &amp;quot;cywhat&amp;quot;
-    self.age = 27
-    self.height = &amp;quot;172cm&amp;quot;
-    self.email = &amp;quot;45204307@qq.com&amp;quot;
-    self.wechat = &amp;quot;SwagAlong&amp;quot;
-    self.hometown = &amp;quot;山西忻州&amp;quot;
-    self.hobby = &amp;quot;LOL/王者荣耀/摄影&amp;quot;
-    self.school = &amp;quot;麻省理工(YY)&amp;quot;
-    self.graduation_time = 4
-    self.blog = &amp;quot;https://cywhat.cn&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;div class=&#34;details admonition success open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-check-circle fa-fw&#34;&gt;&lt;/i&gt;公众号&lt;i class=&#34;details-icon fas fa-angle-right fa-fw&#34;&gt;&lt;/i&gt;
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;img
-        class=&#34;lazyload&#34;
-        src=&#34;https://cywhat.cn/svg/loading.min.svg&#34;
-        data-src=&#34;https://cywhat.cn/img/cywhat-gzh.png&#34;
-        data-srcset=&#34;https://cywhat.cn/img/cywhat-gzh.png, https://cywhat.cn/img/cywhat-gzh.png 1.5x, https://cywhat.cn/img/cywhat-gzh.png 2x&#34;
-        data-sizes=&#34;auto&#34;
-        alt=&#34;/img/cywhat-gzh.png&#34;
-        title=&#34;blog-vx1.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;div class=&#34;details admonition question open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-question-circle fa-fw&#34;&gt;&lt;/i&gt;小程序&lt;i class=&#34;details-icon fas fa-angle-right fa-fw&#34;&gt;&lt;/i&gt;
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;img
-        class=&#34;lazyload&#34;
-        src=&#34;https://cywhat.cn/svg/loading.min.svg&#34;
-        data-src=&#34;https://cywhat.cn/img/cywhat-xcx-ss.png&#34;
-        data-srcset=&#34;https://cywhat.cn/img/cywhat-xcx-ss.png, https://cywhat.cn/img/cywhat-xcx-ss.png 1.5x, https://cywhat.cn/img/cywhat-xcx-ss.png 2x&#34;
-        data-sizes=&#34;auto&#34;
-        alt=&#34;/img/cywhat-xcx-ss.png&#34;
-        title=&#34;blog-vx1.png&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>! &amp;quot; &amp;mdash;-关于我&amp;mdash;-&amp;rdquo; -- coding:utf-8 -- class IntroduceMyself(): &#39;&#39;&#39; 测开Dog的介绍 &#39;&#39;&#39; def __init__(self): self.name = &amp;quot;cywhat&amp;quot; self.age = 27 self.height = &amp;quot;172cm&amp;quot; self.email = &amp;quot;45204307@qq.com&amp;quot; self.wechat = &amp;quot;SwagAlong&amp;quot; self.hometown = &amp;quot;山西</description>
+    </item>
+    
+    <item>
+      <title>fonts.googleapis.com访问较慢[已解决]</title>
+      <link>https://cywhat.cn/fonts-googleapis-com%E8%AE%BF%E9%97%AE%E8%BE%83%E6%85%A2-%E5%B7%B2%E8%A7%A3%E5%86%B3/</link>
+      <pubDate>Tue, 12 Oct 2021 18:14:32 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/fonts-googleapis-com%E8%AE%BF%E9%97%AE%E8%BE%83%E6%85%A2-%E5%B7%B2%E8%A7%A3%E5%86%B3/</guid>
+      <description>前景： 自己写的测试工具发现最近打开页面时快时慢，查了原因，发现是css引用的谷歌字体源：fonts.googleapis.com 解决办法： 1</description>
+    </item>
+    
+    <item>
+      <title>avn自动切换node版本</title>
+      <link>https://cywhat.cn/avn%E8%87%AA%E5%8A%A8%E5%88%87%E6%8D%A2node%E7%89%88%E6%9C%AC/</link>
+      <pubDate>Wed, 29 Sep 2021 17:23:33 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/avn%E8%87%AA%E5%8A%A8%E5%88%87%E6%8D%A2node%E7%89%88%E6%9C%AC/</guid>
+      <description>前景： 服务器中俩个服务需要用到node，但是其中一个服务需要使用低版本的node，另一个则需要高版本node 1.首先安装nvm 1 2 3 4 5 6 7</description>
+    </item>
+    
+    <item>
+      <title>Django中的form表单校验</title>
+      <link>https://cywhat.cn/Django%E4%B8%AD%E7%9A%84form%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C/</link>
+      <pubDate>Fri, 24 Sep 2021 18:20:37 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Django%E4%B8%AD%E7%9A%84form%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C/</guid>
+      <description>前景： 我在使用django的form组件时，发现在view函数中的`form.is_valid()`在form表单校验未通过的情况下，返回的</description>
+    </item>
+    
+    <item>
+      <title>hexo迁移需要进行安装的一些依赖</title>
+      <link>https://cywhat.cn/hexo%E8%BF%81%E7%A7%BB%E9%9C%80%E8%A6%81%E8%BF%9B%E8%A1%8C%E5%AE%89%E8%A3%85%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BE%9D%E8%B5%96/</link>
+      <pubDate>Fri, 24 Sep 2021 17:51:42 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/hexo%E8%BF%81%E7%A7%BB%E9%9C%80%E8%A6%81%E8%BF%9B%E8%A1%8C%E5%AE%89%E8%A3%85%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BE%9D%E8%B5%96/</guid>
+      <description>前景： 更换新设备 or 更换新工作环境需要重新本地部署hexo环境,需要有整个工程的文件夹 1.安装hexo 1 npm install -g hexo-cli 2.安装node_moudle</description>
+    </item>
+    
+    <item>
+      <title>ERROR: Re-run SonarScanner using the -X switch to enable full debug logging.</title>
+      <link>https://cywhat.cn/ERROR-Re-run-SonarScanner-using-the-X-switch-to-enable-full-debug-logging/</link>
+      <pubDate>Thu, 23 Sep 2021 11:25:17 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/ERROR-Re-run-SonarScanner-using-the-X-switch-to-enable-full-debug-logging/</guid>
+      <description>前景 jenkins构建sonarqube报错 报错： &amp;quot;ERROR: Re-run SonarScanner using the -X switch to enable full debug logging. 1.打开sonarqube的SCM配置 2.重新构建即可</description>
+    </item>
+    
+    <item>
+      <title>Linux搭建sonarqube</title>
+      <link>https://cywhat.cn/Linux%E6%90%AD%E5%BB%BAsonarqube/</link>
+      <pubDate>Wed, 22 Sep 2021 16:35:47 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Linux%E6%90%AD%E5%BB%BAsonarqube/</guid>
+      <description>前言 Linux版本:centos7.6 Java:Jdk11 SonarQube:8.2.0.32929 PostgreSQL:12 sonar-scanner:4.6.2.2472 1.安装Jdk 安装JDK 2.安装PostgreSQL 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 1.安装镜</description>
+    </item>
+    
+    <item>
+      <title>Jenkins启动报错原因分析</title>
+      <link>https://cywhat.cn/Jenkins%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90/</link>
+      <pubDate>Sat, 18 Sep 2021 17:58:18 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Jenkins%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90/</guid>
+      <description>1.启动jenkins 1 systemctl start jenkins #如果命令不可使用，首先要把jenkins放到系统启动配置中，详情请百度 2.查看jenkins启动状态 1 systemctl status jenkins.service</description>
+    </item>
+    
+    <item>
+      <title>Linux安装jdk11</title>
+      <link>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85jdk11/</link>
+      <pubDate>Sat, 18 Sep 2021 17:47:51 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85jdk11/</guid>
+      <description>1.下载jdk 下载安装 1 提取码: brq2 2.上传到服务器 3.解压 1 tar -zvxf openjdk-11+28_linux-x64_bin.tar.gz 4.移动文件夹并重命名 1 mv jdk-11/ /usr/local/java 5.配置环境变量 1 2 3 4 5 6 vim /etc/profile export JAVA_HOME=/usr/local/java export PATH=$JAVA_HOME/bin:$PATH #一</description>
+    </item>
+    
+    <item>
+      <title>Django自定义404页面</title>
+      <link>https://cywhat.cn/Django%E8%87%AA%E5%AE%9A%E4%B9%89404%E9%A1%B5%E9%9D%A2/</link>
+      <pubDate>Fri, 17 Sep 2021 19:52:13 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Django%E8%87%AA%E5%AE%9A%E4%B9%89404%E9%A1%B5%E9%9D%A2/</guid>
+      <description>前景： 使用django部署的web应用，在url错误的情况下，页面会报错简单的404页面，并不美观 Django版本：1.11.7 高于2.0版</description>
+    </item>
+    
+    <item>
+      <title>Mac必备软件推荐</title>
+      <link>https://cywhat.cn/Mac%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Fri, 10 Sep 2021 14:54:10 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Mac%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</guid>
+      <description>前景： 前几天系统降级了，发现之前使用的一些得心应手的app忘记名字了，很难找，不过最后还是在时间机器里找到了，特意开帖记录分享一下，常见的就</description>
+    </item>
+    
+    <item>
+      <title>html简单实现button加载中且置灰不可点击</title>
+      <link>https://cywhat.cn/html%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0button%E5%8A%A0%E8%BD%BD%E4%B8%AD%E4%B8%94%E7%BD%AE%E7%81%B0%E4%B8%8D%E5%8F%AF%E7%82%B9%E5%87%BB/</link>
+      <pubDate>Thu, 09 Sep 2021 11:26:12 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/html%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0button%E5%8A%A0%E8%BD%BD%E4%B8%AD%E4%B8%94%E7%BD%AE%E7%81%B0%E4%B8%8D%E5%8F%AF%E7%82%B9%E5%87%BB/</guid>
+      <description>简单js几行代码实现点击按钮,实现加载中，且置灰不可点击 1.html部分 1 2 3 4 &amp;lt;button id=&amp;#34;Submit&amp;#34; type=&amp;#34;button&amp;#34; class=&amp;#34;btn btn-rounded btn-primary mb-6&amp;#34; value=&amp;#34;获取验证码&amp;#34;&amp;g</description>
+    </item>
+    
+    <item>
+      <title>Django发送邮箱验证码实现以及邮箱html模板</title>
+      <link>https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/</link>
+      <pubDate>Wed, 08 Sep 2021 14:40:18 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/</guid>
+      <description>1.setting配置 1 2 3 4 5 6 7 EMAIL_BACKEND = &amp;#39;django.core.mail.backends.smtp.EmailBackend&amp;#39; EMAIL_HOST = &amp;#34;smtp.163.com&amp;#34; # 服务器 EMAIL_PORT = 25 # 一般情况下都为25 EMAIL_HOST_USER = &amp;#34;xxxx@163.com&amp;#34; # 账号 EMAIL_HOST_PASSWORD = &amp;#34;XXXXXXXXXXXX&amp;#34; # 密码 (注意：这里的密码指的是授权码) EMAIL_USE_TLS</description>
+    </item>
+    
+    <item>
+      <title>Mac忽略系统更新提醒，并取消小红点</title>
+      <link>https://cywhat.cn/Mac%E5%BF%BD%E7%95%A5%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E6%8F%90%E9%86%92%E5%B9%B6%E5%8F%96%E6%B6%88%E5%B0%8F%E7%BA%A2%E7%82%B9/</link>
+      <pubDate>Tue, 07 Sep 2021 14:58:29 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Mac%E5%BF%BD%E7%95%A5%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E6%8F%90%E9%86%92%E5%B9%B6%E5%8F%96%E6%B6%88%E5%B0%8F%E7%BA%A2%E7%82%B9/</guid>
+      <description>1.首先关掉系统的自动更新设置** 1 2 3 4 5 1.系统偏好设置--软件更新 2.取消选择&amp;#34;自动保持我的Mac最新&amp;#34; 3.高级--取</description>
+    </item>
+    
+    <item>
+      <title>Tampermonkey&#43;脚本&#43;Aira2GUI直链下载百度网盘资源</title>
+      <link>https://cywhat.cn/Tampermonkey-%E8%84%9A%E6%9C%AC-Aira2GUI%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90/</link>
+      <pubDate>Fri, 03 Sep 2021 14:42:33 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Tampermonkey-%E8%84%9A%E6%9C%AC-Aira2GUI%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E8%B5%84%E6%BA%90/</guid>
+      <description>前景： 各大LM运营限制带宽速度，导致必须要成为尊贵的VIP客户才能勉强享受到自己的带宽 PS：我这里屎以chrome浏览器举例，其他不保证成功</description>
+    </item>
+    
+    <item>
+      <title>Linux关闭防火墙</title>
+      <link>https://cywhat.cn/Linux%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/</link>
+      <pubDate>Wed, 01 Sep 2021 10:43:37 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Linux%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
+      <description>注意:ConterOS7.0以上使用的是firewall，ConterOS7.0以下使用的是iptables 1.查看防火状态 1 2 3 systemctl status firewalld #7</description>
+    </item>
+    
+    <item>
+      <title>DJango Uncaught ReferenceError: $ is not defined</title>
+      <link>https://cywhat.cn/DJango-Uncaught-ReferenceError-is-not-defined/</link>
+      <pubDate>Tue, 31 Aug 2021 17:12:16 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/DJango-Uncaught-ReferenceError-is-not-defined/</guid>
+      <description>前提 用django和jquery写的web应用,html页面js报错,信息如下: 1 DJango Uncaught ReferenceError: $ is not defined 原因 js语法有问题,未识别为js语法 解决 需要</description>
+    </item>
+    
+    <item>
+      <title>selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary</title>
+      <link>https://cywhat.cn/selenium-common-exceptions-WebDriverException-Message-unknown-error-cannot-find-Chrome-binary/</link>
+      <pubDate>Fri, 20 Aug 2021 17:23:21 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/selenium-common-exceptions-WebDriverException-Message-unknown-error-cannot-find-Chrome-binary/</guid>
+      <description>报错: selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary 原因是: 运行脚本的环境中没有找到chrome浏览器 解决: windows/mac: 指定浏览器位置 1 2 $ chrome_path = r&amp;#34;/Library/Frameworks/Python.framework/Versions/3.6/bin/chromedriver&amp;#34; #mac地址 win自己更换路径即可</description>
+    </item>
+    
+    <item>
+      <title>Centos7安装chrome浏览器</title>
+      <link>https://cywhat.cn/Centos7%E5%AE%89%E8%A3%85chrome%E6%B5%8F%E8%A7%88%E5%99%A8/</link>
+      <pubDate>Fri, 20 Aug 2021 17:08:45 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Centos7%E5%AE%89%E8%A3%85chrome%E6%B5%8F%E8%A7%88%E5%99%A8/</guid>
+      <description>1.下载chrome for linux压缩包 百度网盘 1 $ 提取码: 1f4n 更多版本 2.上传解压压缩包 1 $ unzip google-chrome-stable_deb_rpm_91.0.4472.77.zip #解压完成会出现 .deb 和 .rpm 的俩个文件 3.安装解压c</description>
+    </item>
+    
+    <item>
+      <title>libvulkan.so.1()(64bit)缺少依赖</title>
+      <link>https://cywhat.cn/libvulkan-so-1-64bit-%E7%BC%BA%E5%B0%91%E4%BE%9D%E8%B5%96/</link>
+      <pubDate>Fri, 20 Aug 2021 17:04:44 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/libvulkan-so-1-64bit-%E7%BC%BA%E5%B0%91%E4%BE%9D%E8%B5%96/</guid>
+      <description>前提 在Linux安装chrome的时候,报错缺少libvulkan.so.1()(64bit) 这个依赖 解决: 1 sudo yum -y install vulkan-1.1.97.0-1.el7.x86_64</description>
+    </item>
+    
+    <item>
+      <title>Mysql连接以及增删改查语句</title>
+      <link>https://cywhat.cn/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5/</link>
+      <pubDate>Wed, 18 Aug 2021 16:41:15 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5/</guid>
+      <description>1.连接数据库(mysql) 1 mysql -h机器ip -u用户名 -p密码 2.查看所有数据库 1 show databases; 3.进入某个数据库 1 use xxx; # xxx为数据库名 4.查看数据</description>
+    </item>
+    
+    <item>
+      <title>解决hexo图片不展示问题</title>
+      <link>https://cywhat.cn/%E8%A7%A3%E5%86%B3hexo%E5%9B%BE%E7%89%87%E4%B8%8D%E5%B1%95%E7%A4%BA%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Wed, 18 Aug 2021 16:12:40 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/%E8%A7%A3%E5%86%B3hexo%E5%9B%BE%E7%89%87%E4%B8%8D%E5%B1%95%E7%A4%BA%E9%97%AE%E9%A2%98/</guid>
+      <description>1.更改hexo配置文件 1 vim _config.yml #配置_config.yml里面的post_asset_folder:false 设置为 true 如图 2.安装npm插件</description>
+    </item>
+    
+    <item>
+      <title>newman生成好看的html报告</title>
+      <link>https://cywhat.cn/newman%E7%94%9F%E6%88%90%E5%A5%BD%E7%9C%8B%E7%9A%84html%E6%8A%A5%E5%91%8A/</link>
+      <pubDate>Wed, 18 Aug 2021 10:38:09 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/newman%E7%94%9F%E6%88%90%E5%A5%BD%E7%9C%8B%E7%9A%84html%E6%8A%A5%E5%91%8A/</guid>
+      <description>PS:运行newman需要node 版本大于10 1.安装newman 1 npm install -g newman 2.安装普通html报告插件(建议安装) 1 npm install -g newman-reporter-html 3.安装美化h</description>
+    </item>
+    
+    <item>
+      <title>sed: -e expression #1, char 24: unknown option to &#39;s&#39; </title>
+      <link>https://cywhat.cn/sed-e-expression-1-char-24-unknown-option-to-s/</link>
+      <pubDate>Tue, 17 Aug 2021 18:15:24 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/sed-e-expression-1-char-24-unknown-option-to-s/</guid>
+      <description>在使用 sed -e 批量替换命令时候,报错如下: 1 $ &amp;#34;sed: -e expression #1, char 24: unknown option to `s` &amp;#34; 原因: 1 $ 需要替换的内容中有符号,且该符号和你用来分割的符号一样,所以该条命</description>
+    </item>
+    
+    <item>
+      <title>hexo d -g 部署失败</title>
+      <link>https://cywhat.cn/hexo-d-g-%E9%83%A8%E7%BD%B2%E5%A4%B1%E8%B4%A5/</link>
+      <pubDate>Tue, 17 Aug 2021 18:07:39 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/hexo-d-g-%E9%83%A8%E7%BD%B2%E5%A4%B1%E8%B4%A5/</guid>
+      <description>hexo d -g 突然部署失败,报错如下: 1 2 3 $ fatal: unable to access &amp;#39;https://github.com/xxxxx/xxxx.git/&amp;#39;: The requested URL returned error: 403 err: Error: Spawn failed at ChildProcess.&amp;lt;anonymous 1.更改hexo配置文件中的git镜像映射地址 1 $ vim _config.yml #将https</description>
+    </item>
+    
+    <item>
+      <title>node切换版本</title>
+      <link>https://cywhat.cn/node%E5%88%87%E6%8D%A2%E7%89%88%E6%9C%AC/</link>
+      <pubDate>Tue, 17 Aug 2021 16:00:12 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/node%E5%88%87%E6%8D%A2%E7%89%88%E6%9C%AC/</guid>
+      <description>1.安装n 1 npm install -g n 2.使用 n 下载所需node 1 n 10.16.3 #版本号 不需要加v 3.下载最新版本 1 n latest 4.删除某个版本 1 n rm 10.16.3 #版本号 不需要加v 5.查</description>
+    </item>
+    
+    <item>
+      <title>怎么让你的个人博客可以在百度谷歌搜索到</title>
+      <link>https://cywhat.cn/%E6%80%8E%E4%B9%88%E8%AE%A9%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%8F%AF%E4%BB%A5%E5%9C%A8%E7%99%BE%E5%BA%A6%E8%B0%B7%E6%AD%8C%E6%90%9C%E7%B4%A2%E5%88%B0/</link>
+      <pubDate>Fri, 23 Jul 2021 11:34:03 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/%E6%80%8E%E4%B9%88%E8%AE%A9%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%8F%AF%E4%BB%A5%E5%9C%A8%E7%99%BE%E5%BA%A6%E8%B0%B7%E6%AD%8C%E6%90%9C%E7%B4%A2%E5%88%B0/</guid>
+      <description>怎么让百度和谷歌收录你的博客(仅仅局限于拥有自己域名的个人博客使用) 收录的好处: 被搜索引擎收录后，别人就可以通过搜索引擎搜索到你的文章 百度:</description>
+    </item>
+    
+    <item>
+      <title>Shadowrocket小火箭配置规则文件</title>
+      <link>https://cywhat.cn/Shadowrocket%E5%B0%8F%E7%81%AB%E7%AE%AD%E9%85%8D%E7%BD%AE%E8%A7%84%E5%88%99%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Tue, 20 Jul 2021 15:59:03 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Shadowrocket%E5%B0%8F%E7%81%AB%E7%AE%AD%E9%85%8D%E7%BD%AE%E8%A7%84%E5%88%99%E6%96%87%E4%BB%B6/</guid>
+      <description>国内外划分+广告过滤 1 https://raw.githubusercontent.com/chaoyangya/cywhat-block-ad/master/cywhat-block-ad.conf 黑名单(国内外划分无广告过滤) 1 https://raw.githubusercontent.com/chaoyangya/cywhat-block-ad/master/cywhat-no-block-ad.conf</description>
+    </item>
+    
+    <item>
+      <title>bash:jstack: 未找到命令</title>
+      <link>https://cywhat.cn/bash-jstack-%E6%9C%AA%E6%89%BE%E5%88%B0%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Tue, 20 Jul 2021 10:12:22 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/bash-jstack-%E6%9C%AA%E6%89%BE%E5%88%B0%E5%91%BD%E4%BB%A4/</guid>
+      <description>jstack报错如下 1 $ -bash: jstack: 未找到命令 安装以下依赖 1 $ yum install java-1.7.0-openjdk-devel -y</description>
+    </item>
+    
+    <item>
+      <title>Java线上问题排查</title>
+      <link>https://cywhat.cn/Java%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/</link>
+      <pubDate>Tue, 20 Jul 2021 10:03:12 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Java%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/</guid>
+      <description>1、top 查看占用资源信息以及pid 1 top 2、查看pid下绑定线程 1 top -Hp pid1(进程id) 3、拿到需要查询的线程pid,转换成16进制 1 printf &amp;#39;%x&amp;#39;</description>
+    </item>
+    
+    <item>
+      <title>npm切换版本</title>
+      <link>https://cywhat.cn/npm%E5%88%87%E6%8D%A2%E7%89%88%E6%9C%AC/</link>
+      <pubDate>Wed, 14 Jul 2021 17:18:21 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/npm%E5%88%87%E6%8D%A2%E7%89%88%E6%9C%AC/</guid>
+      <description>Npm切换版本 npm需要切换版本如果没有安装nvm很头疼,会存在以下三种情况: ① Node环境还在,只是Npm被卸载 ② Npm和Node版本不兼</description>
+    </item>
+    
+    <item>
+      <title>nvm: Cannot uninstall currently-active node version, vx.x.x (inferred from x.x.x)</title>
+      <link>https://cywhat.cn/nvm-Cannot-uninstall-currently-active-node-version-vx-x-x-inferred-from-x-x-x/</link>
+      <pubDate>Wed, 14 Jul 2021 17:14:24 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/nvm-Cannot-uninstall-currently-active-node-version-vx-x-x-inferred-from-x-x-x/</guid>
+      <description>#使用nvm卸载node版本时报错如下: 1 2 $ nvm: Cannot uninstall currently-active node version, vx.x.x (inferred from x.x.x) 需要先退出已经使用的node环境 1 $ nvm deactivate 然后再执行卸载命令 1 $ nvm uninstall vx.x.x</description>
+    </item>
+    
+    <item>
+      <title>hexo优化加载速度</title>
+      <link>https://cywhat.cn/hexo%E4%BC%98%E5%8C%96%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6/</link>
+      <pubDate>Wed, 14 Jul 2021 15:38:49 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/hexo%E4%BC%98%E5%8C%96%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6/</guid>
+      <description>注意该方法利用插件更改配置,如主题中有Google字体导致加载缓慢,请移步其他内容 利用插件 hexo-all-minifier 安装插件 1 npm install hexo-all-minifier --save 如果安装失败,请使用cnpm 1</description>
+    </item>
+    
+    <item>
+      <title>hexo&#43;netlify&#43;git&#43;个人域名搭建博客</title>
+      <link>https://cywhat.cn/hexo-netlify-git-%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Mon, 12 Jul 2021 14:52:22 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/hexo-netlify-git-%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>部署过程需要用到一些Linux命令,且本文部署操作机为Mac,如是Windows不保证能100%成功噢 1、部署准备 1 2 3 4 5 操作机: Mac(iterm) Git: 创建</description>
+    </item>
+    
+    <item>
+      <title>hexo修改新建文章的默认字段</title>
+      <link>https://cywhat.cn/hexo%E4%BF%AE%E6%94%B9%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0%E7%9A%84%E9%BB%98%E8%AE%A4%E5%AD%97%E6%AE%B5/</link>
+      <pubDate>Fri, 09 Jul 2021 14:33:15 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/hexo%E4%BF%AE%E6%94%B9%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0%E7%9A%84%E9%BB%98%E8%AE%A4%E5%AD%97%E6%AE%B5/</guid>
+      <description>因为每次新建文章都需要自己新增字段,所以就找到了修改新建文章的默认字段所在地,果然社会的进步跟人的偷懒也不是毫无关系(啊哈哈哈) 1、默认使用</description>
+    </item>
+    
+    <item>
+      <title>hexo删除文章</title>
+      <link>https://cywhat.cn/hexo%E5%88%A0%E9%99%A4%E6%96%87%E7%AB%A0/</link>
+      <pubDate>Thu, 08 Jul 2021 18:32:57 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/hexo%E5%88%A0%E9%99%A4%E6%96%87%E7%AB%A0/</guid>
+      <description>hexo删除文章 1 删除 &amp;#34;_posts&amp;#34; 中的 .md 结尾的文件 执行生效 1 hexo d -g</description>
+    </item>
+    
+    <item>
+      <title>hexo管理多个标签</title>
+      <link>https://cywhat.cn/hexo%E7%AE%A1%E7%90%86%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Thu, 08 Jul 2021 18:07:20 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/hexo%E7%AE%A1%E7%90%86%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE/</guid>
+      <description>1、hexo多个标签应该遵循 list 格式,如下 1 2 3 title: XXX date: 2021-04-07 17:39:32 tags: [标签1,标签2]</description>
+    </item>
+    
+    <item>
+      <title>supervisord管理常驻进程uwsgi/nginx/redis/mongodb</title>
+      <link>https://cywhat.cn/supervisord%E7%AE%A1%E7%90%86%E5%B8%B8%E9%A9%BB%E8%BF%9B%E7%A8%8Buwsgi-nginx-redis-mongodb/</link>
+      <pubDate>Mon, 24 May 2021 11:35:23 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/supervisord%E7%AE%A1%E7%90%86%E5%B8%B8%E9%A9%BB%E8%BF%9B%E7%A8%8Buwsgi-nginx-redis-mongodb/</guid>
+      <description>解决部署的一些项目,因机器关机/重启导致项目需要手动重新启动的问题 1.安装supervisor(3种选一种) 1 2 3 4 5 6 7 8 #yum安装 yum install</description>
+    </item>
+    
+    <item>
+      <title>nginx解决多个端口映射80的配置</title>
+      <link>https://cywhat.cn/nginx%E5%A4%9A%E4%B8%AA%E7%AB%AF%E5%8F%A3/</link>
+      <pubDate>Fri, 16 Apr 2021 10:12:11 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/nginx%E5%A4%9A%E4%B8%AA%E7%AB%AF%E5%8F%A3/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 server { listen 80; server_name xx.cn; #域名1 location / { proxy_pass http://x.x.x.x:9001; #域名1需要映射到80端口的服务端口 } } server { listen 80; server_name xx.cn; #域名2 location / { proxy_pass http://xx.xx.xx.xx:7300; #域名</description>
+    </item>
+    
+    <item>
+      <title>Linux部署easy_mock</title>
+      <link>https://cywhat.cn/Linux%E9%83%A8%E7%BD%B2easy-mock/</link>
+      <pubDate>Fri, 16 Apr 2021 10:01:27 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Linux%E9%83%A8%E7%BD%B2easy-mock/</guid>
+      <description>前期准备： 1、Linux：CentOS Linux release 7.8.2003 (Core) 2、mongodb：3.4.24 3、redis：4.0.14 4、node：8.9.0 PS： no</description>
+    </item>
+    
+    <item>
+      <title>Linux管理node版本</title>
+      <link>https://cywhat.cn/Linux%E7%AE%A1%E7%90%86node%E7%89%88%E6%9C%AC/</link>
+      <pubDate>Wed, 07 Apr 2021 17:39:32 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Linux%E7%AE%A1%E7%90%86node%E7%89%88%E6%9C%AC/</guid>
+      <description>1.安装nvm 1 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash 或者 1 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash 2.nvm会自己添加环境变量，但是需要我们手动让环境变量生效 1 source ~/.bashrc ps：如果没有环境变量，需要手动</description>
+    </item>
+    
+    <item>
+      <title>.gitignore不生效的解决方案</title>
+      <link>https://cywhat.cn/gitignore%E4%B8%8D%E7%94%9F%E6%95%88%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Thu, 01 Apr 2021 18:17:13 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/gitignore%E4%B8%8D%E7%94%9F%E6%95%88%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+      <description>原因 原因：git本地运行有缓存，需要清除git缓存即可 解决 1 git rm -r --cached . 注意： 清完缓存需要把代码推到远程仓库</description>
+    </item>
+    
+    <item>
+      <title>git branch出现end需要q才能退出</title>
+      <link>https://cywhat.cn/git-branch%E5%87%BA%E7%8E%B0end%E9%9C%80%E8%A6%81q%E6%89%8D%E8%83%BD%E9%80%80%E5%87%BA/</link>
+      <pubDate>Thu, 01 Apr 2021 17:54:22 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/git-branch%E5%87%BA%E7%8E%B0end%E9%9C%80%E8%A6%81q%E6%89%8D%E8%83%BD%E9%80%80%E5%87%BA/</guid>
+      <description>前景： 在查看git branch分支时，需要q才能退出出现 原因 进入了编辑模式 解决 1 $ git config --global core.pager mor</description>
+    </item>
+    
+    <item>
+      <title>nginx配置实现ip访问指定URL</title>
+      <link>https://cywhat.cn/nginx%E9%85%8D%E7%BD%AE%E5%AE%9E%E7%8E%B0ip%E8%AE%BF%E9%97%AE%E6%8C%87%E5%AE%9AURL/</link>
+      <pubDate>Thu, 01 Apr 2021 17:51:03 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/nginx%E9%85%8D%E7%BD%AE%E5%AE%9E%E7%8E%B0ip%E8%AE%BF%E9%97%AE%E6%8C%87%E5%AE%9AURL/</guid>
+      <description>我的需求是这样的，nginx+uwsgi启动的web服务，访问域名XX.CN之后，nginx报错404，我需要实现的是访问XX.CN，自动映</description>
+    </item>
+    
+    <item>
+      <title>no such table:django_session</title>
+      <link>https://cywhat.cn/no-such-table-django-session/</link>
+      <pubDate>Thu, 01 Apr 2021 17:51:03 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/no-such-table-django-session/</guid>
+      <description>出现的问题是django没有django_session表 错误跟Session的机制相关 既然要从Web服务器端来记录用户信息， 那么一定要有存</description>
+    </item>
+    
+    <item>
+      <title>pip安装插件失败，拒绝连接</title>
+      <link>https://cywhat.cn/pip%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%A4%B1%E8%B4%A5%E6%8B%92%E7%BB%9D%E8%BF%9E%E6%8E%A5/</link>
+      <pubDate>Tue, 30 Mar 2021 11:51:17 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/pip%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%A4%B1%E8%B4%A5%E6%8B%92%E7%BB%9D%E8%BF%9E%E6%8E%A5/</guid>
+      <description>WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by &amp;lsquo;ConnectTimeoutError(&amp;lt;pip._vendor.urllib3.connection.HTTPSConnection object at 0x7ff8fba5f080&amp;gt;, &amp;lsquo;Connection to mirrors.aliyn.com timed out. (connect timeout=15)&#39;)&#39;: /pypi/simple/python-jenkins/ 1 $ pip3 install python-jenkins 安装python-jenkins报错如下 解决办法： 1 $ pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple python-jenkins 如上已经安装好了</description>
+    </item>
+    
+    <item>
+      <title>web服务 访问Linux中的静态文件</title>
+      <link>https://cywhat.cn/web%E6%9C%8D%E5%8A%A1-%E8%AE%BF%E9%97%AELinux%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Mon, 29 Mar 2021 18:04:20 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/web%E6%9C%8D%E5%8A%A1-%E8%AE%BF%E9%97%AELinux%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6/</guid>
+      <description>报错404，NOT FOUND可能是因为nginx.conf配置文件的俩处地方配置有误，按照下面，检查你的配置之后99.9999%是可以在浏览</description>
+    </item>
+    
+    <item>
+      <title>Linux/macos安装newman</title>
+      <link>https://cywhat.cn/Linux-macos%E5%AE%89%E8%A3%85newman/</link>
+      <pubDate>Mon, 22 Mar 2021 16:06:15 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Linux-macos%E5%AE%89%E8%A3%85newman/</guid>
+      <description>1、安装Node环境（1/2选其一即可） 1.官网下载node包，并上传到linux服务器 1 https://nodejs.org/en/download/ 2.wget安装 1 wget https://nodejs.org/dist/v15.12.0/node-v15.12.0-linux-x64.tar.xz 3.安装解压 1 tar -xvf node-v15.12.0-linux-x64.tar.xz 4.移</description>
+    </item>
+    
+    <item>
+      <title>Python&#43;virtualenv&#43;Django&#43;nginx&#43;uwsgi&#43;centos7部署web应用</title>
+      <link>https://cywhat.cn/Python-virtualenv-Django-nginx-uwsgi-centos7%E9%83%A8%E7%BD%B2web%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Thu, 11 Mar 2021 17:09:24 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Python-virtualenv-Django-nginx-uwsgi-centos7%E9%83%A8%E7%BD%B2web%E5%BA%94%E7%94%A8/</guid>
+      <description>给公司写的一个工具平台，先部署到自己的服务器上进行测试，真是困难重重，此文章仅记录自己踩坑过程和搭建教程，不保证你能按照教程成功搭建，但能把</description>
+    </item>
+    
+    <item>
+      <title>Centos7.7安装并配置jenkins&#43;python&#43;allure发送定制化报告</title>
+      <link>https://cywhat.cn/Centos7-7%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AEjenkins-python-allure%E5%8F%91%E9%80%81%E5%AE%9A%E5%88%B6%E5%8C%96%E6%8A%A5%E5%91%8A/</link>
+      <pubDate>Thu, 03 Sep 2020 15:34:13 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Centos7-7%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AEjenkins-python-allure%E5%8F%91%E9%80%81%E5%AE%9A%E5%88%B6%E5%8C%96%E6%8A%A5%E5%91%8A/</guid>
+      <description>【全网最全】Centos7.7安装并配置jenkins+python+allure发送定制化报告 目前测试开发方向的接口自动化脚本很多，这里就</description>
+    </item>
+    
+    <item>
+      <title>Centos7安装mysql5.7亲测可用</title>
+      <link>https://cywhat.cn/centos7%E5%AE%89%E8%A3%85mysql5-7%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8/</link>
+      <pubDate>Mon, 30 Mar 2020 15:54:01 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/centos7%E5%AE%89%E8%A3%85mysql5-7%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8/</guid>
+      <description>一、安装前准备 1.检查是否已经安装过mysql，执行命令 1 $ rpm -qa | grep mysql 2.查询所有Mysql对应的文件夹 1 $ whereis mysql 如果有的话请删除相关目录或文</description>
+    </item>
+    
+    <item>
+      <title>Mac安装brew</title>
+      <link>https://cywhat.cn/mac-%E5%AE%89%E8%A3%85brew/</link>
+      <pubDate>Wed, 18 Mar 2020 15:56:49 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/mac-%E5%AE%89%E8%A3%85brew/</guid>
+      <description>Mac是自带ruby的 打开命令行工具terminal 1.查看ruby版本 1 ruby -version 2.用ruby安装brew 1 ruby -e &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;#34; 3.brew 安装模块方法(举个例子</description>
+    </item>
+    
+    <item>
+      <title>ImportError: No module named flask</title>
+      <link>https://cywhat.cn/ImportError-No-module-named-flask/</link>
+      <pubDate>Fri, 06 Mar 2020 17:43:17 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/ImportError-No-module-named-flask/</guid>
+      <description>错误： 1 &amp;#39;ImportError: No module named flask&amp;#39; 1、删除原有的用大写开头的Flask插件 1 pip uninstall Flask 2、yum安装 flask 1 yum install python-flask 3、等待安装完成就可以允许程序啦（100%有用）</description>
+    </item>
+    
+    <item>
+      <title>Git基础命令</title>
+      <link>https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Wed, 23 Oct 2019 15:32:00 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</guid>
+      <description>git基本命令 初始化：创建一个git仓库，创建之后就会在当前目录生成一个.git的文件 1 git init 添加文件：把文件添加到缓冲区 1 git add filename 添加所有文件</description>
+    </item>
+    
+    <item>
+      <title>Postmant压力测试</title>
+      <link>https://cywhat.cn/Postmant%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Thu, 28 Mar 2019 18:16:00 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Postmant%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/</guid>
+      <description>Postman请自行下载 下面是在网上随便抓了一个请求地址来做演示，把请求地址填入地址栏，此请求为GET请求。点击Send发送请求，请求结果将</description>
+    </item>
+    
+    <item>
+      <title>HTTP各个status code代表什么意思</title>
+      <link>https://cywhat.cn/HTTP%E5%90%84%E4%B8%AAstatus-code%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/</link>
+      <pubDate>Thu, 07 Mar 2019 16:30:00 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/HTTP%E5%90%84%E4%B8%AAstatus-code%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/</guid>
+      <description>计算机之间的通信以协议为共同基础，客户端和服务端都按照协议的约定进行通信。HTTP的状态码就在HTTP的协议内，规定了很多的状态。客户端请求</description>
+    </item>
+    
+    <item>
+      <title>Iterm2/Mac自带终端工具快速ssh</title>
+      <link>https://cywhat.cn/Iterm2-Mac%E8%87%AA%E5%B8%A6%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%BF%AB%E9%80%9Fssh/</link>
+      <pubDate>Sat, 26 Jan 2019 11:13:00 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Iterm2-Mac%E8%87%AA%E5%B8%A6%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7%E5%BF%AB%E9%80%9Fssh/</guid>
+      <description>1、新建文件(最好在根目录) 1 touch login.sh 下面就是脚本文件，比较low，大神勿喷，会更炫酷写法的小伙伴可以自己参考这个思路写，不会的/懒得写的直接复</description>
+    </item>
+    
+    <item>
+      <title>Linux中常用来查看进程的命令</title>
+      <link>https://cywhat.cn/Linux%E4%B8%AD%E5%B8%B8%E7%94%A8%E6%9D%A5%E6%9F%A5%E7%9C%8B%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Tue, 25 Dec 2018 20:12:00 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Linux%E4%B8%AD%E5%B8%B8%E7%94%A8%E6%9D%A5%E6%9F%A5%E7%9C%8B%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%91%BD%E4%BB%A4/</guid>
+      <description>查看所有运行中的进程: 1 ps aux | less 显示所有进程: 1 2 ps -A ps -e 显示进程的树状图: 1 pstree 查看进程: 1 netstat -ntlp</description>
+    </item>
+    
+    <item>
+      <title>Linux快捷进入长目录的方法</title>
+      <link>https://cywhat.cn/Linux%E5%BF%AB%E6%8D%B7%E8%BF%9B%E5%85%A5%E9%95%BF%E7%9B%AE%E5%BD%95%E7%9A%84%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Fri, 02 Nov 2018 16:16:00 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Linux%E5%BF%AB%E6%8D%B7%E8%BF%9B%E5%85%A5%E9%95%BF%E7%9B%AE%E5%BD%95%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
+      <description>1.设置环境变量 1 2 3 vim ~/.bashrc alias cywhat =&amp;#39;cd /root/XX/XX/XX/XX&amp;#39; 2.然后让配置生效 1 source ./bashrc 3.验证 最后我们输入设置的cywhat（这个名字自己设置）就可以快速进入设置的长目</description>
+    </item>
+    
+    <item>
+      <title>checkout无效</title>
+      <link>https://cywhat.cn/checkout%E6%97%A0%E6%95%88/</link>
+      <pubDate>Mon, 29 Oct 2018 16:29:00 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/checkout%E6%97%A0%E6%95%88/</guid>
+      <description>前景 日常工作中，遇到的一些checkout无效或者commit提交不了的情况 1.首先 你需要update的项目 会告诉你更改了那些配置，必须要还</description>
+    </item>
+    
+    <item>
+      <title>npm缺少css-loader，/style-compiler，stylus-loader问题，npm没有权限无法全局更新问题</title>
+      <link>https://cywhat.cn/npm%E7%BC%BA%E5%B0%91css-loader-style-compilerstylus-loader%E9%97%AE%E9%A2%98npm%E6%B2%A1%E6%9C%89%E6%9D%83%E9%99%90%E6%97%A0%E6%B3%95%E5%85%A8%E5%B1%80%E6%9B%B4%E6%96%B0%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Wed, 17 Oct 2018 16:08:00 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/npm%E7%BC%BA%E5%B0%91css-loader-style-compilerstylus-loader%E9%97%AE%E9%A2%98npm%E6%B2%A1%E6%9C%89%E6%9D%83%E9%99%90%E6%97%A0%E6%B3%95%E5%85%A8%E5%B1%80%E6%9B%B4%E6%96%B0%E9%97%AE%E9%A2%98/</guid>
+      <description>​ ERROR in ./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{&amp;ldquo;vue&amp;rdquo;:true,&amp;ldquo;id&amp;rdquo;:&amp;ldquo;data-v-a5e4f82a&amp;rdquo;,&amp;ldquo;scoped&amp;rdquo;:false,&amp;ldquo;hasInlineConfig&amp;rdquo;:false}!./node_modules/stylus-loader?{&amp;ldquo;import&amp;rdquo;:[&amp;ldquo;~@didi/ada/style/mixins.styl&amp;rdquo;,&amp;quot;/home/xiaoju/manhattan-hera-webapp/client/style/base.styl&amp;rdquo;]}!./node_modules/vue-loader/lib/selector.js?type=styles&amp;amp;index=0&amp;amp;bustCache!./client/components/panel_links.vue Cannot find module &amp;lsquo;postcss-import&amp;rsquo; @ ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{&amp;ldquo;vue&amp;rdquo;:true,&amp;ldquo;id&amp;rdquo;:&amp;ldquo;data-v-a5e4f82a&amp;rdquo;,&amp;ldquo;scoped&amp;rdquo;:false,&amp;ldquo;hasInlineConfig&amp;rdquo;:false}!./node_modules/stylus-loader?{&amp;ldquo;import&amp;rdquo;:[&amp;ldquo;~@didi/ada/style/mixins.styl&amp;rdquo;,&amp;quot;/home/xiaoju/manhattan-hera-webapp/client/style/base.styl&amp;rdquo;]}!./node_modules/vue-loader/lib/selector.js?type=styles&amp;amp;index=0&amp;amp;bustCache!./client/components/panel_links.vue 4:14-454 @ ./client/components/panel_links.vue @ ./client/app.ts @ multi ./client/app.ts 如下图： 在测试项目的时候，部署前端在启动前端环境的时候遇到缺少组件css-loader，/style-c</description>
+    </item>
+    
+    <item>
+      <title>App跟web定位元素页面相互切换</title>
+      <link>https://cywhat.cn/App%E8%B7%9Fweb%E5%AE%9A%E4%BD%8D%E5%85%83%E7%B4%A0%E9%A1%B5%E9%9D%A2%E7%9B%B8%E4%BA%92%E5%88%87%E6%8D%A2/</link>
+      <pubDate>Thu, 11 Oct 2018 19:54:00 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/App%E8%B7%9Fweb%E5%AE%9A%E4%BD%8D%E5%85%83%E7%B4%A0%E9%A1%B5%E9%9D%A2%E7%9B%B8%E4%BA%92%E5%88%87%E6%8D%A2/</guid>
+      <description>很多QA在做UI自动化或者App自动化的时候，会遇到在web页面要抓取App模式的元素，或者是在App要抓取H5页面的元素，从网上整理了一些</description>
+    </item>
+    
+    <item>
+      <title>Error taking device screenshot: null</title>
+      <link>https://cywhat.cn/Error-taking-device-screenshot-null/</link>
+      <pubDate>Thu, 11 Oct 2018 19:42:00 +0000</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Error-taking-device-screenshot-null/</guid>
+      <description>前景 使用uiautomatorviewer 查看Android某些页面元素，出现如图错误： 1 Error obtaining UI hierarchy Reason: Error taking device screenshot: null 在网上找了很多解决办法依然没解</description>
     </item>
     
     <item>
@@ -95,328 +722,7 @@ def __init__(self):
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cywhat@cywhat.cn (cywhat)</author>
       <guid>https://cywhat.cn/friends/</guid>
-      <description>&lt;h3 id=&#34;loveit官方&#34;&gt;LoveIt官方&lt;/h3&gt;
-
-
-	&lt;a target=&#34;_blank&#34; href=https://hugoloveit.com/ title=LoveIt官方---LoveIt主题官方文档 class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.jsdelivr.net/gh/dillonzq/LoveIt@master/exampleSite/assets/images/avatar.png onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;LoveIt官方&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;LoveIt主题官方文档&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-&lt;h3 id=&#34;大牛子们不分先后&#34;&gt;大牛子们(不分先后)&lt;/h3&gt;
-
-
-	&lt;a target=&#34;_blank&#34; href=https://lewky.cn/ title=雨临Lewis的博客---不想当写手的码农不是好咸鱼_(xз」∠)_ class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/avatar.jpg onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;雨临Lewis的博客&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;不想当写手的码农不是好咸鱼_(xз」∠)_&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-
-
-	&lt;a target=&#34;_blank&#34; href=https://bore.vip/ title=Bore’s&amp;#32;Notes---博观而约取，厚积而薄发。 class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.jsdelivr.net/gh/iwyang/pic/avatar.jpg onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;Bore’s Notes&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;博观而约取，厚积而薄发。&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-
-
-	&lt;a target=&#34;_blank&#34; href=https://www.iilee.cn/ title=IILeeのBlog---所以，看不到光，算是不幸吗？需要光才是真正的不幸吧。 class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://www.iilee.cn/avatar onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;IILeeのBlog&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;所以，看不到光，算是不幸吗？需要光才是真正的不幸吧。&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-
-
-	&lt;a target=&#34;_blank&#34; href=https://bbing.com.cn/ title=BBing&amp;#39;s&amp;#32;Blog---自由&amp;#32;分享&amp;#32;合作。 class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/2B2pd1.png onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;BBing&amp;#39;s Blog&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;自由 分享 合作。&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-
-
-	&lt;a target=&#34;_blank&#34; href=https://hin.cool/ title=W4J1e&amp;#39;s&amp;#32;blog---总是偏爱不务正业 class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://hin.cool/favicon.ico onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;W4J1e&amp;#39;s blog&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;总是偏爱不务正业&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-
-
-	&lt;a target=&#34;_blank&#34; href=https://thrower.cc/ title=Thrower的博客---一名网络安全技术爱好者，汪峰的老歌迷。 class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://thrower.cc/wp-content/uploads/2021/07/QQ%E5%9B%BE%E7%89%8720210704153032.jpg onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;Thrower的博客&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;一名网络安全技术爱好者，汪峰的老歌迷。&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-
-
-	&lt;a target=&#34;_blank&#34; href=https://chubbyduner.top/ title=小胖墩er---总迟到总比不到的好，所以好好加油吧。 class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.jsdelivr.net/gh/Chubby-Duner/image-hosting@master/blog/logo.jpeg onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;小胖墩er&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;总迟到总比不到的好，所以好好加油吧。&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-
-
-	&lt;a target=&#34;_blank&#34; href=https://seepine.com/ title=Seepine’s&amp;#32;Blog---Java,Vue,Flutter class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://seepine.com/cdn/img/avatar.png onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;Seepine’s Blog&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;Java,Vue,Flutter&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-
-
-	&lt;a target=&#34;_blank&#34; href=https://blog.syzhan.cn/ title=森屿暖树---人和人，和万物，相逢又别离 class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://thirdqq.qlogo.cn/g?b&amp;#61;qq&amp;amp;nk&amp;#61;2817808181&amp;amp;s&amp;#61;100 onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;森屿暖树&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;人和人，和万物，相逢又别离&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-
-
-	&lt;a target=&#34;_blank&#34; href=https://www.imaegoo.com title=iMaeGoo’s&amp;#32;Blog---虹墨空间站 class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://www.imaegoo.com/images/avatar.jpg onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;iMaeGoo’s Blog&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;虹墨空间站&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-
-
-	&lt;a target=&#34;_blank&#34; href=https://blog.n0ts.cn/ title=N0ts&amp;#32;Blog---一个爱好钻研技术的咸鱼 class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.nutssss.cn/wp-content/uploads/2020/02/1581510626-head.png onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;N0ts Blog&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;一个爱好钻研技术的咸鱼&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-
-
-	&lt;a target=&#34;_blank&#34; href=https://blog.rain888.cn/ title=旧时繁华---繁华似锦觅安宁,淡云流水度此生 class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://zzwyun.gitee.io/static/img/jiushi.png onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;旧时繁华&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;繁华似锦觅安宁,淡云流水度此生&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-
-
-	&lt;a target=&#34;_blank&#34; href=https://mkblog.cn/ title=孟坤博客---互联网&amp;#43;分享&amp;#43;科技&amp;#43;吐槽&amp;#61;孟坤博客 class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://tva1.sinaimg.cn/large/a15b4afegy1fn6votd165j2036036glk.jpg onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;孟坤博客&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;互联网&amp;#43;分享&amp;#43;科技&amp;#43;吐槽=孟坤博客&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-
-
-	&lt;a target=&#34;_blank&#34; href=https://www.ylesb.com/ title=怀特博客---怀特博客-忠于原创&amp;#32;乐于分享 class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://www.ylesb.com/wp-content/uploads/2019/10/favicon.ico onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;怀特博客&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;怀特博客-忠于原创 乐于分享&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-
-
-	&lt;a target=&#34;_blank&#34; href=https://www.mintimate.cn/ title=Mintimate&amp;#39;s&amp;#32;Blog---专注与你分享技术教程～ class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://mintimate.cn/custom/img/favicon/favicon.png onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;Mintimate&amp;#39;s Blog&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;专注与你分享技术教程～&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-
-
-	&lt;a target=&#34;_blank&#34; href=https://imszz.com title=Hermoso---时间如一捧流沙,缓缓的在指间流尽 class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.jsdelivr.net/gh/weilain/cdn-photo/Photo/avatar.jpg onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;Hermoso&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;时间如一捧流沙,缓缓的在指间流尽&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-&lt;h3 id=&#34;十年之约&#34;&gt;十年之约&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;十年之约，即从加入这个活动起，我们的博客十年不关闭，保持更新和活力！&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;本站已加入【十年之约】！有兴趣的朋友可以点击下面的链接了解一哈~&lt;/p&gt;
-
-
-	&lt;a target=&#34;_blank&#34; href=https://www.foreverblog.cn/ title=十年之约---十年之约 class=&#34;friend url&#34;&gt;
-	  &lt;div class=&#34;friend block whole default shadow&#34;&gt;
-		&lt;div class=&#34;friend block left&#34;&gt;
-		  &lt;img class=&#34;friend logo rotate&#34; src=https://cdn.jsdelivr.net/gh/chaoyangya/cywhat-cdn@master/images/shinian-favicon.ico onerror=&#34;this.src=&#39;https:\/\/sdn.geekzu.org\/avatar\/d41d8cd98f00b204e9800998ecf8427e?d=retro&#39;&#34; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;friend block right&#34;&gt;
-		  &lt;div class=&#34;friend name&#34;&gt;十年之约&lt;/div&gt;
-		  &lt;div class=&#34;friend info&#34;&gt;&#34;十年之约&#34;&lt;/div&gt;
-		&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/a&gt;
-
-
-&lt;h3 id=&#34;如何交换友链&#34;&gt;如何交换友链&lt;/h3&gt;
-&lt;div class=&#34;details admonition info open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34;&gt;&lt;/i&gt;以下信息发送至&amp;#39;45204307@qq.com&amp;#39;&lt;i class=&#34;details-icon fas fa-angle-right fa-fw&#34;&gt;&lt;/i&gt;
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;name=&amp;#34;站点名称&amp;#34;
-url=&amp;#34;站点地址&amp;#34;
-logo=&amp;#34;站点图标或个人头像&amp;#34;
-describe=&amp;#34;站点描述&amp;#34;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;我的友链信息&#34;&gt;我的友链信息&lt;/h3&gt;
-&lt;div class=&#34;details admonition tip&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-lightbulb fa-fw&#34;&gt;&lt;/i&gt;我的友链信息&lt;i class=&#34;details-icon fas fa-angle-right fa-fw&#34;&gt;&lt;/i&gt;
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;name=&amp;#34;cywhat&amp;#39;s blog&amp;#34;
-url=&amp;#34;https://cywhat.cn&amp;#34;
-logo=&amp;#34;https://cdn.jsdelivr.net/gh/chaoyangya/cywhat-cdn@master/images/cywhat-logo.png&amp;#34;
-describe=&amp;#34;一位摸爬滚打的测开Dog.&amp;#34;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
+      <description>LoveIt官方 LoveIt官方 &#34;LoveIt主题官方文档&#34; 大牛子们(不分先后) 雨临Lewis的博客 &#34;不想当写手的码农不是好咸鱼_(xз」∠</description>
     </item>
     
   </channel>
