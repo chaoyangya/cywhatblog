@@ -9,10 +9,19 @@
     <managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
     <webMaster>cywhat@cywhat.cn (cywhat)</webMaster>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 18 Mar 2022 11:31:21 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 30 Mar 2022 10:56:43 +0800</lastBuildDate>
     
 	<atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>RuntimeWarning:DateTimeField Session.expire_date received a naive datetime</title>
+      <link>https://cywhat.cn/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/</link>
+      <pubDate>Wed, 30 Mar 2022 10:56:43 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/</guid>
+      <description>前景 Django部署的web应用报警，内容如下： 1 &amp;#34;RuntimeWarning:DateTimeField Session.expire_date received a naive datetime&amp;#34; 原因： 1 2 3 4 这是一个跟时区有关的问题，错误里说到datetime字段得到一个</description>
+    </item>
     
     <item>
       <title>Hugo的Loveit主题修改sitemap</title>
