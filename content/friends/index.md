@@ -149,7 +149,20 @@ word="时间如一捧流沙,缓缓的在指间流尽"
 >}}
 
 
+{{< friend
+name="Sulv’s Blog"
+url="https://www.sulvblog.cn"
+logo="https://www.sulvblog.cn/img/Q.gif"
+word="一个记录技术、阅读、生活的博客"
+>}}
 
+
+{{< friend
+name="小冰博客"
+url="https://www.sulvblog.cn"
+logo="https://zfe.space/images/headimage.png"
+word="做个有梦想的人！"
+>}}
 
 
 
