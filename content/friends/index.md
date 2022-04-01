@@ -159,7 +159,7 @@ word="一个记录技术、阅读、生活的博客"
 
 {{< friend
 name="小冰博客"
-url="https://www.sulvblog.cn"
+url="https://zfe.space/"
 logo="https://zfe.space/images/headimage.png"
 word="做个有梦想的人！"
 >}}
