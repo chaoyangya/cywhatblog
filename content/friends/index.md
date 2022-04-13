@@ -174,7 +174,7 @@ word="宁静致远 "
 
 
 {{< friend
-name="国光"
+name="麦氪搜"
 url="https://www.imacso.com/"
 logo="https://www.imacso.com/static/logo-l.png"
 word="我们致力于让您的Mac更有价值！"
