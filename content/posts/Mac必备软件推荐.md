@@ -33,7 +33,7 @@ Sublime Text    "文本编辑器，支持各种代码格式"
 
 MWeb Pro        "markdown编辑器，写博客神器"
 
-The Unarchiver  "免费解压神器"
+BetterZip       "解压神器"
 
 TinyCal         "简洁小巧的日历，Appstore可下载(收费)"
 
