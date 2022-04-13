@@ -165,6 +165,21 @@ word="做个有梦想的人！"
 >}}
 
 
+{{< friend
+name="国光"
+url="https://www.sqlsec.com/"
+logo="https://image.3001.net/images/20210606/16229390604952.png"
+word="宁静致远 "
+>}}
+
+
+{{< friend
+name="国光"
+url="https://www.imacso.com/"
+logo="https://www.imacso.com/static/logo-l.png"
+word="我们致力于让您的Mac更有价值！"
+>}}
+
 
 ### 十年之约
 `十年之约，即从加入这个活动起，我们的博客十年不关闭，保持更新和活力！`
