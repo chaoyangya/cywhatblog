@@ -4,7 +4,21 @@
         <link>https://cywhat.cn/categories/</link>
         <description>Categories - 分类 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 30 Mar 2022 10:56:43 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 15 Apr 2022 14:14:09 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Blog</title>
+    <link>https://cywhat.cn/categories/Blog/</link>
+    <pubDate>Fri, 15 Apr 2022 14:14:09 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/Blog/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Docker</title>
+    <link>https://cywhat.cn/categories/Docker/</link>
+    <pubDate>Fri, 15 Apr 2022 14:14:09 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/Docker/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Django</title>
     <link>https://cywhat.cn/categories/Django/</link>
     <pubDate>Wed, 30 Mar 2022 10:56:43 &#43;0800</pubDate>
@@ -59,20 +73,6 @@
     <pubDate>Thu, 18 Nov 2021 10:01:24 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/categories/Raid/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>iftop</title>
-    <link>https://cywhat.cn/categories/iftop/</link>
-    <pubDate>Wed, 17 Nov 2021 10:16:41 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/iftop/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Avn</title>
-    <link>https://cywhat.cn/categories/Avn/</link>
-    <pubDate>Wed, 29 Sep 2021 17:23:33 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/Avn/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

@@ -2,6 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/</loc><lastmod>2022-04-15T14:14:09&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/</loc><lastmod>2022-03-30T10:56:43&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/Hugo%E7%9A%84Loveit%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9sitemap.xml%E9%85%8D%E7%BD%AE/</loc><lastmod>2022-03-18T11:31:21&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/Linux%E9%83%A8%E7%BD%B2granafa-node_export-prometheus%E7%9B%91%E6%8E%A7/</loc><lastmod>2022-01-20T11:06:19&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>

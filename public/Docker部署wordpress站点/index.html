@@ -5,31 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>RuntimeWarning:DateTimeField Session.expire_date received a naive datetime - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
-<meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="RuntimeWarning:DateTimeField Session.expire_date received a naive datetime" />
-<meta property="og:description" content="前景 Django部署的web应用报警，内容如下： 1 &#34;RuntimeWarning:DateTimeField Session.expire_date received a naive datetime&#34; 原因： 1 2 3 4 这是一个跟时区有关的问题，错误里说到datetime字段得到一个" />
+        <title>Docker部署wordpress站点 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
+<meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Docker部署wordpress站点" />
+<meta property="og:description" content="1.拉取docker镜像 1 2 3 docker pull wordpress docker pull mysql 2.创建mysql容器 1 docker run -d --name mysql -v mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=wordpress mysql 参数解析 -d 后台运行容器，并返回容器id --name 自定义容器" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/" />
+<meta property="og:url" content="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" />
 <meta property="og:image" content="https://cywhat.cn"/>
-<meta property="article:published_time" content="2022-03-30T10:56:43+08:00" />
-<meta property="article:modified_time" content="2022-03-30T10:56:43+08:00" />
+<meta property="article:published_time" content="2022-04-15T14:14:09+08:00" />
+<meta property="article:modified_time" content="2022-04-15T14:14:09+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
-<meta name="twitter:title" content="RuntimeWarning:DateTimeField Session.expire_date received a naive datetime"/>
-<meta name="twitter:description" content="前景 Django部署的web应用报警，内容如下： 1 &#34;RuntimeWarning:DateTimeField Session.expire_date received a naive datetime&#34; 原因： 1 2 3 4 这是一个跟时区有关的问题，错误里说到datetime字段得到一个"/>
+<meta name="twitter:title" content="Docker部署wordpress站点"/>
+<meta name="twitter:description" content="1.拉取docker镜像 1 2 3 docker pull wordpress docker pull mysql 2.创建mysql容器 1 docker run -d --name mysql -v mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=wordpress mysql 参数解析 -d 后台运行容器，并返回容器id --name 自定义容器"/>
 <meta name="application-name" content="LoveIt">
-<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/" /><link rel="prev" href="https://cywhat.cn/Hugo%E7%9A%84Loveit%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9sitemap.xml%E9%85%8D%E7%BD%AE/" /><link rel="next" href="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" /><link rel="prev" href="https://cywhat.cn/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "RuntimeWarning:DateTimeField Session.expire_date received a naive datetime",
+        "headline": "Docker部署wordpress站点",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/cywhat.cn\/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Django","wordcount":  288 ,
-        "url": "https:\/\/cywhat.cn\/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime\/","datePublished": "2022-03-30T10:56:43+08:00","dateModified": "2022-03-30T10:56:43+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/cywhat.cn\/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9\/"
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Docker","wordcount":  386 ,
+        "url": "https:\/\/cywhat.cn\/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9\/","datePublished": "2022-04-15T14:14:09+08:00","dateModified": "2022-04-15T14:14:09+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
                 "@type": "Person",
@@ -103,10 +103,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">RuntimeWarning:DateTimeField Session.expire_date received a naive datetime</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Django/"><i class="far fa-folder fa-fw"></i>Django</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-30">2022-03-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 288 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/" class="leancloud_visitors" data-flag-title="RuntimeWarning:DateTimeField Session.expire_date received a naive datetime">
+        </div><article class="page single"><h1 class="single-title animated flipInX">Docker部署wordpress站点</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Docker/"><i class="far fa-folder fa-fw"></i>Docker</a>&nbsp;<a href="/categories/Blog/"><i class="far fa-folder fa-fw"></i>Blog</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-04-15">2022-04-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 386 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" class="leancloud_visitors" data-flag-title="Docker部署wordpress站点">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
@@ -118,60 +118,116 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#前景">前景</a></li>
-        <li><a href="#原因">原因：</a></li>
-        <li><a href="#解决">解决</a></li>
+        <li><a href="#1拉取docker镜像">1.拉取docker镜像</a></li>
+        <li><a href="#2创建mysql容器">2.创建mysql容器</a></li>
+        <li><a href="#3创建-wordpress-容器">3.创建 wordpress 容器</a></li>
+        <li><a href="#4访问地址">4.访问地址</a></li>
+        <li><a href="#5异常问题解决">5.异常问题解决</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h3 id="前景">前景</h3>
-<p>Django部署的web应用报警，内容如下：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text">&#34;RuntimeWarning:DateTimeField Session.expire_date received a naive datetime&#34;
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="原因">原因：</h3>
+            </div><div class="content" id="content"><h3 id="1拉取docker镜像">1.拉取docker镜像</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text">这是一个跟时区有关的问题，错误里说到datetime字段得到一个naive datetime，而不是支持time zone的active datetime
-由于USE_TZ设置为True，Django会自动根据所设的时区对时间进行转换
-程序中和数据保存的时间都转UTC时间，只有模版渲染时会把时间转为TIME_ZONE所设置的时区的时间
-使用datetime.datetime.utcnow()输出的是不带时区的utc时间，称为naive time
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker pull wordpress
+
+docker pull mysql
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="解决">解决</h3>
+</div><h3 id="2创建mysql容器">2.创建mysql容器</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">django.utils</span> <span class="kn">import</span> <span class="n">timezone</span>
-
-<span class="c1">#方法1</span>
-<span class="c1">#datetime.now()   修改为--&gt;    timezone.now()</span>
-
-<span class="c1">#方法2</span>
-<span class="c1">#datetime.now()   修改为--&gt;    datetime.datetime.now(tz=timezone.utc)</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker run -d --name mysql -v mysql-data:/var/lib/mysql -e <span class="nv">MYSQL_ROOT_PASSWORD</span><span class="o">=</span>root -e <span class="nv">MYSQL_DATABASE</span><span class="o">=</span>wordpress mysql
 </code></pre></td></tr></table>
 </div>
-</div><div class="post-promote">
+</div><div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>参数解析<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><code>-d</code>                    后台运行容器，并返回容器id
+<code>--name</code>                自定义容器名<br>
+<code>-v</code>                    将容器内的目录挂载到宿主机中(前是宿主机路径/后是容器路径)
+<code>-e</code>                    用来指定环境变量以及后续的键值对
+<code>MYSQL_ROOT_PASSWORD</code>   数据库密码
+<code>MYSQL_DATABASE</code>        数据库表名
+<code>mysql:5.7</code>             镜像仓库中的镜像标签版本</div>
+        </div>
+    </div>
+<h3 id="3创建-wordpress-容器">3.创建 wordpress 容器</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">docker run -d --name wordpress -e <span class="nv">WORDPRESS_DB_HOST</span><span class="o">=</span>mysql:3306 --link mysql -p 8083:80 wordpress
+</code></pre></td></tr></table>
+</div>
+</div><div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>参数解析<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><code>-d</code>                    后台运行容器，并返回容器id
+<code>--name</code>                自定义容器名<br>
+<code>-e</code>                    用来指定环境变量以及后续的键值对
+<code>WORDPRESS_DB_HOST</code>     数据库链接
+<code>--link</code>                关联到另一台容器，后面加容器名
+<code>-p</code>                    指定端口映射(前是宿主机/后是容器端口)
+<code>wordpress</code>             wordpress镜像</div>
+        </div>
+    </div>
+<h3 id="4访问地址">4.访问地址</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">https://服务器ip:8083
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="5异常问题解决">5.异常问题解决</h3>
+<p>url访问后，页面出现以下问题</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">Error establishing a database connection
+</code></pre></td></tr></table>
+</div>
+</div><div class="details admonition success open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw"></i>解决办法<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>1.进入容器
+docker exec -it 容器id /bin/bash</p>
+<p>2.编辑配置文件
+vim wp-config.php</p>
+<p>3.修改数据库账号和密码
+<strong>修改下图红框中的内容为你的数据库账号和密码,注意不要去掉引号</strong>
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/img54.png"
+        data-srcset="/img/img54.png, /img/img54.png 1.5x, /img/img54.png 2x"
+        data-sizes="auto"
+        alt="/img/img54.png"
+        title="img54" /></p>
+</div>
+        </div>
+    </div>
+<div class="post-promote">
     <input type="checkbox" name="promote" id="promote" hidden/>
     <label class="promote-button" for="promote">关注一下再走吧</label>
     <div class="qr-code">
@@ -203,27 +259,26 @@
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2022-03-30</span>
+                <span>更新于 2022-04-15</span>
             </div>
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/" data-title="RuntimeWarning:DateTimeField Session.expire_date received a naive datetime" data-hashtags="Django"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/" data-hashtag="Django"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/" data-title="RuntimeWarning:DateTimeField Session.expire_date received a naive datetime"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/" data-title="RuntimeWarning:DateTimeField Session.expire_date received a naive datetime"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/" data-title="RuntimeWarning:DateTimeField Session.expire_date received a naive datetime"><i class="fab fa-weibo fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" data-title="Docker部署wordpress站点" data-hashtags="Docker"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" data-hashtag="Docker"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" data-title="Docker部署wordpress站点"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" data-title="Docker部署wordpress站点"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" data-title="Docker部署wordpress站点"><i class="fab fa-weibo fa-fw"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/Django/">Django</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/Docker/">Docker</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/Hugo%E7%9A%84Loveit%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9sitemap.xml%E9%85%8D%E7%BD%AE/" class="prev" rel="prev" title="Hugo的Loveit主题修改sitemap"><i class="fas fa-angle-left fa-fw"></i>Hugo的Loveit主题修改sitemap</a>
-            <a href="/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" class="next" rel="next" title="Docker部署wordpress站点">Docker部署wordpress站点<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/" class="prev" rel="prev" title="RuntimeWarning:DateTimeField Session.expire_date received a naive datetime"><i class="fas fa-angle-left fa-fw"></i>RuntimeWarning:DateTimeField Session.expire_date received a naive datetime</a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
