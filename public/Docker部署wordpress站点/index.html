@@ -154,13 +154,14 @@ docker pull mysql
             <i class="icon fas fa-lightbulb fa-fw"></i>参数解析<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><code>-d</code>                    后台运行容器，并返回容器id
-<code>--name</code>                自定义容器名<br>
-<code>-v</code>                    将容器内的目录挂载到宿主机中(前是宿主机路径/后是容器路径)
-<code>-e</code>                    用来指定环境变量以及后续的键值对
-<code>MYSQL_ROOT_PASSWORD</code>   数据库密码
-<code>MYSQL_DATABASE</code>        数据库表名
-<code>mysql</code>             镜像仓库中的镜像标签版本</div>
+            <div class="admonition-content"><p><code>-d</code>                    后台运行容器，并返回容器id</p>
+<p><code>--name</code>                自定义容器名</p>
+<p><code>-v</code>                    将容器内的目录挂载到宿主机中(前是宿主机路径/后是容器路径)</p>
+<p><code>-e</code>                    用来指定环境变量以及后续的键值对</p>
+<p><code>MYSQL_ROOT_PASSWORD</code>   数据库密码</p>
+<p><code>MYSQL_DATABASE</code>        数据库表名</p>
+<p><code>mysql</code>             镜像仓库中的镜像标签版本</p>
+</div>
         </div>
     </div>
 <h3 id="3创建-wordpress-容器">3.创建 wordpress 容器</h3>
@@ -177,13 +178,14 @@ docker pull mysql
             <i class="icon fas fa-lightbulb fa-fw"></i>参数解析<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><code>-d</code>                    后台运行容器，并返回容器id
-<code>--name</code>                自定义容器名<br>
-<code>-e</code>                    用来指定环境变量以及后续的键值对
-<code>WORDPRESS_DB_HOST</code>     数据库链接
-<code>--link</code>                关联到另一台容器，后面加容器名
-<code>-p</code>                    指定端口映射(前是宿主机/后是容器端口)
-<code>wordpress</code>             wordpress镜像</div>
+            <div class="admonition-content"><p><code>-d</code>                    后台运行容器，并返回容器id</p>
+<p><code>--name</code>                自定义容器名</p>
+<p><code>-e</code>                    用来指定环境变量以及后续的键值对</p>
+<p><code>WORDPRESS_DB_HOST</code>     数据库链接</p>
+<p><code>--link</code>                关联到另一台容器，后面加容器名</p>
+<p><code>-p</code>                    指定端口映射(前是宿主机/后是容器端口)</p>
+<p><code>wordpress</code>             wordpress镜像</p>
+</div>
         </div>
     </div>
 <h3 id="4访问地址">4.访问地址</h3>

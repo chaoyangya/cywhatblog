@@ -19,11 +19,17 @@ docker run -d --name mysql -v mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=r
 ```
 {{< admonition type=tip title="参数解析" open=true >}}
 `-d`                    后台运行容器，并返回容器id
+
 `--name`                自定义容器名  
+
 `-v`                    将容器内的目录挂载到宿主机中(前是宿主机路径/后是容器路径)
+
 `-e`                    用来指定环境变量以及后续的键值对
+
 `MYSQL_ROOT_PASSWORD`   数据库密码
+
 `MYSQL_DATABASE`        数据库表名
+
 `mysql`             镜像仓库中的镜像标签版本
 {{< /admonition >}}
 
@@ -34,11 +40,17 @@ docker run -d --name wordpress -e WORDPRESS_DB_HOST=mysql:3306 --link mysql -p 8
 ```
 {{< admonition type=tip title="参数解析" open=true >}}
 `-d`                    后台运行容器，并返回容器id
+
 `--name`                自定义容器名  
+
 `-e`                    用来指定环境变量以及后续的键值对
+
 `WORDPRESS_DB_HOST`     数据库链接
+
 `--link`                关联到另一台容器，后面加容器名
+
 `-p`                    指定端口映射(前是宿主机/后是容器端口)
+
 `wordpress`             wordpress镜像
 {{< /admonition >}}
 
