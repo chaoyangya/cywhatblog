@@ -24,7 +24,7 @@ docker run -d --name mysql -v mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=r
 `-e`                    用来指定环境变量以及后续的键值对
 `MYSQL_ROOT_PASSWORD`   数据库密码
 `MYSQL_DATABASE`        数据库表名
-`mysql:5.7`             镜像仓库中的镜像标签版本
+`mysql`             镜像仓库中的镜像标签版本
 {{< /admonition >}}
 
 
