@@ -180,6 +180,14 @@ logo="https://www.imacso.com/static/logo-l.png"
 word="我们致力于让您的Mac更有价值！"
 >}}
 
+{{< friend
+name="卓越笔记"
+url="https://xieboke.net/"
+logo="http://pic.xieboke.net/joyoblog.png"
+word="分享所学技能，记录点滴生活。"
+>}}
+
+
 
 ### 十年之约
 `十年之约，即从加入这个活动起，我们的博客十年不关闭，保持更新和活力！`
