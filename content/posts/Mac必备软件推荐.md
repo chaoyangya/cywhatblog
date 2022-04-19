@@ -12,9 +12,8 @@ categories: ["Mac"]
 **前几天系统降级了，发现之前使用的一些得心应手的app忘记名字了，很难找，不过最后还是在时间机器里找到了，特意开帖记录分享一下，常见的就不分享了，都知道，主要分享一些难找的，但是特别好用的。**
 
 
+{{< admonition type=success title="必备软件" open=true >}}
 
-
-```bash
 Screenium 3     "屏幕录制(全屏/区域/自定义区域)，支持剪辑"
 
 Permute 3       "视频格式转换，直接拖拽文件即可"
@@ -58,4 +57,8 @@ ScreenFocus       "智能熄屏(非常好用)"
 SideNotes         "Mac侧边栏笔记(强迫症患者福音)"
 
 ACDSee Photo Studio 7  "Mac最好用的图片查看/编辑软件"
-```
+
+Daisy Disk         "可视化磁盘清理工具"(非常好用)
+
+Gifox              "Gif制作神器"
+{{< /admonition >}}
