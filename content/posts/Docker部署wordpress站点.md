@@ -55,8 +55,10 @@ docker run -d --name wordpress -e WORDPRESS_DB_HOST=mysql:3306 --link mysql -p 8
 {{< /admonition >}}
 
 ### 4.访问地址
-```bash
-https://服务器ip:8083
+```text
+用户地址：https://服务器ip:8083
+
+管理地址：https://服务器ip:8083/wp-admin/
 ```
 
 ### 5.异常问题解决
