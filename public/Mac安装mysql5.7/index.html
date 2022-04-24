@@ -5,31 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Docker部署wordpress站点 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
-<meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Docker部署wordpress站点" />
-<meta property="og:description" content="1.拉取docker镜像 1 2 3 docker pull wordpress docker pull mysql 2.创建mysql容器 1 docker run -d --name mysql -v mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=wordpress mysql 参数解析 -d 后台运行容器，并返回容器id --name 自定义容器" />
+        <title>Mac安装mysql5.7 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
+<meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Mac安装mysql5.7" />
+<meta property="og:description" content="1.下载Dmg安装包 安装包下载 我选择的Mysql版本是5.7.30 2.安装并启动 3.记录Mysql初始密码 4.设置别名 1 2 alias mysql=/usr/local/mysql/bin/mysql alias mysqladmin=/usr/local/mysql/bin/mysqladmin 5.重置密" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" />
+<meta property="og:url" content="https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/" />
 <meta property="og:image" content="https://cywhat.cn"/>
-<meta property="article:published_time" content="2022-04-15T14:14:09+08:00" />
-<meta property="article:modified_time" content="2022-04-15T14:14:09+08:00" />
+<meta property="article:published_time" content="2022-04-24T10:59:14+08:00" />
+<meta property="article:modified_time" content="2022-04-24T10:59:14+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
-<meta name="twitter:title" content="Docker部署wordpress站点"/>
-<meta name="twitter:description" content="1.拉取docker镜像 1 2 3 docker pull wordpress docker pull mysql 2.创建mysql容器 1 docker run -d --name mysql -v mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=wordpress mysql 参数解析 -d 后台运行容器，并返回容器id --name 自定义容器"/>
+<meta name="twitter:title" content="Mac安装mysql5.7"/>
+<meta name="twitter:description" content="1.下载Dmg安装包 安装包下载 我选择的Mysql版本是5.7.30 2.安装并启动 3.记录Mysql初始密码 4.设置别名 1 2 alias mysql=/usr/local/mysql/bin/mysql alias mysqladmin=/usr/local/mysql/bin/mysqladmin 5.重置密"/>
 <meta name="application-name" content="LoveIt">
-<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" /><link rel="prev" href="https://cywhat.cn/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/" /><link rel="next" href="https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/" /><link rel="prev" href="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" /><link rel="next" href="https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Docker部署wordpress站点",
+        "headline": "Mac安装mysql5.7",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/cywhat.cn\/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Docker","wordcount":  426 ,
-        "url": "https:\/\/cywhat.cn\/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9\/","datePublished": "2022-04-15T14:14:09+08:00","dateModified": "2022-04-15T14:14:09+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/cywhat.cn\/Mac%E5%AE%89%E8%A3%85mysql5.7\/"
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Mac, Mysql","wordcount":  265 ,
+        "url": "https:\/\/cywhat.cn\/Mac%E5%AE%89%E8%A3%85mysql5.7\/","datePublished": "2022-04-24T10:59:14+08:00","dateModified": "2022-04-24T10:59:14+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
                 "@type": "Person",
@@ -103,10 +103,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Docker部署wordpress站点</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Docker/"><i class="far fa-folder fa-fw"></i>Docker</a>&nbsp;<a href="/categories/Blog/"><i class="far fa-folder fa-fw"></i>Blog</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-04-15">2022-04-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 426 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" class="leancloud_visitors" data-flag-title="Docker部署wordpress站点">
+        </div><article class="page single"><h1 class="single-title animated flipInX">Mac安装mysql5.7</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Mac/"><i class="far fa-folder fa-fw"></i>Mac</a>&nbsp;<a href="/categories/Mysql/"><i class="far fa-folder fa-fw"></i>Mysql</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-04-24">2022-04-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 265 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/Mac%E5%AE%89%E8%A3%85mysql5.7/" class="leancloud_visitors" data-flag-title="Mac安装mysql5.7">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
@@ -118,119 +118,101 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#1拉取docker镜像">1.拉取docker镜像</a></li>
-        <li><a href="#2创建mysql容器">2.创建mysql容器</a></li>
-        <li><a href="#3创建-wordpress-容器">3.创建 wordpress 容器</a></li>
-        <li><a href="#4访问地址">4.访问地址</a></li>
-        <li><a href="#5异常问题解决">5.异常问题解决</a></li>
+        <li><a href="#1下载dmg安装包">1.下载Dmg安装包</a></li>
+        <li><a href="#2安装并启动">2.安装并启动</a></li>
+        <li><a href="#3记录mysql初始密码">3.记录Mysql初始密码</a></li>
+        <li><a href="#4设置别名">4.设置别名</a></li>
+        <li><a href="#5重置密码">5.重置密码</a></li>
+        <li><a href="#6本地navicat客户端登录">6.本地Navicat客户端登录</a>
+          <ul>
+            <li><a href="#原因">原因:</a></li>
+            <li><a href="#解决">解决:</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h3 id="1拉取docker镜像">1.拉取docker镜像</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">docker pull wordpress
-
-docker pull mysql
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="2创建mysql容器">2.创建mysql容器</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">docker run -d --name mysql -v mysql-data:/var/lib/mysql -e <span class="nv">MYSQL_ROOT_PASSWORD</span><span class="o">=</span>root -e <span class="nv">MYSQL_DATABASE</span><span class="o">=</span>wordpress mysql
-</code></pre></td></tr></table>
-</div>
-</div><div class="details admonition tip open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw"></i>参数解析<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p><code>-d</code>                    后台运行容器，并返回容器id</p>
-<p><code>--name</code>                自定义容器名</p>
-<p><code>-v</code>                    将容器内的目录挂载到宿主机中(前是宿主机路径/后是容器路径)</p>
-<p><code>-e</code>                    用来指定环境变量以及后续的键值对</p>
-<p><code>MYSQL_ROOT_PASSWORD</code>   数据库密码</p>
-<p><code>MYSQL_DATABASE</code>        数据库表名</p>
-<p><code>mysql</code>             镜像仓库中的镜像标签版本</p>
-</div>
-        </div>
-    </div>
-<h3 id="3创建-wordpress-容器">3.创建 wordpress 容器</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">docker run -d --name wordpress -e <span class="nv">WORDPRESS_DB_HOST</span><span class="o">=</span>mysql:3306 --link mysql -p 8083:80 wordpress
-</code></pre></td></tr></table>
-</div>
-</div><div class="details admonition tip open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw"></i>参数解析<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p><code>-d</code>                    后台运行容器，并返回容器id</p>
-<p><code>--name</code>                自定义容器名</p>
-<p><code>-e</code>                    用来指定环境变量以及后续的键值对</p>
-<p><code>WORDPRESS_DB_HOST</code>     数据库链接</p>
-<p><code>--link</code>                关联到另一台容器，后面加容器名</p>
-<p><code>-p</code>                    指定端口映射(前是宿主机/后是容器端口)</p>
-<p><code>wordpress</code>             wordpress镜像</p>
-</div>
-        </div>
-    </div>
-<h3 id="4访问地址">4.访问地址</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text">用户地址：https://服务器ip:8083
-
-管理地址：https://服务器ip:8083/wp-admin/
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="5异常问题解决">5.异常问题解决</h3>
-<p>url访问后，页面出现以下问题</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">Error establishing a database connection
-</code></pre></td></tr></table>
-</div>
-</div><div class="details admonition success open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-check-circle fa-fw"></i>解决办法<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>1.进入容器
-docker exec -it 容器id /bin/bash</p>
-<p>2.编辑配置文件
-vim wp-config.php</p>
-<p>3.修改数据库账号和密码
-<strong>修改下图红框中的内容为你的数据库账号和密码,注意不要去掉引号</strong>
-<img
+            </div><div class="content" id="content"><h3 id="1下载dmg安装包">1.下载Dmg安装包</h3>
+<p><a href="https://downloads.mysql.com/archives/community/" target="_blank" rel="noopener noreffer">安装包下载</a></p>
+<p>我选择的<code>Mysql</code>版本是<code>5.7.30</code></p>
+<p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/img/img54.png"
-        data-srcset="/img/img54.png, /img/img54.png 1.5x, /img/img54.png 2x"
+        data-src="/img/img55.png"
+        data-srcset="/img/img55.png, /img/img55.png 1.5x, /img/img55.png 2x"
         data-sizes="auto"
-        alt="/img/img54.png"
-        title="img54" /></p>
+        alt="/img/img55.png"
+        title="img55.png" /></p>
+<h3 id="2安装并启动">2.安装并启动</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/img56.png"
+        data-srcset="/img/img56.png, /img/img56.png 1.5x, /img/img56.png 2x"
+        data-sizes="auto"
+        alt="/img/img56.png"
+        title="img56.png" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/img57.png"
+        data-srcset="/img/img57.png, /img/img57.png 1.5x, /img/img57.png 2x"
+        data-sizes="auto"
+        alt="/img/img57.png"
+        title="img57.png" /></p>
+<h3 id="3记录mysql初始密码">3.记录Mysql初始密码</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/img58.png"
+        data-srcset="/img/img58.png, /img/img58.png 1.5x, /img/img58.png 2x"
+        data-sizes="auto"
+        alt="/img/img58.png"
+        title="img58.png" /></p>
+<h3 id="4设置别名">4.设置别名</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">alias</span> <span class="nv">mysql</span><span class="o">=</span>/usr/local/mysql/bin/mysql
+<span class="nb">alias</span> <span class="nv">mysqladmin</span><span class="o">=</span>/usr/local/mysql/bin/mysqladmin
+</code></pre></td></tr></table>
 </div>
+</div><h3 id="5重置密码">5.重置密码</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">mysqladmin -u root -p password <span class="sb">`</span>新密码<span class="sb">`</span>   <span class="c1">#回车后输入临时密码</span>
+
+mysql -u root -p  <span class="c1">#输入新密码即可命令行登录</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="6本地navicat客户端登录">6.本地Navicat客户端登录</h3>
+<p><strong>连接不上(报错)：</strong> <code>2059 - Authentication plugin 'caching_sha2_password' cannot be loaded: dlopen(</code></p>
+<h4 id="原因">原因:</h4>
+<p><code>由于从mysql5.7版本之后 验证方式默认从原来的mysql_native_password改成了caching_sha2_password</code></p>
+<h4 id="解决">解决:</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="k">ALTER</span> <span class="k">USER</span> <span class="s1">&#39;root&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span> <span class="k">IDENTIFIED</span> <span class="k">WITH</span> <span class="n">mysql_native_password</span> <span class="k">BY</span> <span class="s1">&#39;新密码&#39;</span><span class="p">;</span>   <span class="c1">#即可用客户端连接
+</span></code></pre></td></tr></table>
+</div>
+</div><div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>注意<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><code>客户端连接的主机为:</code> localhost</div>
         </div>
     </div>
 <div class="post-promote">
@@ -265,27 +247,27 @@ vim wp-config.php</p>
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2022-04-15</span>
+                <span>更新于 2022-04-24</span>
             </div>
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" data-title="Docker部署wordpress站点" data-hashtags="Docker"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" data-hashtag="Docker"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" data-title="Docker部署wordpress站点"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" data-title="Docker部署wordpress站点"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" data-title="Docker部署wordpress站点"><i class="fab fa-weibo fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/" data-title="Mac安装mysql5.7" data-hashtags="Mac,Mysql"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/" data-hashtag="Mac"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/" data-title="Mac安装mysql5.7"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/" data-title="Mac安装mysql5.7"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/" data-title="Mac安装mysql5.7"><i class="fab fa-weibo fa-fw"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/Docker/">Docker</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/Mac/">Mac</a>,&nbsp;<a href="/tags/Mysql/">Mysql</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/" class="prev" rel="prev" title="RuntimeWarning:DateTimeField Session.expire_date received a naive datetime"><i class="fas fa-angle-left fa-fw"></i>RuntimeWarning:DateTimeField Session.expire_date received a naive datetime</a>
-            <a href="/Mac%E5%AE%89%E8%A3%85mysql5.7/" class="next" rel="next" title="Mac安装mysql5.7">Mac安装mysql5.7<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" class="prev" rel="prev" title="Docker部署wordpress站点"><i class="fas fa-angle-left fa-fw"></i>Docker部署wordpress站点</a>
+            <a href="/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/" class="next" rel="next" title="Django连接Mysql配置">Django连接Mysql配置<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.

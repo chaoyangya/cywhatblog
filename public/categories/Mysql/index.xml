@@ -4,7 +4,21 @@
         <link>https://cywhat.cn/categories/Mysql/</link>
         <description>Mysql - 分类 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 18 Aug 2021 16:41:15 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/categories/Mysql/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Apr 2022 11:15:56 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Mysql/" rel="self" type="application/rss+xml" /><item>
+    <title>Django连接Mysql配置</title>
+    <link>https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/</link>
+    <pubDate>Sun, 24 Apr 2022 11:15:56 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/</guid>
+    <description><![CDATA[环境准备 1 2 3 编译环境：Python3.7.0 编辑器：Pycharm 解释环境：Virtualenv python=3.7.0 1.新建Django项目 各个代码编辑器都]]></description>
+</item><item>
+    <title>Mac安装mysql5.7</title>
+    <link>https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/</link>
+    <pubDate>Sun, 24 Apr 2022 10:59:14 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/</guid>
+    <description><![CDATA[1.下载Dmg安装包 安装包下载 我选择的Mysql版本是5.7.30 2.安装并启动 3.记录Mysql初始密码 4.设置别名 1 2 alias mysql=/usr/local/mysql/bin/mysql alias mysqladmin=/usr/local/mysql/bin/mysqladmin 5.重置密]]></description>
+</item><item>
     <title>Mysql连接以及增删改查语句</title>
     <link>https://cywhat.cn/mysql%E8%BF%9E%E6%8E%A5%E4%BB%A5%E5%8F%8A%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E8%AF%AD%E5%8F%A5/</link>
     <pubDate>Wed, 18 Aug 2021 16:41:15 &#43;0000</pubDate>

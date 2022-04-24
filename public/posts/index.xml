@@ -4,7 +4,21 @@
         <link>https://cywhat.cn/posts/</link>
         <description>所有文章 | cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 15 Apr 2022 14:14:09 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Apr 2022 11:15:56 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Django连接Mysql配置</title>
+    <link>https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/</link>
+    <pubDate>Sun, 24 Apr 2022 11:15:56 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/</guid>
+    <description><![CDATA[环境准备 1 2 3 编译环境：Python3.7.0 编辑器：Pycharm 解释环境：Virtualenv python=3.7.0 1.新建Django项目 各个代码编辑器都]]></description>
+</item><item>
+    <title>Mac安装mysql5.7</title>
+    <link>https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/</link>
+    <pubDate>Sun, 24 Apr 2022 10:59:14 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/</guid>
+    <description><![CDATA[1.下载Dmg安装包 安装包下载 我选择的Mysql版本是5.7.30 2.安装并启动 3.记录Mysql初始密码 4.设置别名 1 2 alias mysql=/usr/local/mysql/bin/mysql alias mysqladmin=/usr/local/mysql/bin/mysqladmin 5.重置密]]></description>
+</item><item>
     <title>Docker部署wordpress站点</title>
     <link>https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/</link>
     <pubDate>Fri, 15 Apr 2022 14:14:09 &#43;0800</pubDate>
@@ -60,19 +74,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/ModuleNotFoundError-No-module-named-_ctypes-make-install-%E9%94%99%E8%AF%AF-1/</guid>
     <description><![CDATA[前景 新服务器安装python3.7.0在make install的时候报错ModuleNotFoundError: No module named '_ctypes' make: *** [install] 错误 1导致编译]]></description>
-</item><item>
-    <title>zipimport.ZipImportError: can&#39;t decompress data; zlib not available make: *** [install] 错误 1</title>
-    <link>https://cywhat.cn/zipimport.ZipImportError-cant-decompress-data-zlib-not-available-make-install-%E9%94%99%E8%AF%AF-1/</link>
-    <pubDate>Thu, 23 Dec 2021 10:36:34 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/zipimport.ZipImportError-cant-decompress-data-zlib-not-available-make-install-%E9%94%99%E8%AF%AF-1/</guid>
-    <description><![CDATA[前景 新服务器安装python3.7.0在make install的时候报错zipimport.ZipImportError: can't decompress data; zlib not available make: *** [install]]]></description>
-</item><item>
-    <title>如何保持Ssh长时间连接不断开</title>
-    <link>https://cywhat.cn/%E5%A6%82%E4%BD%95%E4%BF%9D%E6%8C%81Ssh%E9%95%BF%E6%97%B6%E9%97%B4%E9%93%BE%E6%8E%A5%E4%B8%8D%E6%96%AD%E5%BC%80/</link>
-    <pubDate>Wed, 22 Dec 2021 14:29:11 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/%E5%A6%82%E4%BD%95%E4%BF%9D%E6%8C%81Ssh%E9%95%BF%E6%97%B6%E9%97%B4%E9%93%BE%E6%8E%A5%E4%B8%8D%E6%96%AD%E5%BC%80/</guid>
-    <description><![CDATA[前景： 新购入的华为云服务器SSH连接5分钟没有任何操作就自动断开了，该文章主要为了解决该问题，同样的场景适合各种云服务器/本地物理服务器等 1]]></description>
 </item></channel>
 </rss>

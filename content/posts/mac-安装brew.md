@@ -1,6 +1,7 @@
 ---
 title: Mac安装brew
 date: 2020-03-18 15:56:49
+draft: false
 tags: [Mac,Brew]
 categories: ["Mac"]
 ---

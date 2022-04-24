@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/tags/Django/</link>
         <description>Django - 标签 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 30 Mar 2022 10:56:43 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/Django/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Apr 2022 11:15:56 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/Django/" rel="self" type="application/rss+xml" /><item>
+    <title>Django连接Mysql配置</title>
+    <link>https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/</link>
+    <pubDate>Sun, 24 Apr 2022 11:15:56 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/</guid>
+    <description><![CDATA[环境准备 1 2 3 编译环境：Python3.7.0 编辑器：Pycharm 解释环境：Virtualenv python=3.7.0 1.新建Django项目 各个代码编辑器都]]></description>
+</item><item>
     <title>RuntimeWarning:DateTimeField Session.expire_date received a naive datetime</title>
     <link>https://cywhat.cn/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/</link>
     <pubDate>Wed, 30 Mar 2022 10:56:43 &#43;0800</pubDate>

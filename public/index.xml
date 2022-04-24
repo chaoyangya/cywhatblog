@@ -9,10 +9,28 @@
     <managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
     <webMaster>cywhat@cywhat.cn (cywhat)</webMaster>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 15 Apr 2022 14:14:09 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 Apr 2022 11:15:56 +0800</lastBuildDate>
     
 	<atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Django连接Mysql配置</title>
+      <link>https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sun, 24 Apr 2022 11:15:56 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/</guid>
+      <description>环境准备 1 2 3 编译环境：Python3.7.0 编辑器：Pycharm 解释环境：Virtualenv python=3.7.0 1.新建Django项目 各个代码编辑器都</description>
+    </item>
+    
+    <item>
+      <title>Mac安装mysql5.7</title>
+      <link>https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/</link>
+      <pubDate>Sun, 24 Apr 2022 10:59:14 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/</guid>
+      <description>1.下载Dmg安装包 安装包下载 我选择的Mysql版本是5.7.30 2.安装并启动 3.记录Mysql初始密码 4.设置别名 1 2 alias mysql=/usr/local/mysql/bin/mysql alias mysqladmin=/usr/local/mysql/bin/mysqladmin 5.重置密</description>
+    </item>
     
     <item>
       <title>Docker部署wordpress站点</title>

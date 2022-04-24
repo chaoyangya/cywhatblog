@@ -4,7 +4,28 @@
         <link>https://cywhat.cn/categories/</link>
         <description>Categories - 分类 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 15 Apr 2022 14:14:09 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Apr 2022 11:15:56 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Django</title>
+    <link>https://cywhat.cn/categories/Django/</link>
+    <pubDate>Sun, 24 Apr 2022 11:15:56 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/Django/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Mysql</title>
+    <link>https://cywhat.cn/categories/Mysql/</link>
+    <pubDate>Sun, 24 Apr 2022 11:15:56 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/Mysql/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Mac</title>
+    <link>https://cywhat.cn/categories/Mac/</link>
+    <pubDate>Sun, 24 Apr 2022 10:59:14 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/Mac/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Blog</title>
     <link>https://cywhat.cn/categories/Blog/</link>
     <pubDate>Fri, 15 Apr 2022 14:14:09 &#43;0800</pubDate>
@@ -17,13 +38,6 @@
     <pubDate>Fri, 15 Apr 2022 14:14:09 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/categories/Docker/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Django</title>
-    <link>https://cywhat.cn/categories/Django/</link>
-    <pubDate>Wed, 30 Mar 2022 10:56:43 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/Django/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Hugo</title>
@@ -59,20 +73,6 @@
     <pubDate>Thu, 23 Dec 2021 15:49:42 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/categories/Python/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Cdn</title>
-    <link>https://cywhat.cn/categories/Cdn/</link>
-    <pubDate>Fri, 10 Dec 2021 16:01:02 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/Cdn/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Raid</title>
-    <link>https://cywhat.cn/categories/Raid/</link>
-    <pubDate>Thu, 18 Nov 2021 10:01:24 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/Raid/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

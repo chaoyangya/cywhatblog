@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/tags/Mac/</link>
         <description>Mac - 标签 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 10 Sep 2021 14:54:10 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Mac/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Apr 2022 10:59:14 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/Mac/" rel="self" type="application/rss+xml" /><item>
+    <title>Mac安装mysql5.7</title>
+    <link>https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/</link>
+    <pubDate>Sun, 24 Apr 2022 10:59:14 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/</guid>
+    <description><![CDATA[1.下载Dmg安装包 安装包下载 我选择的Mysql版本是5.7.30 2.安装并启动 3.记录Mysql初始密码 4.设置别名 1 2 alias mysql=/usr/local/mysql/bin/mysql alias mysqladmin=/usr/local/mysql/bin/mysqladmin 5.重置密]]></description>
+</item><item>
     <title>Mac必备软件推荐</title>
     <link>https://cywhat.cn/Mac%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</link>
     <pubDate>Fri, 10 Sep 2021 14:54:10 &#43;0000</pubDate>
