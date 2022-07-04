@@ -5,31 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Django连接Mysql配置 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
-<meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Django连接Mysql配置" />
-<meta property="og:description" content="环境准备 1 2 3 编译环境：Python3.7.0 编辑器：Pycharm 解释环境：Virtualenv python=3.7.0 1.新建Django项目 各个代码编辑器都" />
+        <title>Django的csrf防御机制 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
+<meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Django的csrf防御机制" />
+<meta property="og:description" content="前景： Html页面的表单没有完全使用Django的form进行渲染，故Js不能使用$(&#39;#ClassID&#39;).serialize()来获取C" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/" />
+<meta property="og:url" content="https://cywhat.cn/Django%E7%9A%84csrf%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6/" />
 <meta property="og:image" content="https://cywhat.cn"/>
-<meta property="article:published_time" content="2022-04-24T11:15:56+08:00" />
-<meta property="article:modified_time" content="2022-04-24T11:15:56+08:00" />
+<meta property="article:published_time" content="2022-07-04T14:31:30+08:00" />
+<meta property="article:modified_time" content="2022-07-04T14:31:30+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
-<meta name="twitter:title" content="Django连接Mysql配置"/>
-<meta name="twitter:description" content="环境准备 1 2 3 编译环境：Python3.7.0 编辑器：Pycharm 解释环境：Virtualenv python=3.7.0 1.新建Django项目 各个代码编辑器都"/>
+<meta name="twitter:title" content="Django的csrf防御机制"/>
+<meta name="twitter:description" content="前景： Html页面的表单没有完全使用Django的form进行渲染，故Js不能使用$(&#39;#ClassID&#39;).serialize()来获取C"/>
 <meta name="application-name" content="LoveIt">
-<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/" /><link rel="prev" href="https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/" /><link rel="next" href="https://cywhat.cn/Django%E7%9A%84csrf%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/Django%E7%9A%84csrf%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6/" /><link rel="prev" href="https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Django连接Mysql配置",
+        "headline": "Django的csrf防御机制",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/cywhat.cn\/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Django, Mysql","wordcount":  339 ,
-        "url": "https:\/\/cywhat.cn\/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE\/","datePublished": "2022-04-24T11:15:56+08:00","dateModified": "2022-04-24T11:15:56+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/cywhat.cn\/Django%E7%9A%84csrf%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6\/"
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Django, Ajax","wordcount":  307 ,
+        "url": "https:\/\/cywhat.cn\/Django%E7%9A%84csrf%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6\/","datePublished": "2022-07-04T14:31:30+08:00","dateModified": "2022-07-04T14:31:30+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
                 "@type": "Person",
@@ -103,10 +103,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Django连接Mysql配置</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Django/"><i class="far fa-folder fa-fw"></i>Django</a>&nbsp;<a href="/categories/Mysql/"><i class="far fa-folder fa-fw"></i>Mysql</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-04-24">2022-04-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 339 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/" class="leancloud_visitors" data-flag-title="Django连接Mysql配置">
+        </div><article class="page single"><h1 class="single-title animated flipInX">Django的csrf防御机制</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Django/"><i class="far fa-folder fa-fw"></i>Django</a>&nbsp;<a href="/categories/Ajax/"><i class="far fa-folder fa-fw"></i>Ajax</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-07-04">2022-07-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 307 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/Django%E7%9A%84csrf%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6/" class="leancloud_visitors" data-flag-title="Django的csrf防御机制">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
@@ -118,86 +118,28 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#环境准备">环境准备</a></li>
-        <li><a href="#1新建django项目">1.新建Django项目</a>
+        <li><a href="#前景">前景：</a></li>
+        <li><a href="#原因">原因：</a>
           <ul>
-            <li><a href="#安装django和mysql">安装Django和Mysql</a></li>
-            <li><a href="#构建web应用">构建web应用</a></li>
+            <li><a href="#视图函数返回csrf的三种方式">视图函数返回Csrf的三种方式</a></li>
+            <li><a href="#html中的展现形式">Html中的展现形式</a></li>
           </ul>
         </li>
-        <li><a href="#2修改django配置">2.修改Django配置</a></li>
-        <li><a href="#3项目配置">3.项目配置</a></li>
-        <li><a href="#4数据更新">4.数据更新</a></li>
-        <li><a href="#5库表数据查看">5.库表数据查看</a></li>
+        <li><a href="#解决">解决</a>
+          <ul>
+            <li><a href="#1通过js先获取到csrf值">1.通过Js先获取到Csrf值</a></li>
+            <li><a href="#2通过在ajax设置请求头传递">2.通过在Ajax设置请求头传递</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h3 id="环境准备">环境准备</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text">编译环境：Python3.7.0
-编辑器：Pycharm
-解释环境：Virtualenv python=3.7.0
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="1新建django项目">1.新建Django项目</h3>
-<p><code>各个代码编辑器都支持</code></p>
-<h4 id="安装django和mysql">安装Django和Mysql</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pip3 install <span class="nv">Django</span><span class="o">==</span>1.11.7   <span class="c1">#其他版本也可,Django后不加版本即可安装最新版</span>
-
-pip3 install pymysql
-</code></pre></td></tr></table>
-</div>
-</div><h4 id="构建web应用">构建web应用</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">python3  manage.py startapp web 
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="2修改django配置">2.修改Django配置</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">DATABASES</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;default&#39;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s1">&#39;ENGINE&#39;</span><span class="p">:</span> <span class="s1">&#39;django.db.backends.mysql&#39;</span><span class="p">,</span>  <span class="c1"># 默认</span>
-        <span class="s1">&#39;NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;XXXX&#39;</span><span class="p">,</span>  <span class="c1"># 连接的数据库名</span>
-        <span class="s1">&#39;HOST&#39;</span><span class="p">:</span> <span class="s1">&#39;localhost&#39;</span><span class="p">,</span>  <span class="c1"># mysql的ip地址</span>
-        <span class="s1">&#39;PORT&#39;</span><span class="p">:</span> <span class="mi">3306</span><span class="p">,</span> <span class="c1"># mysql的端口</span>
-        <span class="s1">&#39;USER&#39;</span><span class="p">:</span> <span class="s1">&#39;root&#39;</span><span class="p">,</span>  <span class="c1"># mysql的用户名</span>
-        <span class="s1">&#39;PASSWORD&#39;</span><span class="p">:</span> <span class="s1">&#39;XXXX&#39;</span>  <span class="c1"># mysql的密码</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="3项目配置">3.项目配置</h3>
+            </div><div class="content" id="content"><h3 id="前景">前景：</h3>
+<p>Html页面的表单没有完全使用<code>Django</code>的form进行渲染，故<code>Js</code>不能使用<code>$('#ClassID').serialize()</code>来获取<code>Csrf</code>和<code>Data</code>，然后报错<code>CSRF token missing or incorrect.</code></p>
+<h3 id="原因">原因：</h3>
+<p><code>Django</code>第一次响应来自某个客户端的请求时，会在服务器端随机生成一个<code>Token</code>，把这个<code>Token</code>放在<code>Cookie</code>里。然后每次<code>Post</code>请求都会带上这个<code>Token</code>， 这样可以能避免被<code>Csrf</code>攻击。所以会在每个<code>Html</code>模板中增加一个<code> {% csrf_token %}</code>标签。</p>
+<h4 id="视图函数返回csrf的三种方式">视图函数返回Csrf的三种方式</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -207,14 +149,24 @@ pip3 install pymysql
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#找到根目录项目中的__init__.py文件，输入以下内容</span>
-<span class="kn">import</span> <span class="nn">pymysql</span>
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">return</span> <span class="n">render_to_response</span><span class="p">(</span><span class="s1">&#39;Account/Login.html&#39;</span><span class="p">,</span><span class="n">data</span><span class="p">,</span><span class="n">context_instance</span><span class="o">=</span><span class="n">RequestContext</span><span class="p">(</span><span class="n">request</span><span class="p">))</span>
 
+<span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="n">_template</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">request</span><span class="p">))</span>
 
-<span class="n">pymysql</span><span class="o">.</span><span class="n">install_as_MySQLdb</span><span class="p">()</span>
+<span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="s1">&#39;xxx.html&#39;</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="4数据更新">4.数据更新</h3>
+</div><h4 id="html中的展现形式">Html中的展现形式</h4>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/img60.png"
+        data-srcset="/img/img60.png, /img/img60.png 1.5x, /img/img60.png 2x"
+        data-sizes="auto"
+        alt="/img/img60.png"
+        title="img60" /></p>
+<h3 id="解决">解决</h3>
+<h4 id="1通过js先获取到csrf值">1.通过Js先获取到Csrf值</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -222,22 +174,29 @@ pip3 install pymysql
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">python3 manage.py makemigrations   <span class="c1">#创建类数据库表</span>
-
-python3 manage.py migrate     <span class="c1">#表数据写入(字段属性等)</span>
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="kr">const</span> <span class="nx">csrftoken</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;[name=csrfmiddlewaretoken]&#39;</span><span class="p">).</span><span class="nx">value</span><span class="p">;</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="5库表数据查看">5.库表数据查看</h3>
-<p>本地连接到数据库查看已经有了我们在<code>models</code>创建的表</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/img/img59.png"
-        data-srcset="/img/img59.png, /img/img59.png 1.5x, /img/img59.png 2x"
-        data-sizes="auto"
-        alt="/img/img59.png"
-        title="img59.png" /></p>
-<div class="post-promote">
+</div><h4 id="2通过在ajax设置请求头传递">2.通过在Ajax设置请求头传递</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+        <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span><span class="s1">&#39;X-CSRFToken&#39;</span><span class="o">:</span> <span class="nx">csrf_token</span><span class="p">},</span>     
+    <span class="p">})</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="post-promote">
     <input type="checkbox" name="promote" id="promote" hidden/>
     <label class="promote-button" for="promote">关注一下再走吧</label>
     <div class="qr-code">
@@ -269,27 +228,26 @@ python3 manage.py migrate     <span class="c1">#表数据写入(字段属性等)
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2022-04-24</span>
+                <span>更新于 2022-07-04</span>
             </div>
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/" data-title="Django连接Mysql配置" data-hashtags="Django,Mysql"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/" data-hashtag="Django"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/" data-title="Django连接Mysql配置"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/" data-title="Django连接Mysql配置"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/" data-title="Django连接Mysql配置"><i class="fab fa-weibo fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/Django%E7%9A%84csrf%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6/" data-title="Django的csrf防御机制" data-hashtags="Django,Ajax"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/Django%E7%9A%84csrf%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6/" data-hashtag="Django"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/Django%E7%9A%84csrf%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6/" data-title="Django的csrf防御机制"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/Django%E7%9A%84csrf%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6/" data-title="Django的csrf防御机制"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/Django%E7%9A%84csrf%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6/" data-title="Django的csrf防御机制"><i class="fab fa-weibo fa-fw"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/Django/">Django</a>,&nbsp;<a href="/tags/Mysql/">Mysql</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/Django/">Django</a>,&nbsp;<a href="/tags/Ajax/">Ajax</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/Mac%E5%AE%89%E8%A3%85mysql5.7/" class="prev" rel="prev" title="Mac安装mysql5.7"><i class="fas fa-angle-left fa-fw"></i>Mac安装mysql5.7</a>
-            <a href="/Django%E7%9A%84csrf%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6/" class="next" rel="next" title="Django的csrf防御机制">Django的csrf防御机制<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/" class="prev" rel="prev" title="Django连接Mysql配置"><i class="fas fa-angle-left fa-fw"></i>Django连接Mysql配置</a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.

@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Ajax - 分类 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/categories/Ajax/</link>
+        <description>Ajax - 分类 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 04 Jul 2022 14:31:30 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Ajax/" rel="self" type="application/rss+xml" /><item>
+    <title>Django的csrf防御机制</title>
+    <link>https://cywhat.cn/Django%E7%9A%84csrf%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6/</link>
+    <pubDate>Mon, 04 Jul 2022 14:31:30 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E7%9A%84csrf%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6/</guid>
+    <description><![CDATA[前景： Html页面的表单没有完全使用Django的form进行渲染，故Js不能使用$('#ClassID').serialize()来获取C]]></description>
+</item></channel>
+</rss>
