@@ -9,10 +9,19 @@
     <managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
     <webMaster>cywhat@cywhat.cn (cywhat)</webMaster>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 04 Jul 2022 14:31:30 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 18 Jul 2022 14:54:45 +0800</lastBuildDate>
     
 	<atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python获取当前位置所在行数以及函数名</title>
+      <link>https://cywhat.cn/Python%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E4%BD%8D%E7%BD%AE%E6%89%80%E5%9C%A8%E8%A1%8C%E6%95%B0%E4%BB%A5%E5%8F%8A%E5%87%BD%E6%95%B0%E5%90%8D/</link>
+      <pubDate>Mon, 18 Jul 2022 14:54:45 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/Python%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E4%BD%8D%E7%BD%AE%E6%89%80%E5%9C%A8%E8%A1%8C%E6%95%B0%E4%BB%A5%E5%8F%8A%E5%87%BD%E6%95%B0%E5%90%8D/</guid>
+      <description>代码 1 2 3 4 5 6 7 8 9 10 # encoding=utf-8 import sys def get_python_info(): print(&amp;#39;当前文件名 {} &amp;#39;.format(sys._getframe().f_code.co_filename)) print(&amp;#39;所属函数名 {} &amp;#39;.format(sys._getframe().f_code.co_name)) print(&amp;#39;第 {} 行 &amp;#39;.format(sys._getframe().f_lineno)) #</description>
+    </item>
     
     <item>
       <title>Django的csrf防御机制</title>
