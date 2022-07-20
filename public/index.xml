@@ -9,10 +9,19 @@
     <managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
     <webMaster>cywhat@cywhat.cn (cywhat)</webMaster>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 18 Jul 2022 14:54:45 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 20 Jul 2022 18:18:53 +0800</lastBuildDate>
     
 	<atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>魔戒使用教程</title>
+      <link>https://cywhat.cn/%E9%AD%94%E6%88%92%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Wed, 20 Jul 2022 18:18:53 +0800</pubDate>
+      <author>cywhat@cywhat.cn (cywhat)</author>
+      <guid>https://cywhat.cn/%E9%AD%94%E6%88%92%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
+      <description>为什么选择魔戒 按流量计费,账号永久使用 Windows Android iOS Mac OS 路由器 全平台通用 多设备同时使用 不限IP 不限设备数 支持4k 支持8k 支持YouTubeTV Netflix 不限</description>
+    </item>
     
     <item>
       <title>Python获取当前位置所在行数以及函数名</title>
