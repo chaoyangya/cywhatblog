@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/categories/Django/</link>
         <description>Django - 分类 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 04 Jul 2022 14:31:30 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Django/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 05 Aug 2022 11:39:03 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Django/" rel="self" type="application/rss+xml" /><item>
+    <title>Django删除表重建</title>
+    <link>https://cywhat.cn/Django%E5%88%A0%E9%99%A4%E8%A1%A8%E9%87%8D%E5%BB%BA/</link>
+    <pubDate>Fri, 05 Aug 2022 11:39:03 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E5%88%A0%E9%99%A4%E8%A1%A8%E9%87%8D%E5%BB%BA/</guid>
+    <description><![CDATA[前景 可能是在建表之后又修改了mysql的配置，导致models中的CharField不支持汉字，调试了很久都不行，各种配置无果后决定删表重建]]></description>
+</item><item>
     <title>Django的csrf防御机制</title>
     <link>https://cywhat.cn/Django%E7%9A%84csrf%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6/</link>
     <pubDate>Mon, 04 Jul 2022 14:31:30 &#43;0800</pubDate>
