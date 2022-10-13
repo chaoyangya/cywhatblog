@@ -4,9 +4,16 @@
         <link>https://cywhat.cn/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 13 Oct 2022 11:19:11 &#43;0800</lastBuildDate>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 13 Oct 2022 11:30:33 &#43;0800</lastBuildDate>
             <atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>MoudleNotFoundError: No module named &#39;xxx&#39;</title>
+    <link>https://cywhat.cn/MoudleNotFoundError-No-module-named-xxx/</link>
+    <pubDate>Thu, 13 Oct 2022 11:30:33 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/MoudleNotFoundError-No-module-named-xxx/</guid>
+    <description><![CDATA[1、报错 1 MoudleNotFoundError: No module named &#39;xxx&#39; 2、排查解决 1 2 3 4 5 6 7 8 1、module包没安装 2、忘了import 3、没有__init__.py文件(很重要) 4、]]></description>
+</item><item>
     <title>Failed to Extract Shortcode:template for Shortcode Admonition Not Found</title>
     <link>https://cywhat.cn/failed-to-extract-shortcodetemplate-for-shortcode-admonition-not-found/</link>
     <pubDate>Thu, 13 Oct 2022 11:19:11 &#43;0800</pubDate>
@@ -349,12 +356,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/sed-e-expression-1-char-24-unknown-option-to-s/</guid>
     <description><![CDATA[在使用 sed -e 批量替换命令时候,报错如下: 1 $ &#34;sed: -e expression #1, char 24: unknown option to `s` &#34; 原因: 1 $ 需要替换的内容中有符号,且该符号和你用来分割的符号一样,所以该条命]]></description>
-</item><item>
-    <title>hexo d -g 部署失败</title>
-    <link>https://cywhat.cn/hexo-d-g-%E9%83%A8%E7%BD%B2%E5%A4%B1%E8%B4%A5/</link>
-    <pubDate>Tue, 17 Aug 2021 18:07:39 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/hexo-d-g-%E9%83%A8%E7%BD%B2%E5%A4%B1%E8%B4%A5/</guid>
-    <description><![CDATA[hexo d -g 突然部署失败,报错如下: 1 2 3 $ fatal: unable to access &#39;https://github.com/xxxxx/xxxx.git/&#39;: The requested URL returned error: 403 err: Error: Spawn failed at ChildProcess.&lt;anonymous 1.更改hexo配置文件中的git镜像映射地址 1 $ vim _config.yml #将https]]></description>
 </item></channel>
 </rss>

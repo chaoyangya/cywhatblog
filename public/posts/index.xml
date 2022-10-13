@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/posts/</link>
         <description>所有文章 | cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 13 Oct 2022 11:19:11 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 13 Oct 2022 11:30:33 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>MoudleNotFoundError: No module named &#39;xxx&#39;</title>
+    <link>https://cywhat.cn/MoudleNotFoundError-No-module-named-xxx/</link>
+    <pubDate>Thu, 13 Oct 2022 11:30:33 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/MoudleNotFoundError-No-module-named-xxx/</guid>
+    <description><![CDATA[1、报错 1 MoudleNotFoundError: No module named &#39;xxx&#39; 2、排查解决 1 2 3 4 5 6 7 8 1、module包没安装 2、忘了import 3、没有__init__.py文件(很重要) 4、]]></description>
+</item><item>
     <title>Failed to Extract Shortcode:template for Shortcode Admonition Not Found</title>
     <link>https://cywhat.cn/failed-to-extract-shortcodetemplate-for-shortcode-admonition-not-found/</link>
     <pubDate>Thu, 13 Oct 2022 11:19:11 &#43;0800</pubDate>
@@ -67,12 +74,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/</guid>
     <description><![CDATA[1.下载Dmg安装包 安装包下载 我选择的Mysql版本是5.7.30 2.安装并启动 3.记录Mysql初始密码 4.设置别名 1 2 alias mysql=/usr/local/mysql/bin/mysql alias mysqladmin=/usr/local/mysql/bin/mysqladmin 5.重置密]]></description>
-</item><item>
-    <title>Docker部署wordpress站点</title>
-    <link>https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/</link>
-    <pubDate>Fri, 15 Apr 2022 14:14:09 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/</guid>
-    <description><![CDATA[1.拉取docker镜像 1 2 3 docker pull wordpress docker pull mysql 2.创建mysql容器 1 docker run -d --name mysql -v mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=wordpress mysql 参数解析 -d 后台运行容器，并返回容器id --name 自定义容器]]></description>
 </item></channel>
 </rss>
