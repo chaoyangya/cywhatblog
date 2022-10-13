@@ -2,11 +2,14 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://cywhat.cn/categories/</loc><lastmod>2022-10-13T10:32:12&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/</loc><lastmod>2022-10-13T10:32:12&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/categories/</loc><lastmod>2022-10-13T11:19:11&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/</loc><lastmod>2022-10-13T11:19:11&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/failed-to-extract-shortcodetemplate-for-shortcode-admonition-not-found/</loc><lastmod>2022-10-13T11:19:11&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/tags/Hugo/</loc><lastmod>2022-10-13T11:19:11&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/categories/Hugo/</loc><lastmod>2022-10-13T11:19:11&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/posts/</loc><lastmod>2022-10-13T11:19:11&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/tags/</loc><lastmod>2022-10-13T11:19:11&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/categories/Mac/</loc><lastmod>2022-10-13T10:32:12&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/posts/</loc><lastmod>2022-10-13T10:32:12&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/tags/</loc><lastmod>2022-10-13T10:32:12&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/tags/Zsh/</loc><lastmod>2022-10-13T10:32:12&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/zsh-problem-compinit503-no-such-file-or-directory-usr-local-share-zsh-site/</loc><lastmod>2022-10-13T10:32:12&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/tags/Django/</loc><lastmod>2022-08-05T11:39:03&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
@@ -36,8 +39,6 @@
             <loc>https://cywhat.cn/categories/Docker/</loc><lastmod>2022-04-15T14:14:09&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/</loc><lastmod>2022-04-15T14:14:09&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/</loc><lastmod>2022-03-30T10:56:43&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/tags/Hugo/</loc><lastmod>2022-03-18T11:31:21&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/categories/Hugo/</loc><lastmod>2022-03-18T11:31:21&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/Hugo%E7%9A%84Loveit%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9sitemap.xml%E9%85%8D%E7%BD%AE/</loc><lastmod>2022-03-18T11:31:21&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/tags/Loveit/</loc><lastmod>2022-03-18T11:31:21&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/categories/Loveit/</loc><lastmod>2022-03-18T11:31:21&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>

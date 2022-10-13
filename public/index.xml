@@ -4,9 +4,16 @@
         <link>https://cywhat.cn/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 13 Oct 2022 10:32:12 &#43;0800</lastBuildDate>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 13 Oct 2022 11:19:11 &#43;0800</lastBuildDate>
             <atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Failed to Extract Shortcode:template for Shortcode Admonition Not Found</title>
+    <link>https://cywhat.cn/failed-to-extract-shortcodetemplate-for-shortcode-admonition-not-found/</link>
+    <pubDate>Thu, 13 Oct 2022 11:19:11 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/failed-to-extract-shortcodetemplate-for-shortcode-admonition-not-found/</guid>
+    <description><![CDATA[1、问题 换新设备后迁移基于hugo构建的静态博客出现的报错，报错如下： failed to extract shortcode: template for shortcode &quot;admonition&quot; not found 2、原因 未使用hugo_extended版本，导致]]></description>
+</item><item>
     <title>Zsh Problem Compinit503 No Such File or Directory Usr Local Share Zsh Site</title>
     <link>https://cywhat.cn/zsh-problem-compinit503-no-such-file-or-directory-usr-local-share-zsh-site/</link>
     <pubDate>Thu, 13 Oct 2022 10:32:12 &#43;0800</pubDate>
@@ -349,12 +356,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/hexo-d-g-%E9%83%A8%E7%BD%B2%E5%A4%B1%E8%B4%A5/</guid>
     <description><![CDATA[hexo d -g 突然部署失败,报错如下: 1 2 3 $ fatal: unable to access &#39;https://github.com/xxxxx/xxxx.git/&#39;: The requested URL returned error: 403 err: Error: Spawn failed at ChildProcess.&lt;anonymous 1.更改hexo配置文件中的git镜像映射地址 1 $ vim _config.yml #将https]]></description>
-</item><item>
-    <title>node切换版本</title>
-    <link>https://cywhat.cn/node%E5%88%87%E6%8D%A2%E7%89%88%E6%9C%AC/</link>
-    <pubDate>Tue, 17 Aug 2021 16:00:12 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/node%E5%88%87%E6%8D%A2%E7%89%88%E6%9C%AC/</guid>
-    <description><![CDATA[1.安装n 1 npm install -g n 2.使用 n 下载所需node 1 n 10.16.3 #版本号 不需要加v 3.下载最新版本 1 n latest 4.删除某个版本 1 n rm 10.16.3 #版本号 不需要加v 5.查]]></description>
 </item></channel>
 </rss>
