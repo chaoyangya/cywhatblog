@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/categories/Mac/</link>
         <description>Mac - 分类 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Apr 2022 10:59:14 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Mac/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 13 Oct 2022 10:32:12 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Mac/" rel="self" type="application/rss+xml" /><item>
+    <title>Zsh Problem Compinit503 No Such File or Directory Usr Local Share Zsh Site</title>
+    <link>https://cywhat.cn/zsh-problem-compinit503-no-such-file-or-directory-usr-local-share-zsh-site/</link>
+    <pubDate>Thu, 13 Oct 2022 10:32:12 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/zsh-problem-compinit503-no-such-file-or-directory-usr-local-share-zsh-site/</guid>
+    <description><![CDATA[1、报错信息 no such file or directory: /usr/local/share/zsh/site-functions/_brew_cask 2、原因 升级到BigSur出现该问题，似乎是brew因为BigSur和之前系统的版本不一致导致 3、解决 1 2 3 4 5 brew doctor]]></description>
+</item><item>
     <title>Mac安装mysql5.7</title>
     <link>https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/</link>
     <pubDate>Sun, 24 Apr 2022 10:59:14 &#43;0800</pubDate>
