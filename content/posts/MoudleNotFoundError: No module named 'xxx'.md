@@ -22,3 +22,9 @@ MoudleNotFoundError: No module named 'xxx'
 7、自建的module包所在路径不在PYTHONPATH下
 8、虚拟环境选择错误
 ```
+
+
+### 3.声明
+```text
+我的博客即将同步至腾讯云开发者社区，邀请大家一同入驻：https://cloud.tencent.com/developer/support-plan?invite_code=2sts6ma93kw08
+```
