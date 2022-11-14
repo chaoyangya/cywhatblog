@@ -46,7 +46,7 @@ npm install -g newman  #全局安装
 
 ### 5、安装newman-html插件
 ```bash
-npm install -g newman-reporter-htmlextra
+npm install -g newman-reporter-htmlextra --registry=https://registry.npm.taobao.org
 ```
 
 ### 6、命令详解
