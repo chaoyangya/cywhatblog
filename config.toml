@@ -153,7 +153,7 @@ date = [":filename", ":default"]
           # Gravatar 邮箱，用于优先在主页显示的头像
           gravatarEmail = ""
           # 主页显示头像的 URL
-          avatarURL = "https://cdn.jsdelivr.net/gh/chaoyangya/cywhat-cdn@master/images/cywhat-logo.png"
+          avatarURL = "/img/cywhat-logo.png"
           # 主页显示的网站标题 (支持 HTML 格式)
           title = "cywhat."
           # 主页显示的网站副标题
