@@ -4,7 +4,21 @@
         <link>https://cywhat.cn/categories/Linux/</link>
         <description>Linux - 分类 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 10 Nov 2022 15:08:11 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Linux/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 15 Nov 2022 15:27:31 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Linux/" rel="self" type="application/rss+xml" /><item>
+    <title>Jenkins插件无法安装解决</title>
+    <link>https://cywhat.cn/Jenkins%E6%8F%92%E4%BB%B6%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85%E8%A7%A3%E5%86%B3/</link>
+    <pubDate>Tue, 15 Nov 2022 15:27:31 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Jenkins%E6%8F%92%E4%BB%B6%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85%E8%A7%A3%E5%86%B3/</guid>
+    <description><![CDATA[1、问题 1 jenkins各种改源地址都不行，都无法安装更新插件 2、可行方案 1 2 3 4 5 6 7 8 9 1、更改源地址(http://mirror.es]]></description>
+</item><item>
+    <title>Jenkins报错 Bash:newman:command Not Found</title>
+    <link>https://cywhat.cn/Jenkins%E6%8A%A5%E9%94%99-bashnewmancommand-not-found/</link>
+    <pubDate>Tue, 15 Nov 2022 15:19:31 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Jenkins%E6%8A%A5%E9%94%99-bashnewmancommand-not-found/</guid>
+    <description><![CDATA[1、报错查看 1 2 3 # 报错如下： bash: newman: command not found Build step &#39;Execute shell&#39; marked build as failure 2、原因分析 1 2 3 4 5 1、Linux环境变量配置没问题 2、Linux中任意位置都可以]]></description>
+</item><item>
     <title>Linux安装newman生成postman脚本报告</title>
     <link>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85newman%E7%94%9F%E6%88%90postman%E8%84%9A%E6%9C%AC%E6%8A%A5%E5%91%8A/</link>
     <pubDate>Thu, 10 Nov 2022 15:08:11 &#43;0800</pubDate>
@@ -60,19 +74,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/sed-e-expression-1-char-24-unknown-option-to-s/</guid>
     <description><![CDATA[在使用 sed -e 批量替换命令时候,报错如下: 1 $ &#34;sed: -e expression #1, char 24: unknown option to `s` &#34; 原因: 1 $ 需要替换的内容中有符号,且该符号和你用来分割的符号一样,所以该条命]]></description>
-</item><item>
-    <title>Linux中常用来查看进程的命令</title>
-    <link>https://cywhat.cn/Linux%E4%B8%AD%E5%B8%B8%E7%94%A8%E6%9D%A5%E6%9F%A5%E7%9C%8B%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%91%BD%E4%BB%A4/</link>
-    <pubDate>Tue, 25 Dec 2018 20:12:00 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Linux%E4%B8%AD%E5%B8%B8%E7%94%A8%E6%9D%A5%E6%9F%A5%E7%9C%8B%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%91%BD%E4%BB%A4/</guid>
-    <description><![CDATA[查看所有运行中的进程: 1 ps aux | less 显示所有进程: 1 2 ps -A ps -e 显示进程的树状图: 1 pstree 查看进程: 1 netstat -ntlp]]></description>
-</item><item>
-    <title>Linux快捷进入长目录的方法</title>
-    <link>https://cywhat.cn/Linux%E5%BF%AB%E6%8D%B7%E8%BF%9B%E5%85%A5%E9%95%BF%E7%9B%AE%E5%BD%95%E7%9A%84%E6%96%B9%E6%B3%95/</link>
-    <pubDate>Fri, 02 Nov 2018 16:16:00 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Linux%E5%BF%AB%E6%8D%B7%E8%BF%9B%E5%85%A5%E9%95%BF%E7%9B%AE%E5%BD%95%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
-    <description><![CDATA[1.设置环境变量 1 2 3 vim ~/.bashrc alias cywhat =&#39;cd /root/XX/XX/XX/XX&#39; 2.然后让配置生效 1 source ./bashrc 3.验证 最后我们输入设置的cywhat（这个名字自己设置）就可以快速进入设置的长目]]></description>
 </item></channel>
 </rss>

@@ -51,7 +51,7 @@ npm install -g newman-reporter-htmlextra --registry=https://registry.npm.taobao.
 
 ### 6、命令详解
 ```bash
-newman run  A.postman_collection.json  -e Test-iot-env.postman_environment.json  -r htmlextra,cli --reporter-htmlextra-title "IOT接口自动化测试报告" --reporter-htmlextra-browserTitle "IOT测试报告" --reporter-htmlextra-template ./template.hbs --reporter-htmlextra-export ./reports/C.html
+newman run  A.postman_collection.json  -e B.postman_environment.json  -r htmlextra,cli --reporter-htmlextra-title "接口自动化测试报告" --reporter-htmlextra-browserTitle "测试报告" --reporter-htmlextra-template ./template.hbs --reporter-htmlextra-export ./reports/C.html
 
 A.postman_collection.json           #postman的脚本集合
 B.postman_environment.json          #postman的环境变量

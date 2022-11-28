@@ -4,7 +4,21 @@
         <link>https://cywhat.cn/tags/Jenkins/</link>
         <description>Jenkins - 标签 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 23 Sep 2021 11:25:17 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Jenkins/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 15 Nov 2022 15:27:31 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/Jenkins/" rel="self" type="application/rss+xml" /><item>
+    <title>Jenkins插件无法安装解决</title>
+    <link>https://cywhat.cn/Jenkins%E6%8F%92%E4%BB%B6%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85%E8%A7%A3%E5%86%B3/</link>
+    <pubDate>Tue, 15 Nov 2022 15:27:31 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Jenkins%E6%8F%92%E4%BB%B6%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85%E8%A7%A3%E5%86%B3/</guid>
+    <description><![CDATA[1、问题 1 jenkins各种改源地址都不行，都无法安装更新插件 2、可行方案 1 2 3 4 5 6 7 8 9 1、更改源地址(http://mirror.es]]></description>
+</item><item>
+    <title>Jenkins报错 Bash:newman:command Not Found</title>
+    <link>https://cywhat.cn/Jenkins%E6%8A%A5%E9%94%99-bashnewmancommand-not-found/</link>
+    <pubDate>Tue, 15 Nov 2022 15:19:31 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Jenkins%E6%8A%A5%E9%94%99-bashnewmancommand-not-found/</guid>
+    <description><![CDATA[1、报错查看 1 2 3 # 报错如下： bash: newman: command not found Build step &#39;Execute shell&#39; marked build as failure 2、原因分析 1 2 3 4 5 1、Linux环境变量配置没问题 2、Linux中任意位置都可以]]></description>
+</item><item>
     <title>ERROR: Re-run SonarScanner using the -X switch to enable full debug logging.</title>
     <link>https://cywhat.cn/ERROR-Re-run-SonarScanner-using-the-X-switch-to-enable-full-debug-logging/</link>
     <pubDate>Thu, 23 Sep 2021 11:25:17 &#43;0000</pubDate>
