@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/tags/Html/</link>
         <description>Html - 标签 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 09 Sep 2021 11:26:12 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Html/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 06 Dec 2022 16:18:30 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/Html/" rel="self" type="application/rss+xml" /><item>
+    <title>Jenkins添加html报告并发送到邮箱</title>
+    <link>https://cywhat.cn/Jenkins%E6%B7%BB%E5%8A%A0html%E6%8A%A5%E5%91%8A%E5%B9%B6%E5%8F%91%E9%80%81%E5%88%B0%E9%82%AE%E7%AE%B1/</link>
+    <pubDate>Tue, 06 Dec 2022 16:18:30 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Jenkins%E6%B7%BB%E5%8A%A0html%E6%8A%A5%E5%91%8A%E5%B9%B6%E5%8F%91%E9%80%81%E5%88%B0%E9%82%AE%E7%AE%B1/</guid>
+    <description><![CDATA[1、插件安装 1 2 3 4 5 6 1、Manage Jenkins ---&gt; Manage Plugins ---&gt; Available 搜索框输入下面几款插件 2、插件安装以及插件的说明： 1) HTML Publisher plugin # 推送生成的html报告到je]]></description>
+</item><item>
     <title>html简单实现button加载中且置灰不可点击</title>
     <link>https://cywhat.cn/html%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0button%E5%8A%A0%E8%BD%BD%E4%B8%AD%E4%B8%94%E7%BD%AE%E7%81%B0%E4%B8%8D%E5%8F%AF%E7%82%B9%E5%87%BB/</link>
     <pubDate>Thu, 09 Sep 2021 11:26:12 &#43;0000</pubDate>
