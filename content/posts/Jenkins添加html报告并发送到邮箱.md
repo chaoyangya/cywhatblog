@@ -128,6 +128,12 @@ System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
 ![img_69.png](/img/img69.png)
 
 
+### 4、邮件效果展示
+
+![img_70.png](/img/img70.png)
+
+
+
 
 
 
