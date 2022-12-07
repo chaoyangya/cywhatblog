@@ -121,6 +121,13 @@ System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
 
 ![img_68.png](/img/img68.png)
 
+#### 6、配置junit推送报告
+
+**这一条必须配置，如果不配置报告的用例条数无法读取**
+
+![img_69.png](/img/img69.png)
+
+
 
 
 

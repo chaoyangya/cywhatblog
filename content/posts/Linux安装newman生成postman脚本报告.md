@@ -51,11 +51,13 @@ npm install -g newman-reporter-htmlextra --registry=https://registry.npm.taobao.
 
 ### 6、命令详解
 ```bash
-newman run  A.postman_collection.json  -e B.postman_environment.json  -r htmlextra,cli --reporter-htmlextra-title "接口自动化测试报告" --reporter-htmlextra-browserTitle "测试报告" --reporter-htmlextra-template ./template.hbs --reporter-htmlextra-export ./reports/C.html
+newman run  A.postman_collection.json  -e B.postman_environment.json  -r htmlextra,cli,junit --reporter-junit-export ../reports/echo.xml   --reporter-htmlextra-title "接口自动化测试报告" --reporter-htmlextra-browserTitle "测试报告" --reporter-htmlextra-template ./template.hbs --reporter-htmlextra-export ./reports/C.html
 
 A.postman_collection.json           #postman的脚本集合
 B.postman_environment.json          #postman的环境变量
--r htmlextra,cli                    #指定插件htmlextra
+-r htmlextra,cli,junit              #指定插件htmlextra和junit
+--reporter-junit-export             #生成junit报告
+../reports/echo.xml                 #生成的junit报告-用xml格式呈现
 --reporter-htmlextra-title          #定义报告的title名称
 --reporter-htmlextra-browserTitle   #定义浏览器title名称
 --reporter-htmlextra-template       #生成报告的模板
