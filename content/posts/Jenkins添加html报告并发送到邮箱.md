@@ -48,6 +48,15 @@ System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
 <!DOCTYPE html>
 <html>
 <head>
+    <STYLE TYPE="text/css">
+        BODY {
+            background-image: URL(https://i.postimg.cc/GtTbW0P6/Wechat-IMG134.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </STYLE>
     <meta charset="UTF-8">
     <title>${ENV, var="JOB_NAME"}-自动化测试报告结果</title>
 </head>
@@ -126,7 +135,6 @@ System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
 **这一条必须配置，如果不配置报告的用例条数无法读取**
 
 ![img_69.png](/img/img69.png)
-
 
 ### 4、邮件效果展示
 

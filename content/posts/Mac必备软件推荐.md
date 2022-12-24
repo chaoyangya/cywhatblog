@@ -61,4 +61,11 @@ ACDSee Photo Studio 7  "Mac最好用的图片查看/编辑软件"
 Daisy Disk         "可视化磁盘清理工具"(非常好用)
 
 Gifox              "Gif制作神器"
+
+Paste               "剪切板管理神器"
+
+FastClicker         "定时模拟鼠标点击"
+
+RDM                 "redis可视化客户端"
+
 {{< /admonition >}}
