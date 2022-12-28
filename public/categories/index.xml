@@ -4,7 +4,28 @@
         <link>https://cywhat.cn/categories/</link>
         <description>Categories - 分类 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cywhat@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 06 Dec 2022 16:18:30 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cywhat@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 28 Dec 2022 17:33:31 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Android</title>
+    <link>https://cywhat.cn/categories/Android/</link>
+    <pubDate>Wed, 28 Dec 2022 17:33:31 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/Android/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>IOS</title>
+    <link>https://cywhat.cn/categories/IOS/</link>
+    <pubDate>Wed, 28 Dec 2022 17:33:31 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/IOS/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>性能</title>
+    <link>https://cywhat.cn/categories/%E6%80%A7%E8%83%BD/</link>
+    <pubDate>Wed, 28 Dec 2022 17:33:31 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/%E6%80%A7%E8%83%BD/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Html</title>
     <link>https://cywhat.cn/categories/Html/</link>
     <pubDate>Tue, 06 Dec 2022 16:18:30 &#43;0800</pubDate>
@@ -52,27 +73,6 @@
     <pubDate>Thu, 13 Oct 2022 11:19:11 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/categories/Hugo/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Mac</title>
-    <link>https://cywhat.cn/categories/Mac/</link>
-    <pubDate>Thu, 13 Oct 2022 10:32:12 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/Mac/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Django</title>
-    <link>https://cywhat.cn/categories/Django/</link>
-    <pubDate>Fri, 05 Aug 2022 11:39:03 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/Django/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Clash</title>
-    <link>https://cywhat.cn/categories/Clash/</link>
-    <pubDate>Wed, 20 Jul 2022 18:18:53 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/Clash/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

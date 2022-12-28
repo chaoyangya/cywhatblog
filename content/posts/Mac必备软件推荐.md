@@ -68,4 +68,8 @@ FastClicker         "定时模拟鼠标点击"
 
 RDM                 "redis可视化客户端"
 
+Final Cut Pro 10.6.5      "视频剪辑"
+
+Permute 3.9.13              "视频格式转换"
+
 {{< /admonition >}}
