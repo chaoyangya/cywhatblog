@@ -1,15 +1,15 @@
-/* 轮播背景图片 */
-$(function () {
-	$.backstretch([
-        "/img/background/IMG_banner_4.JPG",
-        "/img/background/IMG_banner_7.JPG",
-        "/img/background/IMG_banner_2.JPG",
-        "/img/background/IMG_banner_1.JPG",
-        "/img/background/IMG_banner_3.JPG",
-        "/img/background/IMG_banner_6.JPG",
-        "/img/background/IMG_banner_5.JPG"
-	], { duration: 6000, fade: 1500 });
-});
+// /* 轮播背景图片 */
+// $(function () {
+// 	$.backstretch([
+//         "/img/background/IMG_banner_4.JPG",
+//         "/img/background/IMG_banner_7.JPG",
+//         "/img/background/IMG_banner_2.JPG",
+//         "/img/background/IMG_banner_1.JPG",
+//         "/img/background/IMG_banner_3.JPG",
+//         "/img/background/IMG_banner_6.JPG",
+//         "/img/background/IMG_banner_5.JPG"
+// 	], { duration: 6000, fade: 1500 });
+// });
 
 /* 站点运行时间 */
 function runtime() {
