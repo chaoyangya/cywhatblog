@@ -187,7 +187,12 @@ logo="http://pic.xieboke.net/joyoblog.png"
 word="分享所学技能，记录点滴生活。"
 >}}
 
-
+{{< friend
+name="Barney’s Blog"
+url="https://hugo.bnblogs.cc/"
+logo="https://hugo.bnblogs.cc/images/img/20220215001349.png"
+word="All the truth is simple"
+>}}
 
 ### 十年之约
 `十年之约，即从加入这个活动起，我们的博客十年不关闭，保持更新和活力！`
