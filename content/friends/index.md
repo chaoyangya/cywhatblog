@@ -196,9 +196,9 @@ word="All the truth is simple"
 
 {{< friend
 name="夜灭の小窝"
-url=“https://yujie.pro”
-logo=“https://yujie.pro/content/templates/NULL/images/tx.jpg”
-describe=“夜灭的小窝，谈天说地热爱二次元且会写bug”
+url="https://yujie.pro"
+logo="https://yujie.pro/content/templates/NULL/images/tx.jpg"
+describe="夜灭的小窝，谈天说地热爱二次元且会写bug"
 >}}
 
 ### 十年之约
