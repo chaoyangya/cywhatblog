@@ -194,6 +194,13 @@ logo="https://hugo.bnblogs.cc/images/img/20220215001349.png"
 word="All the truth is simple"
 >}}
 
+{{< friend
+name=“夜灭の小窝”
+url=“https://yujie.pro”
+logo=“https://yujie.pro/content/templates/NULL/images/tx.jpg”
+describe=“夜灭的小窝，谈天说地热爱二次元且会写bug”
+>}}
+
 ### 十年之约
 `十年之约，即从加入这个活动起，我们的博客十年不关闭，保持更新和活力！`
 
