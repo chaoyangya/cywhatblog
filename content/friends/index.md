@@ -198,7 +198,7 @@ word="All the truth is simple"
 name="夜灭の小窝"
 url="https://yujie.pro"
 logo="https://yujie.pro/content/templates/NULL/images/tx.jpg"
-describe="夜灭的小窝，谈天说地热爱二次元且会写bug"
+word="夜灭的小窝，谈天说地热爱二次元且会写bug"
 >}}
 
 ### 十年之约
@@ -225,7 +225,7 @@ screenshot="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/comm
 name="站点名称"
 url="站点地址"
 logo="站点图标或个人头像"
-describe="站点描述"
+word="站点描述"
 ```
 
 ### 我的友链信息
@@ -236,5 +236,5 @@ describe="站点描述"
 name="cywhat's blog"
 url="https://cywhat.cn"
 logo="https://cdn.jsdelivr.net/gh/chaoyangya/cywhat-cdn@master/images/cywhat-logo.png"
-describe="一位摸爬滚打的测开Dog."
+word="一位摸爬滚打的测开Dog."
 ```
