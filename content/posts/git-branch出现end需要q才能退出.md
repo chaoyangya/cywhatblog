@@ -16,5 +16,5 @@ categories: ["Git"]
 ### 解决
 
 ```bash
-$ git config --global core.pager mor
+git config --global pager.branch false
 ```

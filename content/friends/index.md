@@ -63,12 +63,6 @@ word="总是偏爱不务正业"
 screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQRov.png"
 >}}
 
-{{< friend
-name="Thrower的博客"
-url="https://thrower.cc/"
-logo="https://thrower.cc/wp-content/uploads/2021/07/QQ%E5%9B%BE%E7%89%8720210704153032.jpg"
-word="一名网络安全技术爱好者，汪峰的老歌迷。"
->}}
 
 {{< friend
 name="小胖墩er"
@@ -84,14 +78,6 @@ name="Seepine’s Blog"
 url="https://seepine.com/"
 logo="https://seepine.com/cdn/img/avatar.png"
 word="Java,Vue,Flutter"
-screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQRov.png"
->}}
-
-{{< friend
-name="森屿暖树"
-url="https://blog.syzhan.cn/"
-logo="https://thirdqq.qlogo.cn/g?b=qq&nk=2817808181&s=100"
-word="人和人，和万物，相逢又别离"
 screenshot="https://cdn.jsdelivr.net/gh/caibingcheng/resources@main/images/11XQRov.png"
 >}}
 
