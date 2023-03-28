@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/categories/</link>
         <description>Categories - 分类 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 28 Dec 2022 17:33:31 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 27 Mar 2023 16:17:41 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Mysql</title>
+    <link>https://cywhat.cn/categories/Mysql/</link>
+    <pubDate>Mon, 27 Mar 2023 16:17:41 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/Mysql/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Android</title>
     <link>https://cywhat.cn/categories/Android/</link>
     <pubDate>Wed, 28 Dec 2022 17:33:31 &#43;0800</pubDate>
@@ -66,13 +73,6 @@
     <pubDate>Thu, 13 Oct 2022 11:30:33 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/categories/Python/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Hugo</title>
-    <link>https://cywhat.cn/categories/Hugo/</link>
-    <pubDate>Thu, 13 Oct 2022 11:19:11 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/Hugo/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

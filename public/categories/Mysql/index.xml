@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/categories/Mysql/</link>
         <description>Mysql - 分类 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Apr 2022 11:15:56 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Mysql/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 27 Mar 2023 16:17:41 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Mysql/" rel="self" type="application/rss+xml" /><item>
+    <title>Failing Package Is: Mysql Community Libs Compat 5.7.37 1.el7</title>
+    <link>https://cywhat.cn/Failing-package-is-mysql-community-libs-compat-5.7.37-1.el7.x86_64/</link>
+    <pubDate>Mon, 27 Mar 2023 16:17:41 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Failing-package-is-mysql-community-libs-compat-5.7.37-1.el7.x86_64/</guid>
+    <description><![CDATA[1、安装Mysql出现以下错误 Failing package is: mysql-community-libs-compat-5.7.37-1.el7.x86_64 2、问题原因 1 There is no separate signature. RPM packages have a built-in GPG signature and MD5 checksum. 3、解决 1 rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022]]></description>
+</item><item>
     <title>Django连接Mysql配置</title>
     <link>https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/</link>
     <pubDate>Sun, 24 Apr 2022 11:15:56 &#43;0800</pubDate>

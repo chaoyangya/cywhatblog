@@ -24,7 +24,7 @@
     <pubDate>Thu, 01 Apr 2021 17:54:22 &#43;0000</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/git-branch%E5%87%BA%E7%8E%B0end%E9%9C%80%E8%A6%81q%E6%89%8D%E8%83%BD%E9%80%80%E5%87%BA/</guid>
-    <description><![CDATA[前景： 在查看git branch分支时，需要q才能退出出现 原因 进入了编辑模式 解决 1 $ git config --global core.pager mor]]></description>
+    <description><![CDATA[前景： 在查看git branch分支时，需要q才能退出出现 原因 这是 git 2.16以后版本的默认行为. 如果不想分页输出可以设置: 解决 1 git config --global pager.branch false]]></description>
 </item><item>
     <title>Git基础命令</title>
     <link>https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</link>
