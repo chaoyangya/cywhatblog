@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/posts/</link>
         <description>所有文章 | cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 27 Mar 2023 16:17:41 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 30 Mar 2023 14:51:14 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Pkg_resources.DistributionNotFound:The Supervisor==3.4</title>
+    <link>https://cywhat.cn/pkg_resources.DistributionNotFoundThe-supervisor3.4.0-distribution-was-not-found-and-is-required-by-the-application/</link>
+    <pubDate>Thu, 30 Mar 2023 14:51:14 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/pkg_resources.DistributionNotFoundThe-supervisor3.4.0-distribution-was-not-found-and-is-required-by-the-application/</guid>
+    <description><![CDATA[报错 pkg_resources.DistributionNotFound: The 'supervisor==3.4.0' distribution was not found and is required by the application 原因 1 通过yum命令直接安装的supervisor只支持python2版本,所以python版本不兼容,改掉p]]></description>
+</item><item>
     <title>Failing Package Is: Mysql Community Libs Compat 5.7.37 1.el7</title>
     <link>https://cywhat.cn/Failing-package-is-mysql-community-libs-compat-5.7.37-1.el7.x86_64/</link>
     <pubDate>Mon, 27 Mar 2023 16:17:41 &#43;0800</pubDate>
@@ -67,12 +74,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/zsh-problem-compinit503-no-such-file-or-directory-usr-local-share-zsh-site/</guid>
     <description><![CDATA[1、报错信息 no such file or directory: /usr/local/share/zsh/site-functions/_brew_cask 2、原因 升级到BigSur出现该问题，似乎是brew因为BigSur和之前系统的版本不一致导致 3、解决 1 2 3 4 5 brew doctor]]></description>
-</item><item>
-    <title>Django删除表重建</title>
-    <link>https://cywhat.cn/Django%E5%88%A0%E9%99%A4%E8%A1%A8%E9%87%8D%E5%BB%BA/</link>
-    <pubDate>Fri, 05 Aug 2022 11:39:03 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Django%E5%88%A0%E9%99%A4%E8%A1%A8%E9%87%8D%E5%BB%BA/</guid>
-    <description><![CDATA[前景 可能是在建表之后又修改了mysql的配置，导致models中的CharField不支持汉字，调试了很久都不行，各种配置无果后决定删表重建]]></description>
 </item></channel>
 </rss>
