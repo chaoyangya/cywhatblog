@@ -4,9 +4,16 @@
         <link>https://cywhat.cn/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 30 Mar 2023 14:51:14 &#43;0800</lastBuildDate>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 04 Apr 2023 09:32:40 &#43;0800</lastBuildDate>
             <atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Linux忘记mysql密码解决办法</title>
+    <link>https://cywhat.cn/Linux%E5%BF%98%E8%AE%B0mysql%E5%AF%86%E7%A0%81%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
+    <pubDate>Tue, 04 Apr 2023 09:32:40 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%BF%98%E8%AE%B0mysql%E5%AF%86%E7%A0%81%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid>
+    <description><![CDATA[1、前景 1 2 3 4 5 mysql初始密码忘记 mysql密码忘记 mysql重置密码 2、设置 1、编辑文件 1 vim /etc/my.cf 2、找到文件位置 1 [mysqld] 3、加入忽略密码登]]></description>
+</item><item>
     <title>Pkg_resources.DistributionNotFound:The Supervisor==3.4</title>
     <link>https://cywhat.cn/pkg_resources.DistributionNotFoundThe-supervisor3.4.0-distribution-was-not-found-and-is-required-by-the-application/</link>
     <pubDate>Thu, 30 Mar 2023 14:51:14 &#43;0800</pubDate>
@@ -349,12 +356,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/Linux%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
     <description><![CDATA[注意:ConterOS7.0以上使用的是firewall，ConterOS7.0以下使用的是iptables 1.查看防火状态 1 2 3 systemctl status firewalld #7]]></description>
-</item><item>
-    <title>DJango Uncaught ReferenceError: $ is not defined</title>
-    <link>https://cywhat.cn/DJango-Uncaught-ReferenceError-is-not-defined/</link>
-    <pubDate>Tue, 31 Aug 2021 17:12:16 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/DJango-Uncaught-ReferenceError-is-not-defined/</guid>
-    <description><![CDATA[前提 用django和jquery写的web应用,html页面js报错,信息如下: 1 DJango Uncaught ReferenceError: $ is not defined 原因 js语法有问题,未识别为js语法 解决 需要]]></description>
 </item></channel>
 </rss>

@@ -103,7 +103,7 @@ touch uwsgi.ini  #(这里的uwsgi可以自己命名)
 [uwsgi]
 #http只能用于wusgi自己调试 要跟nginx通信需要用sockt 使用内网ip
 #http=111.11.11.1:9003  
-socket = 111.11.11.1:9001
+socket = 127.0.0.1:9001    
 
 #项目根目录
 chdir = /root/mydjango/
@@ -246,10 +246,10 @@ WARNING: Can't find section "uwsgi" in INI configuration file uwsgi.ini
 vim /usr/local/nginx/conf/nginx.conf
 ```
 
-```bash
-#有些nginx安装完成后这句是注释的 打开即可
+```text
+有些nginx安装完成后文件头部这句是注释的 打开即可
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210311170330559.png)
+![img72.png](/img/img72.png)
 
 
 #### 3、nginx部署完成后，出现-bash: nginx: command not found 添加nginx的环境变量即可

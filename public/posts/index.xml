@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/posts/</link>
         <description>所有文章 | cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 30 Mar 2023 14:51:14 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 04 Apr 2023 09:32:40 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Linux忘记mysql密码解决办法</title>
+    <link>https://cywhat.cn/Linux%E5%BF%98%E8%AE%B0mysql%E5%AF%86%E7%A0%81%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
+    <pubDate>Tue, 04 Apr 2023 09:32:40 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%BF%98%E8%AE%B0mysql%E5%AF%86%E7%A0%81%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid>
+    <description><![CDATA[1、前景 1 2 3 4 5 mysql初始密码忘记 mysql密码忘记 mysql重置密码 2、设置 1、编辑文件 1 vim /etc/my.cf 2、找到文件位置 1 [mysqld] 3、加入忽略密码登]]></description>
+</item><item>
     <title>Pkg_resources.DistributionNotFound:The Supervisor==3.4</title>
     <link>https://cywhat.cn/pkg_resources.DistributionNotFoundThe-supervisor3.4.0-distribution-was-not-found-and-is-required-by-the-application/</link>
     <pubDate>Thu, 30 Mar 2023 14:51:14 &#43;0800</pubDate>
@@ -67,12 +74,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/failed-to-extract-shortcodetemplate-for-shortcode-admonition-not-found/</guid>
     <description><![CDATA[1、问题 换新设备后迁移基于hugo构建的静态博客出现的报错，报错如下： failed to extract shortcode: template for shortcode &quot;admonition&quot; not found 2、原因 未使用hugo_extended版本，导致]]></description>
-</item><item>
-    <title>Zsh Problem Compinit503 No Such File or Directory Usr Local Share Zsh Site</title>
-    <link>https://cywhat.cn/zsh-problem-compinit503-no-such-file-or-directory-usr-local-share-zsh-site/</link>
-    <pubDate>Thu, 13 Oct 2022 10:32:12 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/zsh-problem-compinit503-no-such-file-or-directory-usr-local-share-zsh-site/</guid>
-    <description><![CDATA[1、报错信息 no such file or directory: /usr/local/share/zsh/site-functions/_brew_cask 2、原因 升级到BigSur出现该问题，似乎是brew因为BigSur和之前系统的版本不一致导致 3、解决 1 2 3 4 5 brew doctor]]></description>
 </item></channel>
 </rss>

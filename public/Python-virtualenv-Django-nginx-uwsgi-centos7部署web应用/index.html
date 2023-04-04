@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/cywhat.cn\/Python-virtualenv-Django-nginx-uwsgi-centos7%E9%83%A8%E7%BD%B2web%E5%BA%94%E7%94%A8\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Linux, Nginx, Django","wordcount":  1366 ,
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Linux, Nginx, Django","wordcount":  1369 ,
         "url": "https:\/\/cywhat.cn\/Python-virtualenv-Django-nginx-uwsgi-centos7%E9%83%A8%E7%BD%B2web%E5%BA%94%E7%94%A8\/","datePublished": "2021-03-11T17:09:24+00:00","dateModified": "2021-03-11T17:09:24+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
@@ -105,7 +105,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Python&#43;virtualenv&#43;Django&#43;nginx&#43;uwsgi&#43;centos7部署web应用</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Python/"><i class="far fa-folder fa-fw"></i>Python</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-11">2021-03-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1366 字
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-11">2021-03-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1369 字
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;<span id="/Python-virtualenv-Django-nginx-uwsgi-centos7%E9%83%A8%E7%BD%B2web%E5%BA%94%E7%94%A8/" class="leancloud_visitors" data-flag-title="Python&#43;virtualenv&#43;Django&#43;nginx&#43;uwsgi&#43;centos7部署web应用">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;
@@ -319,7 +319,7 @@ touch uwsgi.ini  <span class="c1">#(这里的uwsgi可以自己命名)</span>
 <span class="o">[</span>uwsgi<span class="o">]</span>
 <span class="c1">#http只能用于wusgi自己调试 要跟nginx通信需要用sockt 使用内网ip</span>
 <span class="c1">#http=111.11.11.1:9003</span>  
-<span class="nv">socket</span> <span class="o">=</span> 111.11.11.1:9001
+<span class="nv">socket</span> <span class="o">=</span> 127.0.0.1:9001    
 
 <span class="c1">#项目根目录</span>
 <span class="nv">chdir</span> <span class="o">=</span> /root/mydjango/
@@ -537,17 +537,17 @@ uwsgi -d --ini uwsgi.ini <span class="c1"># -d 可以让uwsgi保持在后台运�
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#有些nginx安装完成后这句是注释的 打开即可</span>
+<pre class="chroma"><code class="language-text" data-lang="text">有些nginx安装完成后文件头部这句是注释的 打开即可
 </code></pre></td></tr></table>
 </div>
 </div><p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="https://img-blog.csdnimg.cn/20210311170330559.png"
-        data-srcset="https://img-blog.csdnimg.cn/20210311170330559.png, https://img-blog.csdnimg.cn/20210311170330559.png 1.5x, https://img-blog.csdnimg.cn/20210311170330559.png 2x"
+        data-src="/img/img72.png"
+        data-srcset="/img/img72.png, /img/img72.png 1.5x, /img/img72.png 2x"
         data-sizes="auto"
-        alt="https://img-blog.csdnimg.cn/20210311170330559.png"
-        title="在这里插入图片描述" /></p>
+        alt="/img/img72.png"
+        title="img72.png" /></p>
 <h4 id="3nginx部署完成后出现-bash-nginx-command-not-found-添加nginx的环境变量即可">3、nginx部署完成后，出现-bash: nginx: command not found 添加nginx的环境变量即可</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

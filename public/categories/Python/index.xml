@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/categories/Python/</link>
         <description>Python - 分类 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 13 Oct 2022 11:30:33 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Python/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 04 Apr 2023 09:32:40 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Python/" rel="self" type="application/rss+xml" /><item>
+    <title>Linux忘记mysql密码解决办法</title>
+    <link>https://cywhat.cn/Linux%E5%BF%98%E8%AE%B0mysql%E5%AF%86%E7%A0%81%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
+    <pubDate>Tue, 04 Apr 2023 09:32:40 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%BF%98%E8%AE%B0mysql%E5%AF%86%E7%A0%81%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid>
+    <description><![CDATA[1、前景 1 2 3 4 5 mysql初始密码忘记 mysql密码忘记 mysql重置密码 2、设置 1、编辑文件 1 vim /etc/my.cf 2、找到文件位置 1 [mysqld] 3、加入忽略密码登]]></description>
+</item><item>
     <title>MoudleNotFoundError: No module named &#39;xxx&#39;</title>
     <link>https://cywhat.cn/MoudleNotFoundError-No-module-named-xxx/</link>
     <pubDate>Thu, 13 Oct 2022 11:30:33 &#43;0800</pubDate>

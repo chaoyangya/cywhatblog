@@ -2,17 +2,20 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://cywhat.cn/categories/</loc><lastmod>2023-03-30T14:51:14&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/</loc><lastmod>2023-03-30T14:51:14&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/categories/</loc><lastmod>2023-04-04T09:32:40&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/</loc><lastmod>2023-04-04T09:32:40&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/Linux%E5%BF%98%E8%AE%B0mysql%E5%AF%86%E7%A0%81%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</loc><lastmod>2023-04-04T09:32:40&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/tags/Mysql/</loc><lastmod>2023-04-04T09:32:40&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/categories/Mysql/</loc><lastmod>2023-04-04T09:32:40&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/posts/</loc><lastmod>2023-04-04T09:32:40&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/tags/Python/</loc><lastmod>2023-04-04T09:32:40&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/categories/Python/</loc><lastmod>2023-04-04T09:32:40&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/tags/</loc><lastmod>2023-04-04T09:32:40&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/tags/Linux/</loc><lastmod>2023-03-30T14:51:14&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/pkg_resources.DistributionNotFoundThe-supervisor3.4.0-distribution-was-not-found-and-is-required-by-the-application/</loc><lastmod>2023-03-30T14:51:14&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/posts/</loc><lastmod>2023-03-30T14:51:14&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/tags/Supervisor/</loc><lastmod>2023-03-30T14:51:14&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/categories/Supervisor/</loc><lastmod>2023-03-30T14:51:14&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/tags/</loc><lastmod>2023-03-30T14:51:14&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/Failing-package-is-mysql-community-libs-compat-5.7.37-1.el7.x86_64/</loc><lastmod>2023-03-27T16:17:41&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/tags/Mysql/</loc><lastmod>2023-03-27T16:17:41&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/categories/Mysql/</loc><lastmod>2023-03-27T16:17:41&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/tags/Android/</loc><lastmod>2022-12-28T17:33:31&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/categories/Android/</loc><lastmod>2022-12-28T17:33:31&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/tags/IOS/</loc><lastmod>2022-12-28T17:33:31&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
@@ -34,8 +37,6 @@
             <loc>https://cywhat.cn/tags/Postman/</loc><lastmod>2022-11-10T15:08:11&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/categories/Postman/</loc><lastmod>2022-11-10T15:08:11&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/MoudleNotFoundError-No-module-named-xxx/</loc><lastmod>2022-10-13T11:30:33&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/tags/Python/</loc><lastmod>2022-10-13T11:30:33&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/categories/Python/</loc><lastmod>2022-10-13T11:30:33&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/failed-to-extract-shortcodetemplate-for-shortcode-admonition-not-found/</loc><lastmod>2022-10-13T11:19:11&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/tags/Hugo/</loc><lastmod>2022-10-13T11:19:11&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/categories/Hugo/</loc><lastmod>2022-10-13T11:19:11&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
