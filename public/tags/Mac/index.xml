@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/tags/Mac/</link>
         <description>Mac - 标签 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Apr 2022 10:59:14 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/Mac/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 04 Apr 2023 10:41:47 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/Mac/" rel="self" type="application/rss+xml" /><item>
+    <title>Mac出现xxx@bogon</title>
+    <link>https://cywhat.cn/Mac%E5%87%BA%E7%8E%B0xxxbogon.none/</link>
+    <pubDate>Tue, 04 Apr 2023 10:41:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Mac%E5%87%BA%E7%8E%B0xxxbogon.none/</guid>
+    <description><![CDATA[1、问题 1 chaoyang@bogon.(none)&#39; # 用户名被篡改成了bogon 2、解决 1、修改电脑名称 1 sudo scutil --set ComputerName 你想要的计算机名称 2、修改本地主机名 1 sudo scutil --set LocalHostName 你想要的计算机名称 3]]></description>
+</item><item>
     <title>Mac安装mysql5.7</title>
     <link>https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/</link>
     <pubDate>Sun, 24 Apr 2022 10:59:14 &#43;0800</pubDate>

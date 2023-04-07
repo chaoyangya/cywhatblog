@@ -43,7 +43,7 @@ mkdir -p /etc/supervisord.d/conf
 ```bash
 #文件最后一行,目录修改为配置文件地址,我的.ini文件是在/etc/supervisord.d/conf/存放,而且本身配置文件也在etc中,所以目录直接写supervisord.d/conf/就可以了
 [include]
-files = supervisord.d/conf/*.ini
+files = /etc/supervisord.d/conf/*.ini
 ```
 
 
@@ -53,17 +53,40 @@ files = supervisord.d/conf/*.ini
 #这里一定要用配置文件的绝对路径
 $ supervisord -c /etc/supervisord.conf
 ```
+### 5.设置开机自启动
+```bash
+#打开文件
+vim /lib/systemd/system/supervisor.service
+
+# 输入内容
+[Unit]
+Description=supervisor
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/supervisord -c /etc/supervisord.conf
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+
+# 保存并开启
+:wq
+
+systemctl enable supervisor.service
+```
 
 
-### 5.编写要管理进程的配置文件
+### 6.编写要管理进程的配置文件
 
 ```bash
 #因为我这里配置文件中通配符是以.ini结尾 所以新建的文件后缀为.ini
-$ touch my_uwsgi.ini
+$ touch uwsgi.ini
 ```
 
 ```bash
-#配置如下
+#uwsgi 配置如下
 $ [program:uwsgi]  #uwsgi这个名称是管理进程的别名,可以自定义
   user=root #启动用户
   command=/root/pyenv/myenv/bin/uwsgi --ini  /root/pyenv/myenv/my_uwsgi.ini   #启动的命令
@@ -79,7 +102,7 @@ $ [program:uwsgi]  #uwsgi这个名称是管理进程的别名,可以自定义
 ```
 
 
-### 6.启动应用
+### 7.启动应用
 
 ```bash
 #重启supervisor配置中的所有程序
@@ -95,7 +118,7 @@ supervisorctl restart uwsgi
 
 
 
-### 7.supervisor命令详解
+### 8.supervisor命令详解
 
 ```bash
 supervisorctl restart <application name>  #重启指定应用
@@ -108,6 +131,40 @@ supervisorctl update  #配置文件修改后可以使用该命令加载新的配
 supervisorctl reload  #重新启动配置中的所有程序
 ```
 
+### 9.其他配置
+#### 1.nginx
+```bash
+[program:nginx]
+user=root
+directory=/usr/local/nginx
+command=/usr/local/nginx/sbin/nginx -g 'daemon off;'
+autostart=true
+autorestart=true
+stopasgroup=true
+startsecs=10
+startretries=5
+stopasgroup=true
+redirect_stderr=true
+stdout_logfile=/etc/supervisord.d/logs/nginx/nginx_out.log
+stderr_logfile=/etc/supervisord.d/logs/nginx/nginx_err.log
+```
+
+#### 2.redis
+```bash
+[program:redis]
+user=root
+directory=/usr/local/redis
+command=/usr/local/redis/bin/redis-server redis.conf
+autostart=true
+autorestart=true
+stopasgroup=true
+startsecs=10
+startretries=5
+stopasgroup=true
+redirect_stderr=true
+stdout_logfile=/home/cywhat/logs/redis/redis_out.log
+stderr_logfile=/home/cywhat/logs/redis/redis_err.log
+```
 
 ### 注意事项
 
@@ -134,3 +191,5 @@ supervisorctl reload  #重新启动配置中的所有程序
         #mongodb
         mongodb如果不断重启,多半也是因为启动命令中加了后台运行的参数 & 同样的去掉就可以了
 ```
+
+

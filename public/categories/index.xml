@@ -4,7 +4,35 @@
         <link>https://cywhat.cn/categories/</link>
         <description>Categories - 分类 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 04 Apr 2023 09:32:40 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Html</title>
+    <link>https://cywhat.cn/categories/Html/</link>
+    <pubDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/Html/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Jenkins</title>
+    <link>https://cywhat.cn/categories/Jenkins/</link>
+    <pubDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/Jenkins/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Linux</title>
+    <link>https://cywhat.cn/categories/Linux/</link>
+    <pubDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/Linux/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Mac</title>
+    <link>https://cywhat.cn/categories/Mac/</link>
+    <pubDate>Tue, 04 Apr 2023 10:41:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/Mac/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Mysql</title>
     <link>https://cywhat.cn/categories/Mysql/</link>
     <pubDate>Tue, 04 Apr 2023 09:32:40 &#43;0800</pubDate>
@@ -45,34 +73,6 @@
     <pubDate>Wed, 28 Dec 2022 17:33:31 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/categories/%E6%80%A7%E8%83%BD/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Html</title>
-    <link>https://cywhat.cn/categories/Html/</link>
-    <pubDate>Tue, 06 Dec 2022 16:18:30 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/Html/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Jenkins</title>
-    <link>https://cywhat.cn/categories/Jenkins/</link>
-    <pubDate>Tue, 06 Dec 2022 16:18:30 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/Jenkins/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Linux</title>
-    <link>https://cywhat.cn/categories/Linux/</link>
-    <pubDate>Tue, 06 Dec 2022 16:18:30 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/Linux/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Newman</title>
-    <link>https://cywhat.cn/categories/Newman/</link>
-    <pubDate>Tue, 15 Nov 2022 15:19:31 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/Newman/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

@@ -1,6 +1,7 @@
 ---
 title: "Jenkins添加html报告并发送到邮箱"
 date: 2022-12-06T16:18:30+08:00
+draft: false
 tags: ["Jenkins","Linux","Html"]
 categories: ["Jenkins","Linux","Html"]
 ---
