@@ -4,9 +4,16 @@
         <link>https://cywhat.cn/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</lastBuildDate>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Apr 2023 17:45:05 &#43;0800</lastBuildDate>
             <atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>UnorderedObjectListWarning:Pagination May Yield Inconsistent Results With an Unordered Object_list</title>
+    <link>https://cywhat.cn/UnorderedObjectListWarningPagination-may-yield-inconsistent-results-with-an-unordered-object_list/</link>
+    <pubDate>Tue, 11 Apr 2023 17:45:05 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/UnorderedObjectListWarningPagination-may-yield-inconsistent-results-with-an-unordered-object_list/</guid>
+    <description><![CDATA[1、问题 1 使用django进行分页查询的时候，报错如下内容 UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list 2、原因 1 django分页可能会产生与无序对象列表不一致的结果]]></description>
+</item><item>
     <title>Jenkins端口修改之后没有生效</title>
     <link>https://cywhat.cn/jenkins%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9%E4%B9%8B%E5%90%8E%E6%B2%A1%E6%9C%89%E7%94%9F%E6%95%88/</link>
     <pubDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</pubDate>
@@ -168,7 +175,7 @@
     <guid>https://cywhat.cn/Hugo%E7%9A%84Loveit%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9sitemap.xml%E9%85%8D%E7%BD%AE/</guid>
     <description><![CDATA[前景： 要解决的问题是在Hugo自动生成的sitemap.xml文件中（sitemap.xml等于是给搜索引擎看的网站的目录），出现了很多无关]]></description>
 </item><item>
-    <title>Linux部署granafa&#43;node_exporter&#43;prometheus监控</title>
+    <title>Linux部署grafana&#43;node_exporter&#43;prometheus监控</title>
     <link>https://cywhat.cn/Linux%E9%83%A8%E7%BD%B2granafa-node_export-prometheus%E7%9B%91%E6%8E%A7/</link>
     <pubDate>Thu, 20 Jan 2022 11:06:19 &#43;0800</pubDate>
     <author>作者</author>
@@ -349,12 +356,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/</guid>
     <description><![CDATA[1.setting配置 1 2 3 4 5 6 7 EMAIL_BACKEND = &#39;django.core.mail.backends.smtp.EmailBackend&#39; EMAIL_HOST = &#34;smtp.163.com&#34; # 服务器 EMAIL_PORT = 25 # 一般情况下都为25 EMAIL_HOST_USER = &#34;xxxx@163.com&#34; # 账号 EMAIL_HOST_PASSWORD = &#34;XXXXXXXXXXXX&#34; # 密码 (注意：这里的密码指的是授权码) EMAIL_USE_TLS]]></description>
-</item><item>
-    <title>Mac忽略系统更新提醒，并取消小红点</title>
-    <link>https://cywhat.cn/Mac%E5%BF%BD%E7%95%A5%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E6%8F%90%E9%86%92%E5%B9%B6%E5%8F%96%E6%B6%88%E5%B0%8F%E7%BA%A2%E7%82%B9/</link>
-    <pubDate>Tue, 07 Sep 2021 14:58:29 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Mac%E5%BF%BD%E7%95%A5%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E6%8F%90%E9%86%92%E5%B9%B6%E5%8F%96%E6%B6%88%E5%B0%8F%E7%BA%A2%E7%82%B9/</guid>
-    <description><![CDATA[1.首先关掉系统的自动更新设置** 1 2 3 4 5 1.系统偏好设置--软件更新 2.取消选择&#34;自动保持我的Mac最新&#34; 3.高级--取]]></description>
 </item></channel>
 </rss>

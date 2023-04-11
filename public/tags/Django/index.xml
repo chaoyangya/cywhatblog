@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/tags/Django/</link>
         <description>Django - 标签 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 05 Aug 2022 11:39:03 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/Django/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Apr 2023 17:45:05 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/Django/" rel="self" type="application/rss+xml" /><item>
+    <title>UnorderedObjectListWarning:Pagination May Yield Inconsistent Results With an Unordered Object_list</title>
+    <link>https://cywhat.cn/UnorderedObjectListWarningPagination-may-yield-inconsistent-results-with-an-unordered-object_list/</link>
+    <pubDate>Tue, 11 Apr 2023 17:45:05 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/UnorderedObjectListWarningPagination-may-yield-inconsistent-results-with-an-unordered-object_list/</guid>
+    <description><![CDATA[1、问题 1 使用django进行分页查询的时候，报错如下内容 UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list 2、原因 1 django分页可能会产生与无序对象列表不一致的结果]]></description>
+</item><item>
     <title>Django删除表重建</title>
     <link>https://cywhat.cn/Django%E5%88%A0%E9%99%A4%E8%A1%A8%E9%87%8D%E5%BB%BA/</link>
     <pubDate>Fri, 05 Aug 2022 11:39:03 &#43;0800</pubDate>
@@ -67,12 +74,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/DJango-Uncaught-ReferenceError-is-not-defined/</guid>
     <description><![CDATA[前提 用django和jquery写的web应用,html页面js报错,信息如下: 1 DJango Uncaught ReferenceError: $ is not defined 原因 js语法有问题,未识别为js语法 解决 需要]]></description>
-</item><item>
-    <title>no such table:django_session</title>
-    <link>https://cywhat.cn/no-such-table-django-session/</link>
-    <pubDate>Thu, 01 Apr 2021 17:51:03 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/no-such-table-django-session/</guid>
-    <description><![CDATA[出现的问题是django没有django_session表 错误跟Session的机制相关 既然要从Web服务器端来记录用户信息， 那么一定要有存]]></description>
 </item></channel>
 </rss>

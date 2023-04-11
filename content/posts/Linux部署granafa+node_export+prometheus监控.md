@@ -1,9 +1,9 @@
 ---
-title: "Linux部署granafa+node_exporter+prometheus监控"
+title: "Linux部署grafana+node_exporter+prometheus监控"
 date: 2022-01-20T11:06:19+08:00
 draft: false
-tags: ["Granafa","Linux","node_exporter","prometheus"]
-categories: ["Granafa"]
+tags: ["Grafana","Linux","node_exporter","prometheus"]
+categories: ["Grafana"]
 ---
 
 ### 1、下载安装Node_exporter
@@ -47,7 +47,7 @@ eg:
 ```
 
 
-### 3.下载安装granafa
+### 3.下载安装Grafana
 ```bash
 #1.下载
 wget https://dl.grafana.com/enterprise/release/grafana-enterprise-8.3.4.linux-amd64.tar.gz
@@ -72,7 +72,7 @@ eg:
 /usr/local/soft/grafana/bin/grafana-server &
 ```
 
-### 4.web访问granafa-url
+### 4.web访问Grafana-url
 
 PS：默认用户名密码都是admin,第一次登录需要修改密码
 
@@ -101,7 +101,7 @@ PS：默认用户名密码都是admin,第一次登录需要修改密码
 ![img46.png](/img/img46.png)
 
 
-### 9.上传JSON包到granafa
+### 9.上传JSON包到Grafana
 
 ![img47.png](/img/img47.png)
 

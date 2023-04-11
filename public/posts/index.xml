@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/posts/</link>
         <description>所有文章 | cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Apr 2023 17:45:05 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>UnorderedObjectListWarning:Pagination May Yield Inconsistent Results With an Unordered Object_list</title>
+    <link>https://cywhat.cn/UnorderedObjectListWarningPagination-may-yield-inconsistent-results-with-an-unordered-object_list/</link>
+    <pubDate>Tue, 11 Apr 2023 17:45:05 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/UnorderedObjectListWarningPagination-may-yield-inconsistent-results-with-an-unordered-object_list/</guid>
+    <description><![CDATA[1、问题 1 使用django进行分页查询的时候，报错如下内容 UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list 2、原因 1 django分页可能会产生与无序对象列表不一致的结果]]></description>
+</item><item>
     <title>Jenkins端口修改之后没有生效</title>
     <link>https://cywhat.cn/jenkins%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9%E4%B9%8B%E5%90%8E%E6%B2%A1%E6%9C%89%E7%94%9F%E6%95%88/</link>
     <pubDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</pubDate>
@@ -67,12 +74,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/Jenkins%E6%8A%A5%E9%94%99-bashnewmancommand-not-found/</guid>
     <description><![CDATA[1、报错查看 1 2 3 # 报错如下： bash: newman: command not found Build step &#39;Execute shell&#39; marked build as failure 2、原因分析 1 2 3 4 5 1、Linux环境变量配置没问题 2、Linux中任意位置都可以]]></description>
-</item><item>
-    <title>Linux安装newman生成postman脚本报告</title>
-    <link>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85newman%E7%94%9F%E6%88%90postman%E8%84%9A%E6%9C%AC%E6%8A%A5%E5%91%8A/</link>
-    <pubDate>Thu, 10 Nov 2022 15:08:11 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85newman%E7%94%9F%E6%88%90postman%E8%84%9A%E6%9C%AC%E6%8A%A5%E5%91%8A/</guid>
-    <description><![CDATA[1、安装node 1 2 3 4 5 6 7 8 # 1、下载node wget https://nodejs.org/dist/v16.9.1/node-v16.9.1-linux-x64.tar.xz # 2、解压 tar -xvf node-v16.9.1-linux-x64.tar.xz # 3.重命名 mv node-v16.9.1-linux-x64 node 2、配置环境变量 1 2 3 4 5 6 7 8 9 # 1、编辑环境变量]]></description>
 </item></channel>
 </rss>
