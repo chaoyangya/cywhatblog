@@ -4,9 +4,37 @@
         <link>https://cywhat.cn/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Apr 2023 17:45:05 &#43;0800</lastBuildDate>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 18 Apr 2023 14:42:49 &#43;0800</lastBuildDate>
             <atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Django操作异步任务</title>
+    <link>https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/</link>
+    <pubDate>Tue, 18 Apr 2023 14:42:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/</guid>
+    <description><![CDATA[前置条件 1 2 3 4 5 Python==3.7.0 Pip==3 Django==3.2 celery==5.0.5 redis==3.5.3 1、安装 1 pip3 install celery 2、目录 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 - Heng_Tools/ - manage.py - Heng_Tools/ - __init__.py # 修改这个文件 - celery.py # 新增这个文件 - asgi.py]]></description>
+</item><item>
+    <title>Linux卸载RabbitMq</title>
+    <link>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDRabbitMq/</link>
+    <pubDate>Tue, 18 Apr 2023 14:31:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDRabbitMq/</guid>
+    <description><![CDATA[1、卸载Erlang 1 2 3 4 5 6 7 8 # 查看erlang安装的相关列表 yum list|grep erlang # 卸载erlang yum -y remove erlang-* # 删除erlang目录 rm -rf /usr/lib64/erlang 2、卸载Ra]]></description>
+</item><item>
+    <title>Linux安装RabbitMQ</title>
+    <link>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85RabbitMQ/</link>
+    <pubDate>Mon, 17 Apr 2023 17:35:57 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85RabbitMQ/</guid>
+    <description><![CDATA[1、前景 RabbitMQ是用Erlang编写的，所以需要先安装Erlang的编译环境 注意 Erlang和RabbitMQ的版本是有一些版本匹配]]></description>
+</item><item>
+    <title>ValueError:invalid</title>
+    <link>https://cywhat.cn/ValueErrorinvalid-literal-for-intwithbase10-63790/</link>
+    <pubDate>Fri, 14 Apr 2023 15:51:46 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/ValueErrorinvalid-literal-for-intwithbase10-63790/</guid>
+    <description><![CDATA[1、前景 使用django的异步调用场景时，并配置了如下配置：出现了错误：ValueError: Database is int between 0 and limit - 1, not :6379/0 1 2 #CELERY_BROKER_URL =&#34;redis://127.0.0.1/:6379/0&#34; #CELERY_BACKEND_URL = &#34;redis://127.0.0.1/:6379/1&#34; 2、原因 1]]></description>
+</item><item>
     <title>UnorderedObjectListWarning:Pagination May Yield Inconsistent Results With an Unordered Object_list</title>
     <link>https://cywhat.cn/UnorderedObjectListWarningPagination-may-yield-inconsistent-results-with-an-unordered-object_list/</link>
     <pubDate>Tue, 11 Apr 2023 17:45:05 &#43;0800</pubDate>
@@ -328,33 +356,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85jdk11/</guid>
     <description><![CDATA[1.下载jdk 下载安装 1 提取码: brq2 2.上传到服务器 3.解压 1 tar -zvxf openjdk-11+28_linux-x64_bin.tar.gz 4.移动文件夹并重命名 1 mv jdk-11/ /usr/local/java 5.配置环境变量 1 2 3 4 5 6 vim /etc/profile export JAVA_HOME=/usr/local/java export PATH=$JAVA_HOME/bin:$PATH #一]]></description>
-</item><item>
-    <title>Django自定义404页面</title>
-    <link>https://cywhat.cn/Django%E8%87%AA%E5%AE%9A%E4%B9%89404%E9%A1%B5%E9%9D%A2/</link>
-    <pubDate>Fri, 17 Sep 2021 19:52:13 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Django%E8%87%AA%E5%AE%9A%E4%B9%89404%E9%A1%B5%E9%9D%A2/</guid>
-    <description><![CDATA[前景： 使用django部署的web应用，在url错误的情况下，页面会报错简单的404页面，并不美观 Django版本：1.11.7 高于2.0版]]></description>
-</item><item>
-    <title>Mac必备软件推荐</title>
-    <link>https://cywhat.cn/Mac%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</link>
-    <pubDate>Fri, 10 Sep 2021 14:54:10 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Mac%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</guid>
-    <description><![CDATA[前景： 前几天系统降级了，发现之前使用的一些得心应手的app忘记名字了，很难找，不过最后还是在时间机器里找到了，特意开帖记录分享一下，常见的就]]></description>
-</item><item>
-    <title>html简单实现button加载中且置灰不可点击</title>
-    <link>https://cywhat.cn/html%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0button%E5%8A%A0%E8%BD%BD%E4%B8%AD%E4%B8%94%E7%BD%AE%E7%81%B0%E4%B8%8D%E5%8F%AF%E7%82%B9%E5%87%BB/</link>
-    <pubDate>Thu, 09 Sep 2021 11:26:12 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/html%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0button%E5%8A%A0%E8%BD%BD%E4%B8%AD%E4%B8%94%E7%BD%AE%E7%81%B0%E4%B8%8D%E5%8F%AF%E7%82%B9%E5%87%BB/</guid>
-    <description><![CDATA[简单js几行代码实现点击按钮,实现加载中，且置灰不可点击 1.html部分 1 2 3 4 &lt;button id=&#34;Submit&#34; type=&#34;button&#34; class=&#34;btn btn-rounded btn-primary mb-6&#34; value=&#34;获取验证码&#34;&g]]></description>
-</item><item>
-    <title>Django发送邮箱验证码实现以及邮箱html模板</title>
-    <link>https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/</link>
-    <pubDate>Wed, 08 Sep 2021 14:40:18 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/</guid>
-    <description><![CDATA[1.setting配置 1 2 3 4 5 6 7 EMAIL_BACKEND = &#39;django.core.mail.backends.smtp.EmailBackend&#39; EMAIL_HOST = &#34;smtp.163.com&#34; # 服务器 EMAIL_PORT = 25 # 一般情况下都为25 EMAIL_HOST_USER = &#34;xxxx@163.com&#34; # 账号 EMAIL_HOST_PASSWORD = &#34;XXXXXXXXXXXX&#34; # 密码 (注意：这里的密码指的是授权码) EMAIL_USE_TLS]]></description>
 </item></channel>
 </rss>

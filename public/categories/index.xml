@@ -4,12 +4,40 @@
         <link>https://cywhat.cn/categories/</link>
         <description>Categories - 分类 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Apr 2023 17:45:05 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 18 Apr 2023 14:42:49 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/" rel="self" type="application/rss+xml" /><item>
     <title>Django</title>
     <link>https://cywhat.cn/categories/Django/</link>
-    <pubDate>Tue, 11 Apr 2023 17:45:05 &#43;0800</pubDate>
+    <pubDate>Tue, 18 Apr 2023 14:42:49 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/categories/Django/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Erlang</title>
+    <link>https://cywhat.cn/categories/Erlang/</link>
+    <pubDate>Tue, 18 Apr 2023 14:31:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/Erlang/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Python</title>
+    <link>https://cywhat.cn/categories/Python/</link>
+    <pubDate>Tue, 18 Apr 2023 14:31:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/Python/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>RabbitMQ</title>
+    <link>https://cywhat.cn/categories/RabbitMQ/</link>
+    <pubDate>Tue, 18 Apr 2023 14:31:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/RabbitMQ/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Celery</title>
+    <link>https://cywhat.cn/categories/Celery/</link>
+    <pubDate>Fri, 14 Apr 2023 15:51:46 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/categories/Celery/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Html</title>
@@ -45,34 +73,6 @@
     <pubDate>Tue, 04 Apr 2023 09:32:40 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/categories/Mysql/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Python</title>
-    <link>https://cywhat.cn/categories/Python/</link>
-    <pubDate>Tue, 04 Apr 2023 09:32:40 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/Python/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Supervisor</title>
-    <link>https://cywhat.cn/categories/Supervisor/</link>
-    <pubDate>Thu, 30 Mar 2023 14:51:14 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/Supervisor/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Android</title>
-    <link>https://cywhat.cn/categories/Android/</link>
-    <pubDate>Wed, 28 Dec 2022 17:33:31 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/Android/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>IOS</title>
-    <link>https://cywhat.cn/categories/IOS/</link>
-    <pubDate>Wed, 28 Dec 2022 17:33:31 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/categories/IOS/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

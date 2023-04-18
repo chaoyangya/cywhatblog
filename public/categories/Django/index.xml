@@ -4,7 +4,21 @@
         <link>https://cywhat.cn/categories/Django/</link>
         <description>Django - 分类 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Apr 2023 17:45:05 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Django/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 18 Apr 2023 14:42:49 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Django/" rel="self" type="application/rss+xml" /><item>
+    <title>Django操作异步任务</title>
+    <link>https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/</link>
+    <pubDate>Tue, 18 Apr 2023 14:42:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/</guid>
+    <description><![CDATA[前置条件 1 2 3 4 5 Python==3.7.0 Pip==3 Django==3.2 celery==5.0.5 redis==3.5.3 1、安装 1 pip3 install celery 2、目录 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 - Heng_Tools/ - manage.py - Heng_Tools/ - __init__.py # 修改这个文件 - celery.py # 新增这个文件 - asgi.py]]></description>
+</item><item>
+    <title>ValueError:invalid</title>
+    <link>https://cywhat.cn/ValueErrorinvalid-literal-for-intwithbase10-63790/</link>
+    <pubDate>Fri, 14 Apr 2023 15:51:46 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/ValueErrorinvalid-literal-for-intwithbase10-63790/</guid>
+    <description><![CDATA[1、前景 使用django的异步调用场景时，并配置了如下配置：出现了错误：ValueError: Database is int between 0 and limit - 1, not :6379/0 1 2 #CELERY_BROKER_URL =&#34;redis://127.0.0.1/:6379/0&#34; #CELERY_BACKEND_URL = &#34;redis://127.0.0.1/:6379/1&#34; 2、原因 1]]></description>
+</item><item>
     <title>UnorderedObjectListWarning:Pagination May Yield Inconsistent Results With an Unordered Object_list</title>
     <link>https://cywhat.cn/UnorderedObjectListWarningPagination-may-yield-inconsistent-results-with-an-unordered-object_list/</link>
     <pubDate>Tue, 11 Apr 2023 17:45:05 &#43;0800</pubDate>
@@ -60,19 +74,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/Django%E8%87%AA%E5%AE%9A%E4%B9%89404%E9%A1%B5%E9%9D%A2/</guid>
     <description><![CDATA[前景： 使用django部署的web应用，在url错误的情况下，页面会报错简单的404页面，并不美观 Django版本：1.11.7 高于2.0版]]></description>
-</item><item>
-    <title>Django发送邮箱验证码实现以及邮箱html模板</title>
-    <link>https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/</link>
-    <pubDate>Wed, 08 Sep 2021 14:40:18 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/</guid>
-    <description><![CDATA[1.setting配置 1 2 3 4 5 6 7 EMAIL_BACKEND = &#39;django.core.mail.backends.smtp.EmailBackend&#39; EMAIL_HOST = &#34;smtp.163.com&#34; # 服务器 EMAIL_PORT = 25 # 一般情况下都为25 EMAIL_HOST_USER = &#34;xxxx@163.com&#34; # 账号 EMAIL_HOST_PASSWORD = &#34;XXXXXXXXXXXX&#34; # 密码 (注意：这里的密码指的是授权码) EMAIL_USE_TLS]]></description>
-</item><item>
-    <title>no such table:django_session</title>
-    <link>https://cywhat.cn/no-such-table-django-session/</link>
-    <pubDate>Thu, 01 Apr 2021 17:51:03 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/no-such-table-django-session/</guid>
-    <description><![CDATA[出现的问题是django没有django_session表 错误跟Session的机制相关 既然要从Web服务器端来记录用户信息， 那么一定要有存]]></description>
 </item></channel>
 </rss>
