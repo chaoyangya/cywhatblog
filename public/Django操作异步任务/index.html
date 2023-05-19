@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Django操作异步任务 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Django操作异步任务" />
-<meta property="og:description" content="前置条件 1 2 3 4 5 Python==3.7.0 Pip==3 Django==3.2 celery==5.0.5 redis==3.5.3 1、安装 1 pip3 install celery 2、目录 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 - Heng_Tools/ - manage.py - Heng_Tools/ - __init__.py # 修改这个文件 - celery.py # 新增这个文件 - asgi.py" />
+<meta property="og:description" content="前置条件 1 2 3 4 5 Python==3.7.0 Pip==3 Django==3.2.18 celery==5.2.7 redis==3.5.3 1、安装 1 pip3 install celery 2、目录 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 - Heng_Tools/ - manage.py - Heng_Tools/ - __init__.py # 修改这个文件 - celery.py # 新增这个文件 - asgi.py" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" />
 <meta property="og:image" content="https://cywhat.cn"/>
@@ -17,7 +17,7 @@
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
 <meta name="twitter:title" content="Django操作异步任务"/>
-<meta name="twitter:description" content="前置条件 1 2 3 4 5 Python==3.7.0 Pip==3 Django==3.2 celery==5.0.5 redis==3.5.3 1、安装 1 pip3 install celery 2、目录 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 - Heng_Tools/ - manage.py - Heng_Tools/ - __init__.py # 修改这个文件 - celery.py # 新增这个文件 - asgi.py"/>
+<meta name="twitter:description" content="前置条件 1 2 3 4 5 Python==3.7.0 Pip==3 Django==3.2.18 celery==5.2.7 redis==3.5.3 1、安装 1 pip3 install celery 2、目录 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 - Heng_Tools/ - manage.py - Heng_Tools/ - __init__.py # 修改这个文件 - celery.py # 新增这个文件 - asgi.py"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" /><link rel="prev" href="https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDRabbitMq/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/cywhat.cn\/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Django","wordcount":  1012 ,
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Django, Celery","wordcount":  1104 ,
         "url": "https:\/\/cywhat.cn\/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1\/","datePublished": "2023-04-18T14:42:49+08:00","dateModified": "2023-04-18T14:42:49+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
@@ -104,8 +104,8 @@
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Django操作异步任务</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Django/"><i class="far fa-folder fa-fw"></i>Django</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-04-18">2023-04-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1012 字
+            <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Django/"><i class="far fa-folder fa-fw"></i>Django</a>&nbsp;<a href="/categories/Celery/"><i class="far fa-folder fa-fw"></i>Celery</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-04-18">2023-04-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1104 字
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;<span id="/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" class="leancloud_visitors" data-flag-title="Django操作异步任务">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;
@@ -150,6 +150,7 @@
         </li>
         <li><a href="#6安装flower监控">6、安装flower监控</a></li>
         <li><a href="#7异步任务的一些操作">7、异步任务的一些操作</a></li>
+        <li><a href="#8设置异步线程数量">8、设置异步线程数量</a></li>
       </ul>
     </li>
   </ul>
@@ -166,8 +167,8 @@
 <td class="lntd">
 <pre class="chroma"><code class="language-text" data-lang="text">Python==3.7.0
 Pip==3
-Django==3.2
-celery==5.0.5
+Django==3.2.18
+celery==5.2.7
 redis==3.5.3
 </code></pre></td></tr></table>
 </div>
@@ -277,7 +278,7 @@ redis==3.5.3
 
 <span class="c1"># namespace=&#39;CELERY&#39;作用是允许你在Django配置文件中对Celery进行配置</span>
 <span class="c1"># 但所有Celery配置项必须以CELERY开头，防止冲突</span>
-<span class="n">app</span><span class="o">.</span><span class="n">config_from_object</span><span class="p">(</span><span class="s1">&#39;django.conf:settings&#39;</span><span class="p">,</span> <span class="n">namespace</span><span class="o">=</span><span class="s1">&#39;CELERY&#39;</span><span class="p">)</span>
+<span class="n">app</span><span class="o">.</span><span class="n">config_from_object</span><span class="p">(</span><span class="s1">&#39;django.conf:settings&#39;</span><span class="p">,</span> <span class="n">namespace</span><span class="o">=</span><span class="s1">&#39;celery&#39;</span><span class="p">)</span>
 
 <span class="c1"># 自动从Django的已注册app中发现任务</span>
 <span class="n">app</span><span class="o">.</span><span class="n">autodiscover_tasks</span><span class="p">()</span>
@@ -322,6 +323,9 @@ redis==3.5.3
 </span><span class="lnt">20
 </span><span class="lnt">21
 </span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 关掉修改默认市区</span>
@@ -330,15 +334,18 @@ redis==3.5.3
 <span class="c1"># 最重要的配置，设置消息broker,格式为：db://user:password@host:port/dbname</span>
 <span class="c1"># 如果redis安装在本机，使用localhost</span>
 <span class="c1"># 如果docker部署的redis，使用redis://redis:6379</span>
-<span class="n">celery_broker_url</span> <span class="o">=</span> <span class="s2">&#34;redis://127.0.0.1/:6379/0&#34;</span>
-<span class="n">celery_backend_url</span> <span class="o">=</span> <span class="s2">&#34;redis://127.0.0.1/:6379/1&#34;</span>
-
+<span class="c1"># 设置并发worker数量</span>
+<span class="n">celery_worker_concurrency</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="c1"># celery worker 每次去rabbitmq预取任务的数量</span>
+<span class="n">celery_worker_prefetch_multiplier</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="c1"># 防死锁</span>
+<span class="n">celery_force_execv</span> <span class="o">=</span> <span class="bp">True</span>
 <span class="c1"># 时区设置</span>
-<span class="n">CELERY_TIMEZONE</span> <span class="o">=</span> <span class="s1">&#39;Asia/Shanghai&#39;</span>
-<span class="n">CELERY_RESULT_BACKEND</span> <span class="o">=</span> <span class="s2">&#34;django-db&#34;</span>
-<span class="n">CELERY_ACCEPT_CONTENT</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;application/json&#39;</span><span class="p">,</span> <span class="p">]</span>
-<span class="n">CELERY_TASK_SERIALIZER</span> <span class="o">=</span> <span class="s1">&#39;json&#39;</span>
-<span class="n">CELERY_RESULT_SERIALIZER</span> <span class="o">=</span> <span class="s1">&#39;json&#39;</span>
+<span class="n">celery_timezone</span> <span class="o">=</span> <span class="s1">&#39;Asia/Shanghai&#39;</span>
+<span class="n">celery_result_backend</span> <span class="o">=</span> <span class="s2">&#34;django-db&#34;</span>
+<span class="n">celery_accept_content</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;application/json&#39;</span><span class="p">,</span> <span class="p">]</span>
+<span class="n">celery_task_serializer</span> <span class="o">=</span> <span class="s1">&#39;json&#39;</span>
+<span class="n">celery_result_serializer</span> <span class="o">=</span> <span class="s1">&#39;json&#39;</span>
 
 <span class="c1"># INSTALLED_APPS加入如下配置</span>
 <span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
@@ -373,7 +380,7 @@ redis==3.5.3
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">celery</span> <span class="kn">import</span> <span class="n">Celery</span>
 
-<span class="c1"># 专属于myproject项目的任务</span>
+<span class="c1"># 专属于Heng_Tools项目的任务</span>
 <span class="n">app</span> <span class="o">=</span> <span class="n">Celery</span><span class="p">(</span><span class="s1">&#39;Heng_Tools&#39;</span><span class="p">)</span>
 
 
@@ -513,6 +520,23 @@ celery -A  Heng_Tools  flower
 <span class="n">AsyncResult</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">task_id</span><span class="p">)</span><span class="o">.</span><span class="n">revoke</span><span class="p">(</span><span class="n">terminate</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
+</div><h3 id="8设置异步线程数量">8、设置异步线程数量</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 1、安装依赖</span>
+pip3 install eventlet
+
+<span class="c1"># 2、更改启动worker命令</span>
+celery -A Heng_Tools  worker --pool<span class="o">=</span>eventlet --concurrency<span class="o">=</span><span class="m">500</span> --loglevel<span class="o">=</span>info
+</code></pre></td></tr></table>
+</div>
 </div><div class="post-promote">
     <input type="checkbox" name="promote" id="promote" hidden/>
     <label class="promote-button" for="promote">关注一下再走吧</label>
@@ -552,13 +576,13 @@ celery -A  Heng_Tools  flower
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" data-title="Django操作异步任务" data-hashtags="Django"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" data-hashtag="Django"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" data-title="Django操作异步任务"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" data-title="Django操作异步任务"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" data-title="Django操作异步任务"><i class="fab fa-weibo fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" data-title="Django操作异步任务" data-hashtags="Django,Celery"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" data-hashtag="Django"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" data-title="Django操作异步任务"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" data-title="Django操作异步任务"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" data-title="Django操作异步任务"><i class="fab fa-weibo fa-fw"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/Django/">Django</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/Django/">Django</a>,&nbsp;<a href="/tags/Celery/">Celery</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>

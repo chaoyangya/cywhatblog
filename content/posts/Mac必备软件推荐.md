@@ -66,7 +66,7 @@ Paste               "剪切板管理神器"
 
 FastClicker         "定时模拟鼠标点击"
 
-RDM                 "redis可视化客户端"
+AnotherRedisDesktopManager                 "redis可视化客户端"
 
 Final Cut Pro 10.6.5      "视频剪辑"
 

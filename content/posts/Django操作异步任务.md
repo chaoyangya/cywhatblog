@@ -2,8 +2,8 @@
 title: "Django操作异步任务"
 date: 2023-04-18T14:42:49+08:00
 draft: false
-tags:  ["Django"]
-categories: ["Django"]
+tags:  ["Django","Celery"]
+categories: ["Django","Celery"]
 ---
 
 ### 前置条件
@@ -11,8 +11,8 @@ categories: ["Django"]
 ```text
 Python==3.7.0
 Pip==3
-Django==3.2
-celery==5.0.5
+Django==3.2.18
+celery==5.2.7
 redis==3.5.3
 ```
 
@@ -69,7 +69,7 @@ app = Celery('Heng_Tools')
 
 # namespace='CELERY'作用是允许你在Django配置文件中对Celery进行配置
 # 但所有Celery配置项必须以CELERY开头，防止冲突
-app.config_from_object('django.conf:settings', namespace='CELERY')
+app.config_from_object('django.conf:settings', namespace='celery')
 
 # 自动从Django的已注册app中发现任务
 app.autodiscover_tasks()
@@ -94,15 +94,18 @@ USE_TZ = False
 # 最重要的配置，设置消息broker,格式为：db://user:password@host:port/dbname
 # 如果redis安装在本机，使用localhost
 # 如果docker部署的redis，使用redis://redis:6379
-celery_broker_url = "redis://127.0.0.1/:6379/0"
-celery_backend_url = "redis://127.0.0.1/:6379/1"
-
+# 设置并发worker数量
+celery_worker_concurrency = 20
+# celery worker 每次去rabbitmq预取任务的数量
+celery_worker_prefetch_multiplier = 20
+# 防死锁
+celery_force_execv = True
 # 时区设置
-CELERY_TIMEZONE = 'Asia/Shanghai'
-CELERY_RESULT_BACKEND = "django-db"
-CELERY_ACCEPT_CONTENT = ['application/json', ]
-CELERY_TASK_SERIALIZER = 'json'
-CELERY_RESULT_SERIALIZER = 'json'
+celery_timezone = 'Asia/Shanghai'
+celery_result_backend = "django-db"
+celery_accept_content = ['application/json', ]
+celery_task_serializer = 'json'
+celery_result_serializer = 'json'
 
 # INSTALLED_APPS加入如下配置
 INSTALLED_APPS = [
@@ -121,7 +124,7 @@ INSTALLED_APPS = [
 ```python
 from celery import Celery
 
-# 专属于myproject项目的任务
+# 专属于Heng_Tools项目的任务
 app = Celery('Heng_Tools')
 
 
@@ -204,4 +207,14 @@ AsyncResult(result.task_id).result
 
 # 取消正在进行中的task任务
 AsyncResult(result.task_id).revoke(terminate=True)
+```
+
+
+### 8、设置异步线程数量
+```bash
+# 1、安装依赖
+pip3 install eventlet
+
+# 2、更改启动worker命令
+celery -A Heng_Tools  worker --pool=eventlet --concurrency=500 --loglevel=info
 ```
