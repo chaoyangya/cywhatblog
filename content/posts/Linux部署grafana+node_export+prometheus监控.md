@@ -107,6 +107,32 @@ PS：默认用户名密码都是admin,第一次登录需要修改密码
 
 ![img48.png](/img/img48.png)
 
+#### 9.1、配置匿名登录【可选】
+```bash
+# 1.编辑配置文件(进入到grafana/conf/目录下)
+vim defaults.ini
+
+# 2.修改选项
+[auth.anonymous]
+# 默认为false 改为true
+enabled = true
+
+# 3.保存
+:wq
+
+allow embedding= true
+
+```
+
+#### 9.2、配置可嵌套【可选】
+```bash
+# 1.编辑配置文件(进入到grafana/conf/目录下)
+vim defaults.ini
+
+# 2.修改选项
+# 默认为false 改为true
+allow embedding= true
+```
 
 ### 10.查看仪表监控图
 

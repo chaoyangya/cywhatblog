@@ -72,4 +72,12 @@ Final Cut Pro 10.6.5      "视频剪辑"
 
 Permute 3.9.13              "视频格式转换"
 
+Camtasia 2023             "屏幕录制"
+
 {{< /admonition >}}
+
+
+### mac安装损坏
+```bash
+sudo xattr -d com.apple.quarantine /Applications/xxxxxx.app
+```
