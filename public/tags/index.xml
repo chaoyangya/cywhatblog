@@ -4,19 +4,26 @@
         <link>https://cywhat.cn/tags/</link>
         <description>Tags - 标签 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 18 Apr 2023 14:42:49 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 25 May 2023 17:42:27 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Django</title>
+    <link>https://cywhat.cn/tags/Django/</link>
+    <pubDate>Thu, 25 May 2023 17:42:27 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/tags/Django/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Pip</title>
+    <link>https://cywhat.cn/tags/Pip/</link>
+    <pubDate>Thu, 25 May 2023 17:42:27 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/tags/Pip/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Celery</title>
     <link>https://cywhat.cn/tags/Celery/</link>
     <pubDate>Tue, 18 Apr 2023 14:42:49 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/tags/Celery/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Django</title>
-    <link>https://cywhat.cn/tags/Django/</link>
-    <pubDate>Tue, 18 Apr 2023 14:42:49 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/tags/Django/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Erlang</title>
@@ -66,13 +73,6 @@
     <pubDate>Tue, 04 Apr 2023 10:41:47 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://cywhat.cn/tags/Mac/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Mysql</title>
-    <link>https://cywhat.cn/tags/Mysql/</link>
-    <pubDate>Tue, 04 Apr 2023 09:32:40 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/tags/Mysql/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

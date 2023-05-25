@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Python创建并上传自己的pip依赖包 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
+<meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Python创建并上传自己的pip依赖包" />
+<meta property="og:description" content="1、前景 写工具的过程中，发现if-else用的很频繁，如果条件很多的时候，传统的if-else不但不美观，而且效率低，网上参考了edgedb" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cywhat.cn/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85/" />
+<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="article:published_time" content="2023-05-25T17:42:27+08:00" />
+<meta property="article:modified_time" content="2023-05-25T17:42:27+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://cywhat.cn"/>
+
+<meta name="twitter:title" content="Python创建并上传自己的pip依赖包"/>
+<meta name="twitter:description" content="1、前景 写工具的过程中，发现if-else用的很频繁，如果条件很多的时候，传统的if-else不但不美观，而且效率低，网上参考了edgedb"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85/" /><link rel="prev" href="https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Python创建并上传自己的pip依赖包",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/cywhat.cn\/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85\/"
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Pip, Django","wordcount":  842 ,
+        "url": "https:\/\/cywhat.cn\/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85\/","datePublished": "2023-05-25T17:42:27+08:00","dateModified": "2023-05-25T17:42:27+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "cywhat"},"author": {
+                "@type": "Person",
+                "name": "cywhat"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="cywhat&#39;s blog">cywhat&#39;s blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/friends/"> 友链 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="cywhat&#39;s blog">cywhat&#39;s blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/friends/" title="">友链</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Python创建并上传自己的pip依赖包</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Pip/"><i class="far fa-folder fa-fw"></i>Pip</a>&nbsp;<a href="/categories/Django/"><i class="far fa-folder fa-fw"></i>Django</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-05-25">2023-05-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 842 字
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;<span id="/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85/" class="leancloud_visitors" data-flag-title="Python创建并上传自己的pip依赖包">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;
+					<a href="#comments" id="post-meta-vcount" title="查看评论">
+						<i class="fas fa-comment fa-fw"></i>&nbsp;<span id="/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85/" class="waline-comment-count"></span>&nbsp;条评论
+					</a></div>
+
+
+
+
+
+
+
+
+
+
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1前景">1、前景</a></li>
+        <li><a href="#2注册pypi">2、注册Pypi</a></li>
+        <li><a href="#3创建github项目">3、创建github项目</a>
+          <ul>
+            <li><a href="#31下载项目">3.1、下载项目</a></li>
+            <li><a href="#32创建必要工程目录">3.2、创建必要工程目录</a></li>
+            <li><a href="#33工程目录详解">3.3、工程目录详解</a></li>
+            <li><a href="#34模块设置文件">3.4、模块设置文件</a></li>
+          </ul>
+        </li>
+        <li><a href="#4编译">4、编译</a>
+          <ul>
+            <li><a href="#41编译">4.1、编译</a></li>
+            <li><a href="#42生成发版的压缩包">4.2、生成发版的压缩包</a></li>
+          </ul>
+        </li>
+        <li><a href="#5发布到pypi">5、发布到Pypi</a></li>
+        <li><a href="#6更新pypi包">6、更新Pypi包</a></li>
+        <li><a href="#7验证">7、验证</a>
+          <ul>
+            <li><a href="#71安装">7.1、安装</a></li>
+            <li><a href="#72使用">7.2、使用</a></li>
+          </ul>
+        </li>
+        <li><a href="#8conditionevaluator使用教程">8、conditionevaluator使用教程</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="1前景">1、前景</h3>
+<p>写工具的过程中，发现<code>if-else</code>用的很频繁，如果条件很多的时候，传统的<code>if-else</code>不但不美观，而且效率低，网上参考了<code>edgedb</code>的思路后，秉承着前人栽树后人乘凉的原则于是封装了优化<code>if-else</code>的函数，并且萌生了上传到<code>pypi</code>用来服务大家</p>
+<h3 id="2注册pypi">2、注册Pypi</h3>
+<p><a href="https://pypi.org/account/register/" target="_blank" rel="noopener noreffer">点我注册Pypi</a></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/img77.png"
+        data-srcset="/img/img77.png, /img/img77.png 1.5x, /img/img77.png 2x"
+        data-sizes="auto"
+        alt="/img/img77.png"
+        title="img77.png" /></p>
+<h3 id="3创建github项目">3、创建github项目</h3>
+<p><a href="https://github.com/new" target="_blank" rel="noopener noreffer">点我注册github</a></p>
+<h4 id="31下载项目">3.1、下载项目</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git clone https://github.com/chaoyangya/conditionevaluatortool.git   <span class="c1"># 这里的conditionevaluatortool替换为新建的工程名称</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="32创建必要工程目录">3.2、创建必要工程目录</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">conditionevaluatortool          
+├── /conditionevaluator/
+│  ├── __init__.py
+│  ├── conditionevaluator.py
+├── /test/
+│  ├── __init__.py
+│  ├── test.py
+├── README.md
+└── setup.py
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="33工程目录详解">3.3、工程目录详解</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 工程名称</span>
+<span class="n">conditionevaluatortool</span>
+
+<span class="c1"># pip_name模块名称文件夹</span>
+<span class="o">/</span><span class="n">conditionevaluator</span><span class="o">/</span>
+
+<span class="c1"># 引入模块</span>
+<span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>
+
+<span class="c1"># pip_name模块名称的函数文件</span>
+<span class="n">conditionevaluator</span><span class="o">.</span><span class="n">py</span>
+
+<span class="c1"># 占位</span>
+<span class="o">/</span><span class="n">test</span><span class="o">/</span>
+
+<span class="c1"># 模块设置</span>
+<span class="n">setup</span><span class="o">.</span><span class="n">py</span>
+
+<span class="c1"># 阅读文件</span>
+<span class="n">README</span><span class="o">.</span><span class="n">md</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="34模块设置文件">3.4、模块设置文件</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">setuptools</span>
+<span class="kn">import</span> <span class="nn">pathlib</span>
+
+<span class="n">here</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span>
+<span class="n">long_description</span> <span class="o">=</span> <span class="p">(</span><span class="n">here</span> <span class="o">/</span> <span class="s2">&#34;README.md&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">read_text</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+
+<span class="n">setuptools</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span>
+    <span class="c1"># 模块名(pip install conditionevaluator)</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&#34;conditionevaluator&#34;</span><span class="p">,</span>
+    <span class="c1"># 版本</span>
+    <span class="n">version</span><span class="o">=</span><span class="s2">&#34;1.0.1&#34;</span><span class="p">,</span>
+    <span class="c1"># 作者</span>
+    <span class="n">author</span><span class="o">=</span><span class="s2">&#34;cy what&#34;</span><span class="p">,</span>
+    <span class="c1"># 邮箱</span>
+    <span class="n">author_email</span><span class="o">=</span><span class="s2">&#34;45204307@qq.com&#34;</span><span class="p">,</span>
+    <span class="c1"># 描述</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&#34;Package of modules that encapsulate the if else multi-condition judgment&#34;</span><span class="p">,</span>
+    <span class="c1"># 长描述</span>
+    <span class="n">long_description</span><span class="o">=</span><span class="n">long_description</span><span class="p">,</span>
+    <span class="c1"># 长描述格式</span>
+    <span class="n">long_description_content_type</span><span class="o">=</span><span class="s2">&#34;text/markdown&#34;</span><span class="p">,</span>
+    <span class="c1"># github地址</span>
+    <span class="n">url</span><span class="o">=</span><span class="s2">&#34;https://github.com/chaoyangya/conditionevaluator&#34;</span><span class="p">,</span>
+    <span class="c1"># 安装的包</span>
+    <span class="n">packages</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;conditionevaluator&#39;</span><span class="p">],</span>
+    <span class="c1"># License</span>
+    <span class="n">license</span><span class="o">=</span><span class="s2">&#34;conditionevaluator&#34;</span><span class="p">,</span>
+    <span class="n">classifiers</span><span class="o">=</span><span class="p">[</span>
+        <span class="s2">&#34;Development Status :: 3 - Alpha&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;Intended Audience :: Developers&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;Programming Language :: Python :: 3&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;Programming Language :: Python :: 3.7&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;Programming Language :: Python :: 3.8&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;Programming Language :: Python :: 3.9&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;Programming Language :: Python :: 3.10&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;Programming Language :: Python :: 3 :: Only&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;License :: OSI Approved :: MIT License&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;Operating System :: OS Independent&#34;</span><span class="p">,</span>
+
+    <span class="p">],</span>
+    <span class="c1"># 搜索词</span>
+    <span class="n">keywords</span><span class="o">=</span><span class="s2">&#34;conditionevaluator, conditionevaluator_python&#34;</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="4编译">4、编译</h3>
+<h4 id="41编译">4.1、编译</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">python3 setup.py build
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="42生成发版的压缩包">4.2、生成发版的压缩包</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 压缩</span>
+python3 setup.py sdist
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="5发布到pypi">5、发布到Pypi</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 安装依赖</span>
+pip3 install twine
+
+<span class="c1"># 发布</span>
+twine upload dist/*
+
+<span class="c1">#输入账号密码即可</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="6更新pypi包">6、更新Pypi包</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 1、修改版本号</span>
+
+<span class="c1"># 2、重新编译打包</span>
+python3 setup.py sdist bdist
+
+<span class="c1"># 3、发布</span>
+twine upload dist/xxx.tar.gz    <span class="c1"># xxx.tar.gz为最新压缩后的包名</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="7验证">7、验证</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/img78.png"
+        data-srcset="/img/img78.png, /img/img78.png 1.5x, /img/img78.png 2x"
+        data-sizes="auto"
+        alt="/img/img78.png"
+        title="img78.png" /></p>
+<h4 id="71安装">7.1、安装</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 安装</span>
+pip install conditionevaluator
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="72使用">7.2、使用</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 引入</span>
+<span class="kn">from</span> <span class="nn">conditionevaluator.conditionevaluator</span> <span class="kn">import</span> <span class="n">conditionevaluator</span>
+
+<span class="c1"># 使用</span>
+<span class="nd">@conditionevaluator</span>
+<span class="k">def</span> <span class="nf">doorType</span><span class="p">(</span><span class="n">door</span><span class="p">):</span>
+    <span class="s2">&#34;&#34;&#34;
+</span><span class="s2">    条件1
+</span><span class="s2">    :param door: 门类型  2  --&gt; 双开门
+</span><span class="s2">    :return: bool
+</span><span class="s2">    &#34;&#34;&#34;</span>
+    <span class="k">return</span> <span class="s2">&#34;门类型错误&#34;</span>
+
+
+<span class="nd">@doorType.register</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">params_door_type_1</span><span class="p">(</span><span class="n">door</span><span class="p">):</span>
+    <span class="s2">&#34;&#34;&#34;
+</span><span class="s2">    条件2
+</span><span class="s2">    :param door:
+</span><span class="s2">    :return: False
+</span><span class="s2">    &#34;&#34;&#34;</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">count</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="8conditionevaluator使用教程">8、conditionevaluator使用教程</h3>
+<ul>
+<li><a href="https://pypi.org/project/conditionevaluator/1.0.1/" target="_blank" rel="noopener noreffer">Pypi</a></li>
+<li><a href="https://github.com/chaoyangya/conditionevaluator" target="_blank" rel="noopener noreffer">GitHub</a></li>
+</ul>
+<div class="post-promote">
+    <input type="checkbox" name="promote" id="promote" hidden/>
+    <label class="promote-button" for="promote">关注一下再走吧</label>
+    <div class="qr-code">
+        <label class="qr-code-image" for="promote">
+            <img class="image" src="/img/cywhat-gzh.jpg">
+            <span>公众号</span>
+        </label>
+        <label class="qr-code-image" for="promote">
+            <img class="image" src="/img/cywhat-xcx.jpg">
+            <span>小程序</span>
+        </label>
+    </div>
+</div>
+<div class="post-reward">
+    <input type="checkbox" name="reward" id="reward" hidden/>
+    <label class="reward-button" for="reward">赞赏支持</label>
+    <div class="qr-code">
+        <label class="qr-code-image" for="reward">
+            <img class="image" src="/img/WechatPay.jpeg">
+            <span>微信打赏</span>
+        </label>
+        <label class="qr-code-image" for="reward">
+            <img class="image" src="/img/Alipay.jpeg">
+            <span>支付宝打赏</span>
+        </label>
+    </div>
+</div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2023-05-25</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85/" data-title="Python创建并上传自己的pip依赖包" data-hashtags="Pip,Django"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85/" data-hashtag="Pip"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85/" data-title="Python创建并上传自己的pip依赖包"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85/" data-title="Python创建并上传自己的pip依赖包"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85/" data-title="Python创建并上传自己的pip依赖包"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/Pip/">Pip</a>,&nbsp;<a href="/tags/Django/">Django</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" class="prev" rel="prev" title="Django操作异步任务"><i class="fas fa-angle-left fa-fw"></i>Django操作异步任务</a></div>
+</div>
+<div id="comments"><div id="waline"></div>
+			<script src='https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+
+			<script>
+		    	new Waline({
+		    	  el: '#waline',
+				  meta: ["nick","mail","link"],
+		    	  requiredMeta: ["nick","mail"],
+		    	  login: "force",
+				  placeholder: "小Tips 评论前需注册并登录噢",
+		    	  serverURL: "https://comment.cywhat.cn/",
+		    	  avatarCDN: "https://sdn.geekzu.org/avatar/",
+		    	  pageSize:  20 ,
+		    	  avatar: "retro",
+		    	  lang: "zh-CN",
+				  visitor:  true ,
+				  highlight:  true ,
+				  uploadImage:  false 
+		    	});
+		    </script></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://cywhat.cn" target="_blank">cywhat</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="#" target="_blank">Do not go gentle into that good night.</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp"><a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">京ICP备2021041376号</a></span></div>
+        </div>
+
+        <div class="footer-line">
+	        <span id="run-time"></span>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"search":{"algoliaAppID":"3031FWUVJN","algoliaIndex":"cywhat.algolia-temp","algoliaSearchKey":"76bee9d276ea265b36eae78e8a17356c","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"></script>
+
+<script type="text/javascript" src="/js/custom.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-225C41PHZX', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-225C41PHZX" async></script><script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?a54de2ed85b7ec3fd5ad114214614491";
+			  var s = document.getElementsByTagName("script")[0];
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script></body>
+</html>

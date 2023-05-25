@@ -2,15 +2,18 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://cywhat.cn/categories/</loc><lastmod>2023-04-18T14:42:49&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/categories/</loc><lastmod>2023-05-25T17:42:27&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/</loc><lastmod>2023-05-25T17:42:27&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/tags/Django/</loc><lastmod>2023-05-25T17:42:27&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/categories/Django/</loc><lastmod>2023-05-25T17:42:27&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/tags/Pip/</loc><lastmod>2023-05-25T17:42:27&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/categories/Pip/</loc><lastmod>2023-05-25T17:42:27&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/posts/</loc><lastmod>2023-05-25T17:42:27&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85/</loc><lastmod>2023-05-25T17:42:27&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>https://cywhat.cn/tags/</loc><lastmod>2023-05-25T17:42:27&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/tags/Celery/</loc><lastmod>2023-04-18T14:42:49&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/categories/Celery/</loc><lastmod>2023-04-18T14:42:49&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/</loc><lastmod>2023-04-18T14:42:49&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/tags/Django/</loc><lastmod>2023-04-18T14:42:49&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/categories/Django/</loc><lastmod>2023-04-18T14:42:49&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/</loc><lastmod>2023-04-18T14:42:49&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/posts/</loc><lastmod>2023-04-18T14:42:49&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/tags/</loc><lastmod>2023-04-18T14:42:49&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/tags/Erlang/</loc><lastmod>2023-04-18T14:31:47&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/categories/Erlang/</loc><lastmod>2023-04-18T14:31:47&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/tags/Linux/</loc><lastmod>2023-04-18T14:31:47&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
@@ -187,8 +190,6 @@
             <loc>https://cywhat.cn/git-branch%E5%87%BA%E7%8E%B0end%E9%9C%80%E8%A6%81q%E6%89%8D%E8%83%BD%E9%80%80%E5%87%BA/</loc><lastmod>2021-04-01T17:54:22&#43;00:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/nginx%E9%85%8D%E7%BD%AE%E5%AE%9E%E7%8E%B0ip%E8%AE%BF%E9%97%AE%E6%8C%87%E5%AE%9AURL/</loc><lastmod>2021-04-01T17:51:03&#43;00:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/no-such-table-django-session/</loc><lastmod>2021-04-01T17:51:03&#43;00:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/tags/Pip/</loc><lastmod>2021-03-30T11:51:17&#43;00:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://cywhat.cn/categories/Pip/</loc><lastmod>2021-03-30T11:51:17&#43;00:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/pip%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E5%A4%B1%E8%B4%A5%E6%8B%92%E7%BB%9D%E8%BF%9E%E6%8E%A5/</loc><lastmod>2021-03-30T11:51:17&#43;00:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/web%E6%9C%8D%E5%8A%A1-%E8%AE%BF%E9%97%AELinux%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6/</loc><lastmod>2021-03-29T18:04:20&#43;00:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>https://cywhat.cn/Linux-macos%E5%AE%89%E8%A3%85newman/</loc><lastmod>2021-03-22T16:06:15&#43;00:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>

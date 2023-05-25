@@ -4,9 +4,16 @@
         <link>https://cywhat.cn/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 18 Apr 2023 14:42:49 &#43;0800</lastBuildDate>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 25 May 2023 17:42:27 &#43;0800</lastBuildDate>
             <atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Python创建并上传自己的pip依赖包</title>
+    <link>https://cywhat.cn/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85/</link>
+    <pubDate>Thu, 25 May 2023 17:42:27 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85/</guid>
+    <description><![CDATA[1、前景 写工具的过程中，发现if-else用的很频繁，如果条件很多的时候，传统的if-else不但不美观，而且效率低，网上参考了edgedb]]></description>
+</item><item>
     <title>Django操作异步任务</title>
     <link>https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/</link>
     <pubDate>Tue, 18 Apr 2023 14:42:49 &#43;0800</pubDate>
@@ -349,12 +356,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/Jenkins%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90/</guid>
     <description><![CDATA[1.启动jenkins 1 systemctl start jenkins #如果命令不可使用，首先要把jenkins放到系统启动配置中，详情请百度 2.查看jenkins启动状态 1 systemctl status jenkins.service]]></description>
-</item><item>
-    <title>Linux安装jdk11</title>
-    <link>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85jdk11/</link>
-    <pubDate>Sat, 18 Sep 2021 17:47:51 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85jdk11/</guid>
-    <description><![CDATA[1.下载jdk 下载安装 1 提取码: brq2 2.上传到服务器 3.解压 1 tar -zvxf openjdk-11+28_linux-x64_bin.tar.gz 4.移动文件夹并重命名 1 mv jdk-11/ /usr/local/java 5.配置环境变量 1 2 3 4 5 6 vim /etc/profile export JAVA_HOME=/usr/local/java export PATH=$JAVA_HOME/bin:$PATH #一]]></description>
 </item></channel>
 </rss>

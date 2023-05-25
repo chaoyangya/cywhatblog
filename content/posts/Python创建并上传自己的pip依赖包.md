@@ -7,7 +7,7 @@ categories: ["Pip","Django"]
 ---
 
 ### 1、前景
-写工具的过程中，发现`if-else`用的很频繁，如果条件很多的时候，传统的`if-else`不但不美观，而且效率低，再网上参考了`edgedb`的思路后，秉承着前人栽树后人乘凉的原则于是封装了优化if-else的函数，并且萌生了上传到`pypi`用来服务大家
+写工具的过程中，发现`if-else`用的很频繁，如果条件很多的时候，传统的`if-else`不但不美观，而且效率低，网上参考了`edgedb`的思路后，秉承着前人栽树后人乘凉的原则于是封装了优化`if-else`的函数，并且萌生了上传到`pypi`用来服务大家
 
 
 ### 2、注册Pypi
@@ -148,7 +148,7 @@ twine upload dist/xxx.tar.gz    # xxx.tar.gz为最新压缩后的包名
 
 
 ### 7、验证
-![img77.png](/img/img77.png)
+![img78.png](/img/img78.png)
 
 #### 7.1、安装
 ```bash
