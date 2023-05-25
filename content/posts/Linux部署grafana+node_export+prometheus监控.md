@@ -119,9 +119,6 @@ enabled = true
 
 # 3.保存
 :wq
-
-allow embedding= true
-
 ```
 
 #### 9.2、配置可嵌套【可选】
