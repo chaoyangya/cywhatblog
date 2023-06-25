@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Raid磁盘阵列 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
+<meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Raid磁盘阵列" />
+<meta property="og:description" content="1.什么是Raid 什么是Raid Raid 是英文(Redundant Array of Independent Disks)的缩写，翻译成中文是“独立磁盘冗余阵列”, 简称磁盘阵列（Dis" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/" />
+<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="article:published_time" content="2021-11-18T10:01:24+08:00" />
+<meta property="article:modified_time" content="2021-11-18T10:01:24+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://cywhat.cn"/>
+
+<meta name="twitter:title" content="Raid磁盘阵列"/>
+<meta name="twitter:description" content="1.什么是Raid 什么是Raid Raid 是英文(Redundant Array of Independent Disks)的缩写，翻译成中文是“独立磁盘冗余阵列”, 简称磁盘阵列（Dis"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/" /><link rel="prev" href="https://cywhat.cn/Linux%E4%BD%BF%E7%94%A8iftop%E6%9F%A5%E7%9C%8B%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/" /><link rel="next" href="https://cywhat.cn/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84cdn%E5%9B%BE%E5%BA%8A%E5%9C%B0%E5%9D%80/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Raid磁盘阵列",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/cywhat.cn\/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97\/"
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Linux","wordcount":  1222 ,
+        "url": "https:\/\/cywhat.cn\/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97\/","datePublished": "2021-11-18T10:01:24+08:00","dateModified": "2021-11-18T10:01:24+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "cywhat"},"author": {
+                "@type": "Person",
+                "name": "cywhat"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="cywhat&#39;s blog">cywhat&#39;s blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/friends/"> 友链 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="cywhat&#39;s blog">cywhat&#39;s blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/friends/" title="">友链</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Raid磁盘阵列</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Linux/"><i class="far fa-folder fa-fw"></i>Linux</a>&nbsp;<a href="/categories/Raid/"><i class="far fa-folder fa-fw"></i>Raid</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-18">2021-11-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1222 字
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;<span id="/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/" class="leancloud_visitors" data-flag-title="Raid磁盘阵列">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;
+					<a href="#comments" id="post-meta-vcount" title="查看评论">
+						<i class="fas fa-comment fa-fw"></i>&nbsp;<span id="/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/" class="waline-comment-count"></span>&nbsp;条评论
+					</a></div>
+
+
+
+
+
+
+
+
+
+
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1什么是raid">1.什么是Raid</a></li>
+        <li><a href="#2raid的特点">2.Raid的特点</a></li>
+        <li><a href="#3raid的几种模式">3.Raid的几种模式</a>
+          <ul>
+            <li><a href="#raid-0性能最佳">Raid 0(性能最佳)</a></li>
+            <li><a href="#raid-1最安全">Raid 1(最安全)</a></li>
+            <li><a href="#raid-5性能和安全-55开">Raid 5(性能和安全 55开)</a></li>
+            <li><a href="#raid-10性能和安全-55开">Raid 10(性能和安全 55开)</a></li>
+          </ul>
+        </li>
+        <li><a href="#4raid容错对比图">4.Raid容错对比图</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="1什么是raid">1.什么是Raid</h3>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>什么是Raid<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Raid 是英文(Redundant Array of Independent Disks)的缩写，翻译成中文是“独立磁盘冗余阵列”, 简称磁盘阵列（Disk Array）。
+简单的说，RAID是一种把多块独立的硬盘（物理硬盘）按不同的方式组合起来形成一个硬盘组（逻辑硬盘），从而提供比单个硬盘更高的存储性能和提供数据备份技术。
+组成磁盘阵列的不同方式称为RAID级别（RAID Levels），现在已拥有了从 RAID 0 到 6 七种基本的RAID 级别。另外，还有一些基本RAID级别的组合形式，如RAID 10（RAID 0与RAID 1的组合）等等.</div>
+        </div>
+    </div>
+<h3 id="2raid的特点">2.Raid的特点</h3>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>Raid的特点<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>1.速度</p>
+<p>2.安全</p>
+</div>
+        </div>
+    </div>
+<h3 id="3raid的几种模式">3.Raid的几种模式</h3>
+<h4 id="raid-0性能最佳">Raid 0(性能最佳)</h4>
+<p>Raid 0 把多块物理硬盘设备（至少两块）通过硬件或软件的方式串联在一起，组成一个大的卷组，并将数据一次写入到各个物理硬盘中。这样硬盘设备的读写性能会提升数倍，但是若任意一块硬盘发生故障将导致整个系统的数据都受到破坏。</p>
+<pre><code>个人俗解：2块硬盘，将数据均分成`俩份`，每块磁盘存`半份`
+</code></pre>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>`Raid 0`的特点<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>1.使用<code>N</code>块硬盘，获得<code>N</code>倍性能，但<code>N&gt;=2</code></p>
+<p>2.不允许磁盘损坏，任何一块磁盘损坏，即无法使用。</p>
+</div>
+        </div>
+    </div>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/img26.png"
+        data-srcset="/img/img26.png, /img/img26.png 1.5x, /img/img26.png 2x"
+        data-sizes="auto"
+        alt="/img/img26.png"
+        title="img.png" /></p>
+<h4 id="raid-1最安全">Raid 1(最安全)</h4>
+<p>Raid 1 将数据备份到每块磁盘中，使用空间相当于一块硬盘的容量，但是数据再每块硬盘中备份，相对安全性较高</p>
+<pre><code>个人俗解：2块硬盘，每块硬盘存`整份`数据，且相互备份
+</code></pre>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>`Raid 1`的特点<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>1.使用<code>N</code>块硬盘，备份<code>N</code>份数据，且<code>N&gt;=2</code> 硬盘使用率为 <code>(N/100)%</code>，较为浪费资源，但安全性为<code>N</code>。</p>
+<p>2.允许磁盘损坏</p>
+</div>
+        </div>
+    </div>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/img27.png"
+        data-srcset="/img/img27.png, /img/img27.png 1.5x, /img/img27.png 2x"
+        data-sizes="auto"
+        alt="/img/img27.png"
+        title="img.png" /></p>
+<h4 id="raid-5性能和安全-55开">Raid 5(性能和安全 55开)</h4>
+<p>Raid 5 把多块硬盘设备（至少三块）的数据奇偶校验信息保存到其他硬盘设备中。
+Raid 5 磁盘阵列组中数据的奇偶校验信息并不是单独保存到某一块硬盘设备中，而是存储到除自身以外的其他每一块硬盘设备上，这样的好处是其中任何一设备损坏后不至于出现致命缺陷；</p>
+<pre><code>个人俗解：3块硬盘，每块硬盘分`3`份，存`2`份数据，`1`份校验，且互相为奇偶
+</code></pre>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>`Raid 5`的特点<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>1.使用<code>N</code>块硬盘，备份<code>N</code>份数据，且<code>N&gt;=3</code> 硬盘使用率为 <code>(N-1/N)%</code>，较为浪费资源，但安全性为<code>N</code>。</p>
+<p>2.允许磁盘损坏且仅能坏<code>1</code>块</p>
+</div>
+        </div>
+    </div>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/img28.png"
+        data-srcset="/img/img28.png, /img/img28.png 1.5x, /img/img28.png 2x"
+        data-sizes="auto"
+        alt="/img/img28.png"
+        title="img.png" /></p>
+<h4 id="raid-10性能和安全-55开">Raid 10(性能和安全 55开)</h4>
+<p>Raid 10 是Raid1 + Raid 0技术的一个组合体。如下图，Raid 10 技术需要至少四块硬盘来组建，其中先分别两两制作成Raid 1磁盘阵列，以保证数据的安全性；然后再对两个Raid 1磁盘阵列实施Raid 0技术，进一步提高硬盘设备的读写速度。这样子从理论上讲，只要坏的不是同一组中的所有硬盘，那么最多可以损坏50%的硬盘设备而不丢失数据。Raid 10技术继承了Raid 0的高读写速度和Raid 1的数据安全性。
+个人俗解：4块硬盘，每<code>2</code>块硬盘分<code>1</code>份数据，组合成 Raid 1，俩个Raid 1 再组合成Raid 0</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>`Raid 10`的特点<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>1.使用<code>N</code>块硬盘，备份<code>N</code>份数据，且<code>N&gt;=4</code> 硬盘使用率为 <code>(50)%</code>，较为浪费资源，但安全性为<code>N</code>。</p>
+<p>2.允许一组Raid 磁盘损坏且仅能坏<code>1</code>块</p>
+</div>
+        </div>
+    </div>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/img29.png"
+        data-srcset="/img/img29.png, /img/img29.png 1.5x, /img/img29.png 2x"
+        data-sizes="auto"
+        alt="/img/img29.png"
+        title="img.png" /></p>
+<h3 id="4raid容错对比图">4.Raid容错对比图</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/img30.png"
+        data-srcset="/img/img30.png, /img/img30.png 1.5x, /img/img30.png 2x"
+        data-sizes="auto"
+        alt="/img/img30.png"
+        title="img.png" /></p>
+<div class="post-promote">
+    <input type="checkbox" name="promote" id="promote" hidden/>
+    <label class="promote-button" for="promote">关注一下再走吧</label>
+    <div class="qr-code">
+        <label class="qr-code-image" for="promote">
+            <img class="image" src="/img/cywhat-gzh.jpg">
+            <span>公众号</span>
+        </label>
+        <label class="qr-code-image" for="promote">
+            <img class="image" src="/img/cywhat-xcx.jpg">
+            <span>小程序</span>
+        </label>
+    </div>
+</div>
+<div class="post-reward">
+    <input type="checkbox" name="reward" id="reward" hidden/>
+    <label class="reward-button" for="reward">赞赏支持</label>
+    <div class="qr-code">
+        <label class="qr-code-image" for="reward">
+            <img class="image" src="/img/WechatPay.jpeg">
+            <span>微信打赏</span>
+        </label>
+        <label class="qr-code-image" for="reward">
+            <img class="image" src="/img/Alipay.jpeg">
+            <span>支付宝打赏</span>
+        </label>
+    </div>
+</div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2021-11-18</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/" data-title="Raid磁盘阵列" data-hashtags="Linux"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/" data-hashtag="Linux"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/" data-title="Raid磁盘阵列"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/" data-title="Raid磁盘阵列"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/" data-title="Raid磁盘阵列"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/Linux/">Linux</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/Linux%E4%BD%BF%E7%94%A8iftop%E6%9F%A5%E7%9C%8B%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/" class="prev" rel="prev" title="Linux使用iftop查看带宽占用情况"><i class="fas fa-angle-left fa-fw"></i>Linux使用iftop查看带宽占用情况</a>
+            <a href="/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84cdn%E5%9B%BE%E5%BA%8A%E5%9C%B0%E5%9D%80/" class="next" rel="next" title="如何创建自己的cdn图床地址">如何创建自己的cdn图床地址<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="waline"></div>
+			<script src='https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+
+			<script>
+		    	new Waline({
+		    	  el: '#waline',
+				  meta: ["nick","mail","link"],
+		    	  requiredMeta: ["nick","mail"],
+		    	  login: "force",
+				  placeholder: "小Tips 评论前需注册并登录噢",
+		    	  serverURL: "https://comment.cywhat.cn/",
+		    	  avatarCDN: "https://sdn.geekzu.org/avatar/",
+		    	  pageSize:  20 ,
+		    	  avatar: "retro",
+		    	  lang: "zh-CN",
+				  visitor:  true ,
+				  highlight:  true ,
+				  uploadImage:  false 
+		    	});
+		    </script></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://cywhat.cn" target="_blank">cywhat</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="#" target="_blank">Do not go gentle into that good night.</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp"><a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">京ICP备2021041376号</a></span></div>
+        </div>
+
+        <div class="footer-line">
+	        <span id="run-time"></span>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"search":{"algoliaAppID":"3031FWUVJN","algoliaIndex":"cywhat.algolia-temp","algoliaSearchKey":"76bee9d276ea265b36eae78e8a17356c","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"></script>
+
+<script type="text/javascript" src="/js/custom.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-225C41PHZX', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-225C41PHZX" async></script><script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?a54de2ed85b7ec3fd5ad114214614491";
+			  var s = document.getElementsByTagName("script")[0];
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script></body>
+</html>

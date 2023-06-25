@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>.gitignore - 标签 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/tags/.gitignore/</link>
+        <description>.gitignore - 标签 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 01 Apr 2021 18:17:13 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/.gitignore/" rel="self" type="application/rss+xml" /><item>
+    <title>.gitignore不生效的解决方案</title>
+    <link>https://cywhat.cn/gitignore%E4%B8%8D%E7%94%9F%E6%95%88%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+    <pubDate>Thu, 01 Apr 2021 18:17:13 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/gitignore%E4%B8%8D%E7%94%9F%E6%95%88%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+    <description><![CDATA[原因 原因：git本地运行有缓存，需要清除git缓存即可 解决 1 git rm -r --cached . 注意： 清完缓存需要把代码推到远程仓库]]></description>
+</item></channel>
+</rss>

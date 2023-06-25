@@ -1,0 +1,50 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Mac - 分类 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/categories/Mac/</link>
+        <description>Mac - 分类 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 04 Apr 2023 10:41:47 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Mac/" rel="self" type="application/rss+xml" /><item>
+    <title>Mac出现xxx@bogon</title>
+    <link>https://cywhat.cn/Mac%E5%87%BA%E7%8E%B0xxxbogon.none/</link>
+    <pubDate>Tue, 04 Apr 2023 10:41:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Mac%E5%87%BA%E7%8E%B0xxxbogon.none/</guid>
+    <description><![CDATA[1、问题 1 chaoyang@bogon.(none)&#39; # 用户名被篡改成了bogon 2、解决 1、修改电脑名称 1 sudo scutil --set ComputerName 你想要的计算机名称 2、修改本地主机名 1 sudo scutil --set LocalHostName 你想要的计算机名称 3]]></description>
+</item><item>
+    <title>Zsh Problem Compinit503 No Such File or Directory Usr Local Share Zsh Site</title>
+    <link>https://cywhat.cn/zsh-problem-compinit503-no-such-file-or-directory-usr-local-share-zsh-site/</link>
+    <pubDate>Thu, 13 Oct 2022 10:32:12 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/zsh-problem-compinit503-no-such-file-or-directory-usr-local-share-zsh-site/</guid>
+    <description><![CDATA[1、报错信息 no such file or directory: /usr/local/share/zsh/site-functions/_brew_cask 2、原因 升级到BigSur出现该问题，似乎是brew因为BigSur和之前系统的版本不一致导致 3、解决 1 2 3 4 5 brew doctor]]></description>
+</item><item>
+    <title>Mac安装mysql5.7</title>
+    <link>https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/</link>
+    <pubDate>Sun, 24 Apr 2022 10:59:14 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/</guid>
+    <description><![CDATA[1.下载Dmg安装包 安装包下载 我选择的Mysql版本是5.7.30 2.安装并启动 3.记录Mysql初始密码 4.设置别名 1 2 alias mysql=/usr/local/mysql/bin/mysql alias mysqladmin=/usr/local/mysql/bin/mysqladmin 5.重置密]]></description>
+</item><item>
+    <title>Mac必备软件推荐</title>
+    <link>https://cywhat.cn/Mac%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</link>
+    <pubDate>Fri, 10 Sep 2021 14:54:10 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Mac%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</guid>
+    <description><![CDATA[前景： 前几天系统降级了，发现之前使用的一些得心应手的app忘记名字了，很难找，不过最后还是在时间机器里找到了，特意开帖记录分享一下，常见的就]]></description>
+</item><item>
+    <title>Mac忽略系统更新提醒，并取消小红点</title>
+    <link>https://cywhat.cn/Mac%E5%BF%BD%E7%95%A5%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E6%8F%90%E9%86%92%E5%B9%B6%E5%8F%96%E6%B6%88%E5%B0%8F%E7%BA%A2%E7%82%B9/</link>
+    <pubDate>Tue, 07 Sep 2021 14:58:29 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Mac%E5%BF%BD%E7%95%A5%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E6%8F%90%E9%86%92%E5%B9%B6%E5%8F%96%E6%B6%88%E5%B0%8F%E7%BA%A2%E7%82%B9/</guid>
+    <description><![CDATA[1.首先关掉系统的自动更新设置** 1 2 3 4 5 1.系统偏好设置--软件更新 2.取消选择&#34;自动保持我的Mac最新&#34; 3.高级--取]]></description>
+</item><item>
+    <title>Mac安装brew</title>
+    <link>https://cywhat.cn/mac-%E5%AE%89%E8%A3%85brew/</link>
+    <pubDate>Wed, 18 Mar 2020 15:56:49 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/mac-%E5%AE%89%E8%A3%85brew/</guid>
+    <description><![CDATA[Mac是自带ruby的 打开命令行工具terminal 1.查看ruby版本 1 ruby -version 2.用ruby安装brew 1 ruby -e &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&#34; 3.brew 安装模块方法(举个例子]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Java - 分类 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/categories/Java/</link>
+        <description>Java - 分类 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 20 Jul 2021 10:12:22 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/categories/Java/" rel="self" type="application/rss+xml" /><item>
+    <title>bash:jstack: 未找到命令</title>
+    <link>https://cywhat.cn/bash-jstack-%E6%9C%AA%E6%89%BE%E5%88%B0%E5%91%BD%E4%BB%A4/</link>
+    <pubDate>Tue, 20 Jul 2021 10:12:22 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/bash-jstack-%E6%9C%AA%E6%89%BE%E5%88%B0%E5%91%BD%E4%BB%A4/</guid>
+    <description><![CDATA[jstack报错如下 1 $ -bash: jstack: 未找到命令 安装以下依赖 1 $ yum install java-1.7.0-openjdk-devel -y]]></description>
+</item><item>
+    <title>Java线上问题排查</title>
+    <link>https://cywhat.cn/Java%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/</link>
+    <pubDate>Tue, 20 Jul 2021 10:03:12 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Java%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/</guid>
+    <description><![CDATA[1、top 查看占用资源信息以及pid 1 top 2、查看pid下绑定线程 1 top -Hp pid1(进程id) 3、拿到需要查询的线程pid,转换成16进制 1 printf &#39;%x&#39;]]></description>
+</item></channel>
+</rss>

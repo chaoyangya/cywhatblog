@@ -1,0 +1,64 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Jenkins - 标签 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/tags/Jenkins/</link>
+        <description>Jenkins - 标签 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/Jenkins/" rel="self" type="application/rss+xml" /><item>
+    <title>Jenkins端口修改之后没有生效</title>
+    <link>https://cywhat.cn/jenkins%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9%E4%B9%8B%E5%90%8E%E6%B2%A1%E6%9C%89%E7%94%9F%E6%95%88/</link>
+    <pubDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/jenkins%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9%E4%B9%8B%E5%90%8E%E6%B2%A1%E6%9C%89%E7%94%9F%E6%95%88/</guid>
+    <description><![CDATA[1、问题 jenkins通过systemctl start jenkins.service启动服务，端口不是配置文件里自定义的端口 2、排查 1、系统serv]]></description>
+</item><item>
+    <title>Jenkins添加html报告并发送到邮箱</title>
+    <link>https://cywhat.cn/Jenkins%E6%B7%BB%E5%8A%A0html%E6%8A%A5%E5%91%8A%E5%B9%B6%E5%8F%91%E9%80%81%E5%88%B0%E9%82%AE%E7%AE%B1/</link>
+    <pubDate>Tue, 06 Dec 2022 16:18:30 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Jenkins%E6%B7%BB%E5%8A%A0html%E6%8A%A5%E5%91%8A%E5%B9%B6%E5%8F%91%E9%80%81%E5%88%B0%E9%82%AE%E7%AE%B1/</guid>
+    <description><![CDATA[1、插件安装 1 2 3 4 5 6 1、Manage Jenkins ---&gt; Manage Plugins ---&gt; Available 搜索框输入下面几款插件 2、插件安装以及插件的说明： 1) HTML Publisher plugin # 推送生成的html报告到je]]></description>
+</item><item>
+    <title>Jenkins插件无法安装解决</title>
+    <link>https://cywhat.cn/Jenkins%E6%8F%92%E4%BB%B6%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85%E8%A7%A3%E5%86%B3/</link>
+    <pubDate>Tue, 15 Nov 2022 15:27:31 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Jenkins%E6%8F%92%E4%BB%B6%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85%E8%A7%A3%E5%86%B3/</guid>
+    <description><![CDATA[1、问题 1 jenkins各种改源地址都不行，都无法安装更新插件 2、可行方案 1 2 3 4 5 6 7 8 9 1、更改源地址(http://mirror.es]]></description>
+</item><item>
+    <title>Jenkins报错 Bash:newman:command Not Found</title>
+    <link>https://cywhat.cn/Jenkins%E6%8A%A5%E9%94%99-bashnewmancommand-not-found/</link>
+    <pubDate>Tue, 15 Nov 2022 15:19:31 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Jenkins%E6%8A%A5%E9%94%99-bashnewmancommand-not-found/</guid>
+    <description><![CDATA[1、报错查看 1 2 3 # 报错如下： bash: newman: command not found Build step &#39;Execute shell&#39; marked build as failure 2、原因分析 1 2 3 4 5 1、Linux环境变量配置没问题 2、Linux中任意位置都可以]]></description>
+</item><item>
+    <title>ERROR: Re-run SonarScanner using the -X switch to enable full debug logging.</title>
+    <link>https://cywhat.cn/ERROR-Re-run-SonarScanner-using-the-X-switch-to-enable-full-debug-logging/</link>
+    <pubDate>Thu, 23 Sep 2021 11:25:17 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/ERROR-Re-run-SonarScanner-using-the-X-switch-to-enable-full-debug-logging/</guid>
+    <description><![CDATA[前景 jenkins构建sonarqube报错 报错： &quot;ERROR: Re-run SonarScanner using the -X switch to enable full debug logging. 1.打开sonarqube的SCM配置 2.重新构建即可]]></description>
+</item><item>
+    <title>Jenkins启动报错原因分析</title>
+    <link>https://cywhat.cn/Jenkins%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90/</link>
+    <pubDate>Sat, 18 Sep 2021 17:58:18 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Jenkins%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90/</guid>
+    <description><![CDATA[1.启动jenkins 1 systemctl start jenkins #如果命令不可使用，首先要把jenkins放到系统启动配置中，详情请百度 2.查看jenkins启动状态 1 systemctl status jenkins.service]]></description>
+</item><item>
+    <title>newman生成好看的html报告</title>
+    <link>https://cywhat.cn/newman%E7%94%9F%E6%88%90%E5%A5%BD%E7%9C%8B%E7%9A%84html%E6%8A%A5%E5%91%8A/</link>
+    <pubDate>Wed, 18 Aug 2021 10:38:09 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/newman%E7%94%9F%E6%88%90%E5%A5%BD%E7%9C%8B%E7%9A%84html%E6%8A%A5%E5%91%8A/</guid>
+    <description><![CDATA[PS:运行newman需要node 版本大于10 1.安装newman 1 npm install -g newman 2.安装普通html报告插件(建议安装) 1 npm install -g newman-reporter-html 3.安装美化h]]></description>
+</item><item>
+    <title>Centos7.7安装并配置jenkins&#43;python&#43;allure发送定制化报告</title>
+    <link>https://cywhat.cn/Centos7-7%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AEjenkins-python-allure%E5%8F%91%E9%80%81%E5%AE%9A%E5%88%B6%E5%8C%96%E6%8A%A5%E5%91%8A/</link>
+    <pubDate>Thu, 03 Sep 2020 15:34:13 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Centos7-7%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AEjenkins-python-allure%E5%8F%91%E9%80%81%E5%AE%9A%E5%88%B6%E5%8C%96%E6%8A%A5%E5%91%8A/</guid>
+    <description><![CDATA[【全网最全】Centos7.7安装并配置jenkins+python+allure发送定制化报告 目前测试开发方向的接口自动化脚本很多，这里就]]></description>
+</item></channel>
+</rss>

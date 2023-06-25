@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Centos - 分类 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/categories/Centos/</link>
+        <description>Centos - 分类 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 20 Aug 2021 17:08:45 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/categories/Centos/" rel="self" type="application/rss+xml" /><item>
+    <title>Centos7安装chrome浏览器</title>
+    <link>https://cywhat.cn/Centos7%E5%AE%89%E8%A3%85chrome%E6%B5%8F%E8%A7%88%E5%99%A8/</link>
+    <pubDate>Fri, 20 Aug 2021 17:08:45 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Centos7%E5%AE%89%E8%A3%85chrome%E6%B5%8F%E8%A7%88%E5%99%A8/</guid>
+    <description><![CDATA[1.下载chrome for linux压缩包 百度网盘 1 $ 提取码: 1f4n 更多版本 2.上传解压压缩包 1 $ unzip google-chrome-stable_deb_rpm_91.0.4472.77.zip #解压完成会出现 .deb 和 .rpm 的俩个文件 3.安装解压c]]></description>
+</item></channel>
+</rss>

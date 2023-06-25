@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Brew - 标签 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/tags/Brew/</link>
+        <description>Brew - 标签 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 04 Apr 2023 10:41:47 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/Brew/" rel="self" type="application/rss+xml" /><item>
+    <title>Mac出现xxx@bogon</title>
+    <link>https://cywhat.cn/Mac%E5%87%BA%E7%8E%B0xxxbogon.none/</link>
+    <pubDate>Tue, 04 Apr 2023 10:41:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Mac%E5%87%BA%E7%8E%B0xxxbogon.none/</guid>
+    <description><![CDATA[1、问题 1 chaoyang@bogon.(none)&#39; # 用户名被篡改成了bogon 2、解决 1、修改电脑名称 1 sudo scutil --set ComputerName 你想要的计算机名称 2、修改本地主机名 1 sudo scutil --set LocalHostName 你想要的计算机名称 3]]></description>
+</item><item>
+    <title>Mac安装brew</title>
+    <link>https://cywhat.cn/mac-%E5%AE%89%E8%A3%85brew/</link>
+    <pubDate>Wed, 18 Mar 2020 15:56:49 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/mac-%E5%AE%89%E8%A3%85brew/</guid>
+    <description><![CDATA[Mac是自带ruby的 打开命令行工具terminal 1.查看ruby版本 1 ruby -version 2.用ruby安装brew 1 ruby -e &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&#34; 3.brew 安装模块方法(举个例子]]></description>
+</item></channel>
+</rss>

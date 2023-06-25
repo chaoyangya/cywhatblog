@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Supervisord - 标签 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/tags/Supervisord/</link>
+        <description>Supervisord - 标签 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 May 2021 11:35:23 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Supervisord/" rel="self" type="application/rss+xml" /><item>
+    <title>supervisord管理常驻进程uwsgi/nginx/redis/mongodb</title>
+    <link>https://cywhat.cn/supervisord%E7%AE%A1%E7%90%86%E5%B8%B8%E9%A9%BB%E8%BF%9B%E7%A8%8Buwsgi-nginx-redis-mongodb/</link>
+    <pubDate>Mon, 24 May 2021 11:35:23 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/supervisord%E7%AE%A1%E7%90%86%E5%B8%B8%E9%A9%BB%E8%BF%9B%E7%A8%8Buwsgi-nginx-redis-mongodb/</guid>
+    <description><![CDATA[解决部署的一些项目,因机器关机/重启导致项目需要手动重新启动的问题 1.安装supervisor(3种选一种) 1 2 3 4 5 6 7 8 #yum安装 yum install]]></description>
+</item></channel>
+</rss>

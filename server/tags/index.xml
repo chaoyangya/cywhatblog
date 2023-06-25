@@ -1,0 +1,78 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - 标签 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/tags/</link>
+        <description>Tags - 标签 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 25 May 2023 17:42:27 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Django</title>
+    <link>https://cywhat.cn/tags/Django/</link>
+    <pubDate>Thu, 25 May 2023 17:42:27 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/tags/Django/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Pip</title>
+    <link>https://cywhat.cn/tags/Pip/</link>
+    <pubDate>Thu, 25 May 2023 17:42:27 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/tags/Pip/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Celery</title>
+    <link>https://cywhat.cn/tags/Celery/</link>
+    <pubDate>Tue, 18 Apr 2023 14:42:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/tags/Celery/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Erlang</title>
+    <link>https://cywhat.cn/tags/Erlang/</link>
+    <pubDate>Tue, 18 Apr 2023 14:31:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/tags/Erlang/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Linux</title>
+    <link>https://cywhat.cn/tags/Linux/</link>
+    <pubDate>Tue, 18 Apr 2023 14:31:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/tags/Linux/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>RabbitMQ</title>
+    <link>https://cywhat.cn/tags/RabbitMQ/</link>
+    <pubDate>Tue, 18 Apr 2023 14:31:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/tags/RabbitMQ/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Html</title>
+    <link>https://cywhat.cn/tags/Html/</link>
+    <pubDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/tags/Html/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Jenkins</title>
+    <link>https://cywhat.cn/tags/Jenkins/</link>
+    <pubDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/tags/Jenkins/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Brew</title>
+    <link>https://cywhat.cn/tags/Brew/</link>
+    <pubDate>Tue, 04 Apr 2023 10:41:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/tags/Brew/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Mac</title>
+    <link>https://cywhat.cn/tags/Mac/</link>
+    <pubDate>Tue, 04 Apr 2023 10:41:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/tags/Mac/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>

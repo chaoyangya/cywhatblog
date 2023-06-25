@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Https - 标签 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/tags/Https/</link>
+        <description>Https - 标签 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 07 Mar 2019 16:30:00 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Https/" rel="self" type="application/rss+xml" /><item>
+    <title>HTTP各个status code代表什么意思</title>
+    <link>https://cywhat.cn/HTTP%E5%90%84%E4%B8%AAstatus-code%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/</link>
+    <pubDate>Thu, 07 Mar 2019 16:30:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/HTTP%E5%90%84%E4%B8%AAstatus-code%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/</guid>
+    <description><![CDATA[计算机之间的通信以协议为共同基础，客户端和服务端都按照协议的约定进行通信。HTTP的状态码就在HTTP的协议内，规定了很多的状态。客户端请求]]></description>
+</item></channel>
+</rss>

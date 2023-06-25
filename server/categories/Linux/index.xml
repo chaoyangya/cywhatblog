@@ -1,0 +1,78 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Linux - 分类 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/categories/Linux/</link>
+        <description>Linux - 分类 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Linux/" rel="self" type="application/rss+xml" /><item>
+    <title>Jenkins端口修改之后没有生效</title>
+    <link>https://cywhat.cn/jenkins%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9%E4%B9%8B%E5%90%8E%E6%B2%A1%E6%9C%89%E7%94%9F%E6%95%88/</link>
+    <pubDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/jenkins%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9%E4%B9%8B%E5%90%8E%E6%B2%A1%E6%9C%89%E7%94%9F%E6%95%88/</guid>
+    <description><![CDATA[1、问题 jenkins通过systemctl start jenkins.service启动服务，端口不是配置文件里自定义的端口 2、排查 1、系统serv]]></description>
+</item><item>
+    <title>Jenkins添加html报告并发送到邮箱</title>
+    <link>https://cywhat.cn/Jenkins%E6%B7%BB%E5%8A%A0html%E6%8A%A5%E5%91%8A%E5%B9%B6%E5%8F%91%E9%80%81%E5%88%B0%E9%82%AE%E7%AE%B1/</link>
+    <pubDate>Tue, 06 Dec 2022 16:18:30 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Jenkins%E6%B7%BB%E5%8A%A0html%E6%8A%A5%E5%91%8A%E5%B9%B6%E5%8F%91%E9%80%81%E5%88%B0%E9%82%AE%E7%AE%B1/</guid>
+    <description><![CDATA[1、插件安装 1 2 3 4 5 6 1、Manage Jenkins ---&gt; Manage Plugins ---&gt; Available 搜索框输入下面几款插件 2、插件安装以及插件的说明： 1) HTML Publisher plugin # 推送生成的html报告到je]]></description>
+</item><item>
+    <title>Jenkins插件无法安装解决</title>
+    <link>https://cywhat.cn/Jenkins%E6%8F%92%E4%BB%B6%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85%E8%A7%A3%E5%86%B3/</link>
+    <pubDate>Tue, 15 Nov 2022 15:27:31 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Jenkins%E6%8F%92%E4%BB%B6%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85%E8%A7%A3%E5%86%B3/</guid>
+    <description><![CDATA[1、问题 1 jenkins各种改源地址都不行，都无法安装更新插件 2、可行方案 1 2 3 4 5 6 7 8 9 1、更改源地址(http://mirror.es]]></description>
+</item><item>
+    <title>Jenkins报错 Bash:newman:command Not Found</title>
+    <link>https://cywhat.cn/Jenkins%E6%8A%A5%E9%94%99-bashnewmancommand-not-found/</link>
+    <pubDate>Tue, 15 Nov 2022 15:19:31 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Jenkins%E6%8A%A5%E9%94%99-bashnewmancommand-not-found/</guid>
+    <description><![CDATA[1、报错查看 1 2 3 # 报错如下： bash: newman: command not found Build step &#39;Execute shell&#39; marked build as failure 2、原因分析 1 2 3 4 5 1、Linux环境变量配置没问题 2、Linux中任意位置都可以]]></description>
+</item><item>
+    <title>Linux安装newman生成postman脚本报告</title>
+    <link>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85newman%E7%94%9F%E6%88%90postman%E8%84%9A%E6%9C%AC%E6%8A%A5%E5%91%8A/</link>
+    <pubDate>Thu, 10 Nov 2022 15:08:11 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85newman%E7%94%9F%E6%88%90postman%E8%84%9A%E6%9C%AC%E6%8A%A5%E5%91%8A/</guid>
+    <description><![CDATA[1、安装node 1 2 3 4 5 6 7 8 # 1、下载node wget https://nodejs.org/dist/v16.9.1/node-v16.9.1-linux-x64.tar.xz # 2、解压 tar -xvf node-v16.9.1-linux-x64.tar.xz # 3.重命名 mv node-v16.9.1-linux-x64 node 2、配置环境变量 1 2 3 4 5 6 7 8 9 # 1、编辑环境变量]]></description>
+</item><item>
+    <title>Linux配置时间同步</title>
+    <link>https://cywhat.cn/Linux%E9%85%8D%E7%BD%AE%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5/</link>
+    <pubDate>Wed, 05 Jan 2022 10:49:45 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E9%85%8D%E7%BD%AE%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5/</guid>
+    <description><![CDATA[前景 排查售后问题发现一个奇葩BUG是因为Linux服务器时间不同步导致 1.安装ntpdate 1 yum install -y ntpdate 2.同步时间 1 ntpdate 0.asia.pool.ntp.org #0.asia.pool.ntp.org 为ntp时间服务器]]></description>
+</item><item>
+    <title>如何保持Ssh长时间连接不断开</title>
+    <link>https://cywhat.cn/%E5%A6%82%E4%BD%95%E4%BF%9D%E6%8C%81Ssh%E9%95%BF%E6%97%B6%E9%97%B4%E9%93%BE%E6%8E%A5%E4%B8%8D%E6%96%AD%E5%BC%80/</link>
+    <pubDate>Wed, 22 Dec 2021 14:29:11 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/%E5%A6%82%E4%BD%95%E4%BF%9D%E6%8C%81Ssh%E9%95%BF%E6%97%B6%E9%97%B4%E9%93%BE%E6%8E%A5%E4%B8%8D%E6%96%AD%E5%BC%80/</guid>
+    <description><![CDATA[前景： 新购入的华为云服务器SSH连接5分钟没有任何操作就自动断开了，该文章主要为了解决该问题，同样的场景适合各种云服务器/本地物理服务器等 1]]></description>
+</item><item>
+    <title>Raid磁盘阵列</title>
+    <link>https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/</link>
+    <pubDate>Thu, 18 Nov 2021 10:01:24 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/</guid>
+    <description><![CDATA[1.什么是Raid 什么是Raid Raid 是英文(Redundant Array of Independent Disks)的缩写，翻译成中文是“独立磁盘冗余阵列”, 简称磁盘阵列（Dis]]></description>
+</item><item>
+    <title>Linux使用iftop查看带宽占用情况</title>
+    <link>https://cywhat.cn/Linux%E4%BD%BF%E7%94%A8iftop%E6%9F%A5%E7%9C%8B%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/</link>
+    <pubDate>Wed, 17 Nov 2021 10:16:41 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E4%BD%BF%E7%94%A8iftop%E6%9F%A5%E7%9C%8B%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/</guid>
+    <description><![CDATA[1.安装iftop 1 2 3 centos: yum install iftop debian: apt-get install iftop 2.使用iftop 1 2 3 iftop -i eth1 #查看eth1网卡的带宽占用情况 iftop -i eth1 -P #显示详细端口流量占用 3.if]]></description>
+</item><item>
+    <title>Linux关闭防火墙</title>
+    <link>https://cywhat.cn/Linux%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/</link>
+    <pubDate>Wed, 01 Sep 2021 10:43:37 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
+    <description><![CDATA[注意:ConterOS7.0以上使用的是firewall，ConterOS7.0以下使用的是iptables 1.查看防火状态 1 2 3 systemctl status firewalld #7]]></description>
+</item></channel>
+</rss>

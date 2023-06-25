@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Sonarqube - 分类 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/categories/Sonarqube/</link>
+        <description>Sonarqube - 分类 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 23 Sep 2021 11:25:17 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/categories/Sonarqube/" rel="self" type="application/rss+xml" /><item>
+    <title>ERROR: Re-run SonarScanner using the -X switch to enable full debug logging.</title>
+    <link>https://cywhat.cn/ERROR-Re-run-SonarScanner-using-the-X-switch-to-enable-full-debug-logging/</link>
+    <pubDate>Thu, 23 Sep 2021 11:25:17 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/ERROR-Re-run-SonarScanner-using-the-X-switch-to-enable-full-debug-logging/</guid>
+    <description><![CDATA[前景 jenkins构建sonarqube报错 报错： &quot;ERROR: Re-run SonarScanner using the -X switch to enable full debug logging. 1.打开sonarqube的SCM配置 2.重新构建即可]]></description>
+</item><item>
+    <title>Linux搭建sonarqube</title>
+    <link>https://cywhat.cn/Linux%E6%90%AD%E5%BB%BAsonarqube/</link>
+    <pubDate>Wed, 22 Sep 2021 16:35:47 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E6%90%AD%E5%BB%BAsonarqube/</guid>
+    <description><![CDATA[前言 Linux版本:centos7.6 Java:Jdk11 SonarQube:8.2.0.32929 PostgreSQL:12 sonar-scanner:4.6.2.2472 1.安装Jdk 安装JDK 2.安装PostgreSQL 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 1.安装镜]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Raid - 分类 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/categories/Raid/</link>
+        <description>Raid - 分类 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 18 Nov 2021 10:01:24 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Raid/" rel="self" type="application/rss+xml" /><item>
+    <title>Raid磁盘阵列</title>
+    <link>https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/</link>
+    <pubDate>Thu, 18 Nov 2021 10:01:24 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/</guid>
+    <description><![CDATA[1.什么是Raid 什么是Raid Raid 是英文(Redundant Array of Independent Disks)的缩写，翻译成中文是“独立磁盘冗余阵列”, 简称磁盘阵列（Dis]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Git基础命令 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
+<meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Git基础命令" />
+<meta property="og:description" content="git基本命令 初始化：创建一个git仓库，创建之后就会在当前目录生成一个.git的文件 1 git init 添加文件：把文件添加到缓冲区 1 git add filename 添加所有文件" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" />
+<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="article:published_time" content="2019-10-23T15:32:00+00:00" />
+<meta property="article:modified_time" content="2019-10-23T15:32:00+00:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://cywhat.cn"/>
+
+<meta name="twitter:title" content="Git基础命令"/>
+<meta name="twitter:description" content="git基本命令 初始化：创建一个git仓库，创建之后就会在当前目录生成一个.git的文件 1 git init 添加文件：把文件添加到缓冲区 1 git add filename 添加所有文件"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" /><link rel="prev" href="https://cywhat.cn/Postmant%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/" /><link rel="next" href="https://cywhat.cn/ImportError-No-module-named-flask/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Git基础命令",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/cywhat.cn\/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4\/"
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Git","wordcount":  1108 ,
+        "url": "https:\/\/cywhat.cn\/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4\/","datePublished": "2019-10-23T15:32:00+00:00","dateModified": "2019-10-23T15:32:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "cywhat"},"author": {
+                "@type": "Person",
+                "name": "cywhat"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="cywhat&#39;s blog">cywhat&#39;s blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/friends/"> 友链 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="cywhat&#39;s blog">cywhat&#39;s blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/friends/" title="">友链</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Git基础命令</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Git/"><i class="far fa-folder fa-fw"></i>Git</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2019-10-23">2019-10-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1108 字
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;<span id="/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" class="leancloud_visitors" data-flag-title="Git基础命令">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;
+					<a href="#comments" id="post-meta-vcount" title="查看评论">
+						<i class="fas fa-comment fa-fw"></i>&nbsp;<span id="/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" class="waline-comment-count"></span>&nbsp;条评论
+					</a></div>
+
+
+
+
+
+
+
+
+
+
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#git基本命令">git基本命令</a>
+          <ul>
+            <li><a href="#初始化创建一个git仓库创建之后就会在当前目录生成一个git的文件">初始化：创建一个git仓库，创建之后就会在当前目录生成一个.git的文件</a></li>
+            <li><a href="#添加文件把文件添加到缓冲区">添加文件：把文件添加到缓冲区</a></li>
+            <li><a href="#添加所有文件到缓冲区从目前掌握的水平看和后面加的区别在于加all可以添加被手动删除的文件而加不行">添加所有文件到缓冲区（从目前掌握的水平看，和后面加“.”的区别在于，加all可以添加被手动删除的文件，而加“.”不行）：</a></li>
+            <li><a href="#删除文件">删除文件</a></li>
+            <li><a href="#提交提交缓冲区的所有修改到仓库注意如果修改了文件但是没有add到缓冲区也是不会被提交的">提交：提交缓冲区的所有修改到仓库(注意：如果修改了文件但是没有add到缓冲区，也是不会被提交的)</a></li>
+            <li><a href="#查看git库的状态未提交的文件分为两种add过已经在缓冲区的未add过的">查看git库的状态，未提交的文件，分为两种，add过已经在缓冲区的，未add过的</a></li>
+            <li><a href="#比较如果文件修改了还没有提交就可以比较文件修改前后的差异">比较：如果文件修改了，还没有提交，就可以比较文件修改前后的差异</a></li>
+            <li><a href="#查看日志">查看日志</a></li>
+            <li><a href="#版本回退可以将当前仓库回退到历史的某个版本">版本回退：可以将当前仓库回退到历史的某个版本</a></li>
+            <li><a href="#第一种用法回退到上一个版本head代表当前版本有一个代表上一个版本以此类推">第一种用法：回退到上一个版本（HEAD代表当前版本，有一个^代表上一个版本，以此类推）</a></li>
+            <li><a href="#第二种用法回退到指定版本其中d7b5是想回退的指定版本号的前几位">第二种用法：回退到指定版本(其中d7b5是想回退的指定版本号的前几位)</a></li>
+            <li><a href="#查看命令历史查看仓库的操作历史">查看命令历史：查看仓库的操作历史</a></li>
+            <li><a href="#git分支管理-查看分支的情况前面带号的就是当前分支">git分支管理 查看分支的情况，前面带*号的就是当前分支</a></li>
+            <li><a href="#创建分支">创建分支</a></li>
+            <li><a href="#切换当前分支到指定分支">切换当前分支到指定分支</a></li>
+            <li><a href="#创建分支并切换到创建的分支">创建分支并切换到创建的分支</a></li>
+            <li><a href="#合并某分支的内容到当前分支">合并某分支的内容到当前分支</a></li>
+            <li><a href="#删除分支">删除分支</a></li>
+            <li><a href="#如果两个分支同时进行了同一个文件的修改和提交在merge时就会产生冲突首先要手动打开文件解决冲突再提交就相当于进行了merge">如果两个分支同时进行了同一个文件的修改和提交，在merge时就会产生冲突，首先要手动打开文件解决冲突，再提交，就相当于进行了<code>merge</code></a></li>
+            <li><a href="#新建标签默认为最新版本后面加上版本号参数则可指定版本增加标签">新建标签，默认为最新版本，后面加上版本号参数则可指定版本增加标签</a></li>
+            <li><a href="#查看所有标签">查看所有标签：</a></li>
+            <li><a href="#查看标签的详细信息">查看标签的详细信息</a></li>
+            <li><a href="#推送所有tag">推送所有tag:</a></li>
+            <li><a href="#推送某个tag">推送某个tag：</a></li>
+            <li><a href="#git远端库相关">git远端库相关</a></li>
+            <li><a href="#移除远端仓库">移除远端仓库</a></li>
+            <li><a href="#将本地仓库内容推送到远端仓库-u-表示第一次推送master分支的所有内容后面再推送就不需要-u了跟commit的区别在于一个是提交到本地仓库一个是提交到远程仓库">将本地仓库内容推送到远端仓库(-u 表示第一次推送master分支的所有内容，后面再推送就不需要-u了)，跟commit的区别在于一个是提交到本地仓库，一个是提交到远程仓库</a></li>
+            <li><a href="#从远端库更新内容到本地相当于svn的update">从远端库更新内容到本地（相当于svn的update），</a></li>
+            <li><a href="#git记住用户名密码">git记住用户名密码</a></li>
+            <li><a href="#push的时候默认每次都需输入github的用户名和密码在git仓库根目录下git文件夹的config文件末尾增加如下内容即可记住用户名密码无需每次推送都输入了">push的时候默认每次都需输入GitHub的用户名和密码，在git仓库根目录下.git文件夹的config文件末尾增加如下内容，即可记住用户名密码，无需每次推送都输入了</a></li>
+            <li><a href="#强制推送分支">强制推送分支</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="git基本命令">git基本命令</h3>
+<h4 id="初始化创建一个git仓库创建之后就会在当前目录生成一个git的文件">初始化：创建一个git仓库，创建之后就会在当前目录生成一个.git的文件</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git init
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="添加文件把文件添加到缓冲区">添加文件：把文件添加到缓冲区</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git add filename
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="添加所有文件到缓冲区从目前掌握的水平看和后面加的区别在于加all可以添加被手动删除的文件而加不行">添加所有文件到缓冲区（从目前掌握的水平看，和后面加“.”的区别在于，加all可以添加被手动删除的文件，而加“.”不行）：</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git add .
+
+git add --all
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="删除文件">删除文件</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git rm filename
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="提交提交缓冲区的所有修改到仓库注意如果修改了文件但是没有add到缓冲区也是不会被提交的">提交：提交缓冲区的所有修改到仓库(注意：如果修改了文件但是没有add到缓冲区，也是不会被提交的)</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git commit -m <span class="s2">&#34;提交的说明&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><code>commit</code>可以一次提交缓冲区的所有文件</p>
+<h4 id="查看git库的状态未提交的文件分为两种add过已经在缓冲区的未add过的">查看git库的状态，未提交的文件，分为两种，add过已经在缓冲区的，未add过的</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git status -b
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="比较如果文件修改了还没有提交就可以比较文件修改前后的差异">比较：如果文件修改了，还没有提交，就可以比较文件修改前后的差异</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git diff filename
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="查看日志">查看日志</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git log
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="版本回退可以将当前仓库回退到历史的某个版本">版本回退：可以将当前仓库回退到历史的某个版本</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git reset
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="第一种用法回退到上一个版本head代表当前版本有一个代表上一个版本以此类推">第一种用法：回退到上一个版本（HEAD代表当前版本，有一个^代表上一个版本，以此类推）</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git reset --hard HEAD^
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="第二种用法回退到指定版本其中d7b5是想回退的指定版本号的前几位">第二种用法：回退到指定版本(其中d7b5是想回退的指定版本号的前几位)</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git reset --hard d7b5
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="查看命令历史查看仓库的操作历史">查看命令历史：查看仓库的操作历史</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git reflog
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="git分支管理-查看分支的情况前面带号的就是当前分支">git分支管理 查看分支的情况，前面带*号的就是当前分支</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git branch
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="创建分支">创建分支</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git branch <span class="s2">&#34;分支名&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="切换当前分支到指定分支">切换当前分支到指定分支</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git checkout <span class="s2">&#34;分支名&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="创建分支并切换到创建的分支">创建分支并切换到创建的分支</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git checkout -b <span class="s2">&#34;分支名&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="合并某分支的内容到当前分支">合并某分支的内容到当前分支</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git merge <span class="s2">&#34;分支名&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="删除分支">删除分支</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git branch -d <span class="s2">&#34;分支名&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="如果两个分支同时进行了同一个文件的修改和提交在merge时就会产生冲突首先要手动打开文件解决冲突再提交就相当于进行了merge">如果两个分支同时进行了同一个文件的修改和提交，在merge时就会产生冲突，首先要手动打开文件解决冲突，再提交，就相当于进行了<code>merge</code></h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git log --graph
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="新建标签默认为最新版本后面加上版本号参数则可指定版本增加标签">新建标签，默认为最新版本，后面加上版本号参数则可指定版本增加标签</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git tag <span class="s2">&#34;标签名&#34;</span> <span class="s2">&#34;版本号&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="查看所有标签">查看所有标签：</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git tag
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="查看标签的详细信息">查看标签的详细信息</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git show <span class="s2">&#34;标签名&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="推送所有tag">推送所有tag:</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git push origin --tags
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="推送某个tag">推送某个tag：</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git push origin v1.0
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="git远端库相关">git远端库相关</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git remote add origin git://127.0.0.1/abc.git 
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="移除远端仓库">移除远端仓库</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git remote remove origin
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="将本地仓库内容推送到远端仓库-u-表示第一次推送master分支的所有内容后面再推送就不需要-u了跟commit的区别在于一个是提交到本地仓库一个是提交到远程仓库">将本地仓库内容推送到远端仓库(-u 表示第一次推送master分支的所有内容，后面再推送就不需要-u了)，跟commit的区别在于一个是提交到本地仓库，一个是提交到远程仓库</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git push -u origin master
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="从远端库更新内容到本地相当于svn的update">从远端库更新内容到本地（相当于svn的update），</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git pull
+</code></pre></td></tr></table>
+</div>
+</div><p><code>tips:</code>如果push的时候，本地和文件和远端文件有冲突，就要先pull、然后手动解决冲突，才能继续push</p>
+<h4 id="git记住用户名密码">git记住用户名密码</h4>
+<h4 id="push的时候默认每次都需输入github的用户名和密码在git仓库根目录下git文件夹的config文件末尾增加如下内容即可记住用户名密码无需每次推送都输入了">push的时候默认每次都需输入GitHub的用户名和密码，在git仓库根目录下.git文件夹的config文件末尾增加如下内容，即可记住用户名密码，无需每次推送都输入了</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>credential<span class="o">]</span>
+  <span class="nv">helper</span> <span class="o">=</span> store
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="强制推送分支">强制推送分支</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git push -f origin master
+</code></pre></td></tr></table>
+</div>
+</div><div class="post-promote">
+    <input type="checkbox" name="promote" id="promote" hidden/>
+    <label class="promote-button" for="promote">关注一下再走吧</label>
+    <div class="qr-code">
+        <label class="qr-code-image" for="promote">
+            <img class="image" src="/img/cywhat-gzh.jpg">
+            <span>公众号</span>
+        </label>
+        <label class="qr-code-image" for="promote">
+            <img class="image" src="/img/cywhat-xcx.jpg">
+            <span>小程序</span>
+        </label>
+    </div>
+</div>
+<div class="post-reward">
+    <input type="checkbox" name="reward" id="reward" hidden/>
+    <label class="reward-button" for="reward">赞赏支持</label>
+    <div class="qr-code">
+        <label class="qr-code-image" for="reward">
+            <img class="image" src="/img/WechatPay.jpeg">
+            <span>微信打赏</span>
+        </label>
+        <label class="qr-code-image" for="reward">
+            <img class="image" src="/img/Alipay.jpeg">
+            <span>支付宝打赏</span>
+        </label>
+    </div>
+</div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2019-10-23</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" data-title="Git基础命令" data-hashtags="Git"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" data-hashtag="Git"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" data-title="Git基础命令"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" data-title="Git基础命令"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" data-title="Git基础命令"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/Git/">Git</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/Postmant%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/" class="prev" rel="prev" title="Postmant压力测试"><i class="fas fa-angle-left fa-fw"></i>Postmant压力测试</a>
+            <a href="/ImportError-No-module-named-flask/" class="next" rel="next" title="ImportError: No module named flask">ImportError: No module named flask<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="waline"></div>
+			<script src='https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+
+			<script>
+		    	new Waline({
+		    	  el: '#waline',
+				  meta: ["nick","mail","link"],
+		    	  requiredMeta: ["nick","mail"],
+		    	  login: "force",
+				  placeholder: "小Tips 评论前需注册并登录噢",
+		    	  serverURL: "https://comment.cywhat.cn/",
+		    	  avatarCDN: "https://sdn.geekzu.org/avatar/",
+		    	  pageSize:  20 ,
+		    	  avatar: "retro",
+		    	  lang: "zh-CN",
+				  visitor:  true ,
+				  highlight:  true ,
+				  uploadImage:  false 
+		    	});
+		    </script></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://cywhat.cn" target="_blank">cywhat</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="#" target="_blank">Do not go gentle into that good night.</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp"><a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">京ICP备2021041376号</a></span></div>
+        </div>
+
+        <div class="footer-line">
+	        <span id="run-time"></span>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"search":{"algoliaAppID":"3031FWUVJN","algoliaIndex":"cywhat.algolia-temp","algoliaSearchKey":"76bee9d276ea265b36eae78e8a17356c","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"></script>
+
+<script type="text/javascript" src="/js/custom.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-225C41PHZX', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-225C41PHZX" async></script><script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?a54de2ed85b7ec3fd5ad114214614491";
+			  var s = document.getElementsByTagName("script")[0];
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script></body>
+</html>

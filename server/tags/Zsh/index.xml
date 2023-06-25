@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Zsh - 标签 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/tags/Zsh/</link>
+        <description>Zsh - 标签 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 13 Oct 2022 10:32:12 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/Zsh/" rel="self" type="application/rss+xml" /><item>
+    <title>Zsh Problem Compinit503 No Such File or Directory Usr Local Share Zsh Site</title>
+    <link>https://cywhat.cn/zsh-problem-compinit503-no-such-file-or-directory-usr-local-share-zsh-site/</link>
+    <pubDate>Thu, 13 Oct 2022 10:32:12 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/zsh-problem-compinit503-no-such-file-or-directory-usr-local-share-zsh-site/</guid>
+    <description><![CDATA[1、报错信息 no such file or directory: /usr/local/share/zsh/site-functions/_brew_cask 2、原因 升级到BigSur出现该问题，似乎是brew因为BigSur和之前系统的版本不一致导致 3、解决 1 2 3 4 5 brew doctor]]></description>
+</item></channel>
+</rss>

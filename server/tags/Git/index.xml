@@ -1,0 +1,43 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Git - 标签 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/tags/Git/</link>
+        <description>Git - 标签 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 12 Jul 2021 14:52:22 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Git/" rel="self" type="application/rss+xml" /><item>
+    <title>hexo&#43;netlify&#43;git&#43;个人域名搭建博客</title>
+    <link>https://cywhat.cn/hexo-netlify-git-%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+    <pubDate>Mon, 12 Jul 2021 14:52:22 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/hexo-netlify-git-%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+    <description><![CDATA[部署过程需要用到一些Linux命令,且本文部署操作机为Mac,如是Windows不保证能100%成功噢 1、部署准备 1 2 3 4 5 操作机: Mac(iterm) Git: 创建]]></description>
+</item><item>
+    <title>.gitignore不生效的解决方案</title>
+    <link>https://cywhat.cn/gitignore%E4%B8%8D%E7%94%9F%E6%95%88%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+    <pubDate>Thu, 01 Apr 2021 18:17:13 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/gitignore%E4%B8%8D%E7%94%9F%E6%95%88%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+    <description><![CDATA[原因 原因：git本地运行有缓存，需要清除git缓存即可 解决 1 git rm -r --cached . 注意： 清完缓存需要把代码推到远程仓库]]></description>
+</item><item>
+    <title>git branch出现end需要q才能退出</title>
+    <link>https://cywhat.cn/git-branch%E5%87%BA%E7%8E%B0end%E9%9C%80%E8%A6%81q%E6%89%8D%E8%83%BD%E9%80%80%E5%87%BA/</link>
+    <pubDate>Thu, 01 Apr 2021 17:54:22 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/git-branch%E5%87%BA%E7%8E%B0end%E9%9C%80%E8%A6%81q%E6%89%8D%E8%83%BD%E9%80%80%E5%87%BA/</guid>
+    <description><![CDATA[前景： 在查看git branch分支时，需要q才能退出出现 原因 这是 git 2.16以后版本的默认行为. 如果不想分页输出可以设置: 解决 1 git config --global pager.branch false]]></description>
+</item><item>
+    <title>Git基础命令</title>
+    <link>https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</link>
+    <pubDate>Wed, 23 Oct 2019 15:32:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</guid>
+    <description><![CDATA[git基本命令 初始化：创建一个git仓库，创建之后就会在当前目录生成一个.git的文件 1 git init 添加文件：把文件添加到缓冲区 1 git add filename 添加所有文件]]></description>
+</item><item>
+    <title>checkout无效</title>
+    <link>https://cywhat.cn/checkout%E6%97%A0%E6%95%88/</link>
+    <pubDate>Mon, 29 Oct 2018 16:29:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/checkout%E6%97%A0%E6%95%88/</guid>
+    <description><![CDATA[前景 日常工作中，遇到的一些checkout无效或者commit提交不了的情况 1.首先 你需要update的项目 会告诉你更改了那些配置，必须要还]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,36 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Html - 标签 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/tags/Html/</link>
+        <description>Html - 标签 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/Html/" rel="self" type="application/rss+xml" /><item>
+    <title>Jenkins端口修改之后没有生效</title>
+    <link>https://cywhat.cn/jenkins%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9%E4%B9%8B%E5%90%8E%E6%B2%A1%E6%9C%89%E7%94%9F%E6%95%88/</link>
+    <pubDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/jenkins%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9%E4%B9%8B%E5%90%8E%E6%B2%A1%E6%9C%89%E7%94%9F%E6%95%88/</guid>
+    <description><![CDATA[1、问题 jenkins通过systemctl start jenkins.service启动服务，端口不是配置文件里自定义的端口 2、排查 1、系统serv]]></description>
+</item><item>
+    <title>Jenkins添加html报告并发送到邮箱</title>
+    <link>https://cywhat.cn/Jenkins%E6%B7%BB%E5%8A%A0html%E6%8A%A5%E5%91%8A%E5%B9%B6%E5%8F%91%E9%80%81%E5%88%B0%E9%82%AE%E7%AE%B1/</link>
+    <pubDate>Tue, 06 Dec 2022 16:18:30 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Jenkins%E6%B7%BB%E5%8A%A0html%E6%8A%A5%E5%91%8A%E5%B9%B6%E5%8F%91%E9%80%81%E5%88%B0%E9%82%AE%E7%AE%B1/</guid>
+    <description><![CDATA[1、插件安装 1 2 3 4 5 6 1、Manage Jenkins ---&gt; Manage Plugins ---&gt; Available 搜索框输入下面几款插件 2、插件安装以及插件的说明： 1) HTML Publisher plugin # 推送生成的html报告到je]]></description>
+</item><item>
+    <title>html简单实现button加载中且置灰不可点击</title>
+    <link>https://cywhat.cn/html%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0button%E5%8A%A0%E8%BD%BD%E4%B8%AD%E4%B8%94%E7%BD%AE%E7%81%B0%E4%B8%8D%E5%8F%AF%E7%82%B9%E5%87%BB/</link>
+    <pubDate>Thu, 09 Sep 2021 11:26:12 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/html%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0button%E5%8A%A0%E8%BD%BD%E4%B8%AD%E4%B8%94%E7%BD%AE%E7%81%B0%E4%B8%8D%E5%8F%AF%E7%82%B9%E5%87%BB/</guid>
+    <description><![CDATA[简单js几行代码实现点击按钮,实现加载中，且置灰不可点击 1.html部分 1 2 3 4 &lt;button id=&#34;Submit&#34; type=&#34;button&#34; class=&#34;btn btn-rounded btn-primary mb-6&#34; value=&#34;获取验证码&#34;&g]]></description>
+</item><item>
+    <title>Django发送邮箱验证码实现以及邮箱html模板</title>
+    <link>https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/</link>
+    <pubDate>Wed, 08 Sep 2021 14:40:18 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/</guid>
+    <description><![CDATA[1.setting配置 1 2 3 4 5 6 7 EMAIL_BACKEND = &#39;django.core.mail.backends.smtp.EmailBackend&#39; EMAIL_HOST = &#34;smtp.163.com&#34; # 服务器 EMAIL_PORT = 25 # 一般情况下都为25 EMAIL_HOST_USER = &#34;xxxx@163.com&#34; # 账号 EMAIL_HOST_PASSWORD = &#34;XXXXXXXXXXXX&#34; # 密码 (注意：这里的密码指的是授权码) EMAIL_USE_TLS]]></description>
+</item></channel>
+</rss>

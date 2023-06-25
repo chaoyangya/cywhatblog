@@ -1,0 +1,29 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Nginx - 分类 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/categories/Nginx/</link>
+        <description>Nginx - 分类 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 16 Apr 2021 10:12:11 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/categories/Nginx/" rel="self" type="application/rss+xml" /><item>
+    <title>nginx解决多个端口映射80的配置</title>
+    <link>https://cywhat.cn/nginx%E5%A4%9A%E4%B8%AA%E7%AB%AF%E5%8F%A3/</link>
+    <pubDate>Fri, 16 Apr 2021 10:12:11 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/nginx%E5%A4%9A%E4%B8%AA%E7%AB%AF%E5%8F%A3/</guid>
+    <description><![CDATA[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 server { listen 80; server_name xx.cn; #域名1 location / { proxy_pass http://x.x.x.x:9001; #域名1需要映射到80端口的服务端口 } } server { listen 80; server_name xx.cn; #域名2 location / { proxy_pass http://xx.xx.xx.xx:7300; #域名]]></description>
+</item><item>
+    <title>nginx配置实现ip访问指定URL</title>
+    <link>https://cywhat.cn/nginx%E9%85%8D%E7%BD%AE%E5%AE%9E%E7%8E%B0ip%E8%AE%BF%E9%97%AE%E6%8C%87%E5%AE%9AURL/</link>
+    <pubDate>Thu, 01 Apr 2021 17:51:03 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/nginx%E9%85%8D%E7%BD%AE%E5%AE%9E%E7%8E%B0ip%E8%AE%BF%E9%97%AE%E6%8C%87%E5%AE%9AURL/</guid>
+    <description><![CDATA[我的需求是这样的，nginx+uwsgi启动的web服务，访问域名XX.CN之后，nginx报错404，我需要实现的是访问XX.CN，自动映]]></description>
+</item><item>
+    <title>web服务 访问Linux中的静态文件</title>
+    <link>https://cywhat.cn/web%E6%9C%8D%E5%8A%A1-%E8%AE%BF%E9%97%AELinux%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6/</link>
+    <pubDate>Mon, 29 Mar 2021 18:04:20 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/web%E6%9C%8D%E5%8A%A1-%E8%AE%BF%E9%97%AELinux%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6/</guid>
+    <description><![CDATA[报错404，NOT FOUND可能是因为nginx.conf配置文件的俩处地方配置有误，按照下面，检查你的配置之后99.9999%是可以在浏览]]></description>
+</item></channel>
+</rss>

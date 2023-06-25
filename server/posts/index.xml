@@ -1,0 +1,78 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>所有文章 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/posts/</link>
+        <description>所有文章 | cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 25 May 2023 17:42:27 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Python创建并上传自己的pip依赖包</title>
+    <link>https://cywhat.cn/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85/</link>
+    <pubDate>Thu, 25 May 2023 17:42:27 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85/</guid>
+    <description><![CDATA[1、前景 写工具的过程中，发现if-else用的很频繁，如果条件很多的时候，传统的if-else不但不美观，而且效率低，网上参考了edgedb]]></description>
+</item><item>
+    <title>Django操作异步任务</title>
+    <link>https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/</link>
+    <pubDate>Tue, 18 Apr 2023 14:42:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/</guid>
+    <description><![CDATA[前置条件 1 2 3 4 5 Python==3.7.0 Pip==3 Django==3.2.18 celery==5.2.7 redis==3.5.3 1、安装 1 pip3 install celery 2、目录 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 - Heng_Tools/ - manage.py - Heng_Tools/ - __init__.py # 修改这个文件 - celery.py # 新增这个文件 - asgi.py]]></description>
+</item><item>
+    <title>Linux卸载RabbitMQ</title>
+    <link>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDRabbitMq/</link>
+    <pubDate>Tue, 18 Apr 2023 14:31:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDRabbitMq/</guid>
+    <description><![CDATA[1、卸载Erlang 1 2 3 4 5 6 7 8 # 查看erlang安装的相关列表 yum list|grep erlang # 卸载erlang yum -y remove erlang-* # 删除erlang目录 rm -rf /usr/lib64/erlang 2、卸载Ra]]></description>
+</item><item>
+    <title>Linux安装RabbitMQ</title>
+    <link>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85RabbitMQ/</link>
+    <pubDate>Mon, 17 Apr 2023 17:35:57 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85RabbitMQ/</guid>
+    <description><![CDATA[1、前景 RabbitMQ是用Erlang编写的，所以需要先安装Erlang的编译环境 注意 Erlang和RabbitMQ的版本是有一些版本匹配]]></description>
+</item><item>
+    <title>ValueError:invalid</title>
+    <link>https://cywhat.cn/ValueErrorinvalid-literal-for-intwithbase10-63790/</link>
+    <pubDate>Fri, 14 Apr 2023 15:51:46 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/ValueErrorinvalid-literal-for-intwithbase10-63790/</guid>
+    <description><![CDATA[1、前景 使用django的异步调用场景时，并配置了如下配置：出现了错误：ValueError: Database is int between 0 and limit - 1, not :6379/0 1 2 #CELERY_BROKER_URL =&#34;redis://127.0.0.1/:6379/0&#34; #CELERY_BACKEND_URL = &#34;redis://127.0.0.1/:6379/1&#34; 2、原因 1]]></description>
+</item><item>
+    <title>UnorderedObjectListWarning:Pagination May Yield Inconsistent Results With an Unordered Object_list</title>
+    <link>https://cywhat.cn/UnorderedObjectListWarningPagination-may-yield-inconsistent-results-with-an-unordered-object_list/</link>
+    <pubDate>Tue, 11 Apr 2023 17:45:05 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/UnorderedObjectListWarningPagination-may-yield-inconsistent-results-with-an-unordered-object_list/</guid>
+    <description><![CDATA[1、问题 1 使用django进行分页查询的时候，报错如下内容 UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list 2、原因 1 django分页可能会产生与无序对象列表不一致的结果]]></description>
+</item><item>
+    <title>Jenkins端口修改之后没有生效</title>
+    <link>https://cywhat.cn/jenkins%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9%E4%B9%8B%E5%90%8E%E6%B2%A1%E6%9C%89%E7%94%9F%E6%95%88/</link>
+    <pubDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/jenkins%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9%E4%B9%8B%E5%90%8E%E6%B2%A1%E6%9C%89%E7%94%9F%E6%95%88/</guid>
+    <description><![CDATA[1、问题 jenkins通过systemctl start jenkins.service启动服务，端口不是配置文件里自定义的端口 2、排查 1、系统serv]]></description>
+</item><item>
+    <title>Mac出现xxx@bogon</title>
+    <link>https://cywhat.cn/Mac%E5%87%BA%E7%8E%B0xxxbogon.none/</link>
+    <pubDate>Tue, 04 Apr 2023 10:41:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Mac%E5%87%BA%E7%8E%B0xxxbogon.none/</guid>
+    <description><![CDATA[1、问题 1 chaoyang@bogon.(none)&#39; # 用户名被篡改成了bogon 2、解决 1、修改电脑名称 1 sudo scutil --set ComputerName 你想要的计算机名称 2、修改本地主机名 1 sudo scutil --set LocalHostName 你想要的计算机名称 3]]></description>
+</item><item>
+    <title>Linux忘记mysql密码解决办法</title>
+    <link>https://cywhat.cn/Linux%E5%BF%98%E8%AE%B0mysql%E5%AF%86%E7%A0%81%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
+    <pubDate>Tue, 04 Apr 2023 09:32:40 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%BF%98%E8%AE%B0mysql%E5%AF%86%E7%A0%81%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid>
+    <description><![CDATA[1、前景 1 2 3 4 5 mysql初始密码忘记 mysql密码忘记 mysql重置密码 2、设置 1、编辑文件 1 vim /etc/my.cf 2、找到文件位置 1 [mysqld] 3、加入忽略密码登]]></description>
+</item><item>
+    <title>Pkg_resources.DistributionNotFound:The Supervisor==3.4</title>
+    <link>https://cywhat.cn/pkg_resources.DistributionNotFoundThe-supervisor3.4.0-distribution-was-not-found-and-is-required-by-the-application/</link>
+    <pubDate>Thu, 30 Mar 2023 14:51:14 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/pkg_resources.DistributionNotFoundThe-supervisor3.4.0-distribution-was-not-found-and-is-required-by-the-application/</guid>
+    <description><![CDATA[报错 pkg_resources.DistributionNotFound: The 'supervisor==3.4.0' distribution was not found and is required by the application 原因 1 通过yum命令直接安装的supervisor只支持python2版本,所以python版本不兼容,改掉p]]></description>
+</item></channel>
+</rss>

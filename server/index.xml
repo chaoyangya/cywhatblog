@@ -1,0 +1,360 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/</link>
+        <description>关于 LoveIt 主题</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 25 May 2023 17:42:27 &#43;0800</lastBuildDate>
+            <atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Python创建并上传自己的pip依赖包</title>
+    <link>https://cywhat.cn/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85/</link>
+    <pubDate>Thu, 25 May 2023 17:42:27 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Python%E5%88%9B%E5%BB%BA%E5%B9%B6%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84pip%E4%BE%9D%E8%B5%96%E5%8C%85/</guid>
+    <description><![CDATA[1、前景 写工具的过程中，发现if-else用的很频繁，如果条件很多的时候，传统的if-else不但不美观，而且效率低，网上参考了edgedb]]></description>
+</item><item>
+    <title>Django操作异步任务</title>
+    <link>https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/</link>
+    <pubDate>Tue, 18 Apr 2023 14:42:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/</guid>
+    <description><![CDATA[前置条件 1 2 3 4 5 Python==3.7.0 Pip==3 Django==3.2.18 celery==5.2.7 redis==3.5.3 1、安装 1 pip3 install celery 2、目录 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 - Heng_Tools/ - manage.py - Heng_Tools/ - __init__.py # 修改这个文件 - celery.py # 新增这个文件 - asgi.py]]></description>
+</item><item>
+    <title>Linux卸载RabbitMQ</title>
+    <link>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDRabbitMq/</link>
+    <pubDate>Tue, 18 Apr 2023 14:31:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDRabbitMq/</guid>
+    <description><![CDATA[1、卸载Erlang 1 2 3 4 5 6 7 8 # 查看erlang安装的相关列表 yum list|grep erlang # 卸载erlang yum -y remove erlang-* # 删除erlang目录 rm -rf /usr/lib64/erlang 2、卸载Ra]]></description>
+</item><item>
+    <title>Linux安装RabbitMQ</title>
+    <link>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85RabbitMQ/</link>
+    <pubDate>Mon, 17 Apr 2023 17:35:57 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85RabbitMQ/</guid>
+    <description><![CDATA[1、前景 RabbitMQ是用Erlang编写的，所以需要先安装Erlang的编译环境 注意 Erlang和RabbitMQ的版本是有一些版本匹配]]></description>
+</item><item>
+    <title>ValueError:invalid</title>
+    <link>https://cywhat.cn/ValueErrorinvalid-literal-for-intwithbase10-63790/</link>
+    <pubDate>Fri, 14 Apr 2023 15:51:46 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/ValueErrorinvalid-literal-for-intwithbase10-63790/</guid>
+    <description><![CDATA[1、前景 使用django的异步调用场景时，并配置了如下配置：出现了错误：ValueError: Database is int between 0 and limit - 1, not :6379/0 1 2 #CELERY_BROKER_URL =&#34;redis://127.0.0.1/:6379/0&#34; #CELERY_BACKEND_URL = &#34;redis://127.0.0.1/:6379/1&#34; 2、原因 1]]></description>
+</item><item>
+    <title>UnorderedObjectListWarning:Pagination May Yield Inconsistent Results With an Unordered Object_list</title>
+    <link>https://cywhat.cn/UnorderedObjectListWarningPagination-may-yield-inconsistent-results-with-an-unordered-object_list/</link>
+    <pubDate>Tue, 11 Apr 2023 17:45:05 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/UnorderedObjectListWarningPagination-may-yield-inconsistent-results-with-an-unordered-object_list/</guid>
+    <description><![CDATA[1、问题 1 使用django进行分页查询的时候，报错如下内容 UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list 2、原因 1 django分页可能会产生与无序对象列表不一致的结果]]></description>
+</item><item>
+    <title>Jenkins端口修改之后没有生效</title>
+    <link>https://cywhat.cn/jenkins%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9%E4%B9%8B%E5%90%8E%E6%B2%A1%E6%9C%89%E7%94%9F%E6%95%88/</link>
+    <pubDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/jenkins%E7%AB%AF%E5%8F%A3%E4%BF%AE%E6%94%B9%E4%B9%8B%E5%90%8E%E6%B2%A1%E6%9C%89%E7%94%9F%E6%95%88/</guid>
+    <description><![CDATA[1、问题 jenkins通过systemctl start jenkins.service启动服务，端口不是配置文件里自定义的端口 2、排查 1、系统serv]]></description>
+</item><item>
+    <title>Mac出现xxx@bogon</title>
+    <link>https://cywhat.cn/Mac%E5%87%BA%E7%8E%B0xxxbogon.none/</link>
+    <pubDate>Tue, 04 Apr 2023 10:41:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Mac%E5%87%BA%E7%8E%B0xxxbogon.none/</guid>
+    <description><![CDATA[1、问题 1 chaoyang@bogon.(none)&#39; # 用户名被篡改成了bogon 2、解决 1、修改电脑名称 1 sudo scutil --set ComputerName 你想要的计算机名称 2、修改本地主机名 1 sudo scutil --set LocalHostName 你想要的计算机名称 3]]></description>
+</item><item>
+    <title>Linux忘记mysql密码解决办法</title>
+    <link>https://cywhat.cn/Linux%E5%BF%98%E8%AE%B0mysql%E5%AF%86%E7%A0%81%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
+    <pubDate>Tue, 04 Apr 2023 09:32:40 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%BF%98%E8%AE%B0mysql%E5%AF%86%E7%A0%81%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid>
+    <description><![CDATA[1、前景 1 2 3 4 5 mysql初始密码忘记 mysql密码忘记 mysql重置密码 2、设置 1、编辑文件 1 vim /etc/my.cf 2、找到文件位置 1 [mysqld] 3、加入忽略密码登]]></description>
+</item><item>
+    <title>Pkg_resources.DistributionNotFound:The Supervisor==3.4</title>
+    <link>https://cywhat.cn/pkg_resources.DistributionNotFoundThe-supervisor3.4.0-distribution-was-not-found-and-is-required-by-the-application/</link>
+    <pubDate>Thu, 30 Mar 2023 14:51:14 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/pkg_resources.DistributionNotFoundThe-supervisor3.4.0-distribution-was-not-found-and-is-required-by-the-application/</guid>
+    <description><![CDATA[报错 pkg_resources.DistributionNotFound: The 'supervisor==3.4.0' distribution was not found and is required by the application 原因 1 通过yum命令直接安装的supervisor只支持python2版本,所以python版本不兼容,改掉p]]></description>
+</item><item>
+    <title>Failing Package Is: Mysql Community Libs Compat 5.7.37 1.el7</title>
+    <link>https://cywhat.cn/Failing-package-is-mysql-community-libs-compat-5.7.37-1.el7.x86_64/</link>
+    <pubDate>Mon, 27 Mar 2023 16:17:41 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Failing-package-is-mysql-community-libs-compat-5.7.37-1.el7.x86_64/</guid>
+    <description><![CDATA[1、安装Mysql出现以下错误 Failing package is: mysql-community-libs-compat-5.7.37-1.el7.x86_64 2、问题原因 1 There is no separate signature. RPM packages have a built-in GPG signature and MD5 checksum. 3、解决 1 rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022]]></description>
+</item><item>
+    <title>搭建IOS和Android性能监控工具</title>
+    <link>https://cywhat.cn/%E6%90%AD%E5%BB%BAIOS%E5%92%8CAndroid%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E5%B7%A5%E5%85%B7/</link>
+    <pubDate>Wed, 28 Dec 2022 17:33:31 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/%E6%90%AD%E5%BB%BAIOS%E5%92%8CAndroid%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E5%B7%A5%E5%85%B7/</guid>
+    <description><![CDATA[1、安装前准备 1 2 3 1. Python:3.6+ 2. Pip3 2、安装 1 2 3 pip3 install -U solox #注意: 如果Windows用户需要测试ios，先安装并启动iTunes 2.1、源代码地址 下]]></description>
+</item><item>
+    <title>Jenkins添加html报告并发送到邮箱</title>
+    <link>https://cywhat.cn/Jenkins%E6%B7%BB%E5%8A%A0html%E6%8A%A5%E5%91%8A%E5%B9%B6%E5%8F%91%E9%80%81%E5%88%B0%E9%82%AE%E7%AE%B1/</link>
+    <pubDate>Tue, 06 Dec 2022 16:18:30 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Jenkins%E6%B7%BB%E5%8A%A0html%E6%8A%A5%E5%91%8A%E5%B9%B6%E5%8F%91%E9%80%81%E5%88%B0%E9%82%AE%E7%AE%B1/</guid>
+    <description><![CDATA[1、插件安装 1 2 3 4 5 6 1、Manage Jenkins ---&gt; Manage Plugins ---&gt; Available 搜索框输入下面几款插件 2、插件安装以及插件的说明： 1) HTML Publisher plugin # 推送生成的html报告到je]]></description>
+</item><item>
+    <title>Jenkins插件无法安装解决</title>
+    <link>https://cywhat.cn/Jenkins%E6%8F%92%E4%BB%B6%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85%E8%A7%A3%E5%86%B3/</link>
+    <pubDate>Tue, 15 Nov 2022 15:27:31 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Jenkins%E6%8F%92%E4%BB%B6%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85%E8%A7%A3%E5%86%B3/</guid>
+    <description><![CDATA[1、问题 1 jenkins各种改源地址都不行，都无法安装更新插件 2、可行方案 1 2 3 4 5 6 7 8 9 1、更改源地址(http://mirror.es]]></description>
+</item><item>
+    <title>Jenkins报错 Bash:newman:command Not Found</title>
+    <link>https://cywhat.cn/Jenkins%E6%8A%A5%E9%94%99-bashnewmancommand-not-found/</link>
+    <pubDate>Tue, 15 Nov 2022 15:19:31 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Jenkins%E6%8A%A5%E9%94%99-bashnewmancommand-not-found/</guid>
+    <description><![CDATA[1、报错查看 1 2 3 # 报错如下： bash: newman: command not found Build step &#39;Execute shell&#39; marked build as failure 2、原因分析 1 2 3 4 5 1、Linux环境变量配置没问题 2、Linux中任意位置都可以]]></description>
+</item><item>
+    <title>Linux安装newman生成postman脚本报告</title>
+    <link>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85newman%E7%94%9F%E6%88%90postman%E8%84%9A%E6%9C%AC%E6%8A%A5%E5%91%8A/</link>
+    <pubDate>Thu, 10 Nov 2022 15:08:11 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85newman%E7%94%9F%E6%88%90postman%E8%84%9A%E6%9C%AC%E6%8A%A5%E5%91%8A/</guid>
+    <description><![CDATA[1、安装node 1 2 3 4 5 6 7 8 # 1、下载node wget https://nodejs.org/dist/v16.9.1/node-v16.9.1-linux-x64.tar.xz # 2、解压 tar -xvf node-v16.9.1-linux-x64.tar.xz # 3.重命名 mv node-v16.9.1-linux-x64 node 2、配置环境变量 1 2 3 4 5 6 7 8 9 # 1、编辑环境变量]]></description>
+</item><item>
+    <title>MoudleNotFoundError: No module named &#39;xxx&#39;</title>
+    <link>https://cywhat.cn/MoudleNotFoundError-No-module-named-xxx/</link>
+    <pubDate>Thu, 13 Oct 2022 11:30:33 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/MoudleNotFoundError-No-module-named-xxx/</guid>
+    <description><![CDATA[1、报错 1 MoudleNotFoundError: No module named &#39;xxx&#39; 2、排查解决 1 2 3 4 5 6 7 8 1、module包没安装 2、忘了import 3、没有__init__.py文件(很重要) 4、]]></description>
+</item><item>
+    <title>Failed to Extract Shortcode:template for Shortcode Admonition Not Found</title>
+    <link>https://cywhat.cn/failed-to-extract-shortcodetemplate-for-shortcode-admonition-not-found/</link>
+    <pubDate>Thu, 13 Oct 2022 11:19:11 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/failed-to-extract-shortcodetemplate-for-shortcode-admonition-not-found/</guid>
+    <description><![CDATA[1、问题 换新设备后迁移基于hugo构建的静态博客出现的报错，报错如下： failed to extract shortcode: template for shortcode &quot;admonition&quot; not found 2、原因 未使用hugo_extended版本，导致]]></description>
+</item><item>
+    <title>Zsh Problem Compinit503 No Such File or Directory Usr Local Share Zsh Site</title>
+    <link>https://cywhat.cn/zsh-problem-compinit503-no-such-file-or-directory-usr-local-share-zsh-site/</link>
+    <pubDate>Thu, 13 Oct 2022 10:32:12 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/zsh-problem-compinit503-no-such-file-or-directory-usr-local-share-zsh-site/</guid>
+    <description><![CDATA[1、报错信息 no such file or directory: /usr/local/share/zsh/site-functions/_brew_cask 2、原因 升级到BigSur出现该问题，似乎是brew因为BigSur和之前系统的版本不一致导致 3、解决 1 2 3 4 5 brew doctor]]></description>
+</item><item>
+    <title>Django删除表重建</title>
+    <link>https://cywhat.cn/Django%E5%88%A0%E9%99%A4%E8%A1%A8%E9%87%8D%E5%BB%BA/</link>
+    <pubDate>Fri, 05 Aug 2022 11:39:03 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E5%88%A0%E9%99%A4%E8%A1%A8%E9%87%8D%E5%BB%BA/</guid>
+    <description><![CDATA[前景 可能是在建表之后又修改了mysql的配置，导致models中的CharField不支持汉字，调试了很久都不行，各种配置无果后决定删表重建]]></description>
+</item><item>
+    <title>Python如何让字典保持有序存储</title>
+    <link>https://cywhat.cn/Python%E5%A6%82%E4%BD%95%E8%AE%A9%E5%AD%97%E5%85%B8%E4%BF%9D%E6%8C%81%E6%9C%89%E5%BA%8F%E5%AD%98%E5%82%A8/</link>
+    <pubDate>Fri, 22 Jul 2022 14:37:10 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Python%E5%A6%82%E4%BD%95%E8%AE%A9%E5%AD%97%E5%85%B8%E4%BF%9D%E6%8C%81%E6%9C%89%E5%BA%8F%E5%AD%98%E5%82%A8/</guid>
+    <description><![CDATA[前景 众所周知python的字典dict是无序的和元组不同，但是一些特定场景，又需要字典中的数据是有序的，分享并记录下如何解决 注意 python]]></description>
+</item><item>
+    <title>魔戒使用教程</title>
+    <link>https://cywhat.cn/%E9%AD%94%E6%88%92%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
+    <pubDate>Wed, 20 Jul 2022 18:18:53 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/%E9%AD%94%E6%88%92%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
+    <description><![CDATA[为什么选择魔戒 按流量计费,账号永久使用 Windows Android iOS Mac OS 路由器 全平台通用 多设备同时使用 不限IP 不限设备数 支持4k 支持8k 支持YouTubeTV Netflix 不限]]></description>
+</item><item>
+    <title>Python获取当前位置所在行数以及函数名</title>
+    <link>https://cywhat.cn/Python%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E4%BD%8D%E7%BD%AE%E6%89%80%E5%9C%A8%E8%A1%8C%E6%95%B0%E4%BB%A5%E5%8F%8A%E5%87%BD%E6%95%B0%E5%90%8D/</link>
+    <pubDate>Mon, 18 Jul 2022 14:54:45 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Python%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E4%BD%8D%E7%BD%AE%E6%89%80%E5%9C%A8%E8%A1%8C%E6%95%B0%E4%BB%A5%E5%8F%8A%E5%87%BD%E6%95%B0%E5%90%8D/</guid>
+    <description><![CDATA[代码 1 2 3 4 5 6 7 8 9 10 # encoding=utf-8 import sys def get_python_info(): print(&#39;当前文件名 {} &#39;.format(sys._getframe().f_code.co_filename)) print(&#39;所属函数名 {} &#39;.format(sys._getframe().f_code.co_name)) print(&#39;第 {} 行 &#39;.format(sys._getframe().f_lineno)) #]]></description>
+</item><item>
+    <title>Django的csrf防御机制</title>
+    <link>https://cywhat.cn/Django%E7%9A%84csrf%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6/</link>
+    <pubDate>Mon, 04 Jul 2022 14:31:30 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E7%9A%84csrf%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6/</guid>
+    <description><![CDATA[前景： Html页面的表单没有完全使用Django的form进行渲染，故Js不能使用$('#ClassID').serialize()来获取C]]></description>
+</item><item>
+    <title>Django连接Mysql配置</title>
+    <link>https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/</link>
+    <pubDate>Sun, 24 Apr 2022 11:15:56 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E8%BF%9E%E6%8E%A5Mysql%E9%85%8D%E7%BD%AE/</guid>
+    <description><![CDATA[环境准备 1 2 3 编译环境：Python3.7.0 编辑器：Pycharm 解释环境：Virtualenv python=3.7.0 1.新建Django项目 各个代码编辑器都]]></description>
+</item><item>
+    <title>Mac安装mysql5.7</title>
+    <link>https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/</link>
+    <pubDate>Sun, 24 Apr 2022 10:59:14 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Mac%E5%AE%89%E8%A3%85mysql5.7/</guid>
+    <description><![CDATA[1.下载Dmg安装包 安装包下载 我选择的Mysql版本是5.7.30 2.安装并启动 3.记录Mysql初始密码 4.设置别名 1 2 alias mysql=/usr/local/mysql/bin/mysql alias mysqladmin=/usr/local/mysql/bin/mysqladmin 5.重置密]]></description>
+</item><item>
+    <title>Docker部署wordpress站点</title>
+    <link>https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/</link>
+    <pubDate>Fri, 15 Apr 2022 14:14:09 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/</guid>
+    <description><![CDATA[1.拉取docker镜像 1 2 3 docker pull wordpress docker pull mysql 2.创建mysql容器 1 docker run -d --name mysql -v mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=wordpress mysql 参数解析 -d 后台运行容器，并返回容器id --name 自定义容器]]></description>
+</item><item>
+    <title>RuntimeWarning:DateTimeField Session.expire_date received a naive datetime</title>
+    <link>https://cywhat.cn/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/</link>
+    <pubDate>Wed, 30 Mar 2022 10:56:43 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/RuntimeWarningDateTimeField-Session.expire_date-received-a-naive-datetime/</guid>
+    <description><![CDATA[前景 Django部署的web应用报警，内容如下： 1 &#34;RuntimeWarning:DateTimeField Session.expire_date received a naive datetime&#34; 原因： 1 2 3 4 这是一个跟时区有关的问题，错误里说到datetime字段得到一个]]></description>
+</item><item>
+    <title>Hugo的Loveit主题修改sitemap</title>
+    <link>https://cywhat.cn/Hugo%E7%9A%84Loveit%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9sitemap.xml%E9%85%8D%E7%BD%AE/</link>
+    <pubDate>Fri, 18 Mar 2022 11:31:21 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Hugo%E7%9A%84Loveit%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9sitemap.xml%E9%85%8D%E7%BD%AE/</guid>
+    <description><![CDATA[前景： 要解决的问题是在Hugo自动生成的sitemap.xml文件中（sitemap.xml等于是给搜索引擎看的网站的目录），出现了很多无关]]></description>
+</item><item>
+    <title>Linux部署grafana&#43;node_exporter&#43;prometheus监控</title>
+    <link>https://cywhat.cn/Linux%E9%83%A8%E7%BD%B2grafana-node_export-prometheus%E7%9B%91%E6%8E%A7/</link>
+    <pubDate>Thu, 20 Jan 2022 11:06:19 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E9%83%A8%E7%BD%B2grafana-node_export-prometheus%E7%9B%91%E6%8E%A7/</guid>
+    <description><![CDATA[1、下载安装Node_exporter 1 2 3 4 5 6 7 8 9 10 11 #1.下载 wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz #2.解压 tar -zvxf node_exporter-1.3.1.linux-amd64.tar.gz #3.重命名 mv node_exporter-1.3.1.linux-amd64.tar.gz /usr/local/soft/node_exporter #4.启动并常驻后台,默认端口为]]></description>
+</item><item>
+    <title>Linux配置时间同步</title>
+    <link>https://cywhat.cn/Linux%E9%85%8D%E7%BD%AE%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5/</link>
+    <pubDate>Wed, 05 Jan 2022 10:49:45 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E9%85%8D%E7%BD%AE%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5/</guid>
+    <description><![CDATA[前景 排查售后问题发现一个奇葩BUG是因为Linux服务器时间不同步导致 1.安装ntpdate 1 yum install -y ntpdate 2.同步时间 1 ntpdate 0.asia.pool.ntp.org #0.asia.pool.ntp.org 为ntp时间服务器]]></description>
+</item><item>
+    <title>Linux卸载python</title>
+    <link>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDpython/</link>
+    <pubDate>Thu, 23 Dec 2021 15:49:42 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDpython/</guid>
+    <description><![CDATA[1.rpm镜像安装方式卸载 1.卸载Python3(仅适合通过rpm安装的python) 1 rpm -qa|grep python3|xargs rpm -ev --allmatches --nodeps 2.删除残留文件 1 whereis python3 |xargs rm -frv 3.删除软]]></description>
+</item><item>
+    <title>Linux安装python3.7</title>
+    <link>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85python3.7.0/</link>
+    <pubDate>Thu, 23 Dec 2021 15:13:53 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85python3.7.0/</guid>
+    <description><![CDATA[前景 **新服务器搭建Django Web服务需要安装python3.7.0 1.前置条件(一定要在安装之前) 安装python需要依赖(-y：安装]]></description>
+</item><item>
+    <title>ModuleNotFoundError: No Module Named &#39;_Ctypes&#39; Make: *** [Install] 错误 1</title>
+    <link>https://cywhat.cn/ModuleNotFoundError-No-module-named-_ctypes-make-install-%E9%94%99%E8%AF%AF-1/</link>
+    <pubDate>Thu, 23 Dec 2021 10:44:14 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/ModuleNotFoundError-No-module-named-_ctypes-make-install-%E9%94%99%E8%AF%AF-1/</guid>
+    <description><![CDATA[前景 新服务器安装python3.7.0在make install的时候报错ModuleNotFoundError: No module named '_ctypes' make: *** [install] 错误 1导致编译]]></description>
+</item><item>
+    <title>zipimport.ZipImportError: can&#39;t decompress data; zlib not available make: *** [install] 错误 1</title>
+    <link>https://cywhat.cn/zipimport.ZipImportError-cant-decompress-data-zlib-not-available-make-install-%E9%94%99%E8%AF%AF-1/</link>
+    <pubDate>Thu, 23 Dec 2021 10:36:34 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/zipimport.ZipImportError-cant-decompress-data-zlib-not-available-make-install-%E9%94%99%E8%AF%AF-1/</guid>
+    <description><![CDATA[前景 新服务器安装python3.7.0在make install的时候报错zipimport.ZipImportError: can't decompress data; zlib not available make: *** [install]]]></description>
+</item><item>
+    <title>如何保持Ssh长时间连接不断开</title>
+    <link>https://cywhat.cn/%E5%A6%82%E4%BD%95%E4%BF%9D%E6%8C%81Ssh%E9%95%BF%E6%97%B6%E9%97%B4%E9%93%BE%E6%8E%A5%E4%B8%8D%E6%96%AD%E5%BC%80/</link>
+    <pubDate>Wed, 22 Dec 2021 14:29:11 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/%E5%A6%82%E4%BD%95%E4%BF%9D%E6%8C%81Ssh%E9%95%BF%E6%97%B6%E9%97%B4%E9%93%BE%E6%8E%A5%E4%B8%8D%E6%96%AD%E5%BC%80/</guid>
+    <description><![CDATA[前景： 新购入的华为云服务器SSH连接5分钟没有任何操作就自动断开了，该文章主要为了解决该问题，同样的场景适合各种云服务器/本地物理服务器等 1]]></description>
+</item><item>
+    <title>Site.webmanifest异常处理</title>
+    <link>https://cywhat.cn/site.webmanifest%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
+    <pubDate>Tue, 14 Dec 2021 15:14:48 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/site.webmanifest%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</guid>
+    <description><![CDATA[1.前景 搭建完博客后，发现开发者模式中site.webmanifest加载非常慢，最后加载异常(404/超时等),严重拖慢博客的加载速度 2.]]></description>
+</item><item>
+    <title>如何创建自己的cdn图床地址</title>
+    <link>https://cywhat.cn/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84cdn%E5%9B%BE%E5%BA%8A%E5%9C%B0%E5%9D%80/</link>
+    <pubDate>Fri, 10 Dec 2021 16:01:02 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84cdn%E5%9B%BE%E5%BA%8A%E5%9C%B0%E5%9D%80/</guid>
+    <description><![CDATA[1。准备工作 1、github账号 2、需要制作图床的图片 2.创建github项目 3.上传图片到项目 4.转换图片地址 转换地址 1 2 3 1.获取到在g]]></description>
+</item><item>
+    <title>Raid磁盘阵列</title>
+    <link>https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/</link>
+    <pubDate>Thu, 18 Nov 2021 10:01:24 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Raid%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/</guid>
+    <description><![CDATA[1.什么是Raid 什么是Raid Raid 是英文(Redundant Array of Independent Disks)的缩写，翻译成中文是“独立磁盘冗余阵列”, 简称磁盘阵列（Dis]]></description>
+</item><item>
+    <title>Linux使用iftop查看带宽占用情况</title>
+    <link>https://cywhat.cn/Linux%E4%BD%BF%E7%94%A8iftop%E6%9F%A5%E7%9C%8B%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/</link>
+    <pubDate>Wed, 17 Nov 2021 10:16:41 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E4%BD%BF%E7%94%A8iftop%E6%9F%A5%E7%9C%8B%E5%B8%A6%E5%AE%BD%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/</guid>
+    <description><![CDATA[1.安装iftop 1 2 3 centos: yum install iftop debian: apt-get install iftop 2.使用iftop 1 2 3 iftop -i eth1 #查看eth1网卡的带宽占用情况 iftop -i eth1 -P #显示详细端口流量占用 3.if]]></description>
+</item><item>
+    <title>Loveit开启评论功能</title>
+    <link>https://cywhat.cn/Loveit%E5%BC%80%E5%90%AF%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</link>
+    <pubDate>Thu, 21 Oct 2021 17:07:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Loveit%E5%BC%80%E5%90%AF%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</guid>
+    <description><![CDATA[小tips 该文章仅仅针对Loveit主题有效，其他自己尝试。 Loveit开启评论 loveit自带的有valine的配置，我们需要先注册一些要]]></description>
+</item><item>
+    <title>Loveit主题开启文章赞赏</title>
+    <link>https://cywhat.cn/Loveit%E4%B8%BB%E9%A2%98%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E8%B5%9E%E8%B5%8F/</link>
+    <pubDate>Thu, 21 Oct 2021 16:36:41 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Loveit%E4%B8%BB%E9%A2%98%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E8%B5%9E%E8%B5%8F/</guid>
+    <description><![CDATA[小tips 该文章仅仅针对Loveit主题有效，其他自己尝试。 添加文章打赏功能 注意 PS: 使用hugo版本必须为拓展版hugo_extended，如]]></description>
+</item><item>
+    <title>Loveit主题的一些美化设置</title>
+    <link>https://cywhat.cn/loveit%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BE%8E%E5%8C%96%E8%AE%BE%E7%BD%AE/</link>
+    <pubDate>Thu, 21 Oct 2021 16:08:45 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/loveit%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BE%8E%E5%8C%96%E8%AE%BE%E7%BD%AE/</guid>
+    <description><![CDATA[前景 hugo的渲染速度&quot;婶婶&rdquo;(深深)的打动了我，于是决定从hexo迁移到hugo，迁移的帖子之后总结一下，先记录一下]]></description>
+</item><item>
+    <title>fonts.googleapis.com访问较慢[已解决]</title>
+    <link>https://cywhat.cn/fonts-googleapis-com%E8%AE%BF%E9%97%AE%E8%BE%83%E6%85%A2-%E5%B7%B2%E8%A7%A3%E5%86%B3/</link>
+    <pubDate>Tue, 12 Oct 2021 18:14:32 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/fonts-googleapis-com%E8%AE%BF%E9%97%AE%E8%BE%83%E6%85%A2-%E5%B7%B2%E8%A7%A3%E5%86%B3/</guid>
+    <description><![CDATA[前景： 自己写的测试工具发现最近打开页面时快时慢，查了原因，发现是css引用的谷歌字体源：fonts.googleapis.com 解决办法： 1]]></description>
+</item><item>
+    <title>avn自动切换node版本</title>
+    <link>https://cywhat.cn/avn%E8%87%AA%E5%8A%A8%E5%88%87%E6%8D%A2node%E7%89%88%E6%9C%AC/</link>
+    <pubDate>Wed, 29 Sep 2021 17:23:33 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/avn%E8%87%AA%E5%8A%A8%E5%88%87%E6%8D%A2node%E7%89%88%E6%9C%AC/</guid>
+    <description><![CDATA[前景： 服务器中俩个服务需要用到node，但是其中一个服务需要使用低版本的node，另一个则需要高版本node 1.首先安装nvm 1 2 3 4 5 6 7]]></description>
+</item><item>
+    <title>Django中的form表单校验</title>
+    <link>https://cywhat.cn/Django%E4%B8%AD%E7%9A%84form%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C/</link>
+    <pubDate>Fri, 24 Sep 2021 18:20:37 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Django%E4%B8%AD%E7%9A%84form%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C/</guid>
+    <description><![CDATA[前景： 我在使用django的form组件时，发现在view函数中的`form.is_valid()`在form表单校验未通过的情况下，返回的]]></description>
+</item><item>
+    <title>hexo迁移需要进行安装的一些依赖</title>
+    <link>https://cywhat.cn/hexo%E8%BF%81%E7%A7%BB%E9%9C%80%E8%A6%81%E8%BF%9B%E8%A1%8C%E5%AE%89%E8%A3%85%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BE%9D%E8%B5%96/</link>
+    <pubDate>Fri, 24 Sep 2021 17:51:42 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/hexo%E8%BF%81%E7%A7%BB%E9%9C%80%E8%A6%81%E8%BF%9B%E8%A1%8C%E5%AE%89%E8%A3%85%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BE%9D%E8%B5%96/</guid>
+    <description><![CDATA[前景： 更换新设备 or 更换新工作环境需要重新本地部署hexo环境,需要有整个工程的文件夹 1.安装hexo 1 npm install -g hexo-cli 2.安装node_moudle]]></description>
+</item><item>
+    <title>ERROR: Re-run SonarScanner using the -X switch to enable full debug logging.</title>
+    <link>https://cywhat.cn/ERROR-Re-run-SonarScanner-using-the-X-switch-to-enable-full-debug-logging/</link>
+    <pubDate>Thu, 23 Sep 2021 11:25:17 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/ERROR-Re-run-SonarScanner-using-the-X-switch-to-enable-full-debug-logging/</guid>
+    <description><![CDATA[前景 jenkins构建sonarqube报错 报错： &quot;ERROR: Re-run SonarScanner using the -X switch to enable full debug logging. 1.打开sonarqube的SCM配置 2.重新构建即可]]></description>
+</item><item>
+    <title>Linux搭建sonarqube</title>
+    <link>https://cywhat.cn/Linux%E6%90%AD%E5%BB%BAsonarqube/</link>
+    <pubDate>Wed, 22 Sep 2021 16:35:47 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E6%90%AD%E5%BB%BAsonarqube/</guid>
+    <description><![CDATA[前言 Linux版本:centos7.6 Java:Jdk11 SonarQube:8.2.0.32929 PostgreSQL:12 sonar-scanner:4.6.2.2472 1.安装Jdk 安装JDK 2.安装PostgreSQL 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 1.安装镜]]></description>
+</item><item>
+    <title>Jenkins启动报错原因分析</title>
+    <link>https://cywhat.cn/Jenkins%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90/</link>
+    <pubDate>Sat, 18 Sep 2021 17:58:18 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Jenkins%E5%90%AF%E5%8A%A8%E6%8A%A5%E9%94%99%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90/</guid>
+    <description><![CDATA[1.启动jenkins 1 systemctl start jenkins #如果命令不可使用，首先要把jenkins放到系统启动配置中，详情请百度 2.查看jenkins启动状态 1 systemctl status jenkins.service]]></description>
+</item></channel>
+</rss>

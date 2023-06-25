@@ -1,0 +1,78 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Python - 分类 - cywhat&#39;s blog</title>
+        <link>https://cywhat.cn/categories/Python/</link>
+        <description>Python - 分类 - cywhat&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
+            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 18 Apr 2023 14:31:47 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Python/" rel="self" type="application/rss+xml" /><item>
+    <title>Linux卸载RabbitMQ</title>
+    <link>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDRabbitMq/</link>
+    <pubDate>Tue, 18 Apr 2023 14:31:47 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDRabbitMq/</guid>
+    <description><![CDATA[1、卸载Erlang 1 2 3 4 5 6 7 8 # 查看erlang安装的相关列表 yum list|grep erlang # 卸载erlang yum -y remove erlang-* # 删除erlang目录 rm -rf /usr/lib64/erlang 2、卸载Ra]]></description>
+</item><item>
+    <title>Linux安装RabbitMQ</title>
+    <link>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85RabbitMQ/</link>
+    <pubDate>Mon, 17 Apr 2023 17:35:57 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85RabbitMQ/</guid>
+    <description><![CDATA[1、前景 RabbitMQ是用Erlang编写的，所以需要先安装Erlang的编译环境 注意 Erlang和RabbitMQ的版本是有一些版本匹配]]></description>
+</item><item>
+    <title>Linux忘记mysql密码解决办法</title>
+    <link>https://cywhat.cn/Linux%E5%BF%98%E8%AE%B0mysql%E5%AF%86%E7%A0%81%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
+    <pubDate>Tue, 04 Apr 2023 09:32:40 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%BF%98%E8%AE%B0mysql%E5%AF%86%E7%A0%81%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid>
+    <description><![CDATA[1、前景 1 2 3 4 5 mysql初始密码忘记 mysql密码忘记 mysql重置密码 2、设置 1、编辑文件 1 vim /etc/my.cf 2、找到文件位置 1 [mysqld] 3、加入忽略密码登]]></description>
+</item><item>
+    <title>MoudleNotFoundError: No module named &#39;xxx&#39;</title>
+    <link>https://cywhat.cn/MoudleNotFoundError-No-module-named-xxx/</link>
+    <pubDate>Thu, 13 Oct 2022 11:30:33 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/MoudleNotFoundError-No-module-named-xxx/</guid>
+    <description><![CDATA[1、报错 1 MoudleNotFoundError: No module named &#39;xxx&#39; 2、排查解决 1 2 3 4 5 6 7 8 1、module包没安装 2、忘了import 3、没有__init__.py文件(很重要) 4、]]></description>
+</item><item>
+    <title>Python如何让字典保持有序存储</title>
+    <link>https://cywhat.cn/Python%E5%A6%82%E4%BD%95%E8%AE%A9%E5%AD%97%E5%85%B8%E4%BF%9D%E6%8C%81%E6%9C%89%E5%BA%8F%E5%AD%98%E5%82%A8/</link>
+    <pubDate>Fri, 22 Jul 2022 14:37:10 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Python%E5%A6%82%E4%BD%95%E8%AE%A9%E5%AD%97%E5%85%B8%E4%BF%9D%E6%8C%81%E6%9C%89%E5%BA%8F%E5%AD%98%E5%82%A8/</guid>
+    <description><![CDATA[前景 众所周知python的字典dict是无序的和元组不同，但是一些特定场景，又需要字典中的数据是有序的，分享并记录下如何解决 注意 python]]></description>
+</item><item>
+    <title>Python获取当前位置所在行数以及函数名</title>
+    <link>https://cywhat.cn/Python%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E4%BD%8D%E7%BD%AE%E6%89%80%E5%9C%A8%E8%A1%8C%E6%95%B0%E4%BB%A5%E5%8F%8A%E5%87%BD%E6%95%B0%E5%90%8D/</link>
+    <pubDate>Mon, 18 Jul 2022 14:54:45 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Python%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E4%BD%8D%E7%BD%AE%E6%89%80%E5%9C%A8%E8%A1%8C%E6%95%B0%E4%BB%A5%E5%8F%8A%E5%87%BD%E6%95%B0%E5%90%8D/</guid>
+    <description><![CDATA[代码 1 2 3 4 5 6 7 8 9 10 # encoding=utf-8 import sys def get_python_info(): print(&#39;当前文件名 {} &#39;.format(sys._getframe().f_code.co_filename)) print(&#39;所属函数名 {} &#39;.format(sys._getframe().f_code.co_name)) print(&#39;第 {} 行 &#39;.format(sys._getframe().f_lineno)) #]]></description>
+</item><item>
+    <title>Linux卸载python</title>
+    <link>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDpython/</link>
+    <pubDate>Thu, 23 Dec 2021 15:49:42 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDpython/</guid>
+    <description><![CDATA[1.rpm镜像安装方式卸载 1.卸载Python3(仅适合通过rpm安装的python) 1 rpm -qa|grep python3|xargs rpm -ev --allmatches --nodeps 2.删除残留文件 1 whereis python3 |xargs rm -frv 3.删除软]]></description>
+</item><item>
+    <title>Linux安装python3.7</title>
+    <link>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85python3.7.0/</link>
+    <pubDate>Thu, 23 Dec 2021 15:13:53 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Linux%E5%AE%89%E8%A3%85python3.7.0/</guid>
+    <description><![CDATA[前景 **新服务器搭建Django Web服务需要安装python3.7.0 1.前置条件(一定要在安装之前) 安装python需要依赖(-y：安装]]></description>
+</item><item>
+    <title>ModuleNotFoundError: No Module Named &#39;_Ctypes&#39; Make: *** [Install] 错误 1</title>
+    <link>https://cywhat.cn/ModuleNotFoundError-No-module-named-_ctypes-make-install-%E9%94%99%E8%AF%AF-1/</link>
+    <pubDate>Thu, 23 Dec 2021 10:44:14 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/ModuleNotFoundError-No-module-named-_ctypes-make-install-%E9%94%99%E8%AF%AF-1/</guid>
+    <description><![CDATA[前景 新服务器安装python3.7.0在make install的时候报错ModuleNotFoundError: No module named '_ctypes' make: *** [install] 错误 1导致编译]]></description>
+</item><item>
+    <title>zipimport.ZipImportError: can&#39;t decompress data; zlib not available make: *** [install] 错误 1</title>
+    <link>https://cywhat.cn/zipimport.ZipImportError-cant-decompress-data-zlib-not-available-make-install-%E9%94%99%E8%AF%AF-1/</link>
+    <pubDate>Thu, 23 Dec 2021 10:36:34 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/zipimport.ZipImportError-cant-decompress-data-zlib-not-available-make-install-%E9%94%99%E8%AF%AF-1/</guid>
+    <description><![CDATA[前景 新服务器安装python3.7.0在make install的时候报错zipimport.ZipImportError: can't decompress data; zlib not available make: *** [install]]]></description>
+</item></channel>
+</rss>

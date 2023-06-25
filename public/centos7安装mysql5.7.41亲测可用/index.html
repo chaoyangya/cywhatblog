@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Centos7安装mysql5.7.41亲测可用 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
+<meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Centos7安装mysql5.7.41亲测可用" />
+<meta property="og:description" content="一、安装前准备 1.检查是否已经安装过mysql，执行命令 1 2 3 4 5 6 7 8 9 10 11 # 查找已经安装的mysqld rpm -qa | grep mysqld # 查找已经安装的mari" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cywhat.cn/centos7%E5%AE%89%E8%A3%85mysql5.7.41%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8/" />
+<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="article:published_time" content="2020-03-30T15:54:01+00:00" />
+<meta property="article:modified_time" content="2020-03-30T15:54:01+00:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://cywhat.cn"/>
+
+<meta name="twitter:title" content="Centos7安装mysql5.7.41亲测可用"/>
+<meta name="twitter:description" content="一、安装前准备 1.检查是否已经安装过mysql，执行命令 1 2 3 4 5 6 7 8 9 10 11 # 查找已经安装的mysqld rpm -qa | grep mysqld # 查找已经安装的mari"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/centos7%E5%AE%89%E8%A3%85mysql5.7.41%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8/" /><link rel="prev" href="https://cywhat.cn/mac-%E5%AE%89%E8%A3%85brew/" /><link rel="next" href="https://cywhat.cn/Centos7-7%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AEjenkins-python-allure%E5%8F%91%E9%80%81%E5%AE%9A%E5%88%B6%E5%8C%96%E6%8A%A5%E5%91%8A/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Centos7安装mysql5.7.41亲测可用",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/cywhat.cn\/centos7%E5%AE%89%E8%A3%85mysql5.7.41%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8\/"
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Linux, Mysql","wordcount":  992 ,
+        "url": "https:\/\/cywhat.cn\/centos7%E5%AE%89%E8%A3%85mysql5.7.41%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8\/","datePublished": "2020-03-30T15:54:01+00:00","dateModified": "2020-03-30T15:54:01+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "cywhat"},"author": {
+                "@type": "Person",
+                "name": "cywhat"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="cywhat&#39;s blog">cywhat&#39;s blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/friends/"> 友链 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="cywhat&#39;s blog">cywhat&#39;s blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/friends/" title="">友链</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Centos7安装mysql5.7.41亲测可用</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Mysql/"><i class="far fa-folder fa-fw"></i>Mysql</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-03-30">2020-03-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 992 字
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;<span id="/centos7%E5%AE%89%E8%A3%85mysql5.7.41%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8/" class="leancloud_visitors" data-flag-title="Centos7安装mysql5.7.41亲测可用">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;
+					<a href="#comments" id="post-meta-vcount" title="查看评论">
+						<i class="fas fa-comment fa-fw"></i>&nbsp;<span id="/centos7%E5%AE%89%E8%A3%85mysql5.7.41%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8/" class="waline-comment-count"></span>&nbsp;条评论
+					</a></div>
+
+
+
+
+
+
+
+
+
+
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#一安装前准备">一、安装前准备</a>
+      <ul>
+        <li><a href="#1检查是否已经安装过mysql执行命令">1.检查是否已经安装过mysql，执行命令</a></li>
+        <li><a href="#2查询所有mysql对应的文件夹">2.查询所有Mysql对应的文件夹</a></li>
+        <li><a href="#3下载mysql安装包">3.下载Mysql安装包</a></li>
+      </ul>
+    </li>
+    <li><a href="#二安装mysql">二、安装Mysql</a>
+      <ul>
+        <li><a href="#1安装前再次确认没有安装其他版本的mysqld或者mariadb">1.安装前再次确认没有安装其他版本的mysqld或者mariadb</a></li>
+        <li><a href="#2安装依赖">2.安装依赖</a></li>
+        <li><a href="#3安装mysqld服务一定要按顺序来">3.安装mysqld服务【一定要按顺序来】</a></li>
+        <li><a href="#4验证安装结果">4.验证安装结果</a></li>
+      </ul>
+    </li>
+    <li><a href="#三启动mysqld">三、启动Mysqld</a>
+      <ul>
+        <li><a href="#1启动mysqld">1、启动mysqld</a></li>
+        <li><a href="#2查看mysqld运行状态">2、查看mysqld运行状态</a></li>
+        <li><a href="#3开机自启">3、开机自启</a></li>
+      </ul>
+    </li>
+    <li><a href="#四连接mysqld">四、连接Mysqld</a>
+      <ul>
+        <li><a href="#1查看初始密码">1、查看初始密码</a></li>
+        <li><a href="#2登录">2、登录</a></li>
+        <li><a href="#3修改密码">3、修改密码</a></li>
+        <li><a href="#4修改为弱口令密码如有需要eg123456">4、修改为弱口令密码【如有需要，eg：123456】</a></li>
+        <li><a href="#5修改后验证新密码">5、修改后验证新密码</a></li>
+        <li><a href="#6开放远程连接可选">6、开放远程连接【可选】</a></li>
+      </ul>
+    </li>
+    <li><a href="#五数据库备份和迁移">五、数据库备份和迁移</a>
+      <ul>
+        <li><a href="#1开启远程连接备份和迁移必须执行">1、开启远程连接[备份和迁移必须执行]</a></li>
+        <li><a href="#2重启">2、重启</a></li>
+        <li><a href="#3备份">3、备份</a></li>
+        <li><a href="#4备份好的文件传输到其他机器">4、备份好的文件传输到其他机器</a></li>
+        <li><a href="#5恢复备份文件">5、恢复备份文件</a></li>
+        <li><a href="#6验证恢复文件">6、验证恢复文件</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="一安装前准备">一、安装前准备</h2>
+<h3 id="1检查是否已经安装过mysql执行命令">1.检查是否已经安装过mysql，执行命令</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 查找已经安装的mysqld</span>
+rpm -qa <span class="p">|</span> grep mysqld
+
+<span class="c1"># 查找已经安装的mariadb</span>
+rpm -qa <span class="p">|</span> grep mariadb
+
+<span class="c1"># 查看正在运行的端口号</span>
+netstat -tunlp <span class="p">|</span> grep <span class="m">3306</span>
+
+<span class="c1"># 删除查找到的文件</span>
+rpm -e --nodeps  mysqld/mariadb文件
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="2查询所有mysql对应的文件夹">2.查询所有Mysql对应的文件夹</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">whereis mysqld
+
+<span class="c1"># 删除查找到的文件</span>
+rm -rf  mysqld文件
+</code></pre></td></tr></table>
+</div>
+</div><p>并再次执行<code>whereis mysqld</code>验证是否删除完毕</p>
+<h3 id="3下载mysql安装包">3.下载Mysql安装包</h3>
+<p>下载命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">wget https://mirrors.cloud.tencent.com/mysql/yum/mysql-5.7-community-el7-x86_64/mysql-community-common-5.7.41-1.el7.x86_64.rpm
+wget https://mirrors.cloud.tencent.com/mysql/yum/mysql-5.7-community-el7-x86_64/mysql-community-libs-5.7.41-1.el7.x86_64.rpm
+wget https://mirrors.cloud.tencent.com/mysql/yum/mysql-5.7-community-el7-x86_64/mysql-community-client-5.7.41-1.el7.x86_64.rpm
+wget https://mirrors.cloud.tencent.com/mysql/yum/mysql-5.7-community-el7-x86_64/mysql-community-server-5.7.41-1.el7.x86_64.rpm
+</code></pre></td></tr></table>
+</div>
+</div><p><a href="https://mirrors.cloud.tencent.com/mysql/yum/" target="_blank" rel="noopener noreffer">其他版本下载</a></p>
+<h2 id="二安装mysql">二、安装Mysql</h2>
+<h3 id="1安装前再次确认没有安装其他版本的mysqld或者mariadb">1.安装前再次确认没有安装其他版本的mysqld或者mariadb</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">参考第一步
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="2安装依赖">2.安装依赖</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">yum install libaio
+
+yum install net-tools
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="3安装mysqld服务一定要按顺序来">3.安装mysqld服务【一定要按顺序来】</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">rpm -ivh mysql-community-common-5.7.41-1.el7.x86_64.rpm
+rpm -ivh mysql-community-libs-5.7.41-1.el7.x86_64.rpm
+rpm -ivh mysql-community-client-5.7.41-1.el7.x86_64.rpm
+rpm -ivh mysql-community-server-5.7.41-1.el7.x86_64.rpm
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="4验证安装结果">4.验证安装结果</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># mysqld安装成功以后会自动创建mysqld用户和组</span>
+cat /etc/passwd <span class="p">|</span> grep mysql
+
+cat /etc/group <span class="p">|</span> grep mysql
+
+<span class="c1"># 查看mysql版本，如出现版本号即安装成功</span>
+mysqladmin --version    
+</code></pre></td></tr></table>
+</div>
+</div><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/img79.png"
+        data-srcset="/img/img79.png, /img/img79.png 1.5x, /img/img79.png 2x"
+        data-sizes="auto"
+        alt="/img/img79.png"
+        title="img79.png" /></p>
+<h2 id="三启动mysqld">三、启动Mysqld</h2>
+<h3 id="1启动mysqld">1、启动mysqld</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl start mysqld.service
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="2查看mysqld运行状态">2、查看mysqld运行状态</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl status mysqld.service
+</code></pre></td></tr></table>
+</div>
+</div><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/img80.png"
+        data-srcset="/img/img80.png, /img/img80.png 1.5x, /img/img80.png 2x"
+        data-sizes="auto"
+        alt="/img/img80.png"
+        title="img80.png" /></p>
+<h3 id="3开机自启">3、开机自启</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl <span class="nb">enable</span> mysqld.service
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="四连接mysqld">四、连接Mysqld</h2>
+<h3 id="1查看初始密码">1、查看初始密码</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">cat /var/log/mysqld.log <span class="p">|</span> grep password
+</code></pre></td></tr></table>
+</div>
+</div><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/img81.png"
+        data-srcset="/img/img81.png, /img/img81.png 1.5x, /img/img81.png 2x"
+        data-sizes="auto"
+        alt="/img/img81.png"
+        title="img81.png" /></p>
+<h3 id="2登录">2、登录</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">mysql -uroot -p
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="3修改密码">3、修改密码</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">SET PASSWORD FOR <span class="s1">&#39;root&#39;</span>@<span class="s1">&#39;localhost&#39;</span> <span class="o">=</span> PASSWORD<span class="o">(</span><span class="s1">&#39;newpasswd&#39;</span><span class="o">)</span><span class="p">;</span>    
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="4修改为弱口令密码如有需要eg123456">4、修改为弱口令密码【如有需要，eg：123456】</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 依次执行</span>
+<span class="nb">set</span> global <span class="nv">validate_password_policy</span><span class="o">=</span>0<span class="p">;</span>
+
+<span class="nb">set</span> global <span class="nv">validate_password_mixed_case_count</span><span class="o">=</span>0<span class="p">;</span>
+
+<span class="nb">set</span> global <span class="nv">validate_password_number_count</span><span class="o">=</span>3<span class="p">;</span>
+
+<span class="nb">set</span> global <span class="nv">validate_password_special_char_count</span><span class="o">=</span>0<span class="p">;</span>
+
+<span class="nb">set</span> global <span class="nv">validate_password_length</span><span class="o">=</span>3<span class="p">;</span>
+
+SET PASSWORD FOR <span class="s1">&#39;root&#39;</span>@<span class="s1">&#39;localhost&#39;</span> <span class="o">=</span> PASSWORD<span class="o">(</span><span class="s1">&#39;123456&#39;</span><span class="o">)</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="5修改后验证新密码">5、修改后验证新密码</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 退出</span>
+<span class="nb">exit</span>
+
+<span class="c1"># 使用新密码登录</span>
+mysql -uroot -p
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="6开放远程连接可选">6、开放远程连接【可选】</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 登录</span>
+mysql -uroot -p
+
+<span class="c1"># 使用mysql库</span>
+mysql&gt;use mysql<span class="p">;</span>
+
+<span class="c1"># 允许远程登录</span>
+msyql&gt;update user <span class="nb">set</span> user.Host<span class="o">=</span><span class="s1">&#39;%&#39;</span> where user.User<span class="o">=</span><span class="s1">&#39;root&#39;</span><span class="p">;</span>
+
+<span class="c1"># 刷新权限</span>
+mysql&gt;flush privileges<span class="p">;</span> 
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>如果是云服务器的话，需要设置安全组，请自行百度</li>
+</ul>
+<h2 id="五数据库备份和迁移">五、数据库备份和迁移</h2>
+<h3 id="1开启远程连接备份和迁移必须执行">1、开启远程连接[备份和迁移必须执行]</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 登录</span>
+mysql -uroot -p
+
+<span class="c1"># 使用mysql库</span>
+mysql&gt;use mysql<span class="p">;</span>
+
+<span class="c1"># 允许远程登录</span>
+msyql&gt;update user <span class="nb">set</span> user.Host<span class="o">=</span><span class="s1">&#39;%&#39;</span> where user.User<span class="o">=</span><span class="s1">&#39;root&#39;</span><span class="p">;</span>
+
+<span class="c1"># 刷新权限</span>
+mysql&gt;flush privileges<span class="p">;</span> 
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="2重启">2、重启</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl restart mysqld.service
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="3备份">3、备份</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 导出x.x.x.x的database库到当前文件的</span>
+mysqldump -hx.x.x.x -uroot -p<span class="s2">&#34;123456&#34;</span> database &gt; ./database.sql  
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="4备份好的文件传输到其他机器">4、备份好的文件传输到其他机器</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 传输database.sql文件到x.x.x.1机器的指定目录</span>
+scp database.sql root@x.x.x.1:/home/xxx/
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="5恢复备份文件">5、恢复备份文件</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 恢复x.x.x.的database.sql文件到database库</span>
+mysql -hx.x.x.1 -uroot -p<span class="s1">&#39;123456&#39;</span> database &lt; database.sql
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="6验证恢复文件">6、验证恢复文件</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 登录</span>
+mysql -uroot -p
+
+<span class="c1"># 使用库</span>
+use database
+
+<span class="c1"># 查看表</span>
+show tables<span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>补充说明：</strong></p>
+<ul>
+<li>
+<p>安装mysqld时，可能会出现错误：</p>
+</li>
+<li>
+<p>依次执行以下命令安装编译mysql需要的插件</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">yum install  libaio-devel.x86_64
+
+yum -y install numactl
+</code></pre></td></tr></table>
+</div>
+</div><div class="post-promote">
+    <input type="checkbox" name="promote" id="promote" hidden/>
+    <label class="promote-button" for="promote">关注一下再走吧</label>
+    <div class="qr-code">
+        <label class="qr-code-image" for="promote">
+            <img class="image" src="/img/cywhat-gzh.jpg">
+            <span>公众号</span>
+        </label>
+        <label class="qr-code-image" for="promote">
+            <img class="image" src="/img/cywhat-xcx.jpg">
+            <span>小程序</span>
+        </label>
+    </div>
+</div>
+<div class="post-reward">
+    <input type="checkbox" name="reward" id="reward" hidden/>
+    <label class="reward-button" for="reward">赞赏支持</label>
+    <div class="qr-code">
+        <label class="qr-code-image" for="reward">
+            <img class="image" src="/img/WechatPay.jpeg">
+            <span>微信打赏</span>
+        </label>
+        <label class="qr-code-image" for="reward">
+            <img class="image" src="/img/Alipay.jpeg">
+            <span>支付宝打赏</span>
+        </label>
+    </div>
+</div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2020-03-30</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/centos7%E5%AE%89%E8%A3%85mysql5.7.41%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8/" data-title="Centos7安装mysql5.7.41亲测可用" data-hashtags="Linux,Mysql"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/centos7%E5%AE%89%E8%A3%85mysql5.7.41%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8/" data-hashtag="Linux"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/centos7%E5%AE%89%E8%A3%85mysql5.7.41%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8/" data-title="Centos7安装mysql5.7.41亲测可用"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/centos7%E5%AE%89%E8%A3%85mysql5.7.41%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8/" data-title="Centos7安装mysql5.7.41亲测可用"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/centos7%E5%AE%89%E8%A3%85mysql5.7.41%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8/" data-title="Centos7安装mysql5.7.41亲测可用"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/Linux/">Linux</a>,&nbsp;<a href="/tags/Mysql/">Mysql</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/mac-%E5%AE%89%E8%A3%85brew/" class="prev" rel="prev" title="Mac安装brew"><i class="fas fa-angle-left fa-fw"></i>Mac安装brew</a>
+            <a href="/Centos7-7%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AEjenkins-python-allure%E5%8F%91%E9%80%81%E5%AE%9A%E5%88%B6%E5%8C%96%E6%8A%A5%E5%91%8A/" class="next" rel="next" title="Centos7.7安装并配置jenkins&#43;python&#43;allure发送定制化报告">Centos7.7安装并配置jenkins&#43;python&#43;allure发送定制化报告<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="waline"></div>
+			<script src='https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+
+			<script>
+		    	new Waline({
+		    	  el: '#waline',
+				  meta: ["nick","mail","link"],
+		    	  requiredMeta: ["nick","mail"],
+		    	  login: "force",
+				  placeholder: "小Tips 评论前需注册并登录噢",
+		    	  serverURL: "https://comment.cywhat.cn/",
+		    	  avatarCDN: "https://sdn.geekzu.org/avatar/",
+		    	  pageSize:  20 ,
+		    	  avatar: "retro",
+		    	  lang: "zh-CN",
+				  visitor:  true ,
+				  highlight:  true ,
+				  uploadImage:  false 
+		    	});
+		    </script></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://cywhat.cn" target="_blank">cywhat</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="#" target="_blank">Do not go gentle into that good night.</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp"><a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">京ICP备2021041376号</a></span></div>
+        </div>
+
+        <div class="footer-line">
+	        <span id="run-time"></span>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"search":{"algoliaAppID":"3031FWUVJN","algoliaIndex":"cywhat.algolia-temp","algoliaSearchKey":"76bee9d276ea265b36eae78e8a17356c","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"></script>
+
+<script type="text/javascript" src="/js/custom.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-225C41PHZX', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-225C41PHZX" async></script><script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?a54de2ed85b7ec3fd5ad114214614491";
+			  var s = document.getElementsByTagName("script")[0];
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script></body>
+</html>

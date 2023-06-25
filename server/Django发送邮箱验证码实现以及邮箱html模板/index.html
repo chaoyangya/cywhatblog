@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Django发送邮箱验证码实现以及邮箱html模板 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
+<meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Django发送邮箱验证码实现以及邮箱html模板" />
+<meta property="og:description" content="1.setting配置 1 2 3 4 5 6 7 EMAIL_BACKEND = &#39;django.core.mail.backends.smtp.EmailBackend&#39; EMAIL_HOST = &#34;smtp.163.com&#34; # 服务器 EMAIL_PORT = 25 # 一般情况下都为25 EMAIL_HOST_USER = &#34;xxxx@163.com&#34; # 账号 EMAIL_HOST_PASSWORD = &#34;XXXXXXXXXXXX&#34; # 密码 (注意：这里的密码指的是授权码) EMAIL_USE_TLS" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/" />
+<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="article:published_time" content="2021-09-08T14:40:18+00:00" />
+<meta property="article:modified_time" content="2021-09-08T14:40:18+00:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://cywhat.cn"/>
+
+<meta name="twitter:title" content="Django发送邮箱验证码实现以及邮箱html模板"/>
+<meta name="twitter:description" content="1.setting配置 1 2 3 4 5 6 7 EMAIL_BACKEND = &#39;django.core.mail.backends.smtp.EmailBackend&#39; EMAIL_HOST = &#34;smtp.163.com&#34; # 服务器 EMAIL_PORT = 25 # 一般情况下都为25 EMAIL_HOST_USER = &#34;xxxx@163.com&#34; # 账号 EMAIL_HOST_PASSWORD = &#34;XXXXXXXXXXXX&#34; # 密码 (注意：这里的密码指的是授权码) EMAIL_USE_TLS"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/" /><link rel="prev" href="https://cywhat.cn/Mac%E5%BF%BD%E7%95%A5%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E6%8F%90%E9%86%92%E5%B9%B6%E5%8F%96%E6%B6%88%E5%B0%8F%E7%BA%A2%E7%82%B9/" /><link rel="next" href="https://cywhat.cn/html%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0button%E5%8A%A0%E8%BD%BD%E4%B8%AD%E4%B8%94%E7%BD%AE%E7%81%B0%E4%B8%8D%E5%8F%AF%E7%82%B9%E5%87%BB/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Django发送邮箱验证码实现以及邮箱html模板",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/cywhat.cn\/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF\/"
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Django, Html","wordcount":  1250 ,
+        "url": "https:\/\/cywhat.cn\/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF\/","datePublished": "2021-09-08T14:40:18+00:00","dateModified": "2021-09-08T14:40:18+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "cywhat"},"author": {
+                "@type": "Person",
+                "name": "cywhat"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="cywhat&#39;s blog">cywhat&#39;s blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/friends/"> 友链 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="cywhat&#39;s blog">cywhat&#39;s blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/friends/" title="">友链</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Django发送邮箱验证码实现以及邮箱html模板</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Django/"><i class="far fa-folder fa-fw"></i>Django</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-08">2021-09-08</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1250 字
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;<span id="/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/" class="leancloud_visitors" data-flag-title="Django发送邮箱验证码实现以及邮箱html模板">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;
+					<a href="#comments" id="post-meta-vcount" title="查看评论">
+						<i class="fas fa-comment fa-fw"></i>&nbsp;<span id="/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/" class="waline-comment-count"></span>&nbsp;条评论
+					</a></div>
+
+
+
+
+
+
+
+
+
+
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1setting配置">1.setting配置</a></li>
+        <li><a href="#2邮箱配置">2.邮箱配置</a></li>
+        <li><a href="#3代码部分">3.代码部分</a></li>
+        <li><a href="#4html模板">4.html模板</a></li>
+        <li><a href="#5效果图如下">5.效果图如下：</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="1setting配置">1.setting配置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">EMAIL_BACKEND</span> <span class="o">=</span> <span class="s1">&#39;django.core.mail.backends.smtp.EmailBackend&#39;</span>
+<span class="n">EMAIL_HOST</span> <span class="o">=</span> <span class="s2">&#34;smtp.163.com&#34;</span>  <span class="c1"># 服务器</span>
+<span class="n">EMAIL_PORT</span> <span class="o">=</span> <span class="mi">25</span>  <span class="c1"># 一般情况下都为25</span>
+<span class="n">EMAIL_HOST_USER</span> <span class="o">=</span> <span class="s2">&#34;xxxx@163.com&#34;</span>  <span class="c1"># 账号</span>
+<span class="n">EMAIL_HOST_PASSWORD</span> <span class="o">=</span> <span class="s2">&#34;XXXXXXXXXXXX&#34;</span>  <span class="c1"># 密码 (注意：这里的密码指的是授权码)</span>
+<span class="n">EMAIL_USE_TLS</span> <span class="o">=</span> <span class="bp">False</span>  <span class="c1"># 一般都为False</span>
+<span class="n">EMAIL_FROM</span> <span class="o">=</span> <span class="s2">&#34;xxxx@163.com&#34;</span>  <span class="c1"># 邮箱来自 一般和邮箱账号保持一致</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="2邮箱配置">2.邮箱配置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#登录邮箱-设置-POP3/SMTP/IMAP,开启服务，保存授权码，切记要保存，授权码就是密码</span>
+<span class="err">如图</span><span class="p">:</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/img20.png"
+        data-srcset="/img/img20.png, /img/img20.png 1.5x, /img/img20.png 2x"
+        data-sizes="auto"
+        alt="/img/img20.png"
+        title="img20" /></p>
+<h3 id="3代码部分">3.代码部分</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">django.core.mail</span> <span class="kn">import</span> <span class="n">EmailMessage</span>
+<span class="kn">from</span> <span class="nn">django.template</span> <span class="kn">import</span> <span class="n">loader</span>
+
+
+<span class="k">def</span> <span class="nf">clean_email</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">email_title</span> <span class="o">=</span> <span class="s2">&#34;验证码&#34;</span> 
+    
+    <span class="c1">#这里是生成随机验证码 我是4位的，可以自定义</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">9999</span><span class="p">)</span>   
+    
+    <span class="c1">#这个context这里定义的字段，是要给html模板中的验证码使用的，HTML中{% code %}引用即可</span>
+    <span class="n">context</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;code&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">code</span><span class="p">)</span>
+    <span class="p">}</span>
+    
+    <span class="c1">#这里的html文件就是发送验证码部分的html模板我放在下面</span>
+    <span class="n">email_template_name</span> <span class="o">=</span> <span class="s1">&#39;tools_email.html&#39;</span>     
+    <span class="n">t</span> <span class="o">=</span> <span class="n">loader</span><span class="o">.</span><span class="n">get_template</span><span class="p">(</span><span class="n">email_template_name</span><span class="p">)</span>
+    
+    <span class="c1">#发送html验证码到邮箱有三种方式，我觉得这种最方便，其他自行百度</span>
+    <span class="n">html_content</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+    <span class="n">email</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cleaned_data</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">]</span>
+    
+    <span class="c1">#判断邮箱是否存在</span>
+    <span class="n">exists</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">UserInfo</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">email</span><span class="o">=</span><span class="n">email</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">exists</span><span class="p">:</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="n">EmailMessage</span><span class="p">(</span><span class="n">email_title</span><span class="p">,</span>  <span class="c1"># 邮件主题</span>
+                           <span class="n">html_content</span><span class="p">,</span>  <span class="c1"># 邮件内容，使用html模板</span>
+                           <span class="n">settings</span><span class="o">.</span><span class="n">EMAIL_FROM</span><span class="p">,</span>  <span class="c1"># 用于发送邮件的用户</span>
+                           <span class="p">[</span><span class="n">email</span><span class="p">]</span>  <span class="c1"># 接收邮件的用户列表</span>
+                           <span class="p">)</span>
+        
+        <span class="c1">#指定邮箱发送的类型</span>
+        <span class="n">msg</span><span class="o">.</span><span class="n">content_subtype</span> <span class="o">=</span> <span class="s1">&#39;html&#39;</span>
+        
+        <span class="c1">#发送邮箱</span>
+        <span class="n">send_status</span> <span class="o">=</span> <span class="n">msg</span><span class="o">.</span><span class="n">send</span><span class="p">()</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">send_status</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">ValidationError</span><span class="p">(</span><span class="s1">&#39;发生邮箱失败,{}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">send_status</span><span class="p">[</span><span class="s1">&#39;errmsg&#39;</span><span class="p">]))</span>
+        
+        <span class="c1">#放到redis中，有效时长2min</span>
+        <span class="n">conn</span> <span class="o">=</span> <span class="n">get_redis_connection</span><span class="p">()</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">email</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">ex</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">email</span>
+    <span class="k">return</span> <span class="n">ValidationError</span><span class="p">(</span><span class="s1">&#39;邮箱未注册&#39;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="4html模板">4.html模板</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">{% load static %}
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">base</span> <span class="na">target</span><span class="o">=</span><span class="s">&#34;_blank&#34;</span><span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span><span class="p">&gt;::</span><span class="nd">-webkit-scrollbar</span> <span class="p">{</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+    <span class="p">}&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;cloudAttachStyle&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span><span class="p">&gt;#</span><span class="nn">divNeteaseBigAttach</span><span class="o">,</span> <span class="p">#</span><span class="nn">divNeteaseBigAttach_bak</span> <span class="p">{</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+    <span class="p">}&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;blockquoteStyle&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span><span class="p">&gt;</span><span class="nt">blockquote</span> <span class="p">{</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+    <span class="p">}&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span><span class="p">&gt;</span>
+        <span class="nt">body</span> <span class="p">{</span>
+            <span class="k">font-size</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
+            <span class="k">font-family</span><span class="p">:</span> <span class="n">arial</span><span class="p">,</span> <span class="n">verdana</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+            <span class="k">line-height</span><span class="p">:</span> <span class="mf">1.666</span><span class="p">;</span>
+            <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="k">overflow</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+            <span class="k">white-space</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>
+            <span class="k">word-wrap</span><span class="p">:</span> <span class="kc">break-word</span><span class="p">;</span>
+            <span class="k">min-height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span>
+        <span class="p">}</span>
+
+        <span class="nt">td</span><span class="o">,</span> <span class="nt">input</span><span class="o">,</span> <span class="nt">button</span><span class="o">,</span> <span class="nt">select</span><span class="o">,</span> <span class="nt">body</span> <span class="p">{</span>
+            <span class="k">font-family</span><span class="p">:</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="s1">&#39;Microsoft Yahei&#39;</span><span class="p">,</span> <span class="n">verdana</span>
+        <span class="p">}</span>
+
+        <span class="nt">pre</span> <span class="p">{</span>
+            <span class="k">white-space</span><span class="p">:</span> <span class="kc">pre</span><span class="o">-</span><span class="kc">wrap</span><span class="p">;</span>
+            <span class="k">white-space</span><span class="p">:</span> <span class="kp">-moz-</span><span class="kc">pre</span><span class="o">-</span><span class="kc">wrap</span><span class="p">;</span>
+            <span class="k">white-space</span><span class="p">:</span> <span class="o">-</span><span class="kc">pre</span><span class="o">-</span><span class="kc">wrap</span><span class="p">;</span>
+            <span class="k">white-space</span><span class="p">:</span> <span class="kp">-o-</span><span class="kc">pre</span><span class="o">-</span><span class="kc">wrap</span><span class="p">;</span>
+            <span class="k">word-wrap</span><span class="p">:</span> <span class="kc">break-word</span><span class="p">;</span>
+            <span class="k">width</span><span class="p">:</span> <span class="mi">95</span><span class="kt">%</span>
+        <span class="p">}</span>
+
+        <span class="nt">th</span><span class="o">,</span> <span class="nt">td</span> <span class="p">{</span>
+            <span class="k">font-family</span><span class="p">:</span> <span class="n">arial</span><span class="p">,</span> <span class="n">verdana</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+            <span class="k">line-height</span><span class="p">:</span> <span class="mf">1.666</span>
+        <span class="p">}</span>
+
+        <span class="nt">img</span> <span class="p">{</span>
+            <span class="k">border</span><span class="p">:</span> <span class="mi">0</span>
+        <span class="p">}</span>
+
+        <span class="nt">header</span><span class="o">,</span> <span class="nt">footer</span><span class="o">,</span> <span class="nt">section</span><span class="o">,</span> <span class="nt">aside</span><span class="o">,</span> <span class="nt">article</span><span class="o">,</span> <span class="nt">nav</span><span class="o">,</span> <span class="nt">hgroup</span><span class="o">,</span> <span class="nt">figure</span><span class="o">,</span> <span class="nt">figcaption</span> <span class="p">{</span>
+            <span class="k">display</span><span class="p">:</span> <span class="kc">block</span>
+        <span class="p">}</span>
+
+        <span class="nt">blockquote</span> <span class="p">{</span>
+            <span class="k">margin-right</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span>
+        <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&#34;0&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;listitem&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">table</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;700&#34;</span> <span class="na">border</span><span class="o">=</span><span class="s">&#34;0&#34;</span> <span class="na">align</span><span class="o">=</span><span class="s">&#34;center&#34;</span> <span class="na">cellspacing</span><span class="o">=</span><span class="s">&#34;0&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;width:700px;&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;width:700px;margin:0 auto;border-bottom:1px solid #ccc;margin-bottom:30px;&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">table</span> <span class="na">border</span><span class="o">=</span><span class="s">&#34;0&#34;</span> <span class="na">cellpadding</span><span class="o">=</span><span class="s">&#34;0&#34;</span> <span class="na">cellspacing</span><span class="o">=</span><span class="s">&#34;0&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;700&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;39&#34;</span>
+                       <span class="na">style</span><span class="o">=</span><span class="s">&#34;font:12px Tahoma, Arial, 宋体;&#34;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;210&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;width:680px;padding:0 10px;margin:0 auto;&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;line-height:1.5;font-size:14px;margin-bottom:25px;color:#4d4d4d;&#34;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">strong</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;display:block;margin-bottom:15px;&#34;</span><span class="p">&gt;</span>尊敬的用户，您好：<span class="p">&lt;</span><span class="nt">span</span>
+                            <span class="na">style</span><span class="o">=</span><span class="s">&#34;color:#f60;font-size: 16px;&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">strong</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;display:block;margin-bottom:15px;&#34;</span><span class="p">&gt;</span>
+                        您正在进行<span class="p">&lt;</span><span class="nt">span</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;color: red&#34;</span><span class="p">&gt;</span>修改密码<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>操作，请在验证码输入框中输入：<span class="p">&lt;</span><span class="nt">span</span>
+                            <span class="na">style</span><span class="o">=</span><span class="s">&#34;color:#f60;font-size: 24px&#34;</span><span class="p">&gt;</span>{{ code }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>，以完成操作。
+                    <span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;margin-bottom:30px;&#34;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">small</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;display:block;margin-bottom:20px;font-size:12px;&#34;</span><span class="p">&gt;</span>
+                        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;color:#747474;&#34;</span><span class="p">&gt;</span>
+                            注意：验证码2分钟有效，此操作可能会修改您的密码。如非本人操作，请及时登录并修改密码以保证帐户安全
+                            <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>（工作人员不会向你索取此验证码，请勿泄漏！)
+                        <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                    <span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;width:700px;margin:0 auto;&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;padding:10px 10px 0;border-top:1px solid #ccc;color:#747474;margin-bottom:20px;line-height:1.3em;font-size:12px;&#34;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>此为系统邮件，请勿回复<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+                        请保管好您的邮箱，避免账号被他人盗用
+                    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>XXXXXXX QA团队<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+
+{% block js %}{% endblock %}
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="5效果图如下">5.效果图如下：</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/img19.png"
+        data-srcset="/img/img19.png, /img/img19.png 1.5x, /img/img19.png 2x"
+        data-sizes="auto"
+        alt="/img/img19.png"
+        title="img19" /></p>
+<div class="post-promote">
+    <input type="checkbox" name="promote" id="promote" hidden/>
+    <label class="promote-button" for="promote">关注一下再走吧</label>
+    <div class="qr-code">
+        <label class="qr-code-image" for="promote">
+            <img class="image" src="/img/cywhat-gzh.jpg">
+            <span>公众号</span>
+        </label>
+        <label class="qr-code-image" for="promote">
+            <img class="image" src="/img/cywhat-xcx.jpg">
+            <span>小程序</span>
+        </label>
+    </div>
+</div>
+<div class="post-reward">
+    <input type="checkbox" name="reward" id="reward" hidden/>
+    <label class="reward-button" for="reward">赞赏支持</label>
+    <div class="qr-code">
+        <label class="qr-code-image" for="reward">
+            <img class="image" src="/img/WechatPay.jpeg">
+            <span>微信打赏</span>
+        </label>
+        <label class="qr-code-image" for="reward">
+            <img class="image" src="/img/Alipay.jpeg">
+            <span>支付宝打赏</span>
+        </label>
+    </div>
+</div>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2021-09-08</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/" data-title="Django发送邮箱验证码实现以及邮箱html模板" data-hashtags="Django,Html"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/" data-hashtag="Django"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/" data-title="Django发送邮箱验证码实现以及邮箱html模板"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/" data-title="Django发送邮箱验证码实现以及邮箱html模板"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/Django%E5%8F%91%E9%80%81%E9%82%AE%E7%AE%B1%E9%AA%8C%E8%AF%81%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BB%A5%E5%8F%8A%E9%82%AE%E7%AE%B1html%E6%A8%A1%E6%9D%BF/" data-title="Django发送邮箱验证码实现以及邮箱html模板"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/Django/">Django</a>,&nbsp;<a href="/tags/Html/">Html</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/Mac%E5%BF%BD%E7%95%A5%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E6%8F%90%E9%86%92%E5%B9%B6%E5%8F%96%E6%B6%88%E5%B0%8F%E7%BA%A2%E7%82%B9/" class="prev" rel="prev" title="Mac忽略系统更新提醒，并取消小红点"><i class="fas fa-angle-left fa-fw"></i>Mac忽略系统更新提醒，并取消小红点</a>
+            <a href="/html%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0button%E5%8A%A0%E8%BD%BD%E4%B8%AD%E4%B8%94%E7%BD%AE%E7%81%B0%E4%B8%8D%E5%8F%AF%E7%82%B9%E5%87%BB/" class="next" rel="next" title="html简单实现button加载中且置灰不可点击">html简单实现button加载中且置灰不可点击<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="waline"></div>
+			<script src='https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+
+			<script>
+		    	new Waline({
+		    	  el: '#waline',
+				  meta: ["nick","mail","link"],
+		    	  requiredMeta: ["nick","mail"],
+		    	  login: "force",
+				  placeholder: "小Tips 评论前需注册并登录噢",
+		    	  serverURL: "https://comment.cywhat.cn/",
+		    	  avatarCDN: "https://sdn.geekzu.org/avatar/",
+		    	  pageSize:  20 ,
+		    	  avatar: "retro",
+		    	  lang: "zh-CN",
+				  visitor:  true ,
+				  highlight:  true ,
+				  uploadImage:  false 
+		    	});
+		    </script></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://cywhat.cn" target="_blank">cywhat</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="#" target="_blank">Do not go gentle into that good night.</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp"><a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">京ICP备2021041376号</a></span></div>
+        </div>
+
+        <div class="footer-line">
+	        <span id="run-time"></span>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"search":{"algoliaAppID":"3031FWUVJN","algoliaIndex":"cywhat.algolia-temp","algoliaSearchKey":"76bee9d276ea265b36eae78e8a17356c","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"></script>
+
+<script type="text/javascript" src="/js/custom.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-225C41PHZX', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-225C41PHZX" async></script><script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?a54de2ed85b7ec3fd5ad114214614491";
+			  var s = document.getElementsByTagName("script")[0];
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script></body>
+</html>
