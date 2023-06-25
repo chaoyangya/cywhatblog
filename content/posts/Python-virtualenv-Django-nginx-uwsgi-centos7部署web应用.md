@@ -144,7 +144,7 @@ yum -y install gcc pcre-devel zlib-devel openssl openssl-devel
 wget http://nginx.org/download/nginx-1.16.1.tar.gz 
 
 #新建文件夹
-mkdir /usr/loacl/nginx
+mkdir -p /usr/loacl/nginx
 
 #解压nginx包
 tar -zxvf nginx-1.16.1.tar.gz

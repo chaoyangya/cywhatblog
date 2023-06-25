@@ -1,5 +1,5 @@
 ---
-title: "Linux卸载RabbitMq"
+title: "Linux卸载RabbitMQ"
 date: 2023-04-18T14:31:47+08:00
 draft: false
 tags: ["RabbitMQ","Erlang",Linux"]
