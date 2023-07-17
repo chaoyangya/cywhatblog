@@ -39,7 +39,7 @@ categories: ["Jmeter","Linux","压测"]
 ### 5、安装jmeter
 #### 5.1、下载jmeter
 
-[下载jmeter](https://jmeter.apache.org/download_jmeter.cgi)
+- [下载jmeter](https://jmeter.apache.org/download_jmeter.cgi)
 
 ![下载jmeter](/img/img82.png)
 
@@ -92,6 +92,11 @@ server.rmi.localport=8009   # 自定义启动端口
 # 4、修改远程连接端口
 # RMI port to be used by the server (must start rmiregistry with same port)
 server_port=8009            #自定义远程连接端口
+
+# 保存请求和响应数据
+jmeter.save.saveservice.output_format=xml
+jmeter.save.saveservice.response_data=true
+jmeter.save.saveservice.samplerData=true
 ```
 
 
