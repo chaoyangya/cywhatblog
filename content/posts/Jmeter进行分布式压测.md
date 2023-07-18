@@ -144,7 +144,7 @@ cd /home/apache-jmeter-5.6/bin
 **命令解析:**
 - -n : 命令行模式
 - -t : 指定jmx脚本地址[最好是绝对路径]
-- -l : 记录测试结果围巾[指定路径需要给出明确的结果文件名 eg：result.jtl]
+- -l : 记录测试结果存放路径[指定路径需要给出明确的结果文件名 eg：result.jtl]
 - -JthreadNum :   自定义参数[threadNum]    '线程数'
 - -JloopNum :     自定义参数[loopNum]      '循环次数'
 - -JrampupTime :  自定义参数[loopNum]      '运行时间'
