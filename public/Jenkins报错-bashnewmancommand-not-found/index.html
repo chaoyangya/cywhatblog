@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Jenkins报错 Bash:newman:command Not Found" />
 <meta property="og:description" content="1、报错查看 1 2 3 # 报错如下： bash: newman: command not found Build step &#39;Execute shell&#39; marked build as failure 2、原因分析 1 2 3 4 5 1、Linux环境变量配置没问题 2、Linux中任意位置都可以" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/Jenkins%E6%8A%A5%E9%94%99-bashnewmancommand-not-found/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/Jenkins%E6%8A%A5%E9%94%99-bashnewmancommand-not-found/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-11-15T15:19:31+08:00" />
 <meta property="article:modified_time" content="2022-11-15T15:19:31+08:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -142,56 +142,56 @@
             </div><div class="content" id="content"><h3 id="1报错查看">1、报错查看</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 报错如下：</span>
-bash: newman: <span class="nb">command</span> not found
-Build step <span class="s1">&#39;Execute shell&#39;</span> marked build as failure
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 报错如下：</span>
+</span></span><span class="line"><span class="cl">bash: newman: <span class="nb">command</span> not found
+</span></span><span class="line"><span class="cl">Build step <span class="s1">&#39;Execute shell&#39;</span> marked build as failure
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2原因分析">2、原因分析</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text">1、Linux环境变量配置没问题
-
-2、Linux中任意位置都可以执行
-
-3、jenkins构建报错not found
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">1、Linux环境变量配置没问题
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">2、Linux中任意位置都可以执行
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">3、jenkins构建报错not found
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3问题解决1">3、问题解决1</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text">检查jenkins的全局配置是否和linux中的环境变量版本是否一致
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">检查jenkins的全局配置是否和linux中的环境变量版本是否一致
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="4问题解决290可以解决">4、问题解决2(90%可以解决)</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 软链接配置</span>
-ln -s /usr/local/node/bin/npm  /usr/bin/npm
-ln -s /usr/local/node/bin/newman  /usr/bin/newman
-ln -s /usr/local/node/bin/node  /usr/bin/node
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 软链接配置</span>
+</span></span><span class="line"><span class="cl">ln -s /usr/local/node/bin/npm  /usr/bin/npm
+</span></span><span class="line"><span class="cl">ln -s /usr/local/node/bin/newman  /usr/bin/newman
+</span></span><span class="line"><span class="cl">ln -s /usr/local/node/bin/node  /usr/bin/node
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="post-promote">
     <input type="checkbox" name="promote" id="promote" hidden/>

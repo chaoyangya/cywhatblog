@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="newman生成好看的html报告" />
 <meta property="og:description" content="PS:运行newman需要node 版本大于10 1.安装newman 1 npm install -g newman 2.安装普通html报告插件(建议安装) 1 npm install -g newman-reporter-html 3.安装美化h" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/newman%E7%94%9F%E6%88%90%E5%A5%BD%E7%9C%8B%E7%9A%84html%E6%8A%A5%E5%91%8A/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/newman%E7%94%9F%E6%88%90%E5%A5%BD%E7%9C%8B%E7%9A%84html%E6%8A%A5%E5%91%8A/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-08-18T10:38:09+00:00" />
 <meta property="article:modified_time" content="2021-08-18T10:38:09+00:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -143,34 +143,34 @@
 <h3 id="1安装newman">1.安装newman</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">npm install -g newman
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install -g newman
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2安装普通html报告插件建议安装">2.安装普通html报告插件(建议安装)</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">npm install -g newman-reporter-html
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install -g newman-reporter-html
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3安装美化html插件">3.安装美化html插件</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">npm install -g newman-reporter-htmlextra
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install -g newman-reporter-htmlextra
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="4newman命令详解">4.newman命令详解</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -180,15 +180,15 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">newman run  SX.postman_collection.json -e environment.json -r htmlextra,cli --reporter-htmlextra-title <span class="s2">&#34;实训平台接口 测试报告&#34;</span> --reporter-htmlextra-browserTitle <span class="s2">&#34;实训平台接口报告&#34;</span> --reporter-htmlextra-export Bapi.html
-<span class="c1">#参数解释:</span>
-run 后面跟接口脚本json格式的文件
--e 后面添加环境变量
--r 指定生成的报告格式
---reporter-htmlextra-title 指定生成的报告title
---reporter-htmlextra-browserTitle 指定生成的浏览器title
---reporter-htmlextra-export 指定生成的html文件名和路径
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">newman run  SX.postman_collection.json -e environment.json -r htmlextra,cli --reporter-htmlextra-title <span class="s2">&#34;实训平台接口 测试报告&#34;</span> --reporter-htmlextra-browserTitle <span class="s2">&#34;实训平台接口报告&#34;</span> --reporter-htmlextra-export Bapi.html
+</span></span><span class="line"><span class="cl"><span class="c1">#参数解释:</span>
+</span></span><span class="line"><span class="cl">run 后面跟接口脚本json格式的文件
+</span></span><span class="line"><span class="cl">-e 后面添加环境变量
+</span></span><span class="line"><span class="cl">-r 指定生成的报告格式
+</span></span><span class="line"><span class="cl">--reporter-htmlextra-title 指定生成的报告title
+</span></span><span class="line"><span class="cl">--reporter-htmlextra-browserTitle 指定生成的浏览器title
+</span></span><span class="line"><span class="cl">--reporter-htmlextra-export 指定生成的html文件名和路径
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><img
         class="lazyload"

@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Python如何让字典保持有序存储" />
 <meta property="og:description" content="前景 众所周知python的字典dict是无序的和元组不同，但是一些特定场景，又需要字典中的数据是有序的，分享并记录下如何解决 注意 python" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/Python%E5%A6%82%E4%BD%95%E8%AE%A9%E5%AD%97%E5%85%B8%E4%BF%9D%E6%8C%81%E6%9C%89%E5%BA%8F%E5%AD%98%E5%82%A8/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/Python%E5%A6%82%E4%BD%95%E8%AE%A9%E5%AD%97%E5%85%B8%E4%BF%9D%E6%8C%81%E6%9C%89%E5%BA%8F%E5%AD%98%E5%82%A8/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-07-22T14:37:10+08:00" />
 <meta property="article:modified_time" content="2022-07-22T14:37:10+08:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -155,7 +155,7 @@
 <h4 id="无序演示">无序演示</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -171,27 +171,27 @@
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">dict1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">dict1</span><span class="p">)</span>
-
-<span class="c1">#多次执行，结果如下：</span>
-<span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
-
-<span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
-
-<span class="p">{</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
-
-<span class="p">{</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">}</span>
-
-<span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">dict1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">dict1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#多次执行，结果如下：</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="解决">解决</h3>
 <h4 id="有序演示">有序演示</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -211,25 +211,25 @@
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">collections</span>
-<span class="n">dict2</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">OrderedDict</span><span class="p">()</span>
-<span class="n">dict2</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> 
-<span class="n">dict2</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">dict2</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">dict2</span><span class="p">)</span>
-
-<span class="c1">#多次执行，结果如下：</span>
-<span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
-
-<span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
-
-<span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
-
-<span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
-
-<span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">collections</span>
+</span></span><span class="line"><span class="cl"><span class="n">dict2</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">OrderedDict</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">dict2</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> 
+</span></span><span class="line"><span class="cl"><span class="n">dict2</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="n">dict2</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">dict2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#多次执行，结果如下：</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;c&#34;</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="post-promote">
     <input type="checkbox" name="promote" id="promote" hidden/>

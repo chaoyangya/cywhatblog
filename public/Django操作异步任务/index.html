@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Django操作异步任务" />
 <meta property="og:description" content="前置条件 1 2 3 4 5 Python==3.7.0 Pip==3 Django==3.2.18 celery==5.2.7 redis==3.5.3 1、安装 1 pip3 install celery 2、目录 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 - Heng_Tools/ - manage.py - Heng_Tools/ - __init__.py # 修改这个文件 - celery.py # 新增这个文件 - asgi.py" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-04-18T14:42:49+08:00" />
 <meta property="article:modified_time" content="2023-04-18T14:42:49+08:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/cywhat.cn\/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Django, Celery","wordcount":  1104 ,
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Django, Celery","wordcount":  1102 ,
         "url": "https:\/\/cywhat.cn\/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1\/","datePublished": "2023-04-18T14:42:49+08:00","dateModified": "2023-04-18T14:42:49+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
@@ -105,7 +105,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Django操作异步任务</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Django/"><i class="far fa-folder fa-fw"></i>Django</a>&nbsp;<a href="/categories/Celery/"><i class="far fa-folder fa-fw"></i>Celery</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-04-18">2023-04-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1104 字
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-04-18">2023-04-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1102 字
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;<span id="/Django%E6%93%8D%E4%BD%9C%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1/" class="leancloud_visitors" data-flag-title="Django操作异步任务">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;
@@ -158,33 +158,33 @@
             </div><div class="content" id="content"><h3 id="前置条件">前置条件</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text">Python==3.7.0
-Pip==3
-Django==3.2.18
-celery==5.2.7
-redis==3.5.3
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Python==3.7.0
+</span></span><span class="line"><span class="cl">Pip==3
+</span></span><span class="line"><span class="cl">Django==3.2.18
+</span></span><span class="line"><span class="cl">celery==5.2.7
+</span></span><span class="line"><span class="cl">redis==3.5.3
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="1安装">1、安装</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">pip3 install celery
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip3 install celery
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2目录">2、目录</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -204,45 +204,45 @@ redis==3.5.3
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">- Heng_Tools/
-  - manage.py
-  - Heng_Tools/
-    - __init__.py <span class="c1"># 修改这个文件</span>
-    - celery.py <span class="c1"># 新增这个文件</span>
-    - asgi.py
-    - settings.py <span class="c1"># 修改这个文件</span>
-    - urls.py
-    - wsgi.py
-  - web/
-    - static/
-    - forms/
-    - views/
-    - temples/
-    - admin.py
-    - models.py
-    - apps.py
-    - views.py
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">- Heng_Tools/
+</span></span><span class="line"><span class="cl">  - manage.py
+</span></span><span class="line"><span class="cl">  - Heng_Tools/
+</span></span><span class="line"><span class="cl">    - __init__.py <span class="c1"># 修改这个文件</span>
+</span></span><span class="line"><span class="cl">    - celery.py <span class="c1"># 新增这个文件</span>
+</span></span><span class="line"><span class="cl">    - asgi.py
+</span></span><span class="line"><span class="cl">    - settings.py <span class="c1"># 修改这个文件</span>
+</span></span><span class="line"><span class="cl">    - urls.py
+</span></span><span class="line"><span class="cl">    - wsgi.py
+</span></span><span class="line"><span class="cl">  - web/
+</span></span><span class="line"><span class="cl">    - static/
+</span></span><span class="line"><span class="cl">    - forms/
+</span></span><span class="line"><span class="cl">    - views/
+</span></span><span class="line"><span class="cl">    - temples/
+</span></span><span class="line"><span class="cl">    - admin.py
+</span></span><span class="line"><span class="cl">    - models.py
+</span></span><span class="line"><span class="cl">    - apps.py
+</span></span><span class="line"><span class="cl">    - views.py
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="21修改__init__py配置">2.1、修改<code>__init__.py</code>配置</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 加入如下配置</span>
-<span class="kn">from</span> <span class="nn">.celery</span> <span class="kn">import</span> <span class="n">app</span> <span class="k">as</span> <span class="n">celery_app</span>
-
-<span class="n">__all__</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;celery_app&#39;</span><span class="p">,)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 加入如下配置</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">.celery</span> <span class="kn">import</span> <span class="n">app</span> <span class="k">as</span> <span class="n">celery_app</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">__all__</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;celery_app&#39;</span><span class="p">,)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="22新增文件celerypy">2.2、新增文件<code>celery.py</code></h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -266,29 +266,29 @@ redis==3.5.3
 </span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 加入如下代码</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">from</span> <span class="nn">celery</span> <span class="kn">import</span> <span class="n">Celery</span>
-
-<span class="c1"># 设置环境变量</span>
-<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s1">&#39;DJANGO_SETTINGS_MODULE&#39;</span><span class="p">,</span> <span class="s1">&#39;Heng_Tools.settings&#39;</span><span class="p">)</span>
-
-<span class="c1"># 实例化</span>
-<span class="n">app</span> <span class="o">=</span> <span class="n">Celery</span><span class="p">(</span><span class="s1">&#39;Heng_Tools&#39;</span><span class="p">)</span>
-
-<span class="c1"># namespace=&#39;CELERY&#39;作用是允许你在Django配置文件中对Celery进行配置</span>
-<span class="c1"># 但所有Celery配置项必须以CELERY开头，防止冲突</span>
-<span class="n">app</span><span class="o">.</span><span class="n">config_from_object</span><span class="p">(</span><span class="s1">&#39;django.conf:settings&#39;</span><span class="p">,</span> <span class="n">namespace</span><span class="o">=</span><span class="s1">&#39;celery&#39;</span><span class="p">)</span>
-
-<span class="c1"># 自动从Django的已注册app中发现任务</span>
-<span class="n">app</span><span class="o">.</span><span class="n">autodiscover_tasks</span><span class="p">()</span>
-
-
-<span class="c1"># 一个测试任务</span>
-<span class="nd">@app.task</span><span class="p">(</span><span class="n">bind</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">debug_task</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Request: {self.request!r}&#39;</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 加入如下代码</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">celery</span> <span class="kn">import</span> <span class="n">Celery</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 设置环境变量</span>
+</span></span><span class="line"><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s1">&#39;DJANGO_SETTINGS_MODULE&#39;</span><span class="p">,</span> <span class="s1">&#39;Heng_Tools.settings&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 实例化</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span> <span class="o">=</span> <span class="n">Celery</span><span class="p">(</span><span class="s1">&#39;Heng_Tools&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># namespace=&#39;CELERY&#39;作用是允许你在Django配置文件中对Celery进行配置</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 但所有Celery配置项必须以CELERY开头，防止冲突</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span><span class="o">.</span><span class="n">config_from_object</span><span class="p">(</span><span class="s1">&#39;django.conf:settings&#39;</span><span class="p">,</span> <span class="n">namespace</span><span class="o">=</span><span class="s1">&#39;celery&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 自动从Django的已注册app中发现任务</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span><span class="o">.</span><span class="n">autodiscover_tasks</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 一个测试任务</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@app</span><span class="o">.</span><span class="n">task</span><span class="p">(</span><span class="n">bind</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">debug_task</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Request: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">request</span><span class="si">!r}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="23修改settings">2.3、修改<code>settings</code></h4>
 <div class="details admonition note">
@@ -301,7 +301,7 @@ redis==3.5.3
     </div>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -328,32 +328,32 @@ redis==3.5.3
 </span><span class="lnt">25
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 关掉修改默认市区</span>
-<span class="n">USE_TZ</span> <span class="o">=</span> <span class="bp">False</span>
-
-<span class="c1"># 最重要的配置，设置消息broker,格式为：db://user:password@host:port/dbname</span>
-<span class="c1"># 如果redis安装在本机，使用localhost</span>
-<span class="c1"># 如果docker部署的redis，使用redis://redis:6379</span>
-<span class="c1"># 设置并发worker数量</span>
-<span class="n">celery_worker_concurrency</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="c1"># celery worker 每次去rabbitmq预取任务的数量</span>
-<span class="n">celery_worker_prefetch_multiplier</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="c1"># 防死锁</span>
-<span class="n">celery_force_execv</span> <span class="o">=</span> <span class="bp">True</span>
-<span class="c1"># 时区设置</span>
-<span class="n">celery_timezone</span> <span class="o">=</span> <span class="s1">&#39;Asia/Shanghai&#39;</span>
-<span class="n">celery_result_backend</span> <span class="o">=</span> <span class="s2">&#34;django-db&#34;</span>
-<span class="n">celery_accept_content</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;application/json&#39;</span><span class="p">,</span> <span class="p">]</span>
-<span class="n">celery_task_serializer</span> <span class="o">=</span> <span class="s1">&#39;json&#39;</span>
-<span class="n">celery_result_serializer</span> <span class="o">=</span> <span class="s1">&#39;json&#39;</span>
-
-<span class="c1"># INSTALLED_APPS加入如下配置</span>
-<span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s1">&#39;celery&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;django_celery_beat&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;django_celery_results&#39;</span>
-<span class="p">]</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 关掉修改默认市区</span>
+</span></span><span class="line"><span class="cl"><span class="n">USE_TZ</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 最重要的配置，设置消息broker,格式为：db://user:password@host:port/dbname</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 如果redis安装在本机，使用localhost</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 如果docker部署的redis，使用redis://redis:6379</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 设置并发worker数量</span>
+</span></span><span class="line"><span class="cl"><span class="n">celery_worker_concurrency</span> <span class="o">=</span> <span class="mi">20</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># celery worker 每次去rabbitmq预取任务的数量</span>
+</span></span><span class="line"><span class="cl"><span class="n">celery_worker_prefetch_multiplier</span> <span class="o">=</span> <span class="mi">20</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 防死锁</span>
+</span></span><span class="line"><span class="cl"><span class="n">celery_force_execv</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 时区设置</span>
+</span></span><span class="line"><span class="cl"><span class="n">celery_timezone</span> <span class="o">=</span> <span class="s1">&#39;Asia/Shanghai&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">celery_result_backend</span> <span class="o">=</span> <span class="s2">&#34;django-db&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">celery_accept_content</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;application/json&#39;</span><span class="p">,</span> <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">celery_task_serializer</span> <span class="o">=</span> <span class="s1">&#39;json&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">celery_result_serializer</span> <span class="o">=</span> <span class="s1">&#39;json&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># INSTALLED_APPS加入如下配置</span>
+</span></span><span class="line"><span class="cl"><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;celery&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;django_celery_beat&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;django_celery_results&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3新增task">3、新增task</h3>
 <div class="details admonition note">
@@ -366,33 +366,31 @@ redis==3.5.3
     </div>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">celery</span> <span class="kn">import</span> <span class="n">Celery</span>
-
-<span class="c1"># 专属于Heng_Tools项目的任务</span>
-<span class="n">app</span> <span class="o">=</span> <span class="n">Celery</span><span class="p">(</span><span class="s1">&#39;Heng_Tools&#39;</span><span class="p">)</span>
-
-
-<span class="nd">@app.task</span>
-<span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
-    <span class="k">pass</span>
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">celery</span> <span class="kn">import</span> <span class="n">Celery</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 专属于Heng_Tools项目的任务</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span> <span class="o">=</span> <span class="n">Celery</span><span class="p">(</span><span class="s1">&#39;Heng_Tools&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@app</span><span class="o">.</span><span class="n">task</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">pass</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -405,90 +403,88 @@ redis==3.5.3
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">celery</span> <span class="kn">import</span> <span class="n">Celery</span>
-
-<span class="c1"># app/tasks.py, 可以复用的task</span>
-<span class="kn">from</span> <span class="nn">celery</span> <span class="kn">import</span> <span class="n">shared_task</span>
-<span class="kn">import</span> <span class="nn">time</span>
-
-
-<span class="nd">@shared_task</span>
-<span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">celery</span> <span class="kn">import</span> <span class="n">Celery</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># app/tasks.py, 可以复用的task</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">celery</span> <span class="kn">import</span> <span class="n">shared_task</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@shared_task</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text">装饰器`@shared_task`可以让我们避免对某个项目名对应Celery实例的依赖，使app的可移植性更强。
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">装饰器`@shared_task`可以让我们避免对某个项目名对应Celery实例的依赖，使app的可移植性更强。
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="4运行">4、运行</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">Celery -A Heng_Tools worker -l info     
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Celery -A Heng_Tools worker -l info     
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 如果看到这行就说明启动成功了</span>
-<span class="o">[</span>2023-04-18 15:27:03,191: INFO/MainProcess<span class="o">]</span> celery@cywhat ready.
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 如果看到这行就说明启动成功了</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>2023-04-18 15:27:03,191: INFO/MainProcess<span class="o">]</span> celery@cywhat ready.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="5调用异步任务俩种任务都会返回一个taskid">5、调用异步任务[俩种任务都会返回一个taskId]</h3>
 <h4 id="51调用方法1">5.1、调用方法1</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">result</span> <span class="o">=</span> <span class="n">add</span><span class="o">.</span><span class="n">delay</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="n">add</span><span class="o">.</span><span class="n">delay</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="51调用方法2">5.1、调用方法2</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># apply_async方法，与delay类似，但支持更多参数</span>
-<span class="n">result</span> <span class="o">=</span> <span class="n">add</span><span class="o">.</span><span class="n">apply_async</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># apply_async方法，与delay类似，但支持更多参数</span>
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="n">add</span><span class="o">.</span><span class="n">apply_async</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="6安装flower监控">6、安装flower监控</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 安装</span>
-pip3 install flower
-
-<span class="c1"># 运行</span>
-celery -A  Heng_Tools  flower
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 安装</span>
+</span></span><span class="line"><span class="cl">pip3 install flower
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 运行</span>
+</span></span><span class="line"><span class="cl">celery -A  Heng_Tools  flower
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="7异步任务的一些操作">7、异步任务的一些操作</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -504,38 +500,38 @@ celery -A  Heng_Tools  flower
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 查看task的任务id</span>
-<span class="n">result</span><span class="o">.</span><span class="n">task_id</span>
-
-<span class="c1"># 查看task的任务状态</span>
-<span class="n">result</span><span class="o">.</span><span class="n">status</span>
-
-<span class="c1"># 获取task的结果</span>
-<span class="n">AsyncResult</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">task_id</span><span class="p">)</span><span class="o">.</span><span class="n">result</span>
-
-<span class="c1"># 获取task的状态</span>
-<span class="n">AsyncResult</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">task_id</span><span class="p">)</span><span class="o">.</span><span class="n">result</span>
-
-<span class="c1"># 取消正在进行中的task任务</span>
-<span class="n">AsyncResult</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">task_id</span><span class="p">)</span><span class="o">.</span><span class="n">revoke</span><span class="p">(</span><span class="n">terminate</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 查看task的任务id</span>
+</span></span><span class="line"><span class="cl"><span class="n">result</span><span class="o">.</span><span class="n">task_id</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看task的任务状态</span>
+</span></span><span class="line"><span class="cl"><span class="n">result</span><span class="o">.</span><span class="n">status</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 获取task的结果</span>
+</span></span><span class="line"><span class="cl"><span class="n">AsyncResult</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">task_id</span><span class="p">)</span><span class="o">.</span><span class="n">result</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 获取task的状态</span>
+</span></span><span class="line"><span class="cl"><span class="n">AsyncResult</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">task_id</span><span class="p">)</span><span class="o">.</span><span class="n">result</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 取消正在进行中的task任务</span>
+</span></span><span class="line"><span class="cl"><span class="n">AsyncResult</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">task_id</span><span class="p">)</span><span class="o">.</span><span class="n">revoke</span><span class="p">(</span><span class="n">terminate</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="8设置异步线程数量">8、设置异步线程数量</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 1、安装依赖</span>
-pip3 install eventlet
-
-<span class="c1"># 2、更改启动worker命令</span>
-celery -A Heng_Tools  worker --pool<span class="o">=</span>eventlet --concurrency<span class="o">=</span><span class="m">500</span> --loglevel<span class="o">=</span>info
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 1、安装依赖</span>
+</span></span><span class="line"><span class="cl">pip3 install eventlet
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2、更改启动worker命令</span>
+</span></span><span class="line"><span class="cl">celery -A Heng_Tools  worker --pool<span class="o">=</span>eventlet --concurrency<span class="o">=</span><span class="m">500</span> --loglevel<span class="o">=</span>info
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="post-promote">
     <input type="checkbox" name="promote" id="promote" hidden/>

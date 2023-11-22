@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Docker部署wordpress站点" />
 <meta property="og:description" content="1.拉取docker镜像 1 2 3 docker pull wordpress docker pull mysql 2.创建mysql容器 1 docker run -d --name mysql -v mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=wordpress mysql 参数解析 -d 后台运行容器，并返回容器id --name 自定义容器" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/Docker%E9%83%A8%E7%BD%B2wordpress%E7%AB%99%E7%82%B9/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-04-15T14:14:09+08:00" />
 <meta property="article:modified_time" content="2022-04-15T14:14:09+08:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -143,24 +143,24 @@
             </div><div class="content" id="content"><h3 id="1拉取docker镜像">1.拉取docker镜像</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">docker pull wordpress
-
-docker pull mysql
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker pull wordpress
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker pull mysql
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2创建mysql容器">2.创建mysql容器</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">docker run -d --name mysql -v mysql-data:/var/lib/mysql -e <span class="nv">MYSQL_ROOT_PASSWORD</span><span class="o">=</span>root -e <span class="nv">MYSQL_DATABASE</span><span class="o">=</span>wordpress mysql
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -d --name mysql -v mysql-data:/var/lib/mysql -e <span class="nv">MYSQL_ROOT_PASSWORD</span><span class="o">=</span>root -e <span class="nv">MYSQL_DATABASE</span><span class="o">=</span>wordpress mysql
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="details admonition tip open">
         <div class="details-summary admonition-title">
@@ -180,11 +180,11 @@ docker pull mysql
 <h3 id="3创建-wordpress-容器">3.创建 wordpress 容器</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">docker run -d --name wordpress -e <span class="nv">WORDPRESS_DB_HOST</span><span class="o">=</span>mysql:3306 --link mysql -p 8083:80 wordpress
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run -d --name wordpress -e <span class="nv">WORDPRESS_DB_HOST</span><span class="o">=</span>mysql:3306 --link mysql -p 8083:80 wordpress
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="details admonition tip open">
         <div class="details-summary admonition-title">
@@ -204,25 +204,25 @@ docker pull mysql
 <h3 id="4访问地址">4.访问地址</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text">用户地址：https://服务器ip:8083
-
-管理地址：https://服务器ip:8083/wp-admin/
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">用户地址：https://服务器ip:8083
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">管理地址：https://服务器ip:8083/wp-admin/
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="5异常问题解决">5.异常问题解决</h3>
 <p>url访问后，页面出现以下问题</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">Error establishing a database connection
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Error establishing a database connection
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="details admonition success open">
         <div class="details-summary admonition-title">

@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Centos7安装mysql5.7.41亲测可用" />
 <meta property="og:description" content="一、安装前准备 1.检查是否已经安装过mysql，执行命令 1 2 3 4 5 6 7 8 9 10 11 # 查找已经安装的mysqld rpm -qa | grep mysqld # 查找已经安装的mari" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/centos7%E5%AE%89%E8%A3%85mysql5.7.41%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/centos7%E5%AE%89%E8%A3%85mysql5.7.41%E4%BA%B2%E6%B5%8B%E5%8F%AF%E7%94%A8/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-03-30T15:54:01+00:00" />
 <meta property="article:modified_time" content="2020-03-30T15:54:01+00:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -177,7 +177,7 @@
 <h3 id="1检查是否已经安装过mysql执行命令">1.检查是否已经安装过mysql，执行命令</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -190,94 +190,94 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 查找已经安装的mysqld</span>
-rpm -qa <span class="p">|</span> grep mysqld
-
-<span class="c1"># 查找已经安装的mariadb</span>
-rpm -qa <span class="p">|</span> grep mariadb
-
-<span class="c1"># 查看正在运行的端口号</span>
-netstat -tunlp <span class="p">|</span> grep <span class="m">3306</span>
-
-<span class="c1"># 删除查找到的文件</span>
-rpm -e --nodeps  mysqld/mariadb文件
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查找已经安装的mysqld</span>
+</span></span><span class="line"><span class="cl">rpm -qa <span class="p">|</span> grep mysqld
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查找已经安装的mariadb</span>
+</span></span><span class="line"><span class="cl">rpm -qa <span class="p">|</span> grep mariadb
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看正在运行的端口号</span>
+</span></span><span class="line"><span class="cl">netstat -tunlp <span class="p">|</span> grep <span class="m">3306</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 删除查找到的文件</span>
+</span></span><span class="line"><span class="cl">rpm -e --nodeps  mysqld/mariadb文件
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2查询所有mysql对应的文件夹">2.查询所有Mysql对应的文件夹</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">whereis mysqld
-
-<span class="c1"># 删除查找到的文件</span>
-rm -rf  mysqld文件
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">whereis mysqld
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 删除查找到的文件</span>
+</span></span><span class="line"><span class="cl">rm -rf  mysqld文件
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>并再次执行<code>whereis mysqld</code>验证是否删除完毕</p>
 <h3 id="3下载mysql安装包">3.下载Mysql安装包</h3>
 <p>下载命令：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">wget https://mirrors.cloud.tencent.com/mysql/yum/mysql-5.7-community-el7-x86_64/mysql-community-common-5.7.41-1.el7.x86_64.rpm
-wget https://mirrors.cloud.tencent.com/mysql/yum/mysql-5.7-community-el7-x86_64/mysql-community-libs-5.7.41-1.el7.x86_64.rpm
-wget https://mirrors.cloud.tencent.com/mysql/yum/mysql-5.7-community-el7-x86_64/mysql-community-client-5.7.41-1.el7.x86_64.rpm
-wget https://mirrors.cloud.tencent.com/mysql/yum/mysql-5.7-community-el7-x86_64/mysql-community-server-5.7.41-1.el7.x86_64.rpm
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget https://mirrors.cloud.tencent.com/mysql/yum/mysql-5.7-community-el7-x86_64/mysql-community-common-5.7.41-1.el7.x86_64.rpm
+</span></span><span class="line"><span class="cl">wget https://mirrors.cloud.tencent.com/mysql/yum/mysql-5.7-community-el7-x86_64/mysql-community-libs-5.7.41-1.el7.x86_64.rpm
+</span></span><span class="line"><span class="cl">wget https://mirrors.cloud.tencent.com/mysql/yum/mysql-5.7-community-el7-x86_64/mysql-community-client-5.7.41-1.el7.x86_64.rpm
+</span></span><span class="line"><span class="cl">wget https://mirrors.cloud.tencent.com/mysql/yum/mysql-5.7-community-el7-x86_64/mysql-community-server-5.7.41-1.el7.x86_64.rpm
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><a href="https://mirrors.cloud.tencent.com/mysql/yum/" target="_blank" rel="noopener noreffer">其他版本下载</a></p>
 <h2 id="二安装mysql">二、安装Mysql</h2>
 <h3 id="1安装前再次确认没有安装其他版本的mysqld或者mariadb">1.安装前再次确认没有安装其他版本的mysqld或者mariadb</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text">参考第一步
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">参考第一步
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2安装依赖">2.安装依赖</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">yum install libaio
-
-yum install net-tools
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yum install libaio
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">yum install net-tools
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3安装mysqld服务一定要按顺序来">3.安装mysqld服务【一定要按顺序来】</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">rpm -ivh mysql-community-common-5.7.41-1.el7.x86_64.rpm
-rpm -ivh mysql-community-libs-5.7.41-1.el7.x86_64.rpm
-rpm -ivh mysql-community-client-5.7.41-1.el7.x86_64.rpm
-rpm -ivh mysql-community-server-5.7.41-1.el7.x86_64.rpm
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rpm -ivh mysql-community-common-5.7.41-1.el7.x86_64.rpm
+</span></span><span class="line"><span class="cl">rpm -ivh mysql-community-libs-5.7.41-1.el7.x86_64.rpm
+</span></span><span class="line"><span class="cl">rpm -ivh mysql-community-client-5.7.41-1.el7.x86_64.rpm
+</span></span><span class="line"><span class="cl">rpm -ivh mysql-community-server-5.7.41-1.el7.x86_64.rpm
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="4验证安装结果">4.验证安装结果</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -286,14 +286,14 @@ rpm -ivh mysql-community-server-5.7.41-1.el7.x86_64.rpm
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># mysqld安装成功以后会自动创建mysqld用户和组</span>
-cat /etc/passwd <span class="p">|</span> grep mysql
-
-cat /etc/group <span class="p">|</span> grep mysql
-
-<span class="c1"># 查看mysql版本，如出现版本号即安装成功</span>
-mysqladmin --version    
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># mysqld安装成功以后会自动创建mysqld用户和组</span>
+</span></span><span class="line"><span class="cl">cat /etc/passwd <span class="p">|</span> grep mysql
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cat /etc/group <span class="p">|</span> grep mysql
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看mysql版本，如出现版本号即安装成功</span>
+</span></span><span class="line"><span class="cl">mysqladmin --version    
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><img
         class="lazyload"
@@ -307,20 +307,20 @@ mysqladmin --version
 <h3 id="1启动mysqld">1、启动mysqld</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl start mysqld.service
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl start mysqld.service
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2查看mysqld运行状态">2、查看mysqld运行状态</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl status mysqld.service
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl status mysqld.service
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><img
         class="lazyload"
@@ -333,21 +333,21 @@ mysqladmin --version
 <h3 id="3开机自启">3、开机自启</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl <span class="nb">enable</span> mysqld.service
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl <span class="nb">enable</span> mysqld.service
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="四连接mysqld">四、连接Mysqld</h2>
 <h3 id="1查看初始密码">1、查看初始密码</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">cat /var/log/mysqld.log <span class="p">|</span> grep password
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat /var/log/mysqld.log <span class="p">|</span> grep password
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><img
         class="lazyload"
@@ -360,25 +360,25 @@ mysqladmin --version
 <h3 id="2登录">2、登录</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">mysql -uroot -p
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mysql -uroot -p
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3修改密码">3、修改密码</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">SET PASSWORD FOR <span class="s1">&#39;root&#39;</span>@<span class="s1">&#39;localhost&#39;</span> <span class="o">=</span> PASSWORD<span class="o">(</span><span class="s1">&#39;newpasswd&#39;</span><span class="o">)</span><span class="p">;</span>    
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">SET PASSWORD FOR <span class="s1">&#39;root&#39;</span>@<span class="s1">&#39;localhost&#39;</span> <span class="o">=</span> PASSWORD<span class="o">(</span><span class="s1">&#39;newpasswd&#39;</span><span class="o">)</span><span class="p">;</span>    
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="4修改为弱口令密码如有需要eg123456">4、修改为弱口令密码【如有需要，eg：123456】</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -392,41 +392,41 @@ mysqladmin --version
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 依次执行</span>
-<span class="nb">set</span> global <span class="nv">validate_password_policy</span><span class="o">=</span>0<span class="p">;</span>
-
-<span class="nb">set</span> global <span class="nv">validate_password_mixed_case_count</span><span class="o">=</span>0<span class="p">;</span>
-
-<span class="nb">set</span> global <span class="nv">validate_password_number_count</span><span class="o">=</span>3<span class="p">;</span>
-
-<span class="nb">set</span> global <span class="nv">validate_password_special_char_count</span><span class="o">=</span>0<span class="p">;</span>
-
-<span class="nb">set</span> global <span class="nv">validate_password_length</span><span class="o">=</span>3<span class="p">;</span>
-
-SET PASSWORD FOR <span class="s1">&#39;root&#39;</span>@<span class="s1">&#39;localhost&#39;</span> <span class="o">=</span> PASSWORD<span class="o">(</span><span class="s1">&#39;123456&#39;</span><span class="o">)</span><span class="p">;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 依次执行</span>
+</span></span><span class="line"><span class="cl"><span class="nb">set</span> global <span class="nv">validate_password_policy</span><span class="o">=</span>0<span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">set</span> global <span class="nv">validate_password_mixed_case_count</span><span class="o">=</span>0<span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">set</span> global <span class="nv">validate_password_number_count</span><span class="o">=</span>3<span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">set</span> global <span class="nv">validate_password_special_char_count</span><span class="o">=</span>0<span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">set</span> global <span class="nv">validate_password_length</span><span class="o">=</span>3<span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">SET PASSWORD FOR <span class="s1">&#39;root&#39;</span>@<span class="s1">&#39;localhost&#39;</span> <span class="o">=</span> PASSWORD<span class="o">(</span><span class="s1">&#39;123456&#39;</span><span class="o">)</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="5修改后验证新密码">5、修改后验证新密码</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 退出</span>
-<span class="nb">exit</span>
-
-<span class="c1"># 使用新密码登录</span>
-mysql -uroot -p
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 退出</span>
+</span></span><span class="line"><span class="cl"><span class="nb">exit</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 使用新密码登录</span>
+</span></span><span class="line"><span class="cl">mysql -uroot -p
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="6开放远程连接可选">6、开放远程连接【可选】</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -439,18 +439,18 @@ mysql -uroot -p
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 登录</span>
-mysql -uroot -p
-
-<span class="c1"># 使用mysql库</span>
-mysql&gt;use mysql<span class="p">;</span>
-
-<span class="c1"># 允许远程登录</span>
-msyql&gt;update user <span class="nb">set</span> user.Host<span class="o">=</span><span class="s1">&#39;%&#39;</span> where user.User<span class="o">=</span><span class="s1">&#39;root&#39;</span><span class="p">;</span>
-
-<span class="c1"># 刷新权限</span>
-mysql&gt;flush privileges<span class="p">;</span> 
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 登录</span>
+</span></span><span class="line"><span class="cl">mysql -uroot -p
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 使用mysql库</span>
+</span></span><span class="line"><span class="cl">mysql&gt;use mysql<span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 允许远程登录</span>
+</span></span><span class="line"><span class="cl">msyql&gt;update user <span class="nb">set</span> user.Host<span class="o">=</span><span class="s1">&#39;%&#39;</span> where user.User<span class="o">=</span><span class="s1">&#39;root&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 刷新权限</span>
+</span></span><span class="line"><span class="cl">mysql&gt;flush privileges<span class="p">;</span> 
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>如果是云服务器的话，需要设置安全组，请自行百度</li>
@@ -459,7 +459,7 @@ mysql&gt;flush privileges<span class="p">;</span>
 <h3 id="1开启远程连接备份和迁移必须执行">1、开启远程连接[备份和迁移必须执行]</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -472,65 +472,65 @@ mysql&gt;flush privileges<span class="p">;</span>
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 登录</span>
-mysql -uroot -p
-
-<span class="c1"># 使用mysql库</span>
-mysql&gt;use mysql<span class="p">;</span>
-
-<span class="c1"># 允许远程登录</span>
-msyql&gt;update user <span class="nb">set</span> user.Host<span class="o">=</span><span class="s1">&#39;%&#39;</span> where user.User<span class="o">=</span><span class="s1">&#39;root&#39;</span><span class="p">;</span>
-
-<span class="c1"># 刷新权限</span>
-mysql&gt;flush privileges<span class="p">;</span> 
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 登录</span>
+</span></span><span class="line"><span class="cl">mysql -uroot -p
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 使用mysql库</span>
+</span></span><span class="line"><span class="cl">mysql&gt;use mysql<span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 允许远程登录</span>
+</span></span><span class="line"><span class="cl">msyql&gt;update user <span class="nb">set</span> user.Host<span class="o">=</span><span class="s1">&#39;%&#39;</span> where user.User<span class="o">=</span><span class="s1">&#39;root&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 刷新权限</span>
+</span></span><span class="line"><span class="cl">mysql&gt;flush privileges<span class="p">;</span> 
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2重启">2、重启</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl restart mysqld.service
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl restart mysqld.service
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3备份">3、备份</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 导出x.x.x.x的database库到当前文件的</span>
-mysqldump -hx.x.x.x -uroot -p<span class="s2">&#34;123456&#34;</span> database &gt; ./database.sql  
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 导出x.x.x.x的database库到当前文件的</span>
+</span></span><span class="line"><span class="cl">mysqldump -hx.x.x.x -uroot -p<span class="s2">&#34;123456&#34;</span> database &gt; ./database.sql  
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="4备份好的文件传输到其他机器">4、备份好的文件传输到其他机器</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 传输database.sql文件到x.x.x.1机器的指定目录</span>
-scp database.sql root@x.x.x.1:/home/xxx/
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 传输database.sql文件到x.x.x.1机器的指定目录</span>
+</span></span><span class="line"><span class="cl">scp database.sql root@x.x.x.1:/home/xxx/
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="5恢复备份文件">5、恢复备份文件</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 恢复x.x.x.的database.sql文件到database库</span>
-mysql -hx.x.x.1 -uroot -p<span class="s1">&#39;123456&#39;</span> database &lt; database.sql
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 恢复x.x.x.的database.sql文件到database库</span>
+</span></span><span class="line"><span class="cl">mysql -hx.x.x.1 -uroot -p<span class="s1">&#39;123456&#39;</span> database &lt; database.sql
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="6验证恢复文件">6、验证恢复文件</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -540,15 +540,15 @@ mysql -hx.x.x.1 -uroot -p<span class="s1">&#39;123456&#39;</span> database &lt; 
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 登录</span>
-mysql -uroot -p
-
-<span class="c1"># 使用库</span>
-use database
-
-<span class="c1"># 查看表</span>
-show tables<span class="p">;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 登录</span>
+</span></span><span class="line"><span class="cl">mysql -uroot -p
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 使用库</span>
+</span></span><span class="line"><span class="cl">use database
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看表</span>
+</span></span><span class="line"><span class="cl">show tables<span class="p">;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>补充说明：</strong></p>
 <ul>
@@ -561,15 +561,15 @@ show tables<span class="p">;</span>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">yum install  libaio-devel.x86_64
-
-yum -y install numactl
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yum install  libaio-devel.x86_64
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">yum -y install numactl
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="post-promote">
     <input type="checkbox" name="promote" id="promote" hidden/>

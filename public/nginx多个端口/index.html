@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="nginx解决多个端口映射80的配置" />
 <meta property="og:description" content="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 server { listen 80; server_name xx.cn; #域名1 location / { proxy_pass http://x.x.x.x:9001; #域名1需要映射到80端口的服务端口 } } server { listen 80; server_name xx.cn; #域名2 location / { proxy_pass http://xx.xx.xx.xx:7300; #域名" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/nginx%E5%A4%9A%E4%B8%AA%E7%AB%AF%E5%8F%A3/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/nginx%E5%A4%9A%E4%B8%AA%E7%AB%AF%E5%8F%A3/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-04-16T10:12:11+00:00" />
 <meta property="article:modified_time" content="2021-04-16T10:12:11+00:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -138,7 +138,7 @@
 </nav></div>
             </div><div class="content" id="content"><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -157,24 +157,24 @@
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">server <span class="o">{</span>
-    listen       80<span class="p">;</span>
-    server_name  xx.cn<span class="p">;</span>  <span class="c1">#域名1</span>
-
-    location / <span class="o">{</span>
-        proxy_pass http://x.x.x.x:9001<span class="p">;</span>   <span class="c1">#域名1需要映射到80端口的服务端口</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-
-server <span class="o">{</span>
-     listen       80<span class="p">;</span>
-     server_name   xx.cn<span class="p">;</span>   <span class="c1">#域名2</span>
-
-     location / <span class="o">{</span>
-         proxy_pass http://xx.xx.xx.xx:7300<span class="p">;</span>    <span class="c1">#域名2需要映射到80端口的服务端口</span>
-     <span class="o">}</span>
- <span class="o">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">server <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    listen       80<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    server_name  xx.cn<span class="p">;</span>  <span class="c1">#域名1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    location / <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        proxy_pass http://x.x.x.x:9001<span class="p">;</span>   <span class="c1">#域名1需要映射到80端口的服务端口</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">server <span class="o">{</span>
+</span></span><span class="line"><span class="cl">     listen       80<span class="p">;</span>
+</span></span><span class="line"><span class="cl">     server_name   xx.cn<span class="p">;</span>   <span class="c1">#域名2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     location / <span class="o">{</span>
+</span></span><span class="line"><span class="cl">         proxy_pass http://xx.xx.xx.xx:7300<span class="p">;</span>    <span class="c1">#域名2需要映射到80端口的服务端口</span>
+</span></span><span class="line"><span class="cl">     <span class="o">}</span>
+</span></span><span class="line"><span class="cl"> <span class="o">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="注意">注意:</h3>
 <p><strong>俩个server服务要相对独立，这样就可以同时将服务1和服务2的端口映射到80端口了</strong></p>

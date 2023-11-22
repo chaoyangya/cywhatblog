@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="fonts.googleapis.com访问较慢[已解决]" />
 <meta property="og:description" content="前景： 自己写的测试工具发现最近打开页面时快时慢，查了原因，发现是css引用的谷歌字体源：fonts.googleapis.com 解决办法： 1" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/fonts-googleapis-com%E8%AE%BF%E9%97%AE%E8%BE%83%E6%85%A2-%E5%B7%B2%E8%A7%A3%E5%86%B3/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/fonts-googleapis-com%E8%AE%BF%E9%97%AE%E8%BE%83%E6%85%A2-%E5%B7%B2%E8%A7%A3%E5%86%B3/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-10-12T18:14:32+00:00" />
 <meta property="article:modified_time" content="2021-10-12T18:14:32+00:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -145,29 +145,29 @@
 <h3 id="1替换字体库源地址">1.替换字体库源地址</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">查找引用了谷歌源的css文件 更换源地址
-
-fonts.googleapis.com   更换为---&gt;   cdnjs.loli.net 
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">查找引用了谷歌源的css文件 更换源地址
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">fonts.googleapis.com   更换为---&gt;   cdnjs.loli.net 
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2如果是html引用更改link">2.如果是html引用，更改link</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://cdnjs.loli.net/css?family=IBM+Plex+Sans:&#34;</span> <span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://cdnjs.loli.net/css?family=IBM+Plex+Sans:&#34;</span> <span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3字体下载到本地推荐">3.字体下载到本地(推荐)</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -180,27 +180,27 @@ fonts.googleapis.com   更换为---&gt;   cdnjs.loli.net
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#1.下载google字体</span>
-url访问 https://fonts.googleapis.com/css?family<span class="o">=</span>IBM+Plex+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i<span class="p">|</span>Rubik:300,300i,400,400i,500,500i,700,700i,900,900i<span class="p">&amp;</span><span class="nv">display</span><span class="o">=</span>swap
-
-<span class="c1">#2.保存css字体文件到本地，并重命名</span>
-
-<span class="c1">#3.css/html引入字体文件</span>
-  html
-    &lt;link <span class="nv">rel</span><span class="o">=</span><span class="s2">&#34;stylesheet&#34;</span> <span class="nv">href</span><span class="o">=</span><span class="s2">&#34;/fonts.css&#34;</span> &gt;
-    
-  css
-    import <span class="s2">&#34;fonts.css&#34;</span><span class="p">;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#1.下载google字体</span>
+</span></span><span class="line"><span class="cl">url访问 https://fonts.googleapis.com/css?family<span class="o">=</span>IBM+Plex+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i<span class="p">|</span>Rubik:300,300i,400,400i,500,500i,700,700i,900,900i<span class="p">&amp;</span><span class="nv">display</span><span class="o">=</span>swap
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#2.保存css字体文件到本地，并重命名</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#3.css/html引入字体文件</span>
+</span></span><span class="line"><span class="cl">  html
+</span></span><span class="line"><span class="cl">    &lt;link <span class="nv">rel</span><span class="o">=</span><span class="s2">&#34;stylesheet&#34;</span> <span class="nv">href</span><span class="o">=</span><span class="s2">&#34;/fonts.css&#34;</span> &gt;
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">  css
+</span></span><span class="line"><span class="cl">    import <span class="s2">&#34;fonts.css&#34;</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="4重新访问页面">4.重新访问页面</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">访问时长达到了 ms 级别
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">访问时长达到了 ms 级别
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="post-promote">
     <input type="checkbox" name="promote" id="promote" hidden/>

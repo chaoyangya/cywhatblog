@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="hexo优化加载速度" />
 <meta property="og:description" content="注意该方法利用插件更改配置,如主题中有Google字体导致加载缓慢,请移步其他内容 利用插件 hexo-all-minifier 安装插件 1 npm install hexo-all-minifier --save 如果安装失败,请使用cnpm 1" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/hexo%E4%BC%98%E5%8C%96%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/hexo%E4%BC%98%E5%8C%96%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-07-14T15:38:49+00:00" />
 <meta property="article:modified_time" content="2021-07-14T15:38:49+00:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -143,34 +143,34 @@
 <h3 id="安装插件">安装插件</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">npm install hexo-all-minifier --save
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install hexo-all-minifier --save
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>如果安装失败,请使用<code>cnpm</code></strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">cnpm install hexo-all-minifier --save
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cnpm install hexo-all-minifier --save
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="更改hexo配置">更改Hexo配置</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">vim  _config.yml
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim  _config.yml
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>加入如下配置:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -207,51 +207,51 @@
 </span><span class="lnt">35
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#启用all_minifier</span>
-all_minifier: <span class="nb">true</span>
-<span class="c1"># html压缩</span>
-html_minifier:
-  enable: <span class="nb">true</span>
-  ignore_error: <span class="nb">false</span>
-  exclude:
-
-<span class="c1"># css压缩</span>
-css_minifier:
-  enable: <span class="nb">true</span>
-  exclude:
-    - <span class="s1">&#39;*.min.css&#39;</span>
-    
-<span class="c1"># js压缩</span>
-js_minifier:
-  enable: <span class="nb">true</span>
-  mangle: <span class="nb">true</span>
-  compress:
-  exclude:
-    - <span class="s1">&#39;*.min.js&#39;</span>
-js_concator:
-  enable: <span class="nb">false</span>
-  bundle_path: <span class="s1">&#39;/js/bundle.js&#39;</span>
-  front: <span class="nb">false</span>
-  silent: <span class="nb">false</span>
-
-<span class="c1"># 图片优化</span>
-image_minifier:
-  enable: <span class="nb">true</span>
-  interlaced: <span class="nb">false</span>
-  multipass: <span class="nb">false</span>
-  optimizationLevel: <span class="m">2</span>
-  pngquant: <span class="nb">false</span>
-  progressive: <span class="nb">false</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#启用all_minifier</span>
+</span></span><span class="line"><span class="cl">all_minifier: <span class="nb">true</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># html压缩</span>
+</span></span><span class="line"><span class="cl">html_minifier:
+</span></span><span class="line"><span class="cl">  enable: <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">  ignore_error: <span class="nb">false</span>
+</span></span><span class="line"><span class="cl">  exclude:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># css压缩</span>
+</span></span><span class="line"><span class="cl">css_minifier:
+</span></span><span class="line"><span class="cl">  enable: <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">  exclude:
+</span></span><span class="line"><span class="cl">    - <span class="s1">&#39;*.min.css&#39;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl"><span class="c1"># js压缩</span>
+</span></span><span class="line"><span class="cl">js_minifier:
+</span></span><span class="line"><span class="cl">  enable: <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">  mangle: <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">  compress:
+</span></span><span class="line"><span class="cl">  exclude:
+</span></span><span class="line"><span class="cl">    - <span class="s1">&#39;*.min.js&#39;</span>
+</span></span><span class="line"><span class="cl">js_concator:
+</span></span><span class="line"><span class="cl">  enable: <span class="nb">false</span>
+</span></span><span class="line"><span class="cl">  bundle_path: <span class="s1">&#39;/js/bundle.js&#39;</span>
+</span></span><span class="line"><span class="cl">  front: <span class="nb">false</span>
+</span></span><span class="line"><span class="cl">  silent: <span class="nb">false</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 图片优化</span>
+</span></span><span class="line"><span class="cl">image_minifier:
+</span></span><span class="line"><span class="cl">  enable: <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">  interlaced: <span class="nb">false</span>
+</span></span><span class="line"><span class="cl">  multipass: <span class="nb">false</span>
+</span></span><span class="line"><span class="cl">  optimizationLevel: <span class="m">2</span>
+</span></span><span class="line"><span class="cl">  pngquant: <span class="nb">false</span>
+</span></span><span class="line"><span class="cl">  progressive: <span class="nb">false</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="重新发布">重新发布</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">hexo d -g
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hexo d -g
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="post-promote">
     <input type="checkbox" name="promote" id="promote" hidden/>

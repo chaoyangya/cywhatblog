@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Linux安装newman生成postman脚本报告" />
 <meta property="og:description" content="1、安装node 1 2 3 4 5 6 7 8 # 1、下载node wget https://nodejs.org/dist/v16.9.1/node-v16.9.1-linux-x64.tar.xz # 2、解压 tar -xvf node-v16.9.1-linux-x64.tar.xz # 3.重命名 mv node-v16.9.1-linux-x64 node 2、配置环境变量 1 2 3 4 5 6 7 8 9 # 1、编辑环境变量" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/Linux%E5%AE%89%E8%A3%85newman%E7%94%9F%E6%88%90postman%E8%84%9A%E6%9C%AC%E6%8A%A5%E5%91%8A/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/Linux%E5%AE%89%E8%A3%85newman%E7%94%9F%E6%88%90postman%E8%84%9A%E6%9C%AC%E6%8A%A5%E5%91%8A/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-11-10T15:08:11+08:00" />
 <meta property="article:modified_time" content="2022-11-10T15:08:11+08:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -144,7 +144,7 @@
             </div><div class="content" id="content"><h3 id="1安装node">1、安装node</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -154,20 +154,20 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 1、下载node</span>
-wget https://nodejs.org/dist/v16.9.1/node-v16.9.1-linux-x64.tar.xz 
-
-<span class="c1"># 2、解压</span>
-tar -xvf node-v16.9.1-linux-x64.tar.xz
-
-<span class="c1"># 3.重命名</span>
-mv node-v16.9.1-linux-x64 node
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 1、下载node</span>
+</span></span><span class="line"><span class="cl">wget https://nodejs.org/dist/v16.9.1/node-v16.9.1-linux-x64.tar.xz 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2、解压</span>
+</span></span><span class="line"><span class="cl">tar -xvf node-v16.9.1-linux-x64.tar.xz
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 3.重命名</span>
+</span></span><span class="line"><span class="cl">mv node-v16.9.1-linux-x64 node
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2配置环境变量">2、配置环境变量</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -178,52 +178,52 @@ mv node-v16.9.1-linux-x64 node
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 1、编辑环境变量文件</span>
-vim /etc/profile
-
-<span class="c1"># 2、添加node环境</span>
-<span class="nb">export</span> <span class="nv">NODE_HOME</span><span class="o">=</span>/usr/local/node
-<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$NODE_HOME</span>/bin:<span class="nv">$PATH</span>  <span class="c1">#放在后面</span>
-
-<span class="c1"># 3、让配置生效</span>
-<span class="nb">source</span> /etc/profile
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 1、编辑环境变量文件</span>
+</span></span><span class="line"><span class="cl">vim /etc/profile
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2、添加node环境</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">NODE_HOME</span><span class="o">=</span>/usr/local/node
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$NODE_HOME</span>/bin:<span class="nv">$PATH</span>  <span class="c1">#放在后面</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 3、让配置生效</span>
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> /etc/profile
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3检查node是否安装完成">3、检查node是否安装完成</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">node -v
-
-npm -v
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">node -v
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">npm -v
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="4安装newman">4、安装newman</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">npm install -g newman  <span class="c1">#全局安装</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install -g newman  <span class="c1">#全局安装</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="5安装newman-html插件">5、安装newman-html插件</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">npm install -g newman-reporter-htmlextra --registry<span class="o">=</span>https://registry.npm.taobao.org
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install -g newman-reporter-htmlextra --registry<span class="o">=</span>https://registry.npm.taobao.org
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="6命令详解">6、命令详解</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -238,20 +238,20 @@ npm -v
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">newman run  A.postman_collection.json  -e B.postman_environment.json  -r htmlextra,cli,junit --reporter-junit-export ../reports/echo.xml   --reporter-htmlextra-title <span class="s2">&#34;接口自动化测试报告&#34;</span> --reporter-htmlextra-browserTitle <span class="s2">&#34;测试报告&#34;</span> --reporter-htmlextra-template ./template.hbs --reporter-htmlextra-export ./reports/C.html
-
-A.postman_collection.json           <span class="c1">#postman的脚本集合</span>
-B.postman_environment.json          <span class="c1">#postman的环境变量</span>
--r htmlextra,cli,junit              <span class="c1">#指定插件htmlextra和junit</span>
---reporter-junit-export             <span class="c1">#生成junit报告</span>
-../reports/echo.xml                 <span class="c1">#生成的junit报告-用xml格式呈现</span>
---reporter-htmlextra-title          <span class="c1">#定义报告的title名称</span>
---reporter-htmlextra-browserTitle   <span class="c1">#定义浏览器title名称</span>
---reporter-htmlextra-template       <span class="c1">#生成报告的模板</span>
-./template.hbs                      <span class="c1">#使用的模板路径</span>
---reporter-htmlextra-export         <span class="c1">#用htmlextra导出报告</span>
-./reports/C.html                    <span class="c1">#生成到当前目录的reports并命名为C.html</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">newman run  A.postman_collection.json  -e B.postman_environment.json  -r htmlextra,cli,junit --reporter-junit-export ../reports/echo.xml   --reporter-htmlextra-title <span class="s2">&#34;接口自动化测试报告&#34;</span> --reporter-htmlextra-browserTitle <span class="s2">&#34;测试报告&#34;</span> --reporter-htmlextra-template ./template.hbs --reporter-htmlextra-export ./reports/C.html
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">A.postman_collection.json           <span class="c1">#postman的脚本集合</span>
+</span></span><span class="line"><span class="cl">B.postman_environment.json          <span class="c1">#postman的环境变量</span>
+</span></span><span class="line"><span class="cl">-r htmlextra,cli,junit              <span class="c1">#指定插件htmlextra和junit</span>
+</span></span><span class="line"><span class="cl">--reporter-junit-export             <span class="c1">#生成junit报告</span>
+</span></span><span class="line"><span class="cl">../reports/echo.xml                 <span class="c1">#生成的junit报告-用xml格式呈现</span>
+</span></span><span class="line"><span class="cl">--reporter-htmlextra-title          <span class="c1">#定义报告的title名称</span>
+</span></span><span class="line"><span class="cl">--reporter-htmlextra-browserTitle   <span class="c1">#定义浏览器title名称</span>
+</span></span><span class="line"><span class="cl">--reporter-htmlextra-template       <span class="c1">#生成报告的模板</span>
+</span></span><span class="line"><span class="cl">./template.hbs                      <span class="c1">#使用的模板路径</span>
+</span></span><span class="line"><span class="cl">--reporter-htmlextra-export         <span class="c1">#用htmlextra导出报告</span>
+</span></span><span class="line"><span class="cl">./reports/C.html                    <span class="c1">#生成到当前目录的reports并命名为C.html</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="post-promote">
     <input type="checkbox" name="promote" id="promote" hidden/>

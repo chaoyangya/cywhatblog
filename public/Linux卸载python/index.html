@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Linux卸载python" />
 <meta property="og:description" content="1.rpm镜像安装方式卸载 1.卸载Python3(仅适合通过rpm安装的python) 1 rpm -qa|grep python3|xargs rpm -ev --allmatches --nodeps 2.删除残留文件 1 whereis python3 |xargs rm -frv 3.删除软" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDpython/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDpython/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-12-23T15:49:42+08:00" />
 <meta property="article:modified_time" content="2021-12-23T15:49:42+08:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -153,69 +153,69 @@
 <h4 id="1卸载python3仅适合通过rpm安装的python">1.卸载Python3(仅适合通过rpm安装的python)</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">rpm -qa<span class="p">|</span>grep python3<span class="p">|</span>xargs rpm -ev --allmatches --nodeps
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rpm -qa<span class="p">|</span>grep python3<span class="p">|</span>xargs rpm -ev --allmatches --nodeps
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="2删除残留文件">2.删除残留文件</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">whereis python3 <span class="p">|</span>xargs rm -frv
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">whereis python3 <span class="p">|</span>xargs rm -frv
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="3删除软链接">3.删除软链接</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">rm -rf /usr/bin/python3
-
-rm -rf /usr/bin/pip3
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rm -rf /usr/bin/python3
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">rm -rf /usr/bin/pip3
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2解压方式安装卸载">2.解压方式安装卸载</h3>
 <h4 id="1直接删除python路径文件夹">1.直接删除python路径文件夹</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">rm -rf /usr/local/python3
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rm -rf /usr/local/python3
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="2删除软链接">2.删除软链接</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">rm -rf /usr/bin/python3
-
-rm -rf /usr/bin/pip3
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rm -rf /usr/bin/python3
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">rm -rf /usr/bin/pip3
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3检查是否还存在python">3.检查是否还存在Python</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">whereis python3
-
-which python3
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">whereis python3
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">which python3
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="post-promote">
     <input type="checkbox" name="promote" id="promote" hidden/>

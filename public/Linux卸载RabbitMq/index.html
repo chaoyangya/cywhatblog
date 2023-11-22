@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Linux卸载RabbitMQ" />
 <meta property="og:description" content="1、卸载Erlang 1 2 3 4 5 6 7 8 # 查看erlang安装的相关列表 yum list|grep erlang # 卸载erlang yum -y remove erlang-* # 删除erlang目录 rm -rf /usr/lib64/erlang 2、卸载Ra" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDRabbitMq/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/Linux%E5%8D%B8%E8%BD%BDRabbitMq/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-04-18T14:31:47+08:00" />
 <meta property="article:modified_time" content="2023-04-18T14:31:47+08:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -140,7 +140,7 @@
             </div><div class="content" id="content"><h3 id="1卸载erlang">1、卸载Erlang</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -150,20 +150,20 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 查看erlang安装的相关列表</span>
-yum list<span class="p">|</span>grep erlang
-
-<span class="c1"># 卸载erlang</span>
-yum -y remove erlang-*
-
-<span class="c1"># 删除erlang目录</span>
-rm -rf /usr/lib64/erlang
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看erlang安装的相关列表</span>
+</span></span><span class="line"><span class="cl">yum list<span class="p">|</span>grep erlang
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 卸载erlang</span>
+</span></span><span class="line"><span class="cl">yum -y remove erlang-*
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 删除erlang目录</span>
+</span></span><span class="line"><span class="cl">rm -rf /usr/lib64/erlang
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2卸载rabbitmq">2、卸载RabbitMQ</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -178,20 +178,20 @@ rm -rf /usr/lib64/erlang
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 停止服务</span>
-systemctl stop rabbitmq-server.service
-
-<span class="c1"># 查看erlang安装的相关列表</span>
-yum list<span class="p">|</span>grep rabbitmq
-
-<span class="c1"># 卸载erlang</span>
-yum -y remove rabbitmq-server.noarch
-
-
-<span class="c1"># 删除erlang目录</span>
-rm -rf /var/lib/rabbitmq
-rm -rf /usr/lib/rabbitmq
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 停止服务</span>
+</span></span><span class="line"><span class="cl">systemctl stop rabbitmq-server.service
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看erlang安装的相关列表</span>
+</span></span><span class="line"><span class="cl">yum list<span class="p">|</span>grep rabbitmq
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 卸载erlang</span>
+</span></span><span class="line"><span class="cl">yum -y remove rabbitmq-server.noarch
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 删除erlang目录</span>
+</span></span><span class="line"><span class="cl">rm -rf /var/lib/rabbitmq
+</span></span><span class="line"><span class="cl">rm -rf /usr/lib/rabbitmq
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="post-promote">
     <input type="checkbox" name="promote" id="promote" hidden/>

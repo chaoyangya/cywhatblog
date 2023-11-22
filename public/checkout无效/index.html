@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="checkout无效" />
 <meta property="og:description" content="前景 日常工作中，遇到的一些checkout无效或者commit提交不了的情况 1.首先 你需要update的项目 会告诉你更改了那些配置，必须要还" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/checkout%E6%97%A0%E6%95%88/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/checkout%E6%97%A0%E6%95%88/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2018-10-29T16:29:00+00:00" />
 <meta property="article:modified_time" content="2018-10-29T16:29:00+00:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -146,39 +146,39 @@
 <h3 id="1首先-你需要update的项目-会告诉你更改了那些配置必须要还原或者提交">1.首先 你需要update的项目 会告诉你更改了那些配置，必须要还原或者提交</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git pull
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git pull
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2暂存提交">2.暂存提交</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git stash
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git stash
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>命令的意思是将这些更改过的配置 暂存起来，注意是暂存</code></p>
 <h3 id="3更新">3.更新</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git pull     <span class="c1">#拉取最新代码</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git pull     <span class="c1">#拉取最新代码</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="4取暂存">4.取暂存</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git statsh pop
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git statsh pop
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="5检查是否可以checkout或者commit">5.检查是否可以checkout或者commit</h3>
 <p><code>最后你发现之前暂存的配置，以及取出来并且成功替换了update之后的配置</code></p>

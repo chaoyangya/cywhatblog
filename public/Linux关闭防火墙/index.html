@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Linux关闭防火墙" />
 <meta property="og:description" content="注意:ConterOS7.0以上使用的是firewall，ConterOS7.0以下使用的是iptables 1.查看防火状态 1 2 3 systemctl status firewalld #7" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/Linux%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/Linux%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-09-01T10:43:37+00:00" />
 <meta property="article:modified_time" content="2021-09-01T10:43:37+00:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -143,54 +143,54 @@
 <h3 id="1查看防火状态">1.查看防火状态</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl status firewalld  <span class="c1">#7.0以上</span>
-
-service  iptables status  <span class="c1">#7.0以下</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl status firewalld  <span class="c1">#7.0以上</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">service  iptables status  <span class="c1">#7.0以下</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2暂时关闭防火墙">2.暂时关闭防火墙</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">syatemctl stop firewalld     <span class="c1">#7.0以上</span>
-
-service  iptables stop      <span class="c1">#7.0以下</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">syatemctl stop firewalld     <span class="c1">#7.0以上</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">service  iptables stop      <span class="c1">#7.0以下</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3永久关闭防火墙">3.永久关闭防火墙</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl disable firewalld    <span class="c1">#7.0以上</span>
-
-chkconfig iptables off     <span class="c1">#7.0以下</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl disable firewalld    <span class="c1">#7.0以上</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">chkconfig iptables off     <span class="c1">#7.0以下</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="4重启防火墙">4.重启防火墙</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">systemctl <span class="nb">enable</span> firewalld  <span class="c1">#7.0以上</span>
-
-service iptables restart  <span class="c1">#7.0以下</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl <span class="nb">enable</span> firewalld  <span class="c1">#7.0以上</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">service iptables restart  <span class="c1">#7.0以下</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="post-promote">
     <input type="checkbox" name="promote" id="promote" hidden/>

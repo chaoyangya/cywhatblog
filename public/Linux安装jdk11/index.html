@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Linux安装jdk11" />
 <meta property="og:description" content="1.下载jdk 下载安装 1 提取码: brq2 2.上传到服务器 3.解压 1 tar -zvxf openjdk-11&#43;28_linux-x64_bin.tar.gz 4.移动文件夹并重命名 1 mv jdk-11/ /usr/local/java 5.配置环境变量 1 2 3 4 5 6 vim /etc/profile export JAVA_HOME=/usr/local/java export PATH=$JAVA_HOME/bin:$PATH #一" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/Linux%E5%AE%89%E8%A3%85jdk11/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/Linux%E5%AE%89%E8%A3%85jdk11/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-09-18T17:47:51+00:00" />
 <meta property="article:modified_time" content="2021-09-18T17:47:51+00:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -146,35 +146,35 @@
 <p><a href="https://pan.baidu.com/s/1DWgm0m_QlTq67QFq_BV_8g" target="_blank" rel="noopener noreffer">下载安装</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">提取码: brq2
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">提取码: brq2
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="2上传到服务器">2.上传到服务器</h3>
 <h3 id="3解压">3.解压</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">tar -zvxf openjdk-11+28_linux-x64_bin.tar.gz
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tar -zvxf openjdk-11+28_linux-x64_bin.tar.gz
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="4移动文件夹并重命名">4.移动文件夹并重命名</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">mv jdk-11/ /usr/local/java
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mv jdk-11/ /usr/local/java
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="5配置环境变量">5.配置环境变量</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -182,31 +182,31 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">vim /etc/profile
-
-<span class="nb">export</span> <span class="nv">JAVA_HOME</span><span class="o">=</span>/usr/local/java
-<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$JAVA_HOME</span>/bin:<span class="nv">$PATH</span>   <span class="c1">#一定要放在最后</span>
-
-<span class="nb">source</span> /etc/profile     <span class="c1">#让配置生效</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim /etc/profile
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">JAVA_HOME</span><span class="o">=</span>/usr/local/java
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$JAVA_HOME</span>/bin:<span class="nv">$PATH</span>   <span class="c1">#一定要放在最后</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> /etc/profile     <span class="c1">#让配置生效</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="6建立软链接">6.建立软链接</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">ls -n /usr/local/java/bin/java /usr/bin/java
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ls -n /usr/local/java/bin/java /usr/bin/java
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="7查看java版本">7.查看java版本</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">java -version
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">java -version
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="post-promote">
     <input type="checkbox" name="promote" id="promote" hidden/>

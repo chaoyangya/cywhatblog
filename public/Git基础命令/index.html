@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Git基础命令" />
 <meta property="og:description" content="git基本命令 初始化：创建一个git仓库，创建之后就会在当前目录生成一个.git的文件 1 git init 添加文件：把文件添加到缓冲区 1 git add filename 添加所有文件" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-10-23T15:32:00+00:00" />
 <meta property="article:modified_time" content="2019-10-23T15:32:00+00:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -174,281 +174,281 @@
 <h4 id="初始化创建一个git仓库创建之后就会在当前目录生成一个git的文件">初始化：创建一个git仓库，创建之后就会在当前目录生成一个.git的文件</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git init
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git init
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="添加文件把文件添加到缓冲区">添加文件：把文件添加到缓冲区</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git add filename
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add filename
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="添加所有文件到缓冲区从目前掌握的水平看和后面加的区别在于加all可以添加被手动删除的文件而加不行">添加所有文件到缓冲区（从目前掌握的水平看，和后面加“.”的区别在于，加all可以添加被手动删除的文件，而加“.”不行）：</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git add .
-
-git add --all
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">git add --all
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="删除文件">删除文件</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git rm filename
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git rm filename
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="提交提交缓冲区的所有修改到仓库注意如果修改了文件但是没有add到缓冲区也是不会被提交的">提交：提交缓冲区的所有修改到仓库(注意：如果修改了文件但是没有add到缓冲区，也是不会被提交的)</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git commit -m <span class="s2">&#34;提交的说明&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git commit -m <span class="s2">&#34;提交的说明&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>commit</code>可以一次提交缓冲区的所有文件</p>
 <h4 id="查看git库的状态未提交的文件分为两种add过已经在缓冲区的未add过的">查看git库的状态，未提交的文件，分为两种，add过已经在缓冲区的，未add过的</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git status -b
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git status -b
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="比较如果文件修改了还没有提交就可以比较文件修改前后的差异">比较：如果文件修改了，还没有提交，就可以比较文件修改前后的差异</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git diff filename
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git diff filename
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="查看日志">查看日志</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git log
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git log
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="版本回退可以将当前仓库回退到历史的某个版本">版本回退：可以将当前仓库回退到历史的某个版本</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git reset
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git reset
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="第一种用法回退到上一个版本head代表当前版本有一个代表上一个版本以此类推">第一种用法：回退到上一个版本（HEAD代表当前版本，有一个^代表上一个版本，以此类推）</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git reset --hard HEAD^
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git reset --hard HEAD^
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="第二种用法回退到指定版本其中d7b5是想回退的指定版本号的前几位">第二种用法：回退到指定版本(其中d7b5是想回退的指定版本号的前几位)</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git reset --hard d7b5
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git reset --hard d7b5
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="查看命令历史查看仓库的操作历史">查看命令历史：查看仓库的操作历史</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git reflog
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git reflog
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="git分支管理-查看分支的情况前面带号的就是当前分支">git分支管理 查看分支的情况，前面带*号的就是当前分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git branch
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git branch
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="创建分支">创建分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git branch <span class="s2">&#34;分支名&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git branch <span class="s2">&#34;分支名&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="切换当前分支到指定分支">切换当前分支到指定分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git checkout <span class="s2">&#34;分支名&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git checkout <span class="s2">&#34;分支名&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="创建分支并切换到创建的分支">创建分支并切换到创建的分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git checkout -b <span class="s2">&#34;分支名&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git checkout -b <span class="s2">&#34;分支名&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="合并某分支的内容到当前分支">合并某分支的内容到当前分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git merge <span class="s2">&#34;分支名&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git merge <span class="s2">&#34;分支名&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="删除分支">删除分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git branch -d <span class="s2">&#34;分支名&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git branch -d <span class="s2">&#34;分支名&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="如果两个分支同时进行了同一个文件的修改和提交在merge时就会产生冲突首先要手动打开文件解决冲突再提交就相当于进行了merge">如果两个分支同时进行了同一个文件的修改和提交，在merge时就会产生冲突，首先要手动打开文件解决冲突，再提交，就相当于进行了<code>merge</code></h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git log --graph
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git log --graph
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="新建标签默认为最新版本后面加上版本号参数则可指定版本增加标签">新建标签，默认为最新版本，后面加上版本号参数则可指定版本增加标签</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git tag <span class="s2">&#34;标签名&#34;</span> <span class="s2">&#34;版本号&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git tag <span class="s2">&#34;标签名&#34;</span> <span class="s2">&#34;版本号&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="查看所有标签">查看所有标签：</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git tag
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git tag
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="查看标签的详细信息">查看标签的详细信息</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git show <span class="s2">&#34;标签名&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git show <span class="s2">&#34;标签名&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="推送所有tag">推送所有tag:</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git push origin --tags
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git push origin --tags
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="推送某个tag">推送某个tag：</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git push origin v1.0
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git push origin v1.0
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="git远端库相关">git远端库相关</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git remote add origin git://127.0.0.1/abc.git 
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git remote add origin git://127.0.0.1/abc.git 
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="移除远端仓库">移除远端仓库</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git remote remove origin
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git remote remove origin
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="将本地仓库内容推送到远端仓库-u-表示第一次推送master分支的所有内容后面再推送就不需要-u了跟commit的区别在于一个是提交到本地仓库一个是提交到远程仓库">将本地仓库内容推送到远端仓库(-u 表示第一次推送master分支的所有内容，后面再推送就不需要-u了)，跟commit的区别在于一个是提交到本地仓库，一个是提交到远程仓库</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git push -u origin master
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git push -u origin master
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="从远端库更新内容到本地相当于svn的update">从远端库更新内容到本地（相当于svn的update），</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git pull
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git pull
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>tips:</code>如果push的时候，本地和文件和远端文件有冲突，就要先pull、然后手动解决冲突，才能继续push</p>
 <h4 id="git记住用户名密码">git记住用户名密码</h4>
 <h4 id="push的时候默认每次都需输入github的用户名和密码在git仓库根目录下git文件夹的config文件末尾增加如下内容即可记住用户名密码无需每次推送都输入了">push的时候默认每次都需输入GitHub的用户名和密码，在git仓库根目录下.git文件夹的config文件末尾增加如下内容，即可记住用户名密码，无需每次推送都输入了</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>credential<span class="o">]</span>
-  <span class="nv">helper</span> <span class="o">=</span> store
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>credential<span class="o">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">helper</span> <span class="o">=</span> store
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="强制推送分支">强制推送分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">git push -f origin master
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git push -f origin master
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="post-promote">
     <input type="checkbox" name="promote" id="promote" hidden/>

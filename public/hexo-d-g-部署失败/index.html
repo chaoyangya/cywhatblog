@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="hexo d -g 部署失败" />
 <meta property="og:description" content="hexo d -g 突然部署失败,报错如下: 1 2 3 $ fatal: unable to access &#39;https://github.com/xxxxx/xxxx.git/&#39;: The requested URL returned error: 403 err: Error: Spawn failed at ChildProcess.&lt;anonymous 1.更改hexo配置文件中的git镜像映射地址 1 $ vim _config.yml #将https" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/hexo-d-g-%E9%83%A8%E7%BD%B2%E5%A4%B1%E8%B4%A5/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/hexo-d-g-%E9%83%A8%E7%BD%B2%E5%A4%B1%E8%B4%A5/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-08-17T18:07:39+00:00" />
 <meta property="article:modified_time" content="2021-08-17T18:07:39+00:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -139,24 +139,24 @@
             </div><div class="content" id="content"><p>hexo d -g 突然部署失败,报错如下:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ fatal: unable to access <span class="s1">&#39;https://github.com/xxxxx/xxxx.git/&#39;</span>: The requested URL returned error: <span class="m">403</span>
-  err: Error: Spawn failed       
-  at ChildProcess.&lt;anonymous
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ fatal: unable to access <span class="s1">&#39;https://github.com/xxxxx/xxxx.git/&#39;</span>: The requested URL returned error: <span class="m">403</span>
+</span></span><span class="line"><span class="cl">  err: Error: Spawn failed       
+</span></span><span class="line"><span class="cl">  at ChildProcess.&lt;anonymous
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="1更改hexo配置文件中的git镜像映射地址">1.更改hexo配置文件中的git镜像映射地址</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ vim _config.yml   <span class="c1">#将https的地址更改为git开头的地址,如图</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vim _config.yml   <span class="c1">#将https的地址更改为git开头的地址,如图</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><img
         class="lazyload"
@@ -170,20 +170,20 @@
 <h2 id="3hexo清楚缓存">3.hexo清楚缓存</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ hexo clean
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ hexo clean
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="4重新发布">4.重新发布</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ hexo d -g
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ hexo d -g
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="5发布成功">5.发布成功</h2>
 <div class="post-promote">

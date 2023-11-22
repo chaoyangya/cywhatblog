@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Mac忽略系统更新提醒，并取消小红点" />
 <meta property="og:description" content="1.首先关掉系统的自动更新设置** 1 2 3 4 5 1.系统偏好设置--软件更新 2.取消选择&#34;自动保持我的Mac最新&#34; 3.高级--取" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/Mac%E5%BF%BD%E7%95%A5%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E6%8F%90%E9%86%92%E5%B9%B6%E5%8F%96%E6%B6%88%E5%B0%8F%E7%BA%A2%E7%82%B9/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/Mac%E5%BF%BD%E7%95%A5%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%96%B0%E6%8F%90%E9%86%92%E5%B9%B6%E5%8F%96%E6%B6%88%E5%B0%8F%E7%BA%A2%E7%82%B9/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-09-07T14:58:29+00:00" />
 <meta property="article:modified_time" content="2021-09-07T14:58:29+00:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -146,19 +146,19 @@
             </div><div class="content" id="content"><h3 id="1首先关掉系统的自动更新设置">1.首先关掉系统的自动更新设置**</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">1.系统偏好设置--软件更新
-
-2.取消选择<span class="s2">&#34;自动保持我的Mac最新&#34;</span>
-
-3.高级--取消所有按钮勾选
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">1.系统偏好设置--软件更新
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">2.取消选择<span class="s2">&#34;自动保持我的Mac最新&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">3.高级--取消所有按钮勾选
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><img
         class="lazyload"
@@ -173,41 +173,41 @@
 <h4 id="a忽略大版本更新">a.忽略大版本更新</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">sudo softwareupdate --ignore <span class="s2">&#34;macOS Catalina&#34;</span>
-
-sudo softwareupdate --ignore <span class="s2">&#34;macOS Mojave&#34;</span>
-
-sudo softwareupdate --ignore <span class="s2">&#34;macOS Big Sur&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo softwareupdate --ignore <span class="s2">&#34;macOS Catalina&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo softwareupdate --ignore <span class="s2">&#34;macOS Mojave&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo softwareupdate --ignore <span class="s2">&#34;macOS Big Sur&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="b取消小红点">b.取消小红点</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">defaults write com.apple.systempreferences AttentionPrefBundleIDs <span class="m">0</span>
-
-killall Dock  
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">defaults write com.apple.systempreferences AttentionPrefBundleIDs <span class="m">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">killall Dock  
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3恢复更新提示">3.恢复更新提示</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">sudo softwareupdate --reset-ignored
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo softwareupdate --reset-ignored
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="post-promote">
     <input type="checkbox" name="promote" id="promote" hidden/>

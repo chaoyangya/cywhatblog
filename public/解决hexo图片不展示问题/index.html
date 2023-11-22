@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="解决hexo图片不展示问题" />
 <meta property="og:description" content="1.更改hexo配置文件 1 vim _config.yml #配置_config.yml里面的post_asset_folder:false 设置为 true 如图 2.安装npm插件" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/%E8%A7%A3%E5%86%B3hexo%E5%9B%BE%E7%89%87%E4%B8%8D%E5%B1%95%E7%A4%BA%E9%97%AE%E9%A2%98/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/%E8%A7%A3%E5%86%B3hexo%E5%9B%BE%E7%89%87%E4%B8%8D%E5%B1%95%E7%A4%BA%E9%97%AE%E9%A2%98/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-08-18T16:12:40+00:00" />
 <meta property="article:modified_time" content="2021-08-18T16:12:40+00:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -151,11 +151,11 @@
             </div><div class="content" id="content"><h3 id="1更改hexo配置文件">1.更改hexo配置文件</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">vim _config.yml <span class="c1">#配置_config.yml里面的post_asset_folder:false 设置为 true 如图</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim _config.yml <span class="c1">#配置_config.yml里面的post_asset_folder:false 设置为 true 如图</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><img
         class="lazyload"
@@ -168,63 +168,63 @@
 <h3 id="2安装npm插件">2.安装npm插件</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">npm install https://github.com/CodeFalling/hexo-asset-image --save  
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install https://github.com/CodeFalling/hexo-asset-image --save  
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3清除hexo缓存">3.清除hexo缓存</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">hexo clean
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hexo clean
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="4创建新的文章">4.创建新的文章</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">hexo new <span class="s2">&#34;XXA&#34;</span>   <span class="c1">#创建完文章后,会发现 _post 目录下多出一个XXA的文件夹,把图片放入该文件夹中</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hexo new <span class="s2">&#34;XXA&#34;</span>   <span class="c1">#创建完文章后,会发现 _post 目录下多出一个XXA的文件夹,把图片放入该文件夹中</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="5然后文章中引入图片">5.然后文章中引入图片</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">{</span>% asset_img img7.png This is an image %<span class="o">}</span>   <span class="c1">#img7.png为你的图片名称,不可重复 This is an image是图片介绍</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">{</span>% asset_img img7.png This is an image %<span class="o">}</span>   <span class="c1">#img7.png为你的图片名称,不可重复 This is an image是图片介绍</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>ps:唯一的缺点就是 预览的时候看不见图片 需要重新发布</strong></p>
 <h3 id="6重新发布">6.重新发布</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ hexo d -g
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ hexo d -g
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="如果以上操作未生效图片还不显示进行以下操作">如果以上操作未生效，图片还不显示，进行以下操作：</h3>
 <h4 id="1打开node_moduleshexo-asset-imageindexjs">1.打开/node_modules/hexo-asset-image/index.js</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">vim /node_modules/hexo-asset-image/index.js
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim /node_modules/hexo-asset-image/index.js
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="2替换以下内容建议备份原indexjs文件">2.替换以下内容(建议备份原index.js文件)</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -287,81 +287,81 @@
 </span><span class="lnt">61
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
-<span class="kd">var</span> <span class="nx">cheerio</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;cheerio&#39;</span><span class="p">);</span>
-
-<span class="c1">// http://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string
-</span><span class="c1"></span><span class="kd">function</span> <span class="nx">getPosition</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">m</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="nx">str</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="nx">m</span><span class="p">,</span> <span class="nx">i</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="nx">m</span><span class="p">).</span><span class="nx">length</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="kd">var</span> <span class="nx">version</span> <span class="o">=</span> <span class="nb">String</span><span class="p">(</span><span class="nx">hexo</span><span class="p">.</span><span class="nx">version</span><span class="p">).</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">);</span>
-<span class="nx">hexo</span><span class="p">.</span><span class="nx">extend</span><span class="p">.</span><span class="nx">filter</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s1">&#39;after_post_render&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span> <span class="nx">hexo</span><span class="p">.</span><span class="nx">config</span><span class="p">;</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">config</span><span class="p">.</span><span class="nx">post_asset_folder</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kd">var</span> <span class="nx">link</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">permalink</span><span class="p">;</span>
-        <span class="k">if</span> <span class="p">(</span><span class="nx">version</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">version</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span>
-            <span class="kd">var</span> <span class="nx">beginPos</span> <span class="o">=</span> <span class="nx">getPosition</span><span class="p">(</span><span class="nx">link</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-        <span class="k">else</span>
-            <span class="kd">var</span> <span class="nx">beginPos</span> <span class="o">=</span> <span class="nx">getPosition</span><span class="p">(</span><span class="nx">link</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-        <span class="c1">// In hexo 3.1.1, the permalink of &#34;about&#34; page is like &#34;.../about/index.md&#34;.
-</span><span class="c1"></span>        <span class="kd">var</span> <span class="nx">endPos</span> <span class="o">=</span> <span class="nx">link</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-        <span class="nx">link</span> <span class="o">=</span> <span class="nx">link</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="nx">beginPos</span><span class="p">,</span> <span class="nx">endPos</span><span class="p">);</span>
-
-        <span class="kd">var</span> <span class="nx">toprocess</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;excerpt&#39;</span><span class="p">,</span> <span class="s1">&#39;more&#39;</span><span class="p">,</span> <span class="s1">&#39;content&#39;</span><span class="p">];</span>
-        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">toprocess</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-            <span class="kd">var</span> <span class="nx">key</span> <span class="o">=</span> <span class="nx">toprocess</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
-
-            <span class="kd">var</span> <span class="nx">$</span> <span class="o">=</span> <span class="nx">cheerio</span><span class="p">.</span><span class="nx">load</span><span class="p">(</span><span class="nx">data</span><span class="p">[</span><span class="nx">key</span><span class="p">],</span> <span class="p">{</span>
-                <span class="nx">ignoreWhitespace</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
-                <span class="nx">xmlMode</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
-                <span class="nx">lowerCaseTags</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
-                <span class="nx">decodeEntities</span><span class="o">:</span> <span class="kc">false</span>
-            <span class="p">});</span>
-
-            <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;img&#39;</span><span class="p">).</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-                <span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">))</span> <span class="p">{</span>
-                    <span class="c1">// For windows style path, we replace &#39;\&#39; to &#39;/&#39;.
-</span><span class="c1"></span>                    <span class="kd">var</span> <span class="nx">src</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="s1">&#39;\\&#39;</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">);</span>
-                    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="sr">/http[s]*.*|\/\/.*/</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">src</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
-                        <span class="o">!</span><span class="sr">/^\s*\//</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">src</span><span class="p">))</span> <span class="p">{</span>
-                        <span class="c1">// For &#34;about&#34; page, the first part of &#34;src&#34; can&#39;t be removed.
-</span><span class="c1"></span>                        <span class="c1">// In addition, to support multi-level local directory.
-</span><span class="c1"></span>                        <span class="kd">var</span> <span class="nx">linkArray</span> <span class="o">=</span> <span class="nx">link</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">).</span><span class="nx">filter</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">elem</span><span class="p">)</span> <span class="p">{</span>
-                            <span class="k">return</span> <span class="nx">elem</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
-                        <span class="p">});</span>
-                        <span class="kd">var</span> <span class="nx">srcArray</span> <span class="o">=</span> <span class="nx">src</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">).</span><span class="nx">filter</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">elem</span><span class="p">)</span> <span class="p">{</span>
-                            <span class="k">return</span> <span class="nx">elem</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span> <span class="o">&amp;&amp;</span> <span class="nx">elem</span> <span class="o">!=</span> <span class="s1">&#39;.&#39;</span><span class="p">;</span>
-                        <span class="p">});</span>
-                        <span class="k">if</span> <span class="p">(</span><span class="nx">srcArray</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span>
-                            <span class="nx">srcArray</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span>
-                        <span class="nx">src</span> <span class="o">=</span> <span class="nx">srcArray</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">);</span>
-                        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">,</span> <span class="nx">config</span><span class="p">.</span><span class="nx">root</span> <span class="o">+</span> <span class="nx">link</span> <span class="o">+</span> <span class="nx">src</span><span class="p">);</span>
-                        <span class="nx">console</span><span class="p">.</span><span class="nx">info</span> <span class="o">&amp;&amp;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&#34;update link as:--&gt;&#34;</span> <span class="o">+</span> <span class="nx">config</span><span class="p">.</span><span class="nx">root</span> <span class="o">+</span> <span class="nx">link</span> <span class="o">+</span> <span class="nx">src</span><span class="p">);</span>
-                    <span class="p">}</span>
-                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-                    <span class="nx">console</span><span class="p">.</span><span class="nx">info</span> <span class="o">&amp;&amp;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&#34;no src attr, skipped...&#34;</span><span class="p">);</span>
-                    <span class="nx">console</span><span class="p">.</span><span class="nx">info</span> <span class="o">&amp;&amp;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">));</span>
-                <span class="p">}</span>
-            <span class="p">});</span>
-            <span class="nx">data</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">html</span><span class="p">();</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">});</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">cheerio</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;cheerio&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// http://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">getPosition</span><span class="p">(</span><span class="nx">str</span><span class="p">,</span> <span class="nx">m</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">str</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="nx">m</span><span class="p">,</span> <span class="nx">i</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="nx">m</span><span class="p">).</span><span class="nx">length</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">version</span> <span class="o">=</span> <span class="nb">String</span><span class="p">(</span><span class="nx">hexo</span><span class="p">.</span><span class="nx">version</span><span class="p">).</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">hexo</span><span class="p">.</span><span class="nx">extend</span><span class="p">.</span><span class="nx">filter</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s1">&#39;after_post_render&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span> <span class="nx">hexo</span><span class="p">.</span><span class="nx">config</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">config</span><span class="p">.</span><span class="nx">post_asset_folder</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">link</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">permalink</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nx">version</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">version</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="kd">var</span> <span class="nx">beginPos</span> <span class="o">=</span> <span class="nx">getPosition</span><span class="p">(</span><span class="nx">link</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span>
+</span></span><span class="line"><span class="cl">            <span class="kd">var</span> <span class="nx">beginPos</span> <span class="o">=</span> <span class="nx">getPosition</span><span class="p">(</span><span class="nx">link</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// In hexo 3.1.1, the permalink of &#34;about&#34; page is like &#34;.../about/index.md&#34;.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kd">var</span> <span class="nx">endPos</span> <span class="o">=</span> <span class="nx">link</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">link</span> <span class="o">=</span> <span class="nx">link</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="nx">beginPos</span><span class="p">,</span> <span class="nx">endPos</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">toprocess</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;excerpt&#39;</span><span class="p">,</span> <span class="s1">&#39;more&#39;</span><span class="p">,</span> <span class="s1">&#39;content&#39;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">toprocess</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kd">var</span> <span class="nx">key</span> <span class="o">=</span> <span class="nx">toprocess</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="kd">var</span> <span class="nx">$</span> <span class="o">=</span> <span class="nx">cheerio</span><span class="p">.</span><span class="nx">load</span><span class="p">(</span><span class="nx">data</span><span class="p">[</span><span class="nx">key</span><span class="p">],</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">ignoreWhitespace</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">xmlMode</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">lowerCaseTags</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">decodeEntities</span><span class="o">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">            <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;img&#39;</span><span class="p">).</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">// For windows style path, we replace &#39;\&#39; to &#39;/&#39;.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="kd">var</span> <span class="nx">src</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="s1">&#39;\\&#39;</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="sr">/http[s]*.*|\/\/.*/</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">src</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+</span></span><span class="line"><span class="cl">                        <span class="o">!</span><span class="sr">/^\s*\//</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">src</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">// For &#34;about&#34; page, the first part of &#34;src&#34; can&#39;t be removed.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                        <span class="c1">// In addition, to support multi-level local directory.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                        <span class="kd">var</span> <span class="nx">linkArray</span> <span class="o">=</span> <span class="nx">link</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">).</span><span class="nx">filter</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">elem</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                            <span class="k">return</span> <span class="nx">elem</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">});</span>
+</span></span><span class="line"><span class="cl">                        <span class="kd">var</span> <span class="nx">srcArray</span> <span class="o">=</span> <span class="nx">src</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">).</span><span class="nx">filter</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">elem</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                            <span class="k">return</span> <span class="nx">elem</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span> <span class="o">&amp;&amp;</span> <span class="nx">elem</span> <span class="o">!=</span> <span class="s1">&#39;.&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">});</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">if</span> <span class="p">(</span><span class="nx">srcArray</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                            <span class="nx">srcArray</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">                        <span class="nx">src</span> <span class="o">=</span> <span class="nx">srcArray</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">,</span> <span class="nx">config</span><span class="p">.</span><span class="nx">root</span> <span class="o">+</span> <span class="nx">link</span> <span class="o">+</span> <span class="nx">src</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                        <span class="nx">console</span><span class="p">.</span><span class="nx">info</span> <span class="o">&amp;&amp;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&#34;update link as:--&gt;&#34;</span> <span class="o">+</span> <span class="nx">config</span><span class="p">.</span><span class="nx">root</span> <span class="o">+</span> <span class="nx">link</span> <span class="o">+</span> <span class="nx">src</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">console</span><span class="p">.</span><span class="nx">info</span> <span class="o">&amp;&amp;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">&#34;no src attr, skipped...&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">console</span><span class="p">.</span><span class="nx">info</span> <span class="o">&amp;&amp;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">});</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">data</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">html</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="3然后清空缓存再次发布">3.然后清空缓存，再次发布</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">hexo clean
-
-hexo d -g
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hexo clean
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">hexo d -g
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="post-promote">
     <input type="checkbox" name="promote" id="promote" hidden/>

@@ -9,10 +9,10 @@
 <meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary" />
 <meta property="og:description" content="报错: selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary 原因是: 运行脚本的环境中没有找到chrome浏览器 解决: windows/mac: 指定浏览器位置 1 2 $ chrome_path = r&#34;/Library/Frameworks/Python.framework/Versions/3.6/bin/chromedriver&#34; #mac地址 win自己更换路径即可" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/selenium-common-exceptions-WebDriverException-Message-unknown-error-cannot-find-Chrome-binary/" />
-<meta property="og:image" content="https://cywhat.cn"/>
+<meta property="og:url" content="https://cywhat.cn/selenium-common-exceptions-WebDriverException-Message-unknown-error-cannot-find-Chrome-binary/" /><meta property="og:image" content="https://cywhat.cn"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-08-20T17:23:21+00:00" />
 <meta property="article:modified_time" content="2021-08-20T17:23:21+00:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://cywhat.cn"/>
 
@@ -135,13 +135,13 @@
 windows/mac: 指定浏览器位置</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nv">chrome_path</span> <span class="o">=</span> r<span class="s2">&#34;/Library/Frameworks/Python.framework/Versions/3.6/bin/chromedriver&#34;</span>  <span class="c1">#mac地址 win自己更换路径即可</span>
-  <span class="nv">driver</span> <span class="o">=</span> webdriver.Chrome<span class="o">(</span>chrome_path<span class="o">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nv">chrome_path</span> <span class="o">=</span> r<span class="s2">&#34;/Library/Frameworks/Python.framework/Versions/3.6/bin/chromedriver&#34;</span>  <span class="c1">#mac地址 win自己更换路径即可</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">driver</span> <span class="o">=</span> webdriver.Chrome<span class="o">(</span>chrome_path<span class="o">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>linux: 安装chrome浏览器</p>
 <p><a href="https://cywhat.cn/centos7%E5%AE%89%E8%A3%85chrome%E6%B5%8F%E8%A7%88%E5%99%A8/" target="_blank" rel="noopener noreffer">Linux安装chrome浏览器</a></p>
