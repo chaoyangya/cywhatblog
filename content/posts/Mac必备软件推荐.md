@@ -64,7 +64,7 @@ Gifox              "Gif制作神器"
 
 Paste               "剪切板管理神器"
 
-FastClicker         "定时模拟鼠标点击"
+FastClicker         "定时模拟鼠标点击"(非常好用)
 
 AnotherRedisDesktopManager                 "redis可视化客户端"
 
@@ -73,6 +73,8 @@ Final Cut Pro 10.6.5      "视频剪辑"
 Permute 3.9.13              "视频格式转换"
 
 Camtasia 2023             "屏幕录制"
+
+Snipaste                    "贴图工具【贴到屏幕上】"(非常好用)
 
 {{< /admonition >}}
 
