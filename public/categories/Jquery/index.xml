@@ -3,8 +3,8 @@
         <title>Jquery - 分类 - cywhat&#39;s blog</title>
         <link>https://cywhat.cn/categories/Jquery/</link>
         <description>Jquery - 分类 - cywhat&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 31 Aug 2021 17:12:16 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/categories/Jquery/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cy-support@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cy-support@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 31 Aug 2021 17:12:16 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/categories/Jquery/" rel="self" type="application/rss+xml" /><item>
     <title>DJango Uncaught ReferenceError: $ is not defined</title>
     <link>https://cywhat.cn/DJango-Uncaught-ReferenceError-is-not-defined/</link>
     <pubDate>Tue, 31 Aug 2021 17:12:16 &#43;0000</pubDate>

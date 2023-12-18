@@ -3,8 +3,8 @@
         <title>Supervisord - 标签 - cywhat&#39;s blog</title>
         <link>https://cywhat.cn/tags/Supervisord/</link>
         <description>Supervisord - 标签 - cywhat&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 May 2021 11:35:23 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Supervisord/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cy-support@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cy-support@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 May 2021 11:35:23 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Supervisord/" rel="self" type="application/rss+xml" /><item>
     <title>supervisord管理常驻进程uwsgi/nginx/redis/mongodb</title>
     <link>https://cywhat.cn/supervisord%E7%AE%A1%E7%90%86%E5%B8%B8%E9%A9%BB%E8%BF%9B%E7%A8%8Buwsgi-nginx-redis-mongodb/</link>
     <pubDate>Mon, 24 May 2021 11:35:23 &#43;0000</pubDate>

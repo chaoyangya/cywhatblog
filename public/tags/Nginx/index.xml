@@ -3,8 +3,8 @@
         <title>Nginx - 标签 - cywhat&#39;s blog</title>
         <link>https://cywhat.cn/tags/Nginx/</link>
         <description>Nginx - 标签 - cywhat&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 16 Apr 2021 10:12:11 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Nginx/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cy-support@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cy-support@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 16 Apr 2021 10:12:11 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Nginx/" rel="self" type="application/rss+xml" /><item>
     <title>nginx解决多个端口映射80的配置</title>
     <link>https://cywhat.cn/nginx%E5%A4%9A%E4%B8%AA%E7%AB%AF%E5%8F%A3/</link>
     <pubDate>Fri, 16 Apr 2021 10:12:11 &#43;0000</pubDate>

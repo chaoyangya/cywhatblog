@@ -233,7 +233,7 @@ date = [":filename", ":default"]
         XMPP = "https://file.cywhat.cn"
         Matrix = ""
         Bilibili = "175448999"
-        Email = "45204307@qq.com"
+        Email = "cy-support@cywhat.cn"
         RSS = true
 
 
@@ -734,7 +734,7 @@ date = [":filename", ":default"]
 # 作者配置
 [author]
   name = "cywhat"
-  email = "45204307@qq.com"
+  email = "cy-support@cywhat.cn"
   link = "https://cywhat.cn"
 
 # Sitemap config

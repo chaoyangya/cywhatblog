@@ -3,8 +3,8 @@
         <title>Selenium - 标签 - cywhat&#39;s blog</title>
         <link>https://cywhat.cn/tags/Selenium/</link>
         <description>Selenium - 标签 - cywhat&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>45204307@qq.com (cywhat)</managingEditor>
-            <webMaster>45204307@qq.com (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 20 Aug 2021 17:23:21 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Selenium/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cy-support@cywhat.cn (cywhat)</managingEditor>
+            <webMaster>cy-support@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 20 Aug 2021 17:23:21 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/Selenium/" rel="self" type="application/rss+xml" /><item>
     <title>selenium.common.exceptions.WebDriverException: Message: unknown error: cannot find Chrome binary</title>
     <link>https://cywhat.cn/selenium-common-exceptions-WebDriverException-Message-unknown-error-cannot-find-Chrome-binary/</link>
     <pubDate>Fri, 20 Aug 2021 17:23:21 &#43;0000</pubDate>
