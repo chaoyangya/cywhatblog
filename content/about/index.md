@@ -6,4 +6,4 @@ comment: false
 
 
 
-![关于我](/img/about_me.jpg)
+![关于我](/img/about_me.png)

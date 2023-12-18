@@ -203,7 +203,7 @@ screenshot="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/comm
 
 
 ### 如何交换友链
-{{< admonition type=info title="以下信息发送至'45204307@qq.com'" open=true >}}
+{{< admonition type=info title="以下信息发送至'cy-support@cywhat.cn'" open=true >}}
 
 {{< /admonition >}}
 
