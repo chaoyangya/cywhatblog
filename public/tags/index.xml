@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/tags/</link>
         <description>Tags - 标签 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cy-support@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cy-support@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 22 Nov 2023 14:28:16 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cy-support@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 26 Feb 2024 14:27:58 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Java</title>
+    <link>https://cywhat.cn/tags/Java/</link>
+    <pubDate>Mon, 26 Feb 2024 14:27:58 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/tags/Java/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Linux</title>
     <link>https://cywhat.cn/tags/Linux/</link>
     <pubDate>Wed, 22 Nov 2023 14:28:16 &#43;0800</pubDate>
@@ -61,18 +68,11 @@
     <guid>https://cywhat.cn/tags/Erlang/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>RabbitMQ</title>
-    <link>https://cywhat.cn/tags/RabbitMQ/</link>
+    <title>Linux&#34;</title>
+    <link>https://cywhat.cn/tags/Linux/</link>
     <pubDate>Tue, 18 Apr 2023 14:31:47 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://cywhat.cn/tags/RabbitMQ/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Html</title>
-    <link>https://cywhat.cn/tags/Html/</link>
-    <pubDate>Fri, 07 Apr 2023 09:24:59 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/tags/Html/</guid>
+    <guid>https://cywhat.cn/tags/Linux/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

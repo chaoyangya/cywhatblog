@@ -4,9 +4,16 @@
         <link>https://cywhat.cn/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cy-support@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cy-support@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 22 Nov 2023 14:28:16 &#43;0800</lastBuildDate>
+            <webMaster>cy-support@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 26 Feb 2024 14:27:58 &#43;0800</lastBuildDate>
             <atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Java编译出现java.lang.ExceptionInInitializerError</title>
+    <link>https://cywhat.cn/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError/</link>
+    <pubDate>Mon, 26 Feb 2024 14:27:58 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError/</guid>
+    <description><![CDATA[1、Java编译出现如下错误 1 2 java: java.lang.ExceptionInInitializerError com.sun.tools.javac.code.TypeTags 2、问题原因 1 JDK和pom文件中的`lombok`版本不匹配导致 3、解决问题【二选一】 3.1、修改J]]></description>
+</item><item>
     <title>Linux生成自定义名称的ssh证书</title>
     <link>https://cywhat.cn/Linux%E7%94%9F%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89%E5%90%8D%E7%A7%B0%E7%9A%84ssh%E8%AF%81%E4%B9%A6/</link>
     <pubDate>Wed, 22 Nov 2023 14:28:16 &#43;0800</pubDate>
@@ -71,10 +78,10 @@
     <description><![CDATA[1、问题 jenkins通过systemctl start jenkins.service启动服务，端口不是配置文件里自定义的端口 2、排查 1、系统serv]]></description>
 </item><item>
     <title>Mac出现xxx@bogon</title>
-    <link>https://cywhat.cn/Mac%E5%87%BA%E7%8E%B0xxxbogon.none/</link>
+    <link>https://cywhat.cn/Mac%E5%87%BA%E7%8E%B0xxx@bogon.none/</link>
     <pubDate>Tue, 04 Apr 2023 10:41:47 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://cywhat.cn/Mac%E5%87%BA%E7%8E%B0xxxbogon.none/</guid>
+    <guid>https://cywhat.cn/Mac%E5%87%BA%E7%8E%B0xxx@bogon.none/</guid>
     <description><![CDATA[1、问题 1 chaoyang@bogon.(none)&#39; # 用户名被篡改成了bogon 2、解决 1、修改电脑名称 1 sudo scutil --set ComputerName 你想要的计算机名称 2、修改本地主机名 1 sudo scutil --set LocalHostName 你想要的计算机名称 3]]></description>
 </item><item>
     <title>Linux忘记mysql密码解决办法</title>
@@ -349,12 +356,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/hexo%E8%BF%81%E7%A7%BB%E9%9C%80%E8%A6%81%E8%BF%9B%E8%A1%8C%E5%AE%89%E8%A3%85%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BE%9D%E8%B5%96/</guid>
     <description><![CDATA[前景： 更换新设备 or 更换新工作环境需要重新本地部署hexo环境,需要有整个工程的文件夹 1.安装hexo 1 npm install -g hexo-cli 2.安装node_moudle]]></description>
-</item><item>
-    <title>ERROR: Re-run SonarScanner using the -X switch to enable full debug logging.</title>
-    <link>https://cywhat.cn/ERROR-Re-run-SonarScanner-using-the-X-switch-to-enable-full-debug-logging/</link>
-    <pubDate>Thu, 23 Sep 2021 11:25:17 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/ERROR-Re-run-SonarScanner-using-the-X-switch-to-enable-full-debug-logging/</guid>
-    <description><![CDATA[前景 jenkins构建sonarqube报错 报错： &quot;ERROR: Re-run SonarScanner using the -X switch to enable full debug logging. 1.打开sonarqube的SCM配置 2.重新构建即可]]></description>
 </item></channel>
 </rss>

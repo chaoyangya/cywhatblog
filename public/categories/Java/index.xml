@@ -4,7 +4,14 @@
         <link>https://cywhat.cn/categories/Java/</link>
         <description>Java - 分类 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cy-support@cywhat.cn (cywhat)</managingEditor>
-            <webMaster>cy-support@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 20 Jul 2021 10:12:22 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/categories/Java/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>cy-support@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 26 Feb 2024 14:27:58 &#43;0800</lastBuildDate><atom:link href="https://cywhat.cn/categories/Java/" rel="self" type="application/rss+xml" /><item>
+    <title>Java编译出现java.lang.ExceptionInInitializerError</title>
+    <link>https://cywhat.cn/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError/</link>
+    <pubDate>Mon, 26 Feb 2024 14:27:58 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError/</guid>
+    <description><![CDATA[1、Java编译出现如下错误 1 2 java: java.lang.ExceptionInInitializerError com.sun.tools.javac.code.TypeTags 2、问题原因 1 JDK和pom文件中的`lombok`版本不匹配导致 3、解决问题【二选一】 3.1、修改J]]></description>
+</item><item>
     <title>bash:jstack: 未找到命令</title>
     <link>https://cywhat.cn/bash-jstack-%E6%9C%AA%E6%89%BE%E5%88%B0%E5%91%BD%E4%BB%A4/</link>
     <pubDate>Tue, 20 Jul 2021 10:12:22 &#43;0000</pubDate>

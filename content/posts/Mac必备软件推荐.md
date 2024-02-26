@@ -76,6 +76,8 @@ Camtasia 2023             "屏幕录制"
 
 Snipaste                    "贴图工具【贴到屏幕上】"(非常好用)
 
+Pixea                       "图片预览工具"
+
 {{< /admonition >}}
 
 

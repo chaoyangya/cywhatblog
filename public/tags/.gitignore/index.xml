@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>.gitignore - 标签 - cywhat&#39;s blog</title>
+        <title>.Gitignore - 标签 - cywhat&#39;s blog</title>
         <link>https://cywhat.cn/tags/.gitignore/</link>
-        <description>.gitignore - 标签 - cywhat&#39;s blog</description>
+        <description>.Gitignore - 标签 - cywhat&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>cy-support@cywhat.cn (cywhat)</managingEditor>
             <webMaster>cy-support@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 01 Apr 2021 18:17:13 &#43;0000</lastBuildDate><atom:link href="https://cywhat.cn/tags/.gitignore/" rel="self" type="application/rss+xml" /><item>
     <title>.gitignore不生效的解决方案</title>
