@@ -5,29 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Java编译出现java.lang.ExceptionInInitializerError - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
-<meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Java编译出现java.lang.ExceptionInInitializerError" />
-<meta property="og:description" content="1、Java编译出现如下错误 1 2 java: java.lang.ExceptionInInitializerError com.sun.tools.javac.code.TypeTags 2、问题原因 1 JDK和pom文件中的`lombok`版本不匹配导致 3、解决问题【二选一】 3.1、修改J" />
+        <title>Mac修改brew源 - cywhat&#39;s blog</title><meta name="keywords" content="[Theme Hugo]">
+<meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="Mac修改brew源" />
+<meta property="og:description" content="修改为阿里源 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 # 查看 brew.git 当前源 cd &#34;$(brew --repo)&#34; &amp;&amp; git remote -v origin https://github.com/Homebrew/brew.git (fetch) origin https://github.com/Homebrew/brew.git (push) # 查看 homebrew-core.git 当前源 cd &#34;$(brew --repo homebrew/core)&#34; &amp;&amp; git remote -v origin https://github.com/Homebrew/homebrew-core.git (fetch) origin https://github.com/Homebrew/homebrew-core.git (push)" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cywhat.cn/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError/" /><meta property="og:image" content="https://cywhat.cn/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-02-26T14:27:58+08:00" />
-<meta property="article:modified_time" content="2024-02-26T14:27:58+08:00" />
+<meta property="og:url" content="https://cywhat.cn/Mac%E4%BF%AE%E6%94%B9brew%E6%BA%90/" /><meta property="og:image" content="https://cywhat.cn/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-02-27T14:59:17+08:00" />
+<meta property="article:modified_time" content="2024-02-27T14:59:17+08:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://cywhat.cn/" /><meta name="twitter:title" content="Java编译出现java.lang.ExceptionInInitializerError"/>
-<meta name="twitter:description" content="1、Java编译出现如下错误 1 2 java: java.lang.ExceptionInInitializerError com.sun.tools.javac.code.TypeTags 2、问题原因 1 JDK和pom文件中的`lombok`版本不匹配导致 3、解决问题【二选一】 3.1、修改J"/>
+<meta name="twitter:image" content="https://cywhat.cn/" /><meta name="twitter:title" content="Mac修改brew源"/>
+<meta name="twitter:description" content="修改为阿里源 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 # 查看 brew.git 当前源 cd &#34;$(brew --repo)&#34; &amp;&amp; git remote -v origin https://github.com/Homebrew/brew.git (fetch) origin https://github.com/Homebrew/brew.git (push) # 查看 homebrew-core.git 当前源 cd &#34;$(brew --repo homebrew/core)&#34; &amp;&amp; git remote -v origin https://github.com/Homebrew/homebrew-core.git (fetch) origin https://github.com/Homebrew/homebrew-core.git (push)"/>
 <meta name="application-name" content="LoveIt">
-<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError/" /><link rel="prev" href="https://cywhat.cn/Linux%E7%94%9F%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89%E5%90%8D%E7%A7%B0%E7%9A%84ssh%E8%AF%81%E4%B9%A6/" /><link rel="next" href="https://cywhat.cn/Mac%E4%BF%AE%E6%94%B9brew%E6%BA%90/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532da532cc"><link rel="icon" href="/headers/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://cywhat.cn/Mac%E4%BF%AE%E6%94%B9brew%E6%BA%90/" /><link rel="prev" href="https://cywhat.cn/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Java编译出现java.lang.ExceptionInInitializerError",
+        "headline": "Mac修改brew源",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/cywhat.cn\/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError\/"
-        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Java","wordcount":  147 ,
-        "url": "https:\/\/cywhat.cn\/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError\/","datePublished": "2024-02-26T14:27:58+08:00","dateModified": "2024-02-26T14:27:58+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/cywhat.cn\/Mac%E4%BF%AE%E6%94%B9brew%E6%BA%90\/"
+        },"image": ["https:\/\/cywhat.cn\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Mac, Brew","wordcount":  133 ,
+        "url": "https:\/\/cywhat.cn\/Mac%E4%BF%AE%E6%94%B9brew%E6%BA%90\/","datePublished": "2024-02-27T14:59:17+08:00","dateModified": "2024-02-27T14:59:17+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "cywhat"},"author": {
                 "@type": "Person",
@@ -101,14 +101,14 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Java编译出现java.lang.ExceptionInInitializerError</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Java/"><i class="far fa-folder fa-fw"></i>Java</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-02-26">2024-02-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 147 字
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError/" class="leancloud_visitors" data-flag-title="Java编译出现java.lang.ExceptionInInitializerError">
+        </div><article class="page single"><h1 class="single-title animated flipInX">Mac修改brew源</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://cywhat.cn" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>cywhat</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/Mac/"><i class="far fa-folder fa-fw"></i>Mac</a>&nbsp;<a href="/categories/Brew/"><i class="far fa-folder fa-fw"></i>Brew</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-02-27">2024-02-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 133 字
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id="/Mac%E4%BF%AE%E6%94%B9brew%E6%BA%90/" class="leancloud_visitors" data-flag-title="Mac修改brew源">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;
 					<a href="#comments" id="post-meta-vcount" title="查看评论">
-						<i class="fas fa-comment fa-fw"></i>&nbsp;<span id="/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError/" class="waline-comment-count"></span>&nbsp;条评论
+						<i class="fas fa-comment fa-fw"></i>&nbsp;<span id="/Mac%E4%BF%AE%E6%94%B9brew%E6%BA%90/" class="waline-comment-count"></span>&nbsp;条评论
 					</a></div>
 
 
@@ -129,63 +129,62 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#1java编译出现如下错误">1、Java编译出现如下错误</a></li>
-        <li><a href="#2问题原因">2、问题原因</a></li>
-        <li><a href="#3解决问题二选一">3、解决问题【二选一】</a>
-          <ul>
-            <li><a href="#31修改jdk版本">3.1、修改JDK版本</a></li>
-            <li><a href="#32修改lombok版本">3.2、修改lombok版本</a></li>
-          </ul>
-        </li>
+        <li><a href="#修改为阿里源">修改为阿里源</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h3 id="1java编译出现如下错误">1、Java编译出现如下错误</h3>
+            </div><div class="content" id="content"><h3 id="修改为阿里源">修改为阿里源</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nl">java</span><span class="p">:</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">lang</span><span class="p">.</span><span class="na">ExceptionInInitializerError</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">com</span><span class="p">.</span><span class="na">sun</span><span class="p">.</span><span class="na">tools</span><span class="p">.</span><span class="na">javac</span><span class="p">.</span><span class="na">code</span><span class="p">.</span><span class="na">TypeTags</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="2问题原因">2、问题原因</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">JDK和pom文件中的`lombok`版本不匹配导致
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="3解决问题二选一">3、解决问题【二选一】</h3>
-<h4 id="31修改jdk版本">3.1、修改JDK版本</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">1、File --&gt;  Project Structure --&gt; Project
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看 brew.git 当前源</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> <span class="s2">&#34;</span><span class="k">$(</span>brew --repo<span class="k">)</span><span class="s2">&#34;</span> <span class="o">&amp;&amp;</span> git remote -v
+</span></span><span class="line"><span class="cl">origin    https://github.com/Homebrew/brew.git <span class="o">(</span>fetch<span class="o">)</span>
+</span></span><span class="line"><span class="cl">origin    https://github.com/Homebrew/brew.git <span class="o">(</span>push<span class="o">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">2、修改SDK版本，重新编译即可
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="32修改lombok版本">3.2、修改lombok版本</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">1、pom文件中修改lombok版本
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看 homebrew-core.git 当前源</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> <span class="s2">&#34;</span><span class="k">$(</span>brew --repo homebrew/core<span class="k">)</span><span class="s2">&#34;</span> <span class="o">&amp;&amp;</span> git remote -v
+</span></span><span class="line"><span class="cl">origin    https://github.com/Homebrew/homebrew-core.git <span class="o">(</span>fetch<span class="o">)</span>
+</span></span><span class="line"><span class="cl">origin    https://github.com/Homebrew/homebrew-core.git <span class="o">(</span>push<span class="o">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">2、重新编译即可
+</span></span><span class="line"><span class="cl"><span class="c1"># 修改 brew.git 为阿里源</span>
+</span></span><span class="line"><span class="cl">git -C <span class="s2">&#34;</span><span class="k">$(</span>brew --repo<span class="k">)</span><span class="s2">&#34;</span> remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 修改 homebrew-core.git 为阿里源</span>
+</span></span><span class="line"><span class="cl">git -C <span class="s2">&#34;</span><span class="k">$(</span>brew --repo homebrew/core<span class="k">)</span><span class="s2">&#34;</span> remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># zsh 替换 brew bintray 镜像</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles&#39;</span> &gt;&gt; ~/.zshrc
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> ~/.zshrc
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># bash 替换 brew bintray 镜像</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles&#39;</span> &gt;&gt; ~/.bash_profile
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> ~/.bash_profile
 </span></span></code></pre></td></tr></table>
 </div>
 </div><div class="post-promote">
@@ -220,27 +219,26 @@
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2024-02-26</span>
+                <span>更新于 2024-02-27</span>
             </div>
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError/" data-title="Java编译出现java.lang.ExceptionInInitializerError" data-hashtags="Java"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError/" data-hashtag="Java"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError/" data-title="Java编译出现java.lang.ExceptionInInitializerError"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError/" data-title="Java编译出现java.lang.ExceptionInInitializerError"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError/" data-title="Java编译出现java.lang.ExceptionInInitializerError"><i class="fab fa-weibo fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://cywhat.cn/Mac%E4%BF%AE%E6%94%B9brew%E6%BA%90/" data-title="Mac修改brew源" data-hashtags="Mac,Brew"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://cywhat.cn/Mac%E4%BF%AE%E6%94%B9brew%E6%BA%90/" data-hashtag="Mac"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://cywhat.cn/Mac%E4%BF%AE%E6%94%B9brew%E6%BA%90/" data-title="Mac修改brew源"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://cywhat.cn/Mac%E4%BF%AE%E6%94%B9brew%E6%BA%90/" data-title="Mac修改brew源"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://cywhat.cn/Mac%E4%BF%AE%E6%94%B9brew%E6%BA%90/" data-title="Mac修改brew源"><i class="fab fa-weibo fa-fw"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/Java/">Java</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/Mac/">Mac</a>,&nbsp;<a href="/tags/Brew/">Brew</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/Linux%E7%94%9F%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89%E5%90%8D%E7%A7%B0%E7%9A%84ssh%E8%AF%81%E4%B9%A6/" class="prev" rel="prev" title="Linux生成自定义名称的ssh证书"><i class="fas fa-angle-left fa-fw"></i>Linux生成自定义名称的ssh证书</a>
-            <a href="/Mac%E4%BF%AE%E6%94%B9brew%E6%BA%90/" class="next" rel="next" title="Mac修改brew源">Mac修改brew源<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError/" class="prev" rel="prev" title="Java编译出现java.lang.ExceptionInInitializerError"><i class="fas fa-angle-left fa-fw"></i>Java编译出现java.lang.ExceptionInInitializerError</a></div>
 </div>
 <div id="comments"><div id="waline"></div>
 			<script src='https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>

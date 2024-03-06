@@ -7,6 +7,13 @@
             <webMaster>cy-support@cywhat.cn (cywhat)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 27 Feb 2024 14:59:17 &#43;0800</lastBuildDate>
             <atom:link href="https://cywhat.cn/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Mac修改brew源</title>
+    <link>https://cywhat.cn/Mac%E4%BF%AE%E6%94%B9brew%E6%BA%90/</link>
+    <pubDate>Tue, 27 Feb 2024 14:59:17 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://cywhat.cn/Mac%E4%BF%AE%E6%94%B9brew%E6%BA%90/</guid>
+    <description><![CDATA[修改为阿里源 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 # 查看 brew.git 当前源 cd &#34;$(brew --repo)&#34; &amp;&amp; git remote -v origin https://github.com/Homebrew/brew.git (fetch) origin https://github.com/Homebrew/brew.git (push) # 查看 homebrew-core.git 当前源 cd &#34;$(brew --repo homebrew/core)&#34; &amp;&amp; git remote -v origin https://github.com/Homebrew/homebrew-core.git (fetch) origin https://github.com/Homebrew/homebrew-core.git (push)]]></description>
+</item><item>
     <title>Java编译出现java.lang.ExceptionInInitializerError</title>
     <link>https://cywhat.cn/Java%E7%BC%96%E8%AF%91%E5%87%BA%E7%8E%B0java.lang.ExceptionInInitializerError/</link>
     <pubDate>Mon, 26 Feb 2024 14:27:58 &#43;0800</pubDate>
@@ -349,12 +356,5 @@
     <author>作者</author>
     <guid>https://cywhat.cn/Django%E4%B8%AD%E7%9A%84form%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C/</guid>
     <description><![CDATA[前景： 我在使用django的form组件时，发现在view函数中的`form.is_valid()`在form表单校验未通过的情况下，返回的]]></description>
-</item><item>
-    <title>hexo迁移需要进行安装的一些依赖</title>
-    <link>https://cywhat.cn/hexo%E8%BF%81%E7%A7%BB%E9%9C%80%E8%A6%81%E8%BF%9B%E8%A1%8C%E5%AE%89%E8%A3%85%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BE%9D%E8%B5%96/</link>
-    <pubDate>Fri, 24 Sep 2021 17:51:42 &#43;0000</pubDate>
-    <author>作者</author>
-    <guid>https://cywhat.cn/hexo%E8%BF%81%E7%A7%BB%E9%9C%80%E8%A6%81%E8%BF%9B%E8%A1%8C%E5%AE%89%E8%A3%85%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BE%9D%E8%B5%96/</guid>
-    <description><![CDATA[前景： 更换新设备 or 更换新工作环境需要重新本地部署hexo环境,需要有整个工程的文件夹 1.安装hexo 1 npm install -g hexo-cli 2.安装node_moudle]]></description>
 </item></channel>
 </rss>
